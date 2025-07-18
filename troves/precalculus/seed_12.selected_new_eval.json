@@ -1,0 +1,1983 @@
+[
+  {
+    "example_id": 0,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ]
+  },
+  {
+    "example_id": 1,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 2,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.8333333333333333"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 3,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "70.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ]
+  },
+  {
+    "example_id": 4,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 5,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.333333333333333"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ]
+  },
+  {
+    "example_id": 6,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-5.226497308103744"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ]
+  },
+  {
+    "example_id": 7,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ]
+  },
+  {
+    "example_id": 8,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.9999999999999991"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 9,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ]
+  },
+  {
+    "example_id": 10,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.02760521194892391"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 11,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.145047544858779"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ]
+  },
+  {
+    "example_id": 12,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "72.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ]
+  },
+  {
+    "example_id": 13,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.8"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ]
+  },
+  {
+    "example_id": 14,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "70.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "43.0"
+    ]
+  },
+  {
+    "example_id": 15,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ]
+  },
+  {
+    "example_id": 16,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.0000000000000002"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ]
+  },
+  {
+    "example_id": 17,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.633123935319537",
+      "16.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 18,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.0",
+      "1.2246467991473533",
+      "-16.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ]
+  },
+  {
+    "example_id": 19,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0000000000000004"
+    ],
+    "annotated_answers": [
+      "-49.0"
+    ]
+  },
+  {
+    "example_id": 20,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ]
+  },
+  {
+    "example_id": 21,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "203.5"
+    ],
+    "annotated_answers": [
+      "315.0"
+    ]
+  },
+  {
+    "example_id": 22,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-643371375338642.2",
+      "-643371375338642.2"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ]
+  },
+  {
+    "example_id": 23,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ]
+  },
+  {
+    "example_id": 24,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "27.622454633866266"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ]
+  },
+  {
+    "example_id": 25,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 26,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 27,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 28,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.9999999999999987"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 29,
+    "selected_mode": "import",
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 30,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2019.0"
+    ],
+    "annotated_answers": [
+      "82.0"
+    ]
+  },
+  {
+    "example_id": 31,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ]
+  },
+  {
+    "example_id": 32,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 33,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.2014652682504134",
+      "-15.0",
+      "19.621416870348583"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ]
+  },
+  {
+    "example_id": 34,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5294117647058822"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 35,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ]
+  },
+  {
+    "example_id": 36,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-57.29577951308232"
+    ],
+    "annotated_answers": [
+      "160.0"
+    ]
+  },
+  {
+    "example_id": 37,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-61.586653554589375"
+    ],
+    "annotated_answers": [
+      "906.0"
+    ]
+  },
+  {
+    "example_id": 38,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 39,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 40,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "251.0"
+    ]
+  },
+  {
+    "example_id": 41,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "8.0"
+    ]
+  },
+  {
+    "example_id": 42,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-2.0"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ]
+  },
+  {
+    "example_id": 43,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "35.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ]
+  },
+  {
+    "example_id": 44,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0",
+      "6.661338147750939",
+      "-16.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 45,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-266.25921136279254"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ]
+  },
+  {
+    "example_id": 46,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "-3.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "15.0",
+      "2.0",
+      "15.0",
+      "2.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 47,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 48,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 49,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.317821063276353"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ]
+  },
+  {
+    "example_id": 50,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "6.0",
+      "2.0",
+      "12.0",
+      "29.0",
+      "1.0",
+      "2.0",
+      "6.0",
+      "2.0",
+      "12.0",
+      "29.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 51,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-8.0"
+    ]
+  },
+  {
+    "example_id": 52,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "-4.0"
+    ]
+  },
+  {
+    "example_id": 53,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ]
+  },
+  {
+    "example_id": 54,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "60.0",
+      "120.0",
+      "180.0",
+      "240.0",
+      "300.0",
+      "360.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 55,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ]
+  },
+  {
+    "example_id": 56,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 57,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.732050807568878",
+      "-3.7320508075688754",
+      "-0.9999999999999997",
+      "-0.2679491924311225",
+      "0.267949192431123",
+      "1.0000000000000004",
+      "3.7320508075688807",
+      "-3.732050807568873",
+      "-0.9999999999999994",
+      "-0.26794919243112236"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 58,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ]
+  },
+  {
+    "example_id": 59,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.411474127809773"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 60,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ]
+  },
+  {
+    "example_id": 61,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "159.0"
+    ]
+  },
+  {
+    "example_id": 62,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ]
+  },
+  {
+    "example_id": 63,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.4433756729740645"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 64,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ]
+  },
+  {
+    "example_id": 65,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.7416573867739404"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ]
+  },
+  {
+    "example_id": 66,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.9999999999999982"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ]
+  },
+  {
+    "example_id": 67,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ]
+  },
+  {
+    "example_id": 68,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "22.0",
+      "22.0",
+      "22.0"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ]
+  },
+  {
+    "example_id": 69,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "100.00000000000045"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ]
+  },
+  {
+    "example_id": 70,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ]
+  },
+  {
+    "example_id": 71,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-7.105427357601002",
+      "-15.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 72,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.842170943040401",
+      "-14.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 73,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1001.0"
+    ],
+    "annotated_answers": [
+      "92.0"
+    ]
+  },
+  {
+    "example_id": 74,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 75,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-15.721950642280165"
+    ],
+    "annotated_answers": [
+      "46.0"
+    ]
+  },
+  {
+    "example_id": 76,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ]
+  },
+  {
+    "example_id": 77,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5495444030814678"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 78,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ]
+  },
+  {
+    "example_id": 79,
+    "selected_mode": "import",
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 80,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.8009993205741269"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ]
+  },
+  {
+    "example_id": 81,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "647.7870020307602"
+    ],
+    "annotated_answers": [
+      "110.0"
+    ]
+  },
+  {
+    "example_id": 82,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.8369701987210296",
+      "-16.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 83,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ]
+  },
+  {
+    "example_id": 84,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 85,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-639713.0",
+      "271118.0"
+    ],
+    "annotated_answers": [
+      "87.5"
+    ]
+  },
+  {
+    "example_id": 86,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "43.86342439892262",
+      "44.15880433163924"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ]
+  },
+  {
+    "example_id": 87,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.75675676",
+      "0.32432432",
+      "0.10810811",
+      "-0.81081081",
+      "0.75675676",
+      "0.32432432"
+    ],
+    "annotated_answers": [
+      "-6.0"
+    ]
+  },
+  {
+    "example_id": 88,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 89,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-66.93161598149246"
+    ],
+    "annotated_answers": [
+      "59.0"
+    ]
+  },
+  {
+    "example_id": 90,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.6331239353195377",
+      "16.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ]
+  },
+  {
+    "example_id": 91,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "495.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ]
+  },
+  {
+    "example_id": 92,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ]
+  },
+  {
+    "example_id": 93,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 94,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0000000000000002"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 95,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "71.0"
+    ]
+  },
+  {
+    "example_id": 96,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2004.0"
+    ]
+  },
+  {
+    "example_id": 97,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 98,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "30.000000000000004"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ]
+  },
+  {
+    "example_id": 99,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ]
+  },
+  {
+    "example_id": 100,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ]
+  },
+  {
+    "example_id": 101,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "19900.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 102,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.1241554693209974",
+      "1.7507684116335782",
+      "-4.38047710263",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ]
+  },
+  {
+    "example_id": 103,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "14.0"
+    ]
+  },
+  {
+    "example_id": 104,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ]
+  },
+  {
+    "example_id": 105,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "768.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ]
+  },
+  {
+    "example_id": 106,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.85640646055102"
+    ],
+    "annotated_answers": [
+      "192.0"
+    ]
+  },
+  {
+    "example_id": 107,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "96.0",
+      "19.0",
+      "123.0",
+      "76.0"
+    ],
+    "annotated_answers": [
+      "159.0"
+    ]
+  },
+  {
+    "example_id": 108,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "17.0"
+    ],
+    "annotated_answers": [
+      "-13.0"
+    ]
+  },
+  {
+    "example_id": 109,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.751938393884109",
+      "1.319702539465328",
+      "10.0"
+    ],
+    "annotated_answers": [
+      "900.0"
+    ]
+  },
+  {
+    "example_id": 110,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.3183098861837907"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 111,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.000000000000036"
+    ],
+    "annotated_answers": [
+      "-21.0"
+    ]
+  },
+  {
+    "example_id": 112,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ]
+  },
+  {
+    "example_id": 113,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-59.0"
+    ],
+    "annotated_answers": [
+      "-59.0"
+    ]
+  },
+  {
+    "example_id": 114,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.2309594173407747",
+      "-0.0",
+      "0.9428090415820634",
+      "-0.0",
+      "0.6285393610547089",
+      "-0.0",
+      "-0.5237828008789243",
+      "-0.0",
+      "1.047565601757848",
+      "-0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ]
+  },
+  {
+    "example_id": 115,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ]
+  },
+  {
+    "example_id": 116,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-523655808171732.2",
+      "-1561003057074436.0"
+    ],
+    "annotated_answers": [
+      "432.0"
+    ]
+  },
+  {
+    "example_id": 117,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-0.9999995000001249",
+      "-0.9999999999999998"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ]
+  },
+  {
+    "example_id": 118,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.732050807568877",
+      "5.464101615137754",
+      "7.196152422706632"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ]
+  },
+  {
+    "example_id": 119,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "5.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "5.0",
+      "-14.0",
+      "35.0",
+      "-14.0",
+      "35.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ]
+  },
+  {
+    "example_id": 120,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.19485061460432312"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ]
+  },
+  {
+    "example_id": 121,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ]
+  },
+  {
+    "example_id": 122,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.000000000000008"
+    ],
+    "annotated_answers": [
+      "-20.0"
+    ]
+  },
+  {
+    "example_id": 123,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 124,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.5"
+    ],
+    "annotated_answers": [
+      "19.0"
+    ]
+  },
+  {
+    "example_id": 125,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-18.000000000000004"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ]
+  },
+  {
+    "example_id": 126,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.598076211353316"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 127,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "332.0521"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ]
+  },
+  {
+    "example_id": 128,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.899494936611665"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ]
+  },
+  {
+    "example_id": 129,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 130,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ]
+  },
+  {
+    "example_id": 131,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "65536.0"
+    ]
+  },
+  {
+    "example_id": 132,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ]
+  },
+  {
+    "example_id": 133,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 134,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ]
+  },
+  {
+    "example_id": 135,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-827.9999999999999"
+    ],
+    "annotated_answers": [
+      "-27.0"
+    ]
+  },
+  {
+    "example_id": 136,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4018.0"
+    ]
+  },
+  {
+    "example_id": 137,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 138,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.500000000000002"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 139,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ]
+  },
+  {
+    "example_id": 140,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ]
+  },
+  {
+    "example_id": 141,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "97.0"
+    ]
+  },
+  {
+    "example_id": 142,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "534.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "534.0"
+    ]
+  },
+  {
+    "example_id": 143,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-568.0",
+      "182.0",
+      "568.0",
+      "180.0"
+    ],
+    "annotated_answers": [
+      "152.0"
+    ]
+  },
+  {
+    "example_id": 144,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-41.0"
+    ],
+    "annotated_answers": [
+      "-41.0"
+    ]
+  },
+  {
+    "example_id": 145,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ]
+  },
+  {
+    "example_id": 146,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.74734012447073"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ]
+  },
+  {
+    "example_id": 147,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 148,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.546352540927555",
+      "23.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ]
+  },
+  {
+    "example_id": 149,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ]
+  },
+  {
+    "example_id": 150,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ]
+  },
+  {
+    "example_id": 151,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.73320053",
+      "16.73320053",
+      "16.73320053"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ]
+  },
+  {
+    "example_id": 152,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "5.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ]
+  },
+  {
+    "example_id": 153,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "54.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ]
+  },
+  {
+    "example_id": 154,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-12.0"
+    ]
+  },
+  {
+    "example_id": 155,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ]
+  }
+]

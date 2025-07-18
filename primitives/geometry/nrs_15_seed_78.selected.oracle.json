@@ -1,0 +1,950 @@
+[
+  {
+    "example_id": 0,
+    "is_correct": false
+  },
+  {
+    "example_id": 1,
+    "is_correct": false
+  },
+  {
+    "example_id": 2,
+    "is_correct": true
+  },
+  {
+    "example_id": 3,
+    "is_correct": true
+  },
+  {
+    "example_id": 4,
+    "is_correct": false
+  },
+  {
+    "example_id": 5,
+    "is_correct": false
+  },
+  {
+    "example_id": 6,
+    "is_correct": false
+  },
+  {
+    "example_id": 7,
+    "is_correct": false
+  },
+  {
+    "example_id": 8,
+    "is_correct": true
+  },
+  {
+    "example_id": 9,
+    "is_correct": false
+  },
+  {
+    "example_id": 10,
+    "is_correct": false
+  },
+  {
+    "example_id": 11,
+    "is_correct": false
+  },
+  {
+    "example_id": 12,
+    "is_correct": false
+  },
+  {
+    "example_id": 13,
+    "is_correct": true
+  },
+  {
+    "example_id": 14,
+    "is_correct": true
+  },
+  {
+    "example_id": 15,
+    "is_correct": true
+  },
+  {
+    "example_id": 16,
+    "is_correct": false
+  },
+  {
+    "example_id": 17,
+    "is_correct": false
+  },
+  {
+    "example_id": 18,
+    "is_correct": false
+  },
+  {
+    "example_id": 19,
+    "is_correct": false
+  },
+  {
+    "example_id": 20,
+    "is_correct": true
+  },
+  {
+    "example_id": 21,
+    "is_correct": true
+  },
+  {
+    "example_id": 22,
+    "is_correct": false
+  },
+  {
+    "example_id": 23,
+    "is_correct": false
+  },
+  {
+    "example_id": 24,
+    "is_correct": false
+  },
+  {
+    "example_id": 25,
+    "is_correct": false
+  },
+  {
+    "example_id": 26,
+    "is_correct": false
+  },
+  {
+    "example_id": 27,
+    "is_correct": false
+  },
+  {
+    "example_id": 28,
+    "is_correct": false
+  },
+  {
+    "example_id": 29,
+    "is_correct": false
+  },
+  {
+    "example_id": 30,
+    "is_correct": false
+  },
+  {
+    "example_id": 31,
+    "is_correct": false
+  },
+  {
+    "example_id": 32,
+    "is_correct": false
+  },
+  {
+    "example_id": 33,
+    "is_correct": true
+  },
+  {
+    "example_id": 34,
+    "is_correct": true
+  },
+  {
+    "example_id": 35,
+    "is_correct": true
+  },
+  {
+    "example_id": 36,
+    "is_correct": false
+  },
+  {
+    "example_id": 37,
+    "is_correct": true
+  },
+  {
+    "example_id": 38,
+    "is_correct": true
+  },
+  {
+    "example_id": 39,
+    "is_correct": true
+  },
+  {
+    "example_id": 40,
+    "is_correct": true
+  },
+  {
+    "example_id": 41,
+    "is_correct": false
+  },
+  {
+    "example_id": 42,
+    "is_correct": false
+  },
+  {
+    "example_id": 43,
+    "is_correct": true
+  },
+  {
+    "example_id": 44,
+    "is_correct": true
+  },
+  {
+    "example_id": 45,
+    "is_correct": false
+  },
+  {
+    "example_id": 46,
+    "is_correct": true
+  },
+  {
+    "example_id": 47,
+    "is_correct": false
+  },
+  {
+    "example_id": 48,
+    "is_correct": true
+  },
+  {
+    "example_id": 49,
+    "is_correct": false
+  },
+  {
+    "example_id": 50,
+    "is_correct": false
+  },
+  {
+    "example_id": 51,
+    "is_correct": false
+  },
+  {
+    "example_id": 52,
+    "is_correct": false
+  },
+  {
+    "example_id": 53,
+    "is_correct": true
+  },
+  {
+    "example_id": 54,
+    "is_correct": false
+  },
+  {
+    "example_id": 55,
+    "is_correct": false
+  },
+  {
+    "example_id": 56,
+    "is_correct": true
+  },
+  {
+    "example_id": 57,
+    "is_correct": false
+  },
+  {
+    "example_id": 58,
+    "is_correct": false
+  },
+  {
+    "example_id": 59,
+    "is_correct": false
+  },
+  {
+    "example_id": 60,
+    "is_correct": false
+  },
+  {
+    "example_id": 61,
+    "is_correct": false
+  },
+  {
+    "example_id": 62,
+    "is_correct": false
+  },
+  {
+    "example_id": 63,
+    "is_correct": false
+  },
+  {
+    "example_id": 64,
+    "is_correct": false
+  },
+  {
+    "example_id": 65,
+    "is_correct": false
+  },
+  {
+    "example_id": 66,
+    "is_correct": true
+  },
+  {
+    "example_id": 67,
+    "is_correct": false
+  },
+  {
+    "example_id": 68,
+    "is_correct": false
+  },
+  {
+    "example_id": 69,
+    "is_correct": false
+  },
+  {
+    "example_id": 70,
+    "is_correct": false
+  },
+  {
+    "example_id": 71,
+    "is_correct": false
+  },
+  {
+    "example_id": 72,
+    "is_correct": true
+  },
+  {
+    "example_id": 73,
+    "is_correct": true
+  },
+  {
+    "example_id": 74,
+    "is_correct": false
+  },
+  {
+    "example_id": 75,
+    "is_correct": true
+  },
+  {
+    "example_id": 76,
+    "is_correct": false
+  },
+  {
+    "example_id": 77,
+    "is_correct": true
+  },
+  {
+    "example_id": 78,
+    "is_correct": false
+  },
+  {
+    "example_id": 79,
+    "is_correct": true
+  },
+  {
+    "example_id": 80,
+    "is_correct": true
+  },
+  {
+    "example_id": 81,
+    "is_correct": true
+  },
+  {
+    "example_id": 82,
+    "is_correct": false
+  },
+  {
+    "example_id": 83,
+    "is_correct": false
+  },
+  {
+    "example_id": 84,
+    "is_correct": false
+  },
+  {
+    "example_id": 85,
+    "is_correct": true
+  },
+  {
+    "example_id": 86,
+    "is_correct": false
+  },
+  {
+    "example_id": 87,
+    "is_correct": true
+  },
+  {
+    "example_id": 88,
+    "is_correct": true
+  },
+  {
+    "example_id": 89,
+    "is_correct": false
+  },
+  {
+    "example_id": 90,
+    "is_correct": true
+  },
+  {
+    "example_id": 91,
+    "is_correct": false
+  },
+  {
+    "example_id": 92,
+    "is_correct": false
+  },
+  {
+    "example_id": 93,
+    "is_correct": false
+  },
+  {
+    "example_id": 94,
+    "is_correct": false
+  },
+  {
+    "example_id": 95,
+    "is_correct": false
+  },
+  {
+    "example_id": 96,
+    "is_correct": false
+  },
+  {
+    "example_id": 97,
+    "is_correct": false
+  },
+  {
+    "example_id": 98,
+    "is_correct": false
+  },
+  {
+    "example_id": 99,
+    "is_correct": false
+  },
+  {
+    "example_id": 100,
+    "is_correct": false
+  },
+  {
+    "example_id": 101,
+    "is_correct": false
+  },
+  {
+    "example_id": 102,
+    "is_correct": true
+  },
+  {
+    "example_id": 103,
+    "is_correct": false
+  },
+  {
+    "example_id": 104,
+    "is_correct": false
+  },
+  {
+    "example_id": 105,
+    "is_correct": false
+  },
+  {
+    "example_id": 106,
+    "is_correct": true
+  },
+  {
+    "example_id": 107,
+    "is_correct": true
+  },
+  {
+    "example_id": 108,
+    "is_correct": false
+  },
+  {
+    "example_id": 109,
+    "is_correct": true
+  },
+  {
+    "example_id": 110,
+    "is_correct": true
+  },
+  {
+    "example_id": 111,
+    "is_correct": false
+  },
+  {
+    "example_id": 112,
+    "is_correct": false
+  },
+  {
+    "example_id": 113,
+    "is_correct": true
+  },
+  {
+    "example_id": 114,
+    "is_correct": false
+  },
+  {
+    "example_id": 115,
+    "is_correct": false
+  },
+  {
+    "example_id": 116,
+    "is_correct": false
+  },
+  {
+    "example_id": 117,
+    "is_correct": true
+  },
+  {
+    "example_id": 118,
+    "is_correct": false
+  },
+  {
+    "example_id": 119,
+    "is_correct": false
+  },
+  {
+    "example_id": 120,
+    "is_correct": false
+  },
+  {
+    "example_id": 121,
+    "is_correct": false
+  },
+  {
+    "example_id": 122,
+    "is_correct": false
+  },
+  {
+    "example_id": 123,
+    "is_correct": false
+  },
+  {
+    "example_id": 124,
+    "is_correct": false
+  },
+  {
+    "example_id": 125,
+    "is_correct": false
+  },
+  {
+    "example_id": 126,
+    "is_correct": false
+  },
+  {
+    "example_id": 127,
+    "is_correct": false
+  },
+  {
+    "example_id": 128,
+    "is_correct": false
+  },
+  {
+    "example_id": 129,
+    "is_correct": false
+  },
+  {
+    "example_id": 130,
+    "is_correct": true
+  },
+  {
+    "example_id": 131,
+    "is_correct": true
+  },
+  {
+    "example_id": 132,
+    "is_correct": false
+  },
+  {
+    "example_id": 133,
+    "is_correct": false
+  },
+  {
+    "example_id": 134,
+    "is_correct": false
+  },
+  {
+    "example_id": 135,
+    "is_correct": true
+  },
+  {
+    "example_id": 136,
+    "is_correct": true
+  },
+  {
+    "example_id": 137,
+    "is_correct": true
+  },
+  {
+    "example_id": 138,
+    "is_correct": false
+  },
+  {
+    "example_id": 139,
+    "is_correct": false
+  },
+  {
+    "example_id": 140,
+    "is_correct": false
+  },
+  {
+    "example_id": 141,
+    "is_correct": false
+  },
+  {
+    "example_id": 142,
+    "is_correct": false
+  },
+  {
+    "example_id": 143,
+    "is_correct": true
+  },
+  {
+    "example_id": 144,
+    "is_correct": true
+  },
+  {
+    "example_id": 145,
+    "is_correct": false
+  },
+  {
+    "example_id": 146,
+    "is_correct": true
+  },
+  {
+    "example_id": 147,
+    "is_correct": true
+  },
+  {
+    "example_id": 148,
+    "is_correct": false
+  },
+  {
+    "example_id": 149,
+    "is_correct": true
+  },
+  {
+    "example_id": 150,
+    "is_correct": false
+  },
+  {
+    "example_id": 151,
+    "is_correct": false
+  },
+  {
+    "example_id": 152,
+    "is_correct": false
+  },
+  {
+    "example_id": 153,
+    "is_correct": false
+  },
+  {
+    "example_id": 154,
+    "is_correct": true
+  },
+  {
+    "example_id": 155,
+    "is_correct": false
+  },
+  {
+    "example_id": 156,
+    "is_correct": false
+  },
+  {
+    "example_id": 157,
+    "is_correct": false
+  },
+  {
+    "example_id": 158,
+    "is_correct": true
+  },
+  {
+    "example_id": 159,
+    "is_correct": true
+  },
+  {
+    "example_id": 160,
+    "is_correct": false
+  },
+  {
+    "example_id": 161,
+    "is_correct": false
+  },
+  {
+    "example_id": 162,
+    "is_correct": false
+  },
+  {
+    "example_id": 163,
+    "is_correct": false
+  },
+  {
+    "example_id": 164,
+    "is_correct": true
+  },
+  {
+    "example_id": 165,
+    "is_correct": false
+  },
+  {
+    "example_id": 166,
+    "is_correct": false
+  },
+  {
+    "example_id": 167,
+    "is_correct": false
+  },
+  {
+    "example_id": 168,
+    "is_correct": true
+  },
+  {
+    "example_id": 169,
+    "is_correct": false
+  },
+  {
+    "example_id": 170,
+    "is_correct": true
+  },
+  {
+    "example_id": 171,
+    "is_correct": true
+  },
+  {
+    "example_id": 172,
+    "is_correct": false
+  },
+  {
+    "example_id": 173,
+    "is_correct": false
+  },
+  {
+    "example_id": 174,
+    "is_correct": false
+  },
+  {
+    "example_id": 175,
+    "is_correct": false
+  },
+  {
+    "example_id": 176,
+    "is_correct": false
+  },
+  {
+    "example_id": 177,
+    "is_correct": false
+  },
+  {
+    "example_id": 178,
+    "is_correct": false
+  },
+  {
+    "example_id": 179,
+    "is_correct": false
+  },
+  {
+    "example_id": 180,
+    "is_correct": false
+  },
+  {
+    "example_id": 181,
+    "is_correct": false
+  },
+  {
+    "example_id": 182,
+    "is_correct": false
+  },
+  {
+    "example_id": 183,
+    "is_correct": false
+  },
+  {
+    "example_id": 184,
+    "is_correct": false
+  },
+  {
+    "example_id": 185,
+    "is_correct": true
+  },
+  {
+    "example_id": 186,
+    "is_correct": false
+  },
+  {
+    "example_id": 187,
+    "is_correct": true
+  },
+  {
+    "example_id": 188,
+    "is_correct": false
+  },
+  {
+    "example_id": 189,
+    "is_correct": false
+  },
+  {
+    "example_id": 190,
+    "is_correct": false
+  },
+  {
+    "example_id": 191,
+    "is_correct": false
+  },
+  {
+    "example_id": 192,
+    "is_correct": false
+  },
+  {
+    "example_id": 193,
+    "is_correct": false
+  },
+  {
+    "example_id": 194,
+    "is_correct": true
+  },
+  {
+    "example_id": 195,
+    "is_correct": true
+  },
+  {
+    "example_id": 196,
+    "is_correct": false
+  },
+  {
+    "example_id": 197,
+    "is_correct": false
+  },
+  {
+    "example_id": 198,
+    "is_correct": false
+  },
+  {
+    "example_id": 199,
+    "is_correct": false
+  },
+  {
+    "example_id": 200,
+    "is_correct": false
+  },
+  {
+    "example_id": 201,
+    "is_correct": false
+  },
+  {
+    "example_id": 202,
+    "is_correct": true
+  },
+  {
+    "example_id": 203,
+    "is_correct": false
+  },
+  {
+    "example_id": 204,
+    "is_correct": false
+  },
+  {
+    "example_id": 205,
+    "is_correct": true
+  },
+  {
+    "example_id": 206,
+    "is_correct": false
+  },
+  {
+    "example_id": 207,
+    "is_correct": true
+  },
+  {
+    "example_id": 208,
+    "is_correct": false
+  },
+  {
+    "example_id": 209,
+    "is_correct": false
+  },
+  {
+    "example_id": 210,
+    "is_correct": false
+  },
+  {
+    "example_id": 211,
+    "is_correct": true
+  },
+  {
+    "example_id": 212,
+    "is_correct": false
+  },
+  {
+    "example_id": 213,
+    "is_correct": false
+  },
+  {
+    "example_id": 214,
+    "is_correct": false
+  },
+  {
+    "example_id": 215,
+    "is_correct": false
+  },
+  {
+    "example_id": 216,
+    "is_correct": true
+  },
+  {
+    "example_id": 217,
+    "is_correct": false
+  },
+  {
+    "example_id": 218,
+    "is_correct": false
+  },
+  {
+    "example_id": 219,
+    "is_correct": false
+  },
+  {
+    "example_id": 220,
+    "is_correct": false
+  },
+  {
+    "example_id": 221,
+    "is_correct": false
+  },
+  {
+    "example_id": 222,
+    "is_correct": false
+  },
+  {
+    "example_id": 223,
+    "is_correct": true
+  },
+  {
+    "example_id": 224,
+    "is_correct": false
+  },
+  {
+    "example_id": 225,
+    "is_correct": false
+  },
+  {
+    "example_id": 226,
+    "is_correct": false
+  },
+  {
+    "example_id": 227,
+    "is_correct": false
+  },
+  {
+    "example_id": 228,
+    "is_correct": false
+  },
+  {
+    "example_id": 229,
+    "is_correct": false
+  },
+  {
+    "example_id": 230,
+    "is_correct": true
+  },
+  {
+    "example_id": 231,
+    "is_correct": false
+  },
+  {
+    "example_id": 232,
+    "is_correct": false
+  },
+  {
+    "example_id": 233,
+    "is_correct": true
+  },
+  {
+    "example_id": 234,
+    "is_correct": false
+  },
+  {
+    "example_id": 235,
+    "is_correct": false
+  },
+  {
+    "example_id": 236,
+    "is_correct": false
+  }
+]

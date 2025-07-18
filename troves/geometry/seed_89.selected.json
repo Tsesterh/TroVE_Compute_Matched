@@ -1,0 +1,3708 @@
+[
+  {
+    "example_id": 0,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-27.198779883846527"
+    ],
+    "annotated_answers": [
+      "216.0"
+    ],
+    "solution": "# Import math library\nimport math\n\n# Define variables\nR = 3\n\n# Calculate volume of sphere\nV = (4/3) * math.pi * R**3\n\n# Calculate volume of cube\nL = math.sqrt(3) * R\nV_cube = L**3\n\n# Calculate difference\ndifference = V - V_cube\n\n# Print difference\nprint(difference)"
+  },
+  {
+    "example_id": 1,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "x = symbols('x')\nsolution = solve(2*x+2-3*x+1-x-4, x)\nx_value = solution[0]\nprint(x_value)"
+  },
+  {
+    "example_id": 2,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "F = symbols('F')\nA = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\neq1 = sympy.cos(A) - sympy.cos(B)\neq2 = sympy.cos(B) - sympy.cos(C)\neq3 = sympy.cos(C) - sympy.cos(D)\nsolution1 = solve(eq1, A)\nsolution2 = solve(eq2, B)\nsolution3 = solve(eq3, C)\nA_value = solution1[0]\nB_value = solution2[0]\nC_value = solution3[0]\nD_value = A_value + B_value - C_value\nprint(D_value)"
+  },
+  {
+    "example_id": 3,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "# define variables\nr, s, x, y = symbols('r, s, x, y')\n\n# define equations\neq1 = x**2 + y**2 - r**2\neq2 = x**2 + y**2 - s**2\neq3 = x**2 + y**2 - s**2\neq4 = x**2 + y**2 - s**2\neq5 = x**2 + y**2 - r**2\n\n# solve equations\nsolution = solve([eq1, eq2, eq3, eq4, eq5], [r, s])\n\n# print solution\nprint(solution)"
+  },
+  {
+    "example_id": 4,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# define variables\nx, y = symbols('x y')\n\n# define equation\neq = sympy.sin(x) - 2*sympy.cos(x)\n\n# solve equation\nsolution = solve(eq, x)\n\n# print solution\nprint(solution)"
+  },
+  {
+    "example_id": 5,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "radius = symbols('r')\narea = sympy.pi*(radius**2)\nsq_area = sympy.sqrt(area)\nprint(sq_area)"
+  },
+  {
+    "example_id": 6,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "R = symbols('R')\neq = sympy.pi*R**2 - 112*R\nsolution = solve(eq, R)\nR_value = solution[0]\nprint(R_value)"
+  },
+  {
+    "example_id": 7,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5625"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "# Initialize variables\ndiameter = symbols('diameter')\nheight = symbols('height')\n\n# Define volume\nvolume = sympy.pi*diameter**2*height/4\n\n# Define new diameter\nnew_diameter = diameter*1.25\n\n# Define new volume\nnew_volume = sympy.pi*new_diameter**2*height/4\n\n# Define change in volume\nchange_in_volume = new_volume - volume\n\n# Define change in height\nchange_in_height = height*change_in_volume/volume\n\n# Define percent change in height\npercent_change_in_height = change_in_height/height\n\n# Print percent change in height\nprint(percent_change_in_height)"
+  },
+  {
+    "example_id": 8,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "4.0",
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "x1, y1 = symbols('x1 y1')\nx2, y2 = symbols('x2 y2')\nx3, y3 = symbols('x3 y3')\nx4, y4 = symbols('x4 y4')\n\n# area of triangle\narea = (x1*y2 + x2*y3 + x3*y4 + x4*y1) / 2\nprint(area)"
+  },
+  {
+    "example_id": 9,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.sin(A) - 2*sympy.cos(A)\nsolution = solve(eq, A)\nA_value = solution[0]\ntan_A = sympy.tan(A_value)\nprint(tan_A)"
+  },
+  {
+    "example_id": 10,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.23606797749979"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "# Define x\nx = symbols('x')\n# Define area of the shaded region\narea = 0.20 * pi * (x**2)\n# Define area of the circle\ncircle_area = pi * (1**2)\n# Solve for x\nsolution = solve(area - circle_area, x)\n# Print the value of x\nprint(solution[0])"
+  },
+  {
+    "example_id": 11,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "68.0"
+    ],
+    "solution": "# Define variables\nA, B, C, D, E, F, G, H = symbols('A, B, C, D, E, F, G, H')\n\n# Define equations\neq1 = A*B - C*D\neq2 = E*F - G*H\neq3 = A*D - B*C\neq4 = E*H - F*G\n\n# Solve equations\nsolution = solve([eq1, eq2, eq3, eq4], [A, B, C, D, E, F, G, H])\n\n# Print solution\nprint(solution)"
+  },
+  {
+    "example_id": 12,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.6203504908994",
+      "1.0",
+      "3.0",
+      "-0.3101752454497",
+      "1.0",
+      "3.0",
+      "0.537239284369028",
+      "1.0",
+      "3.0",
+      "-0.3101752454497",
+      "1.0",
+      "3.0",
+      "0.537239284369028",
+      "1.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# Define variables\nV = symbols('V')\nr = symbols('r')\n\n# Define equation\neq = (4/3)*pi*r**3 - V\n\n# Solve for r\nr_solution = solve(eq, r)\n\n# Print the value of r\nprint(r_solution)"
+  },
+  {
+    "example_id": 13,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0",
+      "8.0",
+      "8.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "J = symbols('J')\nK = symbols('K')\nL = symbols('L')\neq1 = sympy.tan(K) - 8\neq2 = J - 8\nsolution = solve([eq1, eq2], [J, K])\nJ_value = solution[0][0]\nK_value = solution[0][1]\nL_value = 8\nprint(J_value, K_value, L_value)"
+  },
+  {
+    "example_id": 14,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "360.0"
+    ],
+    "annotated_answers": [
+      "34.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\nE = symbols('E')\nF = symbols('F')\n\n# Define the cost of aluminum per square inch\ncost = 0.05\n\n# Define the dimensions of the container\na = 10\nb = 10\nc = 12\n\n# Define the area of the container\narea = a*b + b*c + c*a\n\n# Define the volume of the container\nvolume = a*b*c\n\n# Define the surface area of the container\nsurface_area = 2*a*b + 2*b*c + 2*c*a\n\n# Define the perimeter of the container\nperimeter = a*2 + b*2 + c*2\n\n# Calculate the cost of the aluminum used to make one container\naluminum_cost = volume*cost\n\n# Calculate the total cost of the aluminum used to make the containers\ntotal_aluminum_cost = aluminum_cost*6\n\n# Print the results\nprint(\"The total cost of the aluminum used to make the containers is: $%.2f\" % total_aluminum_cost)"
+  },
+  {
+    "example_id": 15,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "# Define the variables\nR1, R2, V = symbols('R1, R2, V')\n\n# Define the equation\neq = V - (pi * R1**2 * R2)\n\n# Solve the equation\nsolution = solve(eq, R1)\n\n# Print the solution\nprint(solution)"
+  },
+  {
+    "example_id": 16,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "# define the side lengths of the triangle\na, b, c = symbols('a b c')\n\n# define the perimeter of the triangle\nperimeter = a + b + c\n\n# define the area of the triangle\narea = (a*b*c)/(4*perimeter)\n\n# define the radius of the incircle\nradius = sympy.sqrt(area)\n\n# print the diameter of the incircle\nprint(2*radius)"
+  },
+  {
+    "example_id": 17,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "AB, DC, E, F = symbols('AB DC E F')\n\neq = (2*AB - 2*DC) - (E*F)\nsolution = solve(eq, [AB, DC, E, F])\n\nprint(solution)"
+  },
+  {
+    "example_id": 18,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2116.0",
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "46.0"
+    ],
+    "solution": "A, B, C, D, E, F = symbols('A B C D E F')\neq = sympy.Poly(A*B*C*D*E*F, A, B, C, D, E, F) - 2116*(sympy.sqrt(2) + 1)\nsolution = solve(eq, A, B, C, D, E, F)\nprint(solution)"
+  },
+  {
+    "example_id": 19,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "length_BC = 9\nlength_AB = 8\nlength_AH = 6\nlength_DE = 4\nlength_GF = length_DE + length_AH\nprint(length_GF)"
+  },
+  {
+    "example_id": 20,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# define variables\nx = symbols('x')\ny = symbols('y')\n\n# define equations\neq_1 = (y - 4)**2 + (x - 8)**2 - 16\neq_2 = x**2 + y**2 - 64\n\n# solve equations\nsolution = solve((eq_1, eq_2), (x, y))\n\n# find area\nx_value = solution[0][0]\ny_value = solution[0][1]\narea = (x_value - 8)**2 + (y_value - 4)**2\nprint(area)"
+  },
+  {
+    "example_id": 21,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "2.0",
+      "4.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "a, b, c, d = symbols('a b c d')\ns = (a*d - b*c)/(a - b)\narea = s*(s - a)*(s - b)*(s - c)*(s - d)\narea = area.expand()\narea = area.simplify()\nprint(area)"
+  },
+  {
+    "example_id": 22,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "side_1 = 1\nside_2 = 7\nside_3 = 2\nside_4 = 4\nsum_of_remaining_sides = side_1 + side_2 - side_3 - side_4\nprint(sum_of_remaining_sides)"
+  },
+  {
+    "example_id": 23,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.67",
+      "0.33",
+      "0.33",
+      "0.67",
+      "15.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "# Define variables\nM = symbols('M')\nN = symbols('N')\nA = symbols('A')\nC = symbols('C')\nP = symbols('P')\nQ = symbols('Q')\n\n# Define equations\neq1 = sympy.simplify(P - 0.33 * C - 0.67 * A)\neq2 = sympy.simplify(Q - 0.67 * C - 0.33 * A)\neq3 = sympy.simplify(C - 15)\neq4 = sympy.simplify(P - M)\neq5 = sympy.simplify(Q - N)\n\n# Solve equations\nsol1 = solve(eq1, P)\nsol2 = solve(eq2, Q)\nsol3 = solve(eq3, C)\nsol4 = solve(eq4, M)\nsol5 = solve(eq5, N)\n\n# Extract values\nP_value = sol1[0]\nQ_value = sol2[0]\nC_value = sol3[0]\nM_value = sol4[0]\nN_value = sol5[0]\n\n# Print values\nprint('P = ', P_value)\nprint('Q = ', Q_value)\nprint('C = ', C_value)\nprint('M = ', M_value)\nprint('N = ', N_value)"
+  },
+  {
+    "example_id": 24,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "8918.0"
+    ],
+    "solution": "a = symbols('a')\nb = a*3\neq1 = sympy.pi/6 * (a**2)**2 * a\neq2 = sympy.pi/6 * (b**2)**2 * b\nsol = solve([eq1-eq2], [a])\nprint(sol)"
+  },
+  {
+    "example_id": 25,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "P, Q, R, M = symbols('P Q R M')\nmedian_qm = (M**2 - P**2 - Q**2)/(2*P*Q)\nprint(median_qm)"
+  },
+  {
+    "example_id": 26,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "a = symbols('a')\neq = sympy.sin(a) - 2*sympy.cos(a)\nsolution = solve(eq, a)\na_value = solution[0]\nprint(a_value)"
+  },
+  {
+    "example_id": 27,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "3.0",
+      "2.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "8000.0"
+    ],
+    "solution": "# Define variables\ns = symbols('s')\nv = symbols('v')\n\n# Define the equation\neq = 6*s**2 - 2*v\n\n# Solve the equation\nsolution = solve(eq, s)\ns_value = solution[0]\n\n# Define the volume\nv_value = s_value**3\n\n# Print the volume\nprint(v_value)"
+  },
+  {
+    "example_id": 28,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-16.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "x = symbols('x')\nperimeter = 2*x + 2*8\neq = perimeter - x\nsolution = solve(eq, x)\nprint(solution[0])"
+  },
+  {
+    "example_id": 29,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\nE = symbols('E')\nF = symbols('F')\nG = symbols('G')\nH = symbols('H')\nI = symbols('I')\nJ = symbols('J')\nK = symbols('K')\nL = symbols('L')\nM = symbols('M')\nN = symbols('N')\nO = symbols('O')\nP = symbols('P')\nQ = symbols('Q')\nR = symbols('R')\nS = symbols('S')\nT = symbols('T')\nU = symbols('U')\nV = symbols('V')\nW = symbols('W')\nX = symbols('X')\nY = symbols('Y')\nZ = symbols('Z')\n\neq = sympy.sin(A) - 2*sympy.cos(A)\nsolution = solve(eq, A)\nA_value = solution[0]\ntan_A = sympy.tan(A_value)\nprint(tan_A)"
+  },
+  {
+    "example_id": 30,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-12.0",
+      "12.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "# Define variables\nh = symbols('h')\n\n# Define equations\neq1 = (h**2 + 12**2) * (h**2 + 16**2)\neq2 = (h**2 + 12**2) * (h**2 + 20**2)\n\n# Solve for h\nsolution = solve(eq1 - eq2, h)\n\n# Print solution\nprint(solution)"
+  },
+  {
+    "example_id": 31,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "A, B, C, D, O, P = symbols('A B C D O P')\n\narea = (A*B/2) + (C*D/2) - (O*P/2)\n\nprint(area)"
+  },
+  {
+    "example_id": 32,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "75.0"
+    ],
+    "solution": "percent = 100 * (2 / 4)\nprint(percent)"
+  },
+  {
+    "example_id": 33,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "54.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "cube_surface_area = 3**2 * 6\nprint(cube_surface_area)"
+  },
+  {
+    "example_id": 34,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "98.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "98.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "A, B, C, D, P = symbols('A B C D P')\neq1 = sympy.Pow(A - P, 2) + sympy.Pow(B - P, 2) - 49\neq2 = sympy.Pow(C - P, 2) + sympy.Pow(D - P, 2) - 49\nsolution1 = solve(eq1, P)\nsolution2 = solve(eq2, P)\nP_value = solution1[0]\nBP = P_value - A\nDP = P_value - C\nprint(BP/DP)"
+  },
+  {
+    "example_id": 35,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "4.0",
+      "1.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "a, b, c = symbols('a, b, c')\nr = 1/(a + sympy.sqrt(b))\nr_new = r*c\neq = sympy.sqrt(b) - r_new**2\nsolution = solve(eq, [a, b, c])\na_value = solution[0][0]\nb_value = solution[0][1]\nc_value = solution[0][2]\nprint(a_value + b_value + c_value)"
+  },
+  {
+    "example_id": 36,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "49.0"
+    ],
+    "annotated_answers": [
+      "210.0"
+    ],
+    "solution": "AB = 52\nBC = 12\nCD = 39\nDA = 5\nABCD_area = 0.5 * (AB + BC + CD - DA)\nprint(ABCD_area)"
+  },
+  {
+    "example_id": 37,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "102.0"
+    ],
+    "solution": "# Define the sides of the triangle\na, b, c = symbols('a b c')\n\n# Find the area of the triangle\narea = (a*b*c)/(4*sympy.sqrt(sympy.tan(pi/12)*(a*b + b*c + c*a)))\n\n# Print the area\nprint(area)"
+  },
+  {
+    "example_id": 38,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "25.255006058700175"
+    ],
+    "annotated_answers": [
+      "44.0"
+    ],
+    "solution": "# Define variables\nN = 10\nd = 2\nL = 2\n\n# Calculate perimeter\nperimeter = 0\nfor i in range(N):\n    perimeter += 2 * math.sin(i * pi / N) * d\n\nprint(perimeter)"
+  },
+  {
+    "example_id": 39,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.tan(A) - 1\nsolution = solve(eq, A)\nA_value = solution[0]\nprint(A_value)"
+  },
+  {
+    "example_id": 40,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "5.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "2304.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\n\neq1 = sympy.sin(A) - 2*sympy.cos(A)\neq2 = sympy.sin(B) - 2*sympy.cos(B)\neq3 = sympy.sin(C) - 2*sympy.cos(C)\neq4 = sympy.sin(D) - 2*sympy.cos(D)\n\nsolution = solve([eq1, eq2, eq3, eq4], [A, B, C, D])\n\n# A, B, C, D = solution[0]\nA, B, C, D = solution[0]\n\narea = sympy.sqrt(sympy.sin(A)**2 + sympy.sin(B)**2 + sympy.sin(C)**2 + sympy.sin(D)**2)\nprint(area)"
+  },
+  {
+    "example_id": 41,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "2.0",
+      "25.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "from sympy import symbols, solve\nfrom sympy.geometry import Point, Polygon\n\nA = symbols('A')\nAB = 1\nEF = AB\nAY = 5\nAS = 5\n\npoints = [Point(0, 5), Point(1, 5), Point(0, 4), Point(1, 4), Point(4, 1), Point(5, 1), Point(4, 0), Point(5, 0), Point(0, 0), Point(5, 5), Point(A, A)]\npolygon = Polygon(*points)\n\nprint(polygon.area)"
+  },
+  {
+    "example_id": 42,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.6203504908994",
+      "2.0",
+      "2.0",
+      "3.0",
+      "4.83597586204941",
+      "2.0",
+      "1.0",
+      "3.0",
+      "0.170696015813824",
+      "-1.81712059283214"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Define the variables\nradius = symbols('radius')\nvolume = symbols('volume')\nsurface_area = symbols('surface_area')\n\n# Define the equations\neq_1 = volume - 4/3*pi*radius**3\neq_2 = surface_area - 4*pi*radius**2\n\n# Solve the equations\nsolution = solve((eq_1, eq_2), (radius, volume, surface_area))\n\n# Print the results\nprint(solution)"
+  },
+  {
+    "example_id": 43,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0",
+      "1.4142135623731",
+      "2.0",
+      "3.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "# Define the symbols\na = symbols('a')\nh = symbols('h')\n\n# Define the perimeter of the octagon\nperimeter = 8*a\n\n# Define the area of the octagon\narea = (a**2)*(math.sqrt(2))\n\n# Define the volume of the octagon\nvolume = (a**3)*h/3\n\n# Print the results\nprint(\"The perimeter of the octagon is:\", perimeter)\nprint(\"The area of the octagon is:\", area)\nprint(\"The volume of the octagon is:\", volume)"
+  },
+  {
+    "example_id": 44,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "r = 3\nh = sympy.sqrt(3*r**2)\nprint(h)"
+  },
+  {
+    "example_id": 45,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "# A = symbols('A')\nA = symbols('A')\n# eq = sympy.sin(A) - 2*sympy.cos(A)\neq = sympy.sin(A) - 2*sympy.cos(A)\nsolution = solve(eq, A)\nA_value = solution[0]\ntan_A = sympy.tan(A_value)\nprint(tan_A)"
+  },
+  {
+    "example_id": 46,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.sin(A) - 2*sympy.cos(A)\nsolution = solve(eq, A)\nA_value = solution[0]\nprint(A_value)"
+  },
+  {
+    "example_id": 47,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "A = symbols('A')\nBC = 10\nAB = BC\nBC_point = Point(0,3)\nAB_point = Point(2,3)\nAC = BC_point.distance(AB_point)\nC = symbols('C')\nangle_ABC = 90 - C\nangle_ABC = 124 - C\nsin_C = sympy.sin(angle_ABC)/sympy.sin(angle_ABC)\ncos_C = sympy.cos(angle_ABC)/sympy.cos(angle_ABC)\ntan_C = sympy.tan(angle_ABC)/sympy.tan(angle_ABC)\ntan_A = sin_C/cos_C\nprint(tan_A)"
+  },
+  {
+    "example_id": 48,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "0.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "s = symbols('s')\n\n# surface area of a cube\nsa = 6*s\n\n# volume of a cube\nv = s**3\n\n# sum of all possible values of s\nsum_s = solve(sa - v - 5*s, s)\n\nprint(sum_s)"
+  },
+  {
+    "example_id": 49,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "2.0",
+      "1000.0"
+    ],
+    "annotated_answers": [
+      "592.0"
+    ],
+    "solution": "a, b, c, d, e, f = symbols('a b c d e f')\neq = ((a*pi + b*sqrt(c))/ (d*pi - e*sqrt(f)))\nsolution = solve(eq, [a, b, c, d, e, f])\na_value = solution[0][0]\nb_value = solution[0][1]\nc_value = solution[0][2]\nd_value = solution[0][3]\ne_value = solution[0][4]\nf_value = solution[0][5]\nproduct = a_value*b_value*c_value*d_value*e_value*f_value\nprint(product%1000)"
+  },
+  {
+    "example_id": 50,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Define the variables\nr1, r2 = symbols('r1 r2')\n\n# Define the equation\neq = (4*pi*r1**2) - (4*pi*r2**2)\n\n# Find the solution\nsolution = solve(eq, r2)\n\n# Print the result\nprint(solution)"
+  },
+  {
+    "example_id": 51,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "p = symbols('p')\neq1 = sympy.sin(p) - 2*sympy.cos(p)\neq2 = sympy.tan(p) - 2*sympy.cot(p)\neq3 = sympy.sin(p) - 2*sympy.cos(p)\nsolution = solve(eq1, eq2, eq3, p)\nprint(solution)"
+  },
+  {
+    "example_id": 52,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "198.0"
+    ],
+    "solution": "# define variables\na = symbols('a')\nb = symbols('b')\nc = symbols('c')\nd = symbols('d')\n\n# define equations\neq1 = a**2 + b**2 + c**2 + d**2 - 4*a - 4*b - 4*c - 4*d\neq2 = a**2 + b**2 + c**2 + d**2 - 2*a - 2*b - 2*c - 2*d\neq3 = a**2 + b**2 + c**2 + d**2 - 2*a - 2*b - 2*c - 2*d\neq4 = a**2 + b**2 + c**2 + d**2 - 2*a - 2*b - 2*c - 2*d\n\n# solve equations\nsolution = solve([eq1, eq2, eq3, eq4], [a, b, c, d])\n\n# find surface area\nsurface_area = 4*a*b + 4*b*c + 4*c*d + 4*d*a\n\n# find volume\nvolume = a*b*c*d\n\n# print surface area and volume\nprint('Surface Area:', surface_area)\nprint('Volume:', volume)"
+  },
+  {
+    "example_id": 53,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "33.690067525979785"
+    ],
+    "annotated_answers": [
+      "140.0"
+    ],
+    "solution": "# Points A, B, C\nA = Point(0, 0)\nB = Point(6, 0)\nC = Point(3, 2)\n\n# Angle BAC\nAB = B.distance(A)\nBC = B.distance(C)\nAC = A.distance(C)\n\n# Cosine rule\ncos_x = (AB**2 + BC**2 - AC**2)/(2*AB*BC)\n\n# Degrees in angle x\ndegrees = math.degrees(math.acos(cos_x))\n\n# Print\nprint(\"The degrees in angle x is:\", degrees)"
+  },
+  {
+    "example_id": 54,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.315193032440724",
+      "2.82639962114907"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "x = symbols('x')\neq = sympy.sin(x) - 0.31\nsolution = solve(eq, x)\nprint(solution)"
+  },
+  {
+    "example_id": 55,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "21.333333333333332"
+    ],
+    "annotated_answers": [
+      "15.08"
+    ],
+    "solution": "base = 4\nheight = 4\nvolume = (base**2)*height/3\nprint(volume)"
+  },
+  {
+    "example_id": 56,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "47.0"
+    ],
+    "solution": "# import math\nimport math\n\n# define vertices of a convex pentagon\nv1 = Point(-1, -1)\nv2 = Point(-3, 4)\nv3 = Point(1, 7)\nv4 = Point(6, 5)\nv5 = Point(3, -1)\n\n# define perimeter of the polygon\nperimeter = sqrt(18)\n\n# define area of the polygon\narea = perimeter * sin(pi/5) / 2\n\n# print area\nprint(area)"
+  },
+  {
+    "example_id": 57,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "# Define the variables\na, b, h = symbols('a b h')\n\n# Define the polygon\npolygon = Polygon(Point(0,0), Point(a,0), Point(a,b), Point(0,b))\n\n# Find the area of the polygon\narea = polygon.area\n\n# Find the perimeter of the polygon\nperimeter = polygon.perimeter\n\n# Find the height of the polygon\nheight = sqrt(a**2 + b**2)\n\n# Print the area and perimeter of the polygon\nprint('The area of the trapezoid is', area)\nprint('The perimeter of the trapezoid is', perimeter)\nprint('The height of the trapezoid is', height)"
+  },
+  {
+    "example_id": 58,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\na = symbols('a')\nb = symbols('b')\nc = symbols('c')\n\neq1 = a**2 + b**2 - c**2\neq2 = a**2 + c**2 - b**2\neq3 = b**2 + c**2 - a**2\n\nsolution = solve([eq1, eq2, eq3], [a, b, c])\n\n# find the length of the median\nBM = sympy.sqrt(2*(solution[0][0] + solution[0][2]))\nprint(BM)"
+  },
+  {
+    "example_id": 59,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "n_sticks = [2, 4, 6]\nn_triangles = [0, 0, 0]\nfor i in range(3):\n    for j in range(i+1, 3):\n        for k in range(j+1, 3):\n            if n_sticks[i] + n_sticks[j] == n_sticks[k] or n_sticks[j] + n_sticks[k] == n_sticks[i] or n_sticks[k] + n_sticks[i] == n_sticks[j]:\n                n_triangles[i] += 1\nprint(n_triangles)"
+  },
+  {
+    "example_id": 60,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Define the sides of the triangle\na = symbols('a')\nb = symbols('b')\nc = symbols('c')\n\n# Define the triangle\nABC = Polygon(Point(0,0), Point(a,0), Point(a,b))\n\n# Define the perimeter\np = a + b + c\n\n# Define the area\nA = (a*b*c)/(4*p)\n\n# Define the circumradius\nr = sqrt((a*a + b*b + c*c)/(p*p))\n\n# Define the inradius\nir = r/2\n\n# Define the area of the triangle\nA = (a*b*c)/(4*p)\n\n# Define the area of the inscribed circle\ncircum_area = pi*r*r\n\n# Define the area of the circumscribed circle\ncircum_area = 2*ir*ir\n\n# Print the answer\nprint(circum_area)"
+  },
+  {
+    "example_id": 61,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.247499999999999"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "area = (3.5 * 1.67 + 5 * 3.33) / 2\nprint(area)"
+  },
+  {
+    "example_id": 62,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "86.0"
+    ],
+    "solution": "from sympy import symbols, solve\n\nk = symbols('k')\nsides = symbols('a b c d')\narea = (sides[0] + sides[1]) * (sides[0] + sides[2])\narea = area - (sides[1] + sides[2]) * (sides[1] + sides[3])\narea = area - (sides[0] + sides[2]) * (sides[0] + sides[3])\narea = area + (sides[1] + sides[3]) * (sides[1] + sides[2])\narea = area / 4\neq = area - k\nsolution = solve(eq, k)\nk_value = solution[0]\nprint(k_value)"
+  },
+  {
+    "example_id": 63,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# Define the variables\nd1 = symbols('d1')\nd2 = symbols('d2')\n\n# Define the equation\neq = d2 - d1\n\n# Solve the equation\nsolution = solve(eq, d2)\n\n# Print the answer\nprint(solution)"
+  },
+  {
+    "example_id": 64,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-59.0",
+      "9.0",
+      "1261.0",
+      "27.0",
+      "10.0",
+      "1995.0",
+      "9.0",
+      "1.0",
+      "3.0",
+      "1.0",
+      "3.0",
+      "1261.0",
+      "27.0",
+      "10.0",
+      "1995.0",
+      "9.0",
+      "1.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "x = symbols('x')\neq = x + x*sympy.sqrt(x) - 10\nsolution = solve(eq, x)\nx_value = solution[0]\nprint(x_value)"
+  },
+  {
+    "example_id": 65,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "13.0",
+      "9.0",
+      "13.0"
+    ],
+    "annotated_answers": [
+      "1.17"
+    ],
+    "solution": "# Define symbols\nh = symbols('h')\nl = symbols('l')\n\n# Define variables\nx = 9\ny = 13\nd = 1\n\n# Define equation\neq = h*y + l*x - d\n\n# Define solution\nsolution = solve(eq, h)\n\n# Define depth\ndepth = solution[0]\n\n# Print solution\nprint(depth)"
+  },
+  {
+    "example_id": 66,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "import numpy as np\n\ndef area_triangle(x1, y1, x2, y2, x3, y3):\n    area = 0.5 * np.abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2))\n    return area\n\nprint(area_triangle(-4, -1, 2, -1, 1, 3))"
+  },
+  {
+    "example_id": 67,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "# Define variables\na, b, c, d = symbols('a b c d')\n\n# Find the area of the first parallelogram\narea1 = (b-a)*(c-d)\n\n# Find the area of the second parallelogram\narea2 = (b+a)*(c+d)\n\n# Find the difference between the two areas\ndiff = area2 - area1\n\n# Simplify the expression\ndiff = diff.simplify()\n\n# Find the smallest value of a+b+c+d\ndiff = diff.expand()\ndiff = diff.subs({a:1, b:1, c:1, d:1})\nprint(diff)"
+  },
+  {
+    "example_id": 68,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "# Define variables\nP = Point(0, 1, 0)\nQ = Point(1, 0, 0)\n\n# Calculate distance\ndistance = sqrt((P.x - Q.x)**2 + (P.y - Q.y)**2 + (P.z - Q.z)**2)\n\n# Print distance\nprint(distance)"
+  },
+  {
+    "example_id": 69,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.77245385090552",
+      "0.5",
+      "0.5"
+    ],
+    "annotated_answers": [
+      "1.3"
+    ],
+    "solution": "# define the variables\nr = symbols('r')\nh = symbols('h')\n\n# define the area of the trapezoid\nA = (1/2)*(h + r) * (h + r)\n\n# define the area of the semicircle\nB = (1/2) * r * r * pi\n\n# solve for the value of h\nsolution = solve(A - B, h)\nh_value = solution[0]\n\n# print the value of h\nprint(h_value)\n\n# print the value of the area of the trapezoid\nprint(A)"
+  },
+  {
+    "example_id": 70,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.14"
+    ],
+    "solution": "# side length of the square\nside_length = 10\n\n# side length of one of the octagon's sides\noctagon_side_length = side_length / (1 + sqrt(2))\n\nprint(octagon_side_length)"
+  },
+  {
+    "example_id": 71,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "length = 12\nprint(length)"
+  },
+  {
+    "example_id": 72,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "perimeter = 20\nlength = 5\n\ndef count_triangles(length):\n    return length * (length - 1) // 2\n\ndef count_isosceles_triangles(length):\n    return count_triangles(length) + count_triangles(length - 1)\n\ncount = 0\nfor i in range(1, length):\n    count += count_isosceles_triangles(i)\n    if count > perimeter:\n        break\nprint(count)"
+  },
+  {
+    "example_id": 73,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "693.333333333333"
+    ],
+    "annotated_answers": [
+      "640.0"
+    ],
+    "solution": "r1, r2, K = symbols('r1 r2 K')\n\ns1 = 4/3*pi*r1**3\ns2 = 4/3*pi*r2**3\n\nV = K*pi\n\nvolume = s1 + s2 - V\n\neq = volume.subs({r1: 2, r2: 8})\n\nsolution = solve(eq, K)\n\nprint(solution)"
+  },
+  {
+    "example_id": 74,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "a, b, c, d, o = symbols('a b c d o')\np = Polygon(Point(a, b), Point(c, d), Point(o, o))\narea = p.area\ncircum_area = 2*pi\nprint('area of triangle ABC ='+ str(area))\nprint('area of semicircle ='+ str(circum_area))\nprint('ratio ='+ str(area/circum_area))"
+  },
+  {
+    "example_id": 75,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "# Define the variables\nx = symbols('x')\ny = symbols('y')\nz = symbols('z')\n\n# Define the equations\neq1 = (x+y)**2 + (y+z)**2 + (z+x)**2 - 2*x*y*z\neq2 = (x+y)**2 + (y+z)**2 + (z+x)**2 - 2*x*y*z\neq3 = (x+y)**2 + (y+z)**2 + (z+x)**2 - 2*x*y*z\n\n# Solve the equations\nsolution = solve([eq1,eq2,eq3], [x,y,z])\n\n# Print the solution\nprint(solution)"
+  },
+  {
+    "example_id": 76,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "200.0"
+    ],
+    "annotated_answers": [
+      "127.0"
+    ],
+    "solution": "# Define variables\na = symbols('a')\nb = symbols('b')\n\n# Define triangle vertices\nA = Point(10, 0)\nB = Point(0, 10)\nC = Point(0, 0)\n\n# Define point P\nP = Point(3, 3.5)\n\n# Define sides AC and BC\nAC = A.distance(C)\nBC = B.distance(C)\n\n# Define s\ns = sqrt(a + b * sqrt(2))\n\n# Solve for a+b\neq = AC ** 2 + BC ** 2 - s ** 2\nsolution = solve(eq, [a, b])\na_value = solution[0][0]\nb_value = solution[0][1]\na_plus_b = a_value + b_value\nprint(a_plus_b)"
+  },
+  {
+    "example_id": 77,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "90.0",
+      "90.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "90.0",
+      "90.0"
+    ],
+    "annotated_answers": [
+      "140.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\n\neq1 = sympy.sin(A) + sympy.sin(B) + sympy.sin(C) + sympy.sin(D)\neq2 = sympy.cos(A) + sympy.cos(B) + sympy.cos(C) + sympy.cos(D)\n\neq3 = sympy.sin(A) + sympy.sin(B) + sympy.sin(C) - sympy.sin(D)\neq4 = sympy.cos(A) + sympy.cos(B) + sympy.cos(C) - sympy.cos(D)\n\nsolution1 = solve([eq1, eq2], [A, B, C, D])\nsolution2 = solve([eq3, eq4], [A, B, C, D])\n\nA_value = solution1[0][0]\nB_value = solution1[0][1]\nC_value = solution1[0][2]\nD_value = solution1[0][3]\n\nA_value_obtuse = 90 - A_value\nB_value_obtuse = 90 - B_value\nC_value_obtuse = 90 - C_value\nD_value_obtuse = 90 - D_value\n\nprint(A_value_obtuse, B_value_obtuse, C_value_obtuse, D_value_obtuse)"
+  },
+  {
+    "example_id": 78,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "A, B, C, D, P = map(tuple, ((0, 5), (8, 5), (8, 0), (0, 0), (3, 5)))\nx = D[0]\ny = D[1]\nw = 2*x + y\nz = x**2 + y**2\nx_sqrt = int(x**0.5)\nx_sqrt_z = x_sqrt*z\nw_x_sqrt_z = w + x_sqrt_z\nprint(w_x_sqrt_z)"
+  },
+  {
+    "example_id": 79,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "180.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0"
+    ],
+    "annotated_answers": [
+      "3600.0"
+    ],
+    "solution": "base = 20\nheight = 27\nvolume = (1/3) * base * height * sin(pi/5)\nprint(volume)"
+  },
+  {
+    "example_id": 80,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "72.0",
+      "72.0",
+      "72.0",
+      "72.0",
+      "72.0",
+      "0.0",
+      "72.0",
+      "72.0",
+      "72.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "n = 5\ni = 1\nwhile i <= n:\n    j = 1\n    while j <= n:\n        if i == j:\n            print(0)\n        else:\n            print(360/n)\n        j += 1\n    i += 1"
+  },
+  {
+    "example_id": 81,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nhypotenuse = sympy.sqrt((A**2) + (B**2))\narea = (hypotenuse * (hypotenuse - A) * (hypotenuse - B)) / 2\nprint(area)"
+  },
+  {
+    "example_id": 82,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "289.0",
+      "2.0",
+      "137.0",
+      "2.0",
+      "281.0",
+      "2.0",
+      "38.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "x = symbols('x')\ny = symbols('y')\n\n# define the points\np0 = Point(0,0)\np1 = Point(8,0)\np2 = Point(8,18)\np3 = Point(2.5,20)\np4 = Point(0,12)\n\n# define the pentagon\npentagon = Polygon(p0,p1,p2,p3,p4)\n\n# get the area\narea = pentagon.area\n\n# get the perimeter\nperimeter = pentagon.perimeter\n\n# print the area and perimeter\nprint(area)\nprint(perimeter)"
+  },
+  {
+    "example_id": 83,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.sqrt(sympy.tan(A)**2 + 1) - 4\nsolution = solve(eq, A)\nA_value = solution[0]\nAC = sympy.cos(A_value)*12\nprint(AC)"
+  },
+  {
+    "example_id": 84,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "a, b, c, d = symbols('a b c d')\n\n# Construct a trapezoid\ntrapezoid = Polygon(Point(0,0), Point(a, 0), Point(a+b, c), Point(a+b+c, c+d), Point(a+b+c+d, d), Point(a+b+c, 0))\n\n# Compute area\narea = trapezoid.area\n\n# Print the area\nprint(area)"
+  },
+  {
+    "example_id": 85,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7853.981633974483"
+    ],
+    "annotated_answers": [
+      "2500.0"
+    ],
+    "solution": "import math\nradius = 50\narea = (radius ** 2) * math.pi\nprint(area)"
+  },
+  {
+    "example_id": 86,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "20.0",
+      "2.0",
+      "30.0",
+      "20.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# Find the length of the side BC\nBC = sqrt(100)\nprint(BC)\n\n# Find the length of the side AD\nAD = sqrt(100 - 30**2)\nprint(AD)\n\n# Find the length of the side AE\nAE = 30\nprint(AE)\n\n# Find the length of the side BE\nBE = sqrt(100 - AE**2)\nprint(BE)"
+  },
+  {
+    "example_id": 87,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-219.9114857512855"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "import math\n\nperimeter = 28\narea = 49\nr = (perimeter**2 - area) / (perimeter - area)\narc = 2*math.pi*r\nprint(arc)"
+  },
+  {
+    "example_id": 88,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "x = symbols('x')\ny = symbols('y')\nA = (3,3)\nA_prime = (-x+3,y)\nA_double = (-x+3,-y)\nx_double = x-2\ny_double = y\nprint(x_double + y_double)"
+  },
+  {
+    "example_id": 89,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "from itertools import combinations\n\ndef triangle_count(sides):\n    count = 0\n    for n in range(2, len(sides)+1):\n        for combo in combinations(sides, n):\n            if len(set(combo)) == 1:\n                count += 1\n    return count\n\nprint(triangle_count([2, 3, 5, 7, 11]))"
+  },
+  {
+    "example_id": 90,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "A, B, C, D, E, F = symbols('A B C D E F')\n\n# Area of triangle ABE\narea_ABE = sympy.sqrt(\n    sympy.sin(B - A)**2*sympy.sin(C - A)**2\n    + sympy.cos(B - A)**2*sympy.cos(C - A)**2\n)\n\n# Area of triangle DEF\narea_DEF = sympy.sqrt(\n    sympy.sin(D - E)**2*sympy.sin(F - E)**2\n    + sympy.cos(D - E)**2*sympy.cos(F - E)**2\n)\n\n# Ratio of the area of triangle DEF to that of triangle ABE\nratio = area_DEF / area_ABE\n\nprint(ratio)"
+  },
+  {
+    "example_id": 91,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# define a function to get the interior right angles\ndef get_interior_angles(n):\n    interior_angles = []\n    for i in range(n):\n        interior_angles.append(2*i*pi/n)\n    return interior_angles\n\n# get the number of interior right angles\nn = 8\ninterior_angles = get_interior_angles(n)\n\n# get the greatest number of interior right angles\ngreatest_number = 0\nfor i in range(n):\n    if interior_angles[i] > greatest_number:\n        greatest_number = interior_angles[i]\nprint(greatest_number)"
+  },
+  {
+    "example_id": 92,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "41.84"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "# Define variables\nx, y = symbols('x y')\n# Define polygons\npolygon_1 = Polygon(Point(0, 0), Point(9, 0), Point(9, 12), Point(6, 8))\npolygon_2 = Polygon(Point(6, 8), Point(6, 0), Point(3, 0))\npolygon_3 = Polygon(Point(5.6, 0), Point(5.6, 0.4), Point(6, 0.4))\npolygon_4 = Polygon(Point(8.6, 0), Point(8.6, 0.4), Point(9, 0.4))\n# Define functions\nf_1 = polygon_1.area\nf_2 = polygon_2.area\nf_3 = polygon_3.area\nf_4 = polygon_4.area\n# Find the area of polygon 1\nA1 = f_1.evalf()\n# Find the area of polygon 2\nA2 = f_2.evalf()\n# Find the area of polygon 3\nA3 = f_3.evalf()\n# Find the area of polygon 4\nA4 = f_4.evalf()\n# Find the total area\nA_total = A1 + A2 + A3 + A4\n# Print the total area\nprint(A_total)"
+  },
+  {
+    "example_id": 93,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "25.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import math\nlength_qr = math.sqrt(25*25 + 15*15 - 15*15)\nprint(length_qr)"
+  },
+  {
+    "example_id": 94,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-15.0",
+      "8.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "# Define the points\nA = Point(0,0)\nB = Point(30,0)\nC = Point(15,-8)\nD = Point(30,0)\nE = Point(0,0)\n\n# Define the triangle\nT = Polygon(A,B,C)\n\n# Define the perimeter of the triangle\nperimeter = T.perimeter\n\n# Define the area of the triangle\narea = T.area\n\n# Define the ratio\nratio = area/perimeter\n\n# Print the ratio\nprint(ratio)"
+  },
+  {
+    "example_id": 95,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# Create variables\nN = symbols('N')\n\n# Find the number of vertices\nnum_vertices = N/2\n\n# Print the number of vertices\nprint(num_vertices)"
+  },
+  {
+    "example_id": 96,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "160.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.Eq(sympy.sin(A) - 2*sympy.cos(A), 0)\nsolution = solve(eq, A)\nA_value = solution[0]\ntan_A = sympy.tan(A_value)\nprint(tan_A)"
+  },
+  {
+    "example_id": 97,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0",
+      "2.0",
+      "27.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "# Define variables\nh = 3\na = 6\n\n# Calculate base area\nA = (3*a*sin(pi/6))/2\n\n# Calculate area of each non-hexagonal face\nF = (3*a**2*cos(pi/6))/2\n\n# Calculate total area\nA_total = A + F\n\n# Print answer\nprint(\"The sum of the areas of the non-hexagonal faces of the prism is\", A_total, \"square feet.\")"
+  },
+  {
+    "example_id": 98,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2",
+      "60",
+      "1",
+      "60"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "# Define the sides of the square and the radius of the circle\ns = 12\nr = 6\n\n# Define the center of the circle\ncenter = Point(0,0)\n\n# Define the vertices of the square\nvertices = []\nfor i in range(4):\n    angle = 2 * math.pi / 4 * i\n    x = center.x + r * math.cos(angle)\n    y = center.y + r * math.sin(angle)\n    vertices.append(Point(x, y))\n\n# Define the polygon\npolygon = Polygon(*vertices)\n\n# Find the area of the square\nsquare_area = polygon.area\n\n# Find the area of the circle\ncircle_area = pi * r ** 2\n\n# Find the value of K\nk = square_area / circle_area\nprint(k)"
+  },
+  {
+    "example_id": 99,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "224.0"
+    ],
+    "solution": "h = 6 # Height of the truncated cone\nR_large = 8 # Large base radius of the truncated cone\nR_small = 4 # Small base radius of the truncated cone\n\n# Volume of the truncated cone\nV = (1/3)*pi*(R_large**2 + R_large*R_small + R_small**2)*h\n\n# Volume is n \\pi cubic cm, where n is an integer\n# So we have: n = V / (n \\pi cubic cm)\nn = V / (pi*(R_large**2 + R_large*R_small + R_small**2))\n\nprint(n)"
+  },
+  {
+    "example_id": 100,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "from sympy import *\n\nx, y = symbols('x y')\n\nquadrilateral = Polygon(Point(0, 1), Point(1, 3), Point(5, 2), Point(4, 0))\nprint(quadrilateral.area)"
+  },
+  {
+    "example_id": 101,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.603022689155527",
+      "1.20604537831105",
+      "0.603022689155527",
+      "1.20604537831105"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "# triangle area is 40\narea = 40\n\n# x-coordinates of points\nx1 = 0\nx2 = 10\nx3 = 12\n\n# y-coordinates of points\ny1 = 0\ny2 = 10\ny3 = 0\n\n# calculate perimeter\np = (x1 + x2 + x3)\n\n# calculate semiperimeter\ns = (x1 + x2 + x3) / 2\n\n# calculate semiperimeter\nr = 2*p/(s*(s-x1)*(s-x2)*(s-x3))\n\n# calculate radius\nradius = sqrt(r)\n\n# calculate circumference\ncircumference = 2*pi*radius\n\n# calculate area\narea_triangle = area/circumference\n\n# calculate x coordinate of center of circle\nx_center = (x1 + x2 + x3)/3\n\n# calculate y coordinate of center of circle\ny_center = (y1 + y2 + y3)/3\n\n# calculate radius of circle\nradius_circle = radius\n\n# calculate circumference of circle\ncircumference_circle = 2*pi*radius_circle\n\n# calculate area of circle\narea_circle = area_triangle/circumference_circle\n\n# print results\nprint(\"The radius of the triangle is\", radius, \"and the circumference is\", circumference)\nprint(\"The radius of the circle is\", radius_circle, \"and the circumference is\", circumference_circle)"
+  },
+  {
+    "example_id": 102,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "V1 = sympy.pi * 2**2 * 1\nV2 = sympy.pi * 1**2 * 1\nh = V1 / V2\nprint(h)"
+  },
+  {
+    "example_id": 103,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "82.0"
+    ],
+    "annotated_answers": [
+      "41.0"
+    ],
+    "solution": "A, B, C = symbols('A B C')\nI = symbols('I')\nM, N = symbols('M N')\n\nBC = 33\nAB = 17\nAC = 24\n\nBC_perimeter = 2*(BC + BC)\nAB_perimeter = 2*(AB + BC)\nAC_perimeter = 2*(AC + BC)\n\nI_perimeter = 2*(BC + BC)\nMN_perimeter = 2*(AB + AC)\n\nAM_perimeter = sympy.sqrt((I_perimeter - BC_perimeter)**2 - (M - I)**2)\nAN_perimeter = sympy.sqrt((I_perimeter - BC_perimeter)**2 - (N - I)**2)\n\ntotal_perimeter = AM_perimeter + AN_perimeter + MN_perimeter\n\nprint(total_perimeter)"
+  },
+  {
+    "example_id": 104,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "12.0",
+      "4.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "x, y = symbols('x y')\nlines = [4*x - 6, -2*x + 12]\narea = 0\nfor line in lines:\n    line_point = Point(0, line.subs(y, 0))\n    area += abs(line_point.y)\nprint(area)"
+  },
+  {
+    "example_id": 105,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "x, y = symbols('x y')\neq1 = sympy.Eq(x**2 + y**2, 16)\neq2 = sympy.Eq(x + y, 0)\nsolution = solve([eq1, eq2], [x, y])\nx_value, y_value = solution[0]\nprint(x_value, y_value)"
+  },
+  {
+    "example_id": 106,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "2.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "# Variables\nR = symbols('R')\nh = symbols('h')\n\n# Volume of the cylinder\nV = pi*R**2*h\n\n# Percentage change in volume\ndV = (V*25/100) - V\n\n# Print the absolute value of the percentage change\nprint(abs(dV))"
+  },
+  {
+    "example_id": 107,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "84.0"
+    ],
+    "solution": "a, b, c = symbols('a b c')\ns = (a + b + c) / 2\narea = sqrt(s * (s - a) * (s - b) * (s - c))\nprint(area)"
+  },
+  {
+    "example_id": 108,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-22.0",
+      "10.0",
+      "60.0"
+    ],
+    "annotated_answers": [
+      "27.2"
+    ],
+    "solution": "# define sides\na = 10\nb = 10\nc = 12\n\n# define altitudes\nh = a**2 * sin(60)\nk = b**2 * sin(60)\nl = c**2 * sin(60)\n\n# define perimeter\np = a + b + c\n\n# define area\nA = (p * sin(60)) / 2\n\n# define length of altitudes\nm = sqrt((p * (p - a) * (p - b) * (p - c)) / (4 * A * sin(60)))\n\n# display altitudes\nprint(\"The length of the altitudes is: \", m)"
+  },
+  {
+    "example_id": 109,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-15.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "# Define points\nO = Point(0,0)\nD = Point(2,3)\nC = Point(4,3)\nB = Point(8,0)\n\n# Define trapezoid\ntrapezoid = Polygon(O, D, C, B)\n\n# Find area\narea = trapezoid.area\n\n# Print area\nprint(area)"
+  },
+  {
+    "example_id": 110,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "30.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "A = Point(10, 24)\nb = Point(0, 0)\nc = Point(20, 0)\n\narea = 240\n\n# Find $h$\n\nh = sqrt(area * 2)\n\n# Find $\\angle A$\n\nangle = math.asin(2 * h / area)\n\n# Find $x$ coordinate of $A$\n\nx = b.x + (c.x - b.x) * cos(angle)\n\n# Find $y$ coordinate of $A$\n\ny = h\n\n# Print result\n\nprint(y)"
+  },
+  {
+    "example_id": 111,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "2.0",
+      "41.0",
+      "2.0",
+      "40.0",
+      "8.0",
+      "41.0",
+      "20.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Define points\nA = Point(0,0)\nB = Point(10,0)\nC = Point(5,4)\nD = Point(2.5,2)\nE = Point(7.5,2)\nF = Point(5,0)\n\n# Define polygon\npolygon = Polygon(A,B,C,D,E,F)\n\n# Calculate area\narea = polygon.area\n\n# Calculate perimeter\nperimeter = polygon.perimeter\n\n# Calculate area of shaded region\nshaded_area = 2*area - perimeter*perimeter/(4*perimeter)\n\nprint(\"The area of the shaded region is\", shaded_area, \"square inches.\")"
+  },
+  {
+    "example_id": 112,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.5",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "11.5"
+    ],
+    "solution": "from sympy import symbols, solve, sqrt\n\n# Define the variables\nA, B, C, D, P, Q, R = symbols('A, B, C, D, P, Q, R')\n\n# Define the equations\neq1 = (A*D - B*C).expand()\neq2 = (A*C + B*D).expand()\neq3 = (P*Q - R*D).expand()\neq4 = (P*R + Q*D).expand()\neq5 = (P*D - R*Q).expand()\n\n# Solve the equations\nsol1 = solve(eq1, A)\nsol2 = solve(eq2, B)\nsol3 = solve(eq3, P)\nsol4 = solve(eq4, Q)\nsol5 = solve(eq5, R)\n\n# Extract the values\nA_value = sol1[0]\nB_value = sol2[0]\nP_value = sol3[0]\nQ_value = sol4[0]\nR_value = sol5[0]\n\n# Calculate the area\narea = 0.5*A_value*B_value\n\n# Print the results\nprint(area)"
+  },
+  {
+    "example_id": 113,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "6.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "sides = 6\nedges = 6\nfaces = 5\nprint(sides, edges, faces)"
+  },
+  {
+    "example_id": 114,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "# Create variables\nr = symbols('r')\nh = symbols('h')\n\n# Volume of can = pi * r^2 * h\nvol = pi * r**2 * h\n\n# Area of label = 2 * pi * r * h\narea = 2 * pi * r * h\n\n# Solve for r\nsol = solve([vol, area], [r, h])\n\n# Print solution\nprint(sol)"
+  },
+  {
+    "example_id": 115,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "x, y = symbols('x y')\neq1 = 2*x + y - 4\neq2 = x + y - 1\neq3 = x - 0\neq4 = y - 0\nsol = solve([eq1, eq2, eq3, eq4], [x, y])\npolygon = Polygon(Point(0, 0), Point(4, 0), Point(4, 4), Point(0, 4))\narea = polygon.area\nprint(area)"
+  },
+  {
+    "example_id": 116,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "45454240.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "# define variables\nV = 63960\nh = 30\n\n# define a function to find the length of the lateral height\ndef lateral_height(h, V):\n    return (V**2*h)/(3*(h**2))\n\n# find the length of the lateral height\nl = lateral_height(h, V)\n\n# find the number of meters in the length of the lateral height\nl_value = round(l,0)\n\n# print the number of meters in the length of the lateral height\nprint(l_value)"
+  },
+  {
+    "example_id": 117,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "39.0"
+    ],
+    "annotated_answers": [
+      "39.0"
+    ],
+    "solution": "p = (0,5)\nq = (6,9)\nr = (12,0)\narea = 0.5 * abs( (q[1]-p[1]) * (r[0]-p[0]) - (q[0]-p[0]) * (r[1]-p[1]) )\nprint(area)"
+  },
+  {
+    "example_id": 118,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "0.0",
+      "0.0",
+      "2.0",
+      "16.0",
+      "0.0",
+      "2.0",
+      "16.0",
+      "2.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "a = symbols('a')\nb = symbols('b')\nc = symbols('c')\nh = symbols('h')\nperimeter = 2*(a+b+c+h)\narea = (a+b)*h/2\nperimeter_value = solve(perimeter-162, h)[0]\narea_value = solve(area-162, h)[0]\nb_value = solve(a+b-16, b)[0]\na_value = solve(a+b-16, a)[0]\nA = Polygon((0,0), (a_value,0), (a_value,h), (0,h))\nB = Polygon((a_value,0), (a_value+b_value,0), (a_value+b_value,h), (a_value,h))\nC = Polygon((a_value+b_value,0), (a_value+b_value+c,0), (a_value+b_value+c,h), (a_value+b_value,h))\nD = Polygon((a_value+b_value+c,0), (0,0), (0,h), (a_value+b_value+c,h))\nprint(A)\nprint(B)\nprint(C)\nprint(D)\nprint(perimeter_value)\nprint(area_value)"
+  },
+  {
+    "example_id": 119,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.sin(A)*sympy.cos(A) - sympy.cos(A)\nsolution = solve(eq, A)\nA_value = solution[0]\nprint(A_value)"
+  },
+  {
+    "example_id": 120,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "180.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "# Find the sum of the angles\na = symbols('a')\nb = symbols('b')\nc = symbols('c')\nd = symbols('d')\n\n# Find the sum of the angles\nsum_of_angles = a + b + c + d\n\n# Find the measure of the largest angle\nlargest_angle = 180 - sum_of_angles\n\n# Print the measure of the largest angle\nprint(largest_angle)"
+  },
+  {
+    "example_id": 121,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "63.0"
+    ],
+    "solution": "# define the vertices of the rectangle\nA = Point(5,4)\nB = Point(-5,4)\nC = Point(-5,-4)\nD = Point(5,-4)\n\n# define the polygon\nrectangle = Polygon(A,B,C,D)\n\n# get the area of the polygon\narea = rectangle.area\n\n# find the integer coordinates that are strictly inside the polygon\ncoordinates = [point for point in rectangle.vertices if point in rectangle]\n\n# count the number of integer coordinates\ncount = 0\nfor coordinate in coordinates:\n    if coordinate.x.is_integer and coordinate.y.is_integer:\n        count += 1\n\nprint(count)"
+  },
+  {
+    "example_id": 122,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "a = 1\nb = 2\nc = 3\narea = (b - a) * (c - a)\nprint(area)"
+  },
+  {
+    "example_id": 123,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "n = symbols('n')\ntheta = symbols('theta')\n\n# Define the equation for the interior angle\neq1 = theta * n - theta\n\n# Define the equation for the exterior angle\neq2 = theta - theta / n\n\n# Define the equation for the polygon\neq3 = eq1 - eq2\n\n# Solve for n\nsolution = solve(eq3, n)\n\n# Print the result\nprint(solution)"
+  },
+  {
+    "example_id": 124,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "# Define variables\nbase_perimeter = 3\nheight = 2*base_perimeter\nbase_area = 3\nvolume = (1/3)*base_area*height\nprint(volume)"
+  },
+  {
+    "example_id": 125,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "A = 2\nprint(4*A)"
+  },
+  {
+    "example_id": 126,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "151.49775380815362"
+    ],
+    "annotated_answers": [
+      "55.0"
+    ],
+    "solution": "import math\nfrom math import sin, cos, degrees\n\nr = 0\nt = -55\ns = -55 - 70\np = -55 + 180\nqr = sin(70) / sin(40)\nq = qr * (-55 - 70 + 180)\n\nx = degrees(math.atan2(p - q, s - r))\nprint(x)"
+  },
+  {
+    "example_id": 127,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1.4"
+    ],
+    "solution": "M = symbols('M')\nA = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\nX = symbols('X')\neq = sympy.Eq(X - M, (M + A)/2)\nsolution = solve(eq, X)\nX_value = solution[0]\nprint(X_value)"
+  },
+  {
+    "example_id": 128,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "540.0"
+    ],
+    "annotated_answers": [
+      "210.0"
+    ],
+    "solution": "P, Q, R = symbols('P Q R')\neq = sympy.sin(P) + sympy.sin(Q) + sympy.sin(R) - 3\nsolution = solve(eq, [P, Q, R])\nP_value = solution[0][0]\nQ_value = solution[0][1]\nR_value = solution[0][2]\nx = P_value + 180\ny = Q_value + 180\nz = R_value + 180\nprint(x + y + z)"
+  },
+  {
+    "example_id": 129,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "720.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\nE = symbols('E')\nF = symbols('F')\n\neq1 = sympy.sin(A) + sympy.sin(B) + sympy.sin(C) + sympy.sin(D) + sympy.sin(E) + sympy.sin(F)\neq2 = sympy.cos(A) + sympy.cos(B) + sympy.cos(C) + sympy.cos(D) + sympy.cos(E) + sympy.cos(F)\neq3 = sympy.tan(A) + sympy.tan(B) + sympy.tan(C) + sympy.tan(D) + sympy.tan(E) + sympy.tan(F)\n\nsolution1 = solve(eq1, A)\nsolution2 = solve(eq2, B)\nsolution3 = solve(eq3, C)\nsolution4 = solve(eq3, D)\nsolution5 = solve(eq3, E)\nsolution6 = solve(eq3, F)\n\nA_value = solution1[0]\nB_value = solution2[0]\nC_value = solution3[0]\nD_value = solution4[0]\nE_value = solution5[0]\nF_value = solution6[0]\n\nsum_of_angles = A_value + B_value + C_value + D_value + E_value + F_value\nprint(sum_of_angles)"
+  },
+  {
+    "example_id": 130,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.5"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "# Side length of hexagon\ns = 6\n\n# Side length of equilateral triangle\nh = s/2\n\n# Area of equilateral triangle\nA = (3*h**2)/2\n\n# Perimeter of equilateral triangle\np = 3*h\n\n# Area of hexagon\nA_hex = (s*s)/2\n\n# Perimeter of hexagon\np_hex = 6*s\n\n# Volume of pyramid\nV = A*h/3\n\n# Surface area of pyramid\nS = A_hex + A_hex*math.sin(math.pi/6)\n\n# Print the sum of the lengths of the edges of the pyramid\nprint(V + S)"
+  },
+  {
+    "example_id": 131,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "# Define variables\nR_scoop = 1\nR_cone = 2\nH_cone = 5\n\n# Define the volume of a scoop\nV_scoop = 4/3 * pi * R_scoop**3\n\n# Define the volume of a cone\nV_cone = (1/3) * pi * R_cone**2 * H_cone\n\n# Define the number of scoops needed\nn_scoops = V_cone / V_scoop\n\n# Print the number of scoops\nprint(n_scoops)"
+  },
+  {
+    "example_id": 132,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Define symbols\nA, B, C, D, E = symbols('A B C D E')\n\n# Define triangle sides\nBC = 6\nAB = AC = sqrt(BC**2 - 3**2)\n\n# Define triangle vertices\nA, B, C = Point(0, 0), Point(AB, 0), Point(AB, BC)\n\n# Define midpoints\nD, E = (A+B)/2, (A+C)/2\n\n# Define line segment DE\nDE = D.distance(E)\n\n# Display result\nprint(DE)"
+  },
+  {
+    "example_id": 133,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "2.0",
+      "10.0",
+      "2.0",
+      "0.5",
+      "2.0",
+      "100.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "# Define variables\nx = symbols('x')\ny = symbols('y')\n\n# Define polygon\np = Polygon((0,0), (10,0), (10,10), (0,10))\n\n# Find area of triangle\narea_triangle = p.area\n\n# Find area of trapezoid\narea_trapezoid = (((10-x)**2 + (10-y)**2)**.5)/2\n\n# Find area of total figure\narea_total = area_triangle + area_trapezoid\n\n# Print area\nprint(area_total)"
+  },
+  {
+    "example_id": 134,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.928203230275507"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ],
+    "solution": "import math\n\n# length of base\nbase_length = 5\n\n# height of trapezoid\nheight = 2 * math.sqrt(3)\n\n# perimeter of trapezoid\nperimeter = base_length * 2 + height * 2\n\nprint(perimeter)"
+  },
+  {
+    "example_id": 135,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "volume = 2700 * 3.14\nheight = volume / (3.14 * 30**2)\nprint(height)"
+  },
+  {
+    "example_id": 136,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "# Define variables\nr = symbols('r')\n\u03b8 = symbols('\u03b8')\n\n# Define the equation\neq = r*cos(\u03b8) - 10*pi\n\n# Solve for r\nsolution = solve(eq, r)\n\n# Get the solution\nr_value = solution[0]\n\n# Print the value of r\nprint(r_value)"
+  },
+  {
+    "example_id": 137,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "2.0",
+      "-2.0",
+      "2.0",
+      "0.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "a, b = symbols('a b')\nK = symbols('K')\n# (a, b) are the two non-consecutive vertices of a rhombus\n# (4, 0) and (-4, 0) are two of the four vertices\neq1 = a**2 + b**2 - 16\neq2 = 2*a - 2*b - K\neq3 = a**2 + b**2 - 16 - 8*K\neq4 = 2*a - 2*b - 4*K\n# Find the value of K\nsolution = solve([eq1, eq2, eq3, eq4], [a, b, K])\nprint(solution)"
+  },
+  {
+    "example_id": 138,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "h = symbols('h')\ns = symbols('s')\nt = symbols('t')\n\n# s and t are the legs of the second triangle\n# h is the hypotenuse\n# s and t are similar to the first triangle\n\n# The legs of the first triangle are 7 and 24\n\n# The length of the shorter leg of the second triangle is 24\n\n# The length of the hypotenuse of the second triangle is 100\n\n# Use the similar triangles to find the length of the shorter leg of the second triangle\n\neq1 = sympy.sqrt((s**2) + (h**2)) - sympy.sqrt((t**2) + (h**2))\neq2 = sympy.sqrt((s**2) + (t**2)) - sympy.sqrt((t**2) + (h**2))\nsolution = solve([eq1, eq2], [s, t])\n\n# The length of the shorter leg of the second triangle is 24\n\nprint(solution)"
+  },
+  {
+    "example_id": 139,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "36.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "# define the radius of the sphere\nR = 36\n\n# define the volume of the polyhedron\nV = 0\n\n# define the surface area of the polyhedron\nA = 0\n\n# define the least upper bound on the ratio\nt = 0\n\n# find the volume of the polyhedron\nfor n in range(1, 1000):\n    V = (n * R ** 3) / (n * (n + 1) * (2 * n + 1))\n    if V < 1:\n        continue\n    else:\n        break\n\n# find the surface area of the polyhedron\nfor m in range(1, 1000):\n    A = (m * R ** 2) / (m * (m + 1) * (2 * m + 1))\n    if A < 1:\n        continue\n    else:\n        break\n\n# find the least upper bound on the ratio\nt = (V / A)\nprint(t)"
+  },
+  {
+    "example_id": 140,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "17748.380207782346",
+      "17748.380207782342",
+      "17748.380207782342",
+      "78853.97560510381",
+      "78800.0"
+    ],
+    "annotated_answers": [
+      "17700.0"
+    ],
+    "solution": "import math\n\n# Lena's latitude\nlat = 45\n\n# Earth's equator radius\nR = 25100\n\n# Earth's circumference\nC = 2 * math.pi * R\n\n# Lena's longitude\nlon = 90 - lat\n\n# Lena's distance from the equator\nL = R * math.cos(math.radians(lat))\n\n# Lena's distance from the center of the Earth\nr = R * math.sin(math.radians(lat))\n\n# Lena's distance from the center of the Earth to the equator\nL_equator = R * math.sin(math.radians(lat))\n\n# Lena's circumference\nC_Lena = math.pi * math.sqrt(L**2 + r**2)\n\n# Lena's circumference to the nearest hundred miles\nC_Lena_nearest_hundred = math.floor(C_Lena / 100) * 100\n\nprint(\"Lena's distance from the equator:\", L, \"miles\")\nprint(\"Lena's distance from the center of the Earth:\", r, \"miles\")\nprint(\"Lena's distance from the center of the Earth to the equator:\", L_equator, \"miles\")\nprint(\"Lena's circumference:\", C_Lena, \"miles\")\nprint(\"Lena's circumference to the nearest hundred miles:\", C_Lena_nearest_hundred, \"miles\")"
+  },
+  {
+    "example_id": 141,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.166666666666667",
+      "0.166666666666667",
+      "112.0",
+      "0.0357142857142857",
+      "0.0357142857142857",
+      "112.0",
+      "-0.166666666666667",
+      "0.166666666666667",
+      "112.0",
+      "0.0357142857142857",
+      "0.0357142857142857",
+      "112.0",
+      "0.0357142857142857",
+      "0.0357142857142857",
+      "112.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "# Define variables\nA = symbols('A')\nB = symbols('B')\nC = symbols('C')\n\n# Define equations\neq_1 = 3*A/4*B - 0.5*C\neq_2 = 3*A - 14*B + C\n\n# Solve equations\nsolution = solve([eq_1, eq_2], [A, B, C])\n\n# Print solution\nprint(solution)\n\n# Print the value of B\nB_value = solution[0][1]\nprint(B_value)\n\n# Print the value of C\nC_value = solution[0][2]\nprint(C_value)"
+  },
+  {
+    "example_id": 142,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.3386902103511544"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# compute tan 180\ntan_180 = math.tan(180)\nprint(tan_180)"
+  },
+  {
+    "example_id": 143,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "3.0",
+      "4.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Define variables\nside_a = 1\nside_b = 3\n\n# Define geometry\npolygon = Polygon(Point(0, 0), Point(side_a, 0), Point(side_a, side_b))\n\n# Define length of third side\nthird_side_length = polygon.perimeter / 3\n\n# Print length of third side\nprint(third_side_length)"
+  },
+  {
+    "example_id": 144,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "4.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "from sympy import symbols, solve\n\nx, y = symbols('x y')\neq = (x - 5)**2 + y**2 - 4\nsolution = solve(eq, x)\na_value = solution[0]\nprint(a_value)"
+  },
+  {
+    "example_id": 145,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "x, y = symbols('x y')\ns1 = 5*x + 3*y\ns2 = 6*x + 8*y\ns3 = 7*x + 4*y\neq = s1 + s2 + s3\nsolution = solve(eq, x, y)\nx_value = solution[0][0]\ny_value = solution[0][1]\nx_plus_y = x_value + y_value\nprint(x_plus_y)"
+  },
+  {
+    "example_id": 146,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "-11.889981892818",
+      "-11.889981892818",
+      "0.0",
+      "11.889981892818",
+      "0.0",
+      "0.0",
+      "11.889981892818"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "r = symbols('r')\nh = symbols('h')\n\neq1 = (r**2 + h**2 - 45*pi)\neq2 = (h*r*sin(math.pi/4))\n\nsolution = solve((eq1,eq2), (r,h))\n\nprint(solution)"
+  },
+  {
+    "example_id": 147,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0",
+      "9.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "x = symbols('x')\nk = symbols('k')\neq = sympy.sqrt((x - 8)**2 + k**2) - 3\nsolution = solve(eq, x)\nx_value = solution[0]\nprint(x_value)"
+  },
+  {
+    "example_id": 148,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0",
+      "2.0",
+      "2.0",
+      "24.0",
+      "2.0",
+      "2.0",
+      "24.0",
+      "2.0",
+      "2.0",
+      "24.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "A,B,C,D,E,F = symbols('A B C D E F')\n\n# define the rhombus ABCD\nAB = Point(A,B)\nBC = Point(B,C)\nCD = Point(C,D)\nDA = Point(D,A)\n\n# define the rhombus BFDE\nBF = Point(B,F)\nDE = Point(D,E)\nEF = Point(E,F)\nFD = Point(F,D)\n\n# define the angle BAD\nangle_BAD = 60*pi/180\n\n# define the area of rhombus ABCD\narea_ABCD = 24\n\n# define the perimeter of rhombus ABCD\nperimeter_ABCD = AB.distance(BC) + BC.distance(CD) + CD.distance(DA) + DA.distance(AB)\n\n# define the perimeter of rhombus BFDE\nperimeter_BFDE = BF.distance(DE) + DE.distance(EF) + EF.distance(FD) + FD.distance(BF)\n\n# define the area of rhombus BFDE\narea_BFDE = area_ABCD*perimeter_BFDE/perimeter_ABCD\n\nprint(area_BFDE)"
+  },
+  {
+    "example_id": 149,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "36.0",
+      "2.0",
+      "100.0",
+      "2.0",
+      "10.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "A = symbols('A')\nB = 6\nC = 10\n\n# Find side lengths\na = B*sin(A)\nb = C*cos(A)\nc = sqrt(a**2 + b**2)\n\n# Find cosine\ncos_A = c/b\n\nprint(cos_A)"
+  },
+  {
+    "example_id": 150,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "55.0"
+    ],
+    "solution": "r = 8/100\nx_0 = 12/100\ny_0 = 0\nh = sqrt(x_0**2 + y_0**2)\nk = 2*pi/h\nx1 = -r*cos(k*0)\ny1 = r*sin(k*0)\nx2 = -r*cos(k*h)\ny2 = r*sin(k*h)\nprint(int((x2 - x1)*1000))"
+  },
+  {
+    "example_id": 151,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.5"
+    ],
+    "solution": "# Define variables\na = symbols('a')\nb = symbols('b')\nc = symbols('c')\n\n# Define points\nA = Point(0, 0)\nB = Point(a, 0)\nC = Point(0, b)\nD = Point(c, c)\n\n# Define sides\nAB = B - A\nBC = C - B\nCD = D - C\n\n# Define area\narea = Polygon(A, B, C, D).area\n\n# Define radius\nradius = sqrt(area/(pi/4))\n\n# Display radius\nprint(radius)"
+  },
+  {
+    "example_id": 152,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.4142135623730951"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "# set up variables\nh = 8\ns = 32\n\n# find distance from center to corner\nd = (s/2) - (h/2)\n\n# find angle\nangle = math.degrees(math.asin(d/s))\n\n# find side length of triangle\na = math.sin(math.radians(angle)) * s\n\n# find hypotenuse\nc = math.sqrt(s**2 + a**2)\n\n# find height\nh = c - s\n\n# find point P\nP = Point(0, 0, h/2)\n\n# find point Q\nQ = Point(1, 1, h/2)\n\n# find distance between points\ndistance = math.sqrt((P.x - Q.x)**2 + (P.y - Q.y)**2 + (P.z - Q.z)**2)\n\nprint(distance)"
+  },
+  {
+    "example_id": 153,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "300.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "from sympy import symbols, solve, simplify\nfrom sympy.geometry import Point3D, Polygon\nfrom sympy.solvers import solve_poly_system\nfrom sympy.plotting import plot3d\n\nA,B,C,D,EE,F,G,H = symbols('A:H')\n\ntri = Polygon(Point3D(0,0,0), Point3D(5,0,0), Point3D(5,6,0), Point3D(0,6,0))\n\npyr = Polygon(Point3D(0,0,0), Point3D(5,0,0), Point3D(5,6,0), Point3D(0,6,0))\n\nvol_pyr = simplify(pyr.area*5)\n\nvol_tri = simplify(tri.area*5)\n\nvol_prism = simplify(vol_pyr*2)\n\nprint(vol_prism)"
+  },
+  {
+    "example_id": 154,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "58.60697361379421"
+    ],
+    "annotated_answers": [
+      "162.0"
+    ],
+    "solution": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.spatial import ConvexHull\n\nWW = np.array([12, 18])\nX = np.array([18, 18])\nY = np.array([12, 0])\nZ = np.array([0, 0])\n\nhull = ConvexHull([WW, X, Y, Z])\n\nA = hull.area\nprint(A)"
+  },
+  {
+    "example_id": 155,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "x, y = symbols('x y')\npoints = [(i, j) for i in range(4) for j in range(4)]\narea = 0\nfor p in points:\n    point = Point(p)\n    polygon = Polygon(*[Point(q) for q in points])\n    if point in polygon:\n        area += polygon.area\nprint(area)"
+  },
+  {
+    "example_id": 156,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "301.0"
+    ],
+    "solution": "# Define variables\nm = symbols('m')\nn = symbols('n')\n\n# Define radius of circle\nr = symbols('r')\n\n# Define angle\ntheta = symbols('theta')\n\n# Define area of circle\narea = (pi * r**2) / 4\n\n# Define red region\nred_region = (r**2 * sin(theta)) / 2\n\n# Define green region\ngreen_region = (r**2 * cos(theta)) / 2\n\n# Define total area\ntotal_area = red_region + green_region\n\n# Define expression\nexpr = (total_area / area) * (m/n)\n\n# Solve for m+n\nsolution = solve(expr, m, n)\n\n# Print solution\nprint(solution)"
+  },
+  {
+    "example_id": 157,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "216.0"
+    ],
+    "solution": "s = symbols('s')\nv = s**3\nA = (s**2) * 6\ns_value = solve(A - v, s)[0]\nprint(s_value)"
+  },
+  {
+    "example_id": 158,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "43.027756377319946"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "# Define the sides of the triangle\na = 15\nb = 10\n\n# Find the greatest possible perimeter\nperimeter = a + b + math.sqrt(a**2 + b**2)\nprint(perimeter)"
+  },
+  {
+    "example_id": 159,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.5400000000000001"
+    ],
+    "annotated_answers": [
+      "0.54"
+    ],
+    "solution": "# Define the volume of the cube\nV = 0.027\n\n# Find the side length of the cube\nside = V ** (1/3)\n\n# Find the surface area of the cube\nSA = 6 * side ** 2\n\nprint(SA)"
+  },
+  {
+    "example_id": 160,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "52.0",
+      "180.0",
+      "52.0",
+      "180.0",
+      "52.0",
+      "180.0",
+      "52.0",
+      "180.0",
+      "52.0",
+      "180.0",
+      "52.0",
+      "180.0"
+    ],
+    "annotated_answers": [
+      "90.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\n\na = Point(76, 0)\nb = Point(-1, 0)\nc = Point(1, 0)\n\no = Point(0, 0)\n\np = Polygon(a, b, c)\n\ns = 104\n\nx = (104 / 2) * sin(pi * A / 180)\ny = (104 / 2) * cos(pi * A / 180)\n\nprint(x)\nprint(y)\n\nx_value = x.evalf()\ny_value = y.evalf()\n\nprint(x_value)\nprint(y_value)\n\nx_plus_y = x_value + y_value\n\nprint(x_plus_y)"
+  },
+  {
+    "example_id": 161,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "# define variables\na = Point(2, 4)\nb = Point(4, 4)\nc = Point(4, 2)\nd = Point(2, 2)\np = Point(6, 0)\n\n# define polygon\nABCD = Polygon(a, b, c, d)\n\n# find distance between A and P\ndistance = sqrt( (a.x - p.x)**2 + (a.y - p.y)**2 )\n\nprint(distance)"
+  },
+  {
+    "example_id": 162,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1165.0",
+      "3.0",
+      "2.0",
+      "539773.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "34.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.sqrt(18**2 + A**2) + sympy.sqrt(29**2 + A**2) - A\nsolution = solve(eq, A)\nA_value = solution[0]\nprint(A_value)"
+  },
+  {
+    "example_id": 163,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "135.0"
+    ],
+    "solution": "a, b, c = symbols('a b c')\ns = (a**2 + b**2 + c**2)/2\narea = sqrt(s*(s-a)*(s-b)*(s-c))\nprint(area)"
+  },
+  {
+    "example_id": 164,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import symbols, sqrt, integrate\n\nA, B, C, D = symbols('A B C D')\n\narea = (A*B + B*C + C*D + D*A)/2\n\nprint(area)"
+  },
+  {
+    "example_id": 165,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "from sympy import symbols, cos, sin, sqrt\nx, y = symbols('x y')\na, b, c = symbols('a b c')\ns = sqrt((x - a)**2 + (y - b)**2)\nt = sqrt((x - c)**2 + (y - b)**2)\narea = 0.5 * s * t\nprint(area)"
+  },
+  {
+    "example_id": 166,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.asin(sympy.sin(A)/2)\nsolution = solve(eq, A)\nA_value = solution[0]\nprint(A_value)"
+  },
+  {
+    "example_id": 167,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "n = 7\nm = 3\n\ndef mangle_pqr(p, q, r):\n    \"\"\"\n    Given three points p, q, and r,\n    return the number of possible values for mangle pqr\n    \"\"\"\n    return (n - 1) * (n - 2) * (n - 3)\n\nprint(mangle_pqr(0, 1, 2))\nprint(mangle_pqr(0, 1, 3))\nprint(mangle_pqr(0, 1, 4))\nprint(mangle_pqr(0, 1, 5))\nprint(mangle_pqr(0, 1, 6))\nprint(mangle_pqr(0, 1, 7))\nprint(mangle_pqr(0, 2, 3))\nprint(mangle_pqr(0, 2, 4))\nprint(mangle_pqr(0, 2, 5))\nprint(mangle_pqr(0, 2, 6))\nprint(mangle_pqr(0, 2, 7))\nprint(mangle_pqr(0, 3, 4))\nprint(mangle_pqr(0, 3, 5))\nprint(mangle_pqr(0, 3, 6))\nprint(mangle_pqr(0, 3, 7))\nprint(mangle_pqr(0, 4, 5))\nprint(mangle_pqr(0, 4, 6))\nprint(mangle_pqr(0, 4, 7))\nprint(mangle_pqr(0, 5, 6))\nprint(mangle_pqr(0, 5, 7))\nprint(mangle_pqr(0, 6, 7))"
+  },
+  {
+    "example_id": 168,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "1.125",
+      "1.0",
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "s1 = symbols('s1')\ns2 = symbols('s2')\ns3 = symbols('s3')\nA1 = (s1**2 + s2**2 + s3**2) / 2\nA2 = (s1*1.5 + s2*1.5 + s3*1.5)**2 / 2\nprint(A2 - A1)"
+  },
+  {
+    "example_id": 169,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "1.0",
+      "2.0",
+      "-2.0",
+      "1.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "81.0"
+    ],
+    "solution": "R = symbols('R')\nA = symbols('A')\nB = symbols('B')\nT = symbols('T')\n\neq1 = sympy.sin(R)*sympy.cos(A) - sympy.sin(A)*sympy.cos(R)\neq2 = sympy.sin(R)*sympy.cos(B) - sympy.sin(B)*sympy.cos(R)\neq3 = sympy.sin(A)**2 + sympy.cos(A)**2 - sympy.sin(B)**2 - sympy.cos(B)**2\n\nsolution = solve([eq1, eq2, eq3], [R, A, B])\n\nprint(solution)"
+  },
+  {
+    "example_id": 170,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "-1.5",
+      "2.59807621135332",
+      "-1.5",
+      "2.59807621135332"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "r_tank = symbols('r_tank')\nr_beaker = 3\nh_beaker = 8\nvol_beaker = 4/3*sympy.pi*r_beaker**3\nvol_tank = 4/3*sympy.pi*r_tank**3\nsolution = solve((vol_tank - vol_beaker)/vol_beaker, r_tank)\nprint(solution)"
+  },
+  {
+    "example_id": 171,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-9.0",
+      "2.0",
+      "12.0",
+      "30.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "x, y = symbols('x y')\neq = (x - 0)**2 + (y - 1)**2 + (x - 2)**2 + (y - 1)**2 + (x - 4)**2 + (y - 0)**2\nsolution = solve(eq, x, y)\nx_value, y_value = solution[0]\nprint(x_value + y_value)"
+  },
+  {
+    "example_id": 172,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-18.0",
+      "371.0",
+      "50.0",
+      "-3.0",
+      "100.0",
+      "6.0",
+      "6.0",
+      "5.0",
+      "5.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "# x = 40\nx = 40\n\n# q = Point(0, 0)\nq = Point(0, 0)\n\n# p = Point(3, 6)\np = Point(3, 6)\n\n# r = Point(6, 0)\nr = Point(6, 0)\n\n# s = Point(8, 0)\ns = Point(8, 0)\n\n# t = Point(7, -2)\nt = Point(7, -2)\n\n# u = Point(4.3, 2.9)\nu = Point(4.3, 2.9)\n\n# v = Point(4.7, 3.1)\nv = Point(4.7, 3.1)\n\n# w = Point(1.3, 3.1)\nw = Point(1.3, 3.1)\n\n# x = Point(1.7, 2.9)\nx = Point(1.7, 2.9)\n\n# y = Point(1.7, 3.1)\ny = Point(1.7, 3.1)\n\n# z = Point(2, 3.1)\nz = Point(2, 3.1)\n\n# a = Polygon(q, p, r, s)\na = Polygon(q, p, r, s)\n\n# b = Polygon(t, u, v, w)\nb = Polygon(t, u, v, w)\n\n# c = Polygon(x, y, z)\nc = Polygon(x, y, z)\n\n# print(a.area)\nprint(a.area)\n\n# print(b.area)\nprint(b.area)\n\n# print(c.area)\nprint(c.area)\n\n# print(a.perimeter)\nprint(a.perimeter)\n\n# print(b.perimeter)\nprint(b.perimeter)\n\n# print(c.perimeter)\nprint(c.perimeter)\n\n# print(a.centroid)\nprint(a.centroid)\n\n# print("
+  },
+  {
+    "example_id": 173,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5",
+      "3.0",
+      "7.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "A, B, C, M, N, P = symbols('A B C M N P')\n\n# ABC\na = 6\nb = 8\nc = sqrt(a**2 + b**2)\n\n# MN\nm = (a + b)/2\nn = m\n\n# P\np = m + (c - m) * sin(pi/3)\n\n# Area\narea = (p - M) * (P - N) / 2\nprint(area)"
+  },
+  {
+    "example_id": 174,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.76395319577068",
+      "12.0",
+      "2.0",
+      "24.0",
+      "7.63943726841098",
+      "2.0",
+      "1.5707963267949",
+      "2.0",
+      "17.3664301093984",
+      "27.2791246253833",
+      "2.0",
+      "27.2791246253833",
+      "2.0",
+      "7.63943726841098",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "# create a variable for the lateral surface area\nlateral_surface_area = 24*pi*sympy.sin(sympy.pi/4)\n\n# create a variable for the volume\nvolume = 24*pi\n\n# create a variable for the radius\nradius = sympy.sqrt(volume/math.pi)\n\n# create a variable for the area of the base\narea_base = sympy.pi*radius**2\n\n# create a variable for the height\nheight = lateral_surface_area/area_base\n\n# create a variable for the circumference\ncircumference = 2*radius*math.pi\n\n# create a variable for the area of the top\narea_top = height*circumference\n\n# create a variable for the total surface area\ntotal_surface_area = area_base + area_top\n\n# print the results\nprint('The radius is:', radius, 'inches')\nprint('The lateral surface area is:', lateral_surface_area,'square inches')\nprint('The volume is:', volume, 'cubic inches')\nprint('The area of the base is:', area_base,'square inches')\nprint('The height is:', height, 'inches')\nprint('The circumference is:', circumference, 'inches')\nprint('The area of the top is:', area_top,'square inches')\nprint('The total surface area is:', total_surface_area,'square inches')"
+  },
+  {
+    "example_id": 175,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "360.0"
+    ],
+    "solution": "# Create symbols for the variables\nA, B, C = symbols('A B C')\nM, N = symbols('M N')\n\n# Create a polygon object for triangle ABC\npolygon = Polygon(Point(0,0), Point(A,0), Point(A,B))\n\n# Find the area of triangle ABC\narea_ABC = polygon.area\n\n# Print the area of triangle ABC\nprint(area_ABC)\n\n# Create a point object for the centroid G\ncentroid = Point(0,0)\n\n# Find the area of triangle GAM\ntriangle_GAM = Polygon(centroid, Point(M,0), Point(M,A))\narea_GAM = triangle_GAM.area\n\n# Print the area of triangle GAM\nprint(area_GAM)\n\n# Find the area of triangle GCN\ntriangle_GCN = Polygon(centroid, Point(0,C), Point(N,C))\narea_GCN = triangle_GCN.area\n\n# Print the area of triangle GCN\nprint(area_GCN)\n\n# Find the area of triangle AMN\ntriangle_AMN = Polygon(Point(M,0), Point(M,N), Point(0,N))\narea_AMN = triangle_AMN.area\n\n# Print the area of triangle AMN\nprint(area_AMN)"
+  },
+  {
+    "example_id": 176,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "24.0",
+      "2.25",
+      "24.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "# Define variables\nx = symbols('x')\ny = symbols('y')\n\n# Define the length of each side\na = 6\nb = 8\n\n# Define the angle\ntheta = 90\n\n# Define the height of the triangle\nh = 3\n\n# Define the radius of the semicircle\nr = h/2\n\n# Define the center of the semicircle\ncenter = Point(0,0)\n\n# Define the vertices of the triangle\nvertices = [Point(0,0), Point(a,0), Point(a,b)]\n\n# Define the vertices of the semicircle\nvertices_semicircle = [Point(r*cos(theta),r*sin(theta)), Point(r*cos(theta+90),r*sin(theta+90)), Point(r*cos(theta+180),r*sin(theta+180)), Point(r*cos(theta+270),r*sin(theta+270))]\n\n# Define the area of the triangle\narea_triangle = (a*b)/2\n\n# Define the area of the semicircle\narea_semicircle = pi*r**2\n\n# Define the area of the shaded region\narea_shaded = area_triangle - area_semicircle\n\n# Define the area of the non-shaded region\narea_non_shaded = area_triangle\n\n# Print the area of the shaded region\nprint(area_shaded)\n\n# Print the area of the non-shaded region\nprint(area_non_shaded)"
+  },
+  {
+    "example_id": 177,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "8.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "A, B, C = symbols('A B C')\nmedian = (A+B+C)/2\neq = (median**2 - (A*B)/2 + (A*C)/2 + (B*C)/2)/2\nsolution = solve(eq, C)\nC_value = solution[0]\nprint(C_value)"
+  },
+  {
+    "example_id": 178,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "2.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "# Define symbols\nx, y, z = symbols('x y z')\n\n# Define rectangle\nrectangle = Polygon(Point(0,0), Point(x,0), Point(x,y), Point(0,y))\n\n# Define perimeter\nperimeter = rectangle.perimeter\n\n# Find perimeter of one of the five congruent rectangles\nperimeter_one = perimeter/5\n\n# Print the perimeter of one of the five congruent rectangles\nprint(perimeter_one)"
+  },
+  {
+    "example_id": 179,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "2.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "1.0",
+      "0.0",
+      "-3.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import sympy\nx, y = sympy.symbols('x y')\nprint(sympy.integrate((x + 2*y + 2)/(1 + x**2 + y**2), (x, -1, 2), (y, 0, -3)))"
+  },
+  {
+    "example_id": 180,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "12.0",
+      "-12.0"
+    ],
+    "annotated_answers": [
+      "-5.0"
+    ],
+    "solution": "P = Point(1, 3)\nR = Point(7, 15)\nM = (P + R)/2\nPR = R - P\nx = PR.x\ny = PR.y\nx_image = 2*x\ny_image = -y\nM_image = Point(x_image, y_image)\nprint(M_image)"
+  },
+  {
+    "example_id": 181,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "9.0",
+      "2.0",
+      "51.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "A = symbols('A')\nBC = 3\nBD = 2*BC\nBC_squared = BC**2\nBD_squared = BD**2\ntriangle_area = 6\ntriangle_perimeter = BC + BD + A\ntriangle_perimeter_squared = triangle_perimeter**2\ntriangle_area_BCD = triangle_perimeter_squared - BC_squared - BD_squared + A**2\ntriangle_area_CDE = triangle_area - triangle_area_BCD\nprint(triangle_area_CDE)"
+  },
+  {
+    "example_id": 182,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# define variables\nx = symbols('x')\ny = symbols('y')\n\n# define triangles\ntri1 = Polygon(Point(0, 0), Point(4, 0), Point(4, 6))\ntri2 = Polygon(Point(0, 0), Point(4, 0), Point(4, 6))\n\n# find area of triangles\narea1 = tri1.area\narea2 = tri2.area\n\n# find value of |x-y| that is not a possible value of |x-y|\nfor i in range(1, 10000):\n    if (i not in [area1, area2]):\n        print(i)\n        break"
+  },
+  {
+    "example_id": 183,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1440.0"
+    ],
+    "annotated_answers": [
+      "864.0"
+    ],
+    "solution": "# Define variables\ns = 288\nh = 15\n\n# Calculate volume\nV = (1/3) * s * h\n\n# Print result\nprint(\"The volume of the pyramid is:\", V, \"cubic centimeters\")"
+  },
+  {
+    "example_id": 184,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8100.0",
+      "4050.0",
+      "8100.0"
+    ],
+    "annotated_answers": [
+      "391872.0"
+    ],
+    "solution": "r = 32400 # radius of the fan\nv = 80 # revolutions per minute\nt = 15 # time (minutes)\n\n# point halfway between the center of the fan and the outer edge of the fan travels 97968 inches in 15 minutes\nt_half = t/2\ndist_half = r * 2 * sympy.pi * (t_half/60)\nprint(dist_half)\n\n# point on the outer edge of the fan travels 1/2 of the distance traveled by the point halfway between the center and the outer edge\ndist_outer = dist_half / 2\nprint(dist_outer)\n\n# point on the outer edge of the fan travels 30 minutes\nt_outer = 30\ndist_outer_30 = dist_outer * (t_outer/t)\nprint(dist_outer_30)"
+  },
+  {
+    "example_id": 185,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10169.240312354817"
+    ],
+    "annotated_answers": [
+      "126.0"
+    ],
+    "solution": "O = Point(0,0)\nA = Point(1,0)\nB = Point(-1,0)\nC = Point(0.5877852522924731291,0.80901699437)\nD = Point(-0.5877852522924731291,-0.80901699437)\nOA = A - O\nOA_angle = sympy.atan2(OA.y, OA.x)\nAB = B - A\nAB_angle = sympy.atan2(AB.y, AB.x)\nBC = C - B\nBC_angle = sympy.atan2(BC.y, BC.x)\nBD = D - B\nBD_angle = sympy.atan2(BD.y, BD.x)\n\n# angle OAD\nOAD_angle = OA_angle + AB_angle\n\n# angle OBC\nOBC_angle = OA_angle + BC_angle\n\n# angle OBD\nOBD_angle = OA_angle + BD_angle\n\n# angle AOB\nAOB_angle = 180 - (OAD_angle + OBC_angle + OBD_angle)\n\n# angle AOB in degrees\nAOB_angle_deg = math.degrees(AOB_angle)\n\nprint(\"The angle AOB is {} degrees.\".format(AOB_angle_deg))"
+  },
+  {
+    "example_id": 186,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0",
+      "10.0"
+    ],
+    "annotated_answers": [
+      "1152.0"
+    ],
+    "solution": "# Variables\nflour = 0.5\ndiameter = 24\nwaffle_thickness = 0.2\n\n# Calculate number of waffles on the griddle\nnum_waffles = diameter / waffle_thickness\n\n# Calculate number of cups of flour needed\nflour_needed = num_waffles * flour\n\n# Calculate circumference of griddle\ncircumference = 2 * pi * diameter / 12\n\n# Calculate number of waffles on the griddle\nnum_waffles = circumference / waffle_thickness\n\n# Calculate number of cups of flour needed\nflour_needed = num_waffles * flour\n\n# Print output\nprint(\"Number of waffles on the griddle:\", num_waffles)\nprint(\"Number of cups of flour needed:\", flour_needed)"
+  },
+  {
+    "example_id": 187,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "A = symbols('A')\nZB = 18\nZC = 63\nAX = 6\neq = sympy.Eq(A*ZB, AX*ZC)\nsolution = solve(eq, A)\nA_value = solution[0]\nAY = A*ZC/ZB\nprint(AY)"
+  },
+  {
+    "example_id": 188,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "30.0"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "# Define variables\na = symbols('a')\nb = symbols('b')\n\n# Define equation\neq = a + b*pi - 30\n\n# Solve equation\nsolution = solve(eq, a, b)\n\n# Print solution\nprint(solution)"
+  },
+  {
+    "example_id": 189,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.55689330449006",
+      "-3.0",
+      "0.333333333333333",
+      "0.333333333333333"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "r = symbols('r')\nV = 60\nV_sphere = (4/3) * pi * r ** 3\nr_sphere = (V/V_sphere) ** (1/3)\nprint(r_sphere)"
+  },
+  {
+    "example_id": 190,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0",
+      "7.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "12.25"
+    ],
+    "solution": "A, B, C, D = symbols('A B C D')\neq1 = sympy.Eq(A+B, C)\neq2 = sympy.Eq(A+D, B)\neq3 = sympy.Eq(D, 7)\neq4 = sympy.Eq(A*C, B*D)\nsolution = solve([eq1, eq2, eq3, eq4], [A, B, C, D])\nAB_CD = solution[0][2]\nprint(AB_CD)"
+  },
+  {
+    "example_id": 191,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0",
+      "7.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "7.0",
+      "2.0",
+      "2.0",
+      "17.0",
+      "4.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "32.0"
+    ],
+    "solution": "import sympy as sp\n\nx, y = sp.symbols('x, y')\narea = sp.integrate(sp.sqrt(1 + (y + 4)**2), (y, 0, x + 3))\nprint(area)"
+  },
+  {
+    "example_id": 192,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.75"
+    ],
+    "solution": "pentagon_area = (1 + 1) * (1 + 2) / 2\nprint(pentagon_area)"
+  },
+  {
+    "example_id": 193,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0",
+      "5.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\nO = symbols('O')\nP = symbols('P')\n\neq1 = sympy.sin(A) - 2*sympy.cos(A)\neq2 = sympy.sin(B) - 2*sympy.cos(B)\neq3 = sympy.sin(C) - 2*sympy.cos(C)\neq4 = sympy.sin(D) - 2*sympy.cos(D)\neq5 = sympy.sin(O) - 2*sympy.cos(O)\neq6 = sympy.sin(P) - 2*sympy.cos(P)\n\nsolution1 = solve(eq1, A)\nsolution2 = solve(eq2, B)\nsolution3 = solve(eq3, C)\nsolution4 = solve(eq4, D)\nsolution5 = solve(eq5, O)\nsolution6 = solve(eq6, P)\n\nA_value = solution1[0]\nB_value = solution2[0]\nC_value = solution3[0]\nD_value = solution4[0]\nO_value = solution5[0]\nP_value = solution6[0]\n\nlength_OP = sympy.sin(O_value) * 12\nprint(length_OP)"
+  },
+  {
+    "example_id": 194,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.6197751905438615"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# Compute tan 45 degrees\ntan45 = math.tan(45)\nprint(tan45)"
+  },
+  {
+    "example_id": 195,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-32.0"
+    ],
+    "annotated_answers": [
+      "32.0"
+    ],
+    "solution": "# define the coordinates of the vertices\nvertices = [(-2, 2), (2, -2), (-2, -6), (-6, -2)]\n\n# define the polygon\npolygon = Polygon(*vertices)\n\n# compute the area\narea = polygon.area\n\n# print the area\nprint(area)"
+  },
+  {
+    "example_id": 196,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "33.33333333333334"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ],
+    "solution": "# Define the radius of the circle\nr = 10\n# Define the length of the side of the triangle\na = 2*r\n# Define the length of the height of the triangle\nb = r\n# Define the angle of the triangle\nalpha = math.asin(r/a)\n# Define the area of the triangle\narea = (r**2)*(math.sin(alpha))\n# Define the perimeter of the triangle\nperimeter = 3*r\n# Define the side of the square\nside = math.sqrt(area/3)\n# Define the length of the diagonal of the square\ndiagonal = side*math.sqrt(2)\n# Define the area of the square\nsquare_area = diagonal**2\nprint(square_area)"
+  },
+  {
+    "example_id": 197,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\neq1 = sympy.sqrt(A**2 + B**2) - 1\neq2 = 2*A + 2*B - 4\nsolution1 = solve(eq1, A)\nsolution2 = solve(eq2, B)\nA_value = solution1[0]\nB_value = solution2[0]\nperimeter = 2*A_value + 2*B_value\nprint(perimeter)"
+  },
+  {
+    "example_id": 198,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "48.49742261192856"
+    ],
+    "annotated_answers": [
+      "37.72"
+    ],
+    "solution": "# Define the lengths of the sides of the triangle\nsides = [7, 24, 25]\n\n# Create a list of the altitudes of the triangle\naltitudes = []\nfor side in sides:\n    # Calculate the altitude of the triangle\n    altitude = math.sqrt(side**2 - (side/2)**2)\n    # Add the altitude to the list of altitudes\n    altitudes.append(altitude)\n\n# Calculate the sum of the lengths of the altitudes\nsum_of_altitudes = sum(altitudes)\n\n# Print the result\nprint(sum_of_altitudes)"
+  },
+  {
+    "example_id": 199,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.5",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "A, B, C, D = symbols('A B C D')\n\nBC = 14\nAB = 13\nCA = 15\n\n# Formula for ADC\nADC = 1/2 * BC * sin(A)\n\n# Formula for angle A\nA = 2*pi/3\n\n# Formula for ADC\nADC = 1/2 * BC * sin(A)\n\n# Print ADC\nprint(ADC)"
+  },
+  {
+    "example_id": 200,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0555025071836959",
+      "2.22817108534214",
+      "3.5",
+      "1.0555025071837"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "# define variables\nlateral_surface_area = 3.5\nvolume = 3.5\n\n# define radius\nradius = (volume/3.14159)**(1/2)\n\n# define lateral_surface_area\nlateral_surface_area = 2*radius*radius*pi\n\n# define circumference\ncircumference = 2*radius*pi\n\n# define area\narea = lateral_surface_area/circumference\n\n# print results\nprint(\"The radius of the cylinder is: \", radius, \"inches\")\nprint(\"The lateral surface area of the cylinder is: \", lateral_surface_area, \"square inches\")\nprint(\"The volume of the cylinder is: \", volume, \"cubic inches\")\nprint(\"The area of the cylinder is: \", area, \"square inches\")"
+  },
+  {
+    "example_id": 201,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-5.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "300.0"
+    ],
+    "solution": "from sympy import Polygon, Point, Line\n\nA, B, C, D, E, F, G = Point(0,0), Point(1,1), Point(1,0.5), Point(2.5,0.5), Point(2.5,-0.5), Point(1,-0.5), Point(1,-1)\n\npolygon = Polygon(A, B, C, D, E, F, G)\n\nprint(polygon.area)"
+  },
+  {
+    "example_id": 202,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "108.0"
+    ],
+    "solution": "# define variables\nv, w, x, y, z = symbols('v w x y z')\n\n# define angles\nangles = [v, w, x, y, z]\n\n# define equation\neq = [angles[i] - angles[i-1] for i in range(1, 5)]\n\n# define length of sequence\nlength = len(eq)\n\n# define values of angles\nvalues = [angles[i] for i in range(length)]\n\n# define sum of angles\nsum_angles = sum(values)\n\n# define difference of angles\ndifference_angles = values[1] - values[0]\n\n# define ratio of angles\nratio = difference_angles/values[0]\n\n# define value of x\nx = sum_angles - length*difference_angles\n\n# print x\nprint(x)"
+  },
+  {
+    "example_id": 203,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-5.0",
+      "2.0",
+      "165.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "x = symbols('x')\nA = 30\nh = 5\ns = (x**2 + x*h + h**2)/2\neq = s - A\nsolution = solve(eq, x)\nx_value = solution[0]\nprint(x_value)"
+  },
+  {
+    "example_id": 204,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "36.0"
+    ],
+    "annotated_answers": [
+      "184.0"
+    ],
+    "solution": "a = symbols('a')\neq = (sqrt(a) - 6)/2\nsolution = solve(eq, a)\na_value = solution[0]\nprint(a_value)"
+  },
+  {
+    "example_id": 205,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "81.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "# Calculate the radius of the larger sphere\n# The smaller sphere has a radius of 3\n# The larger sphere is 27 times the smaller sphere\n# Therefore the larger sphere's radius is 3 * 27 = 81\nprint(81)"
+  },
+  {
+    "example_id": 206,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "528.0"
+    ],
+    "annotated_answers": [
+      "384.0"
+    ],
+    "solution": "A = Point(-18, 0)\nB = Point(18, 0)\nC = Point(0, 24)\nD = Point(-12, 8)\nE = Point(-12, 0)\nF = Point(12, 0)\nG = Point(12, 8)\nH = Point(0, 0)\n\n# Pentagon ABCDEF\npentagon = Polygon(A, B, C, D, E, F, G)\npentagon_area = pentagon.area\nprint(pentagon_area)"
+  },
+  {
+    "example_id": 207,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "length_AB, length_BC, length_XY = 4, 6, 14\nlength_YZ = length_XY / length_AB * length_BC\nprint(length_YZ)"
+  },
+  {
+    "example_id": 208,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.0",
+      "2.0",
+      "2.0",
+      "1.0",
+      "13.0",
+      "2.0",
+      "1.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "a = symbols('a')\n\nsides = [a + 1, 6*a, 6*a + 1]\n\nperimeter = sum(sides)\n\narea = (perimeter/2)*(perimeter/2 - sides[0])*(perimeter/2 - sides[1])*(perimeter/2 - sides[2])\n\nprint(area)"
+  },
+  {
+    "example_id": 209,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3976.0"
+    ],
+    "annotated_answers": [
+      "2040.0"
+    ],
+    "solution": "import math\na, b, c = 32, 36, 100\narea = 0.5 * (a * b + b * c + c * a)\nprint(area)"
+  },
+  {
+    "example_id": 210,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.333333333333333",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.5"
+    ],
+    "solution": "# Define the variables\nr1 = symbols('r1')\nr2 = symbols('r2')\nh = symbols('h')\n\n# Define the volume of the hemispherical cup\nV1 = (1/3)*pi*r1**3\n\n# Define the volume of the cylindrical container\nV2 = pi*r2**2*h\n\n# Define the constraint\neq = V1 - V2\n\n# Find the solution to the equation\nsolution = solve(eq, h)\n\n# Print the solution\nprint(solution)"
+  },
+  {
+    "example_id": 211,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.2"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "import math\n\ndef find_percentage_increase(start, end):\n    return (end - start) / start\n\nstart_degree_measure = 30\nstart_radius = 5\nend_degree_measure = start_degree_measure * 1.2\nend_radius = start_radius * 1.25\n\npercentage_increase = find_percentage_increase(start_degree_measure, end_degree_measure)\nprint(percentage_increase)"
+  },
+  {
+    "example_id": 212,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "105.0"
+    ],
+    "annotated_answers": [
+      "145.0"
+    ],
+    "solution": "A = symbols('A')\neq = sympy.sin(A)*sympy.sin(A) + sympy.sin(A)*sympy.cos(A)\nsolution = solve(eq, A)\nA_value = solution[0]\nAC = 105 - A_value\nprint(AC)"
+  },
+  {
+    "example_id": 213,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "70.52877936550931"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "import math\n\ndef angle_ADC(radians):\n    return math.degrees(math.acos((2*math.sin(radians))/3))\n\nprint(angle_ADC(math.radians(30)))"
+  },
+  {
+    "example_id": 214,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.4705882352941177"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "import math\n\na = 1.5707963267948966\nb = 0.32\nx = b / (1 - b)\n\nprint(x)"
+  },
+  {
+    "example_id": 215,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.3141592653589793"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "import math\n\nx = math.pi / 10\nprint(x)"
+  },
+  {
+    "example_id": 216,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "V = 8\nV_new = V + 19\nside = math.pow(V_new, 1/3)\nprint(side)"
+  },
+  {
+    "example_id": 217,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "A, B, C = symbols('A B C')\ng = symbols('g')\nG = symbols('G')\nM, N = symbols('M N')\nAB = sympy.sqrt(A**2 + B**2)\nAC = sympy.sqrt(A**2 + C**2)\nBC = sympy.sqrt(B**2 + C**2)\nAB_2 = sympy.sqrt(A**2 + B**2)\nAC_2 = sympy.sqrt(A**2 + C**2)\nBC_2 = sympy.sqrt(B**2 + C**2)\ncentroid = sympy.Rational(1, 3)*(A + B + C)\narea = sympy.Rational(1, 2)*(AB_2 + AC_2 + BC_2)\nG = sympy.Rational(1, 3)*(A + B + C)\nM = sympy.Rational(1, 2)*(A + B)\nN = sympy.Rational(1, 2)*(A + C)\nE = sympy.Rational(1, 2)*(A + B + C)\nF = sympy.Rational(1, 2)*(A + B + C)\nENG = sympy.Rational(1, 2)*(A + B + C)\nprint(ENG)"
+  },
+  {
+    "example_id": 218,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# 180 degrees is pi radians\nradians = pi * 180\n\n# compute sin(pi)\nsin_pi = sin(radians)\n\n# compute sin(180)\nsin_180 = sin_pi\n\n# print the result\nprint(sin_180)"
+  },
+  {
+    "example_id": 219,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "30.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "from sympy import *\nx = Symbol('x')\ny = Symbol('y')\narea = integrate(x*y, (x, -2, 8))\nprint(area)"
+  },
+  {
+    "example_id": 220,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "34.0",
+      "2.0",
+      "3.0",
+      "34.0",
+      "2.0",
+      "3.0",
+      "34.0",
+      "2.0",
+      "3.0",
+      "34.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "x = symbols('x')\ny = symbols('y')\nsolution = solve([x + y - 6, x**2 + y**2 - 1], [x, y])\nprint(solution)"
+  },
+  {
+    "example_id": 221,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nM = symbols('M')\nN = symbols('N')\nC = symbols('C')\neq = sympy.sqrt(A**2 - 2*M*A + M**2) - sympy.sqrt(B**2 - 2*N*B + N**2)\nsolution = solve(eq, A)\nA_value = solution[0]\nB_value = solution[1]\nC_value = A_value - M*B_value/N\nprint(C_value)"
+  },
+  {
+    "example_id": 222,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "4.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "ABCD = symbols('ABCD')\nAD = ABCD/2\nBD = AD\nAC = sympy.sqrt(ABCD**2 - BD**2)\nCD = AC\nBA = AD\nBC = AC\nDA = BD\nDC = CD\nangle_A = sympy.acos(BD/ABCD)\nangle_B = sympy.acos(BC/ABCD)\nangle_C = sympy.acos(CD/ABCD)\nangle_D = sympy.acos(DA/ABCD)\narea_ABCD = (ABCD*angle_A)*(ABCD*angle_B)*(ABCD*angle_C)*(ABCD*angle_D)\nprint(area_ABCD)"
+  },
+  {
+    "example_id": 223,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0",
+      "2.0",
+      "217.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "A = symbols('A')\neq = (10 + A)**2 + (17 - A)**2 - 16**2\nsolution = solve(eq, A)\nA_value = solution[0]\nprint(A_value)"
+  },
+  {
+    "example_id": 224,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "144.0"
+    ],
+    "annotated_answers": [
+      "84.0"
+    ],
+    "solution": "from sympy import symbols, sqrt\nx, y = symbols('x, y')\nlength = 12\nwidth = 12\narea = length * width\nprint(area)"
+  },
+  {
+    "example_id": 225,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "42.0",
+      "-42.0",
+      "42.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "from sympy import symbols, sqrt, pi\n\nA, B, C, D, E, F, I = symbols('A B C D E F I')\n\n# Calculate the length of the sides\nAB = 13\nBC = 14\nAC = 15\n\n# Calculate the area of triangle ABC\ns = (AB + BC + AC) / 2\narea = sqrt(s * (s - AB) * (s - BC) * (s - AC))\n\n# Calculate the radius of the incircle\nr = area / (2 * pi)\n\n# Calculate the coordinates of the incenter I\nI = (A + B + C) / 3\n\n# Calculate the coordinates of the points D, E, and F\nD = I + r * (B - C)\nE = I + r * (C - A)\nF = I + r * (A - B)\n\n# Calculate the area of quadrilateral AEIF\narea = (D - E) * (F - I)\nprint(area)"
+  },
+  {
+    "example_id": 226,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "A = symbols('A')\neq = 4*A - A\nsolution = solve(eq, A)\nA_value = solution[0]\nprint(A_value)"
+  },
+  {
+    "example_id": 227,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-8.0",
+      "2.0",
+      "2600.0",
+      "2738.0",
+      "2.0",
+      "7.0",
+      "4.0",
+      "2600.0",
+      "2738.0",
+      "2.0",
+      "7.0",
+      "54.0",
+      "2.0",
+      "90.0"
+    ],
+    "annotated_answers": [
+      "23.31"
+    ],
+    "solution": "A = (0, -63)\nB = (0, 74)\nx = symbols('x')\n\n# first part\nt1 = x / sympy.sqrt(2)\n\n# second part\nt2 = x / 2\n\n# third part\nt3 = sympy.sqrt(x**2 + 74**2) - 63\n\n# total time\nt = t1 + t2 + t3\n\nsolution = solve(t, x)\nprint(solution)"
+  },
+  {
+    "example_id": 228,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "12.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "100.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "A = symbols('A')\nB = symbols('B')\nC = symbols('C')\nD = symbols('D')\n\nAB = 6\nBC = 8\nCA = 10\n\nAD = symbols('AD')\nBD = symbols('BD')\nCD = symbols('CD')\n\nABD = sqrt(AB**2 + AD**2)\nBDC = sqrt(BD**2 + CD**2)\nCDA = sqrt(CD**2 + CA**2)\n\neq = (ABD + BDC + CDA)**2 - 2*AB*BD*CD*cos(A)\nsolution = solve(eq, AD)\nAD_value = solution[0]\nprint(AD_value)"
+  },
+  {
+    "example_id": 229,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "84.0"
+    ],
+    "solution": "a = symbols('a')\nb = symbols('b')\nc = symbols('c')\nd = symbols('d')\n\n# calculate the areas of the triangles\narea1 = (a * b * sin(c)) / (2 * sin(a + b - c))\narea2 = (a * b * sin(c)) / (2 * sin(a + b - c))\n\n# calculate the centroid of the triangles\ncentroid_x1 = (d * (a + b - c) * sin(c)) / (2 * sin(a + b - c))\ncentroid_y1 = (d * (a + b - c) * sin(c)) / (2 * sin(a + b - c))\n\ncentroid_x2 = (d * (a + b - c) * sin(c)) / (2 * sin(a + b - c))\ncentroid_y2 = (d * (a + b - c) * sin(c)) / (2 * sin(a + b - c))\n\n# calculate the area of triangle UXP\narea_UXP = area1 - area2\n\n# calculate the centroid of triangle UXP\ncentroid_UXP_x = centroid_x1 - centroid_x2\ncentroid_UXP_y = centroid_y1 - centroid_y2\n\n# calculate the area of triangle UXP\nprint(area_UXP)\n\n# calculate the centroid of triangle UXP\nprint(centroid_UXP_x, centroid_UXP_y)"
+  },
+  {
+    "example_id": 230,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.3333333333333335"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "base_side_1 = 3\nbase_side_2 = 4\nbase_side_3 = 5\naltitude = 6\n\n# Formula to find the volume of a triangular pyramid\nvolume = (base_side_1 * base_side_2 * base_side_3) / (3 * altitude)\n\n# Print the volume\nprint(volume)"
+  },
+  {
+    "example_id": 231,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "28.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "A = Point(0, 2)\nB = Point(0, 0)\nC = Point(3, 0)\nD = Point(3, 2)\nE = Point(3 * B + 2 * C) / 5\nF = Point(2 * D + C) / 3\n\n# find the area of triangle ABD\narea_ABD = abs(A.x * B.y + B.x * D.y + D.x * A.y - A.y * B.x - B.y * D.x - D.y * A.x) / 2\n\n# find the area of triangle AEF\narea_AEF = abs(A.x * E.y + E.x * F.y + F.x * A.y - A.y * E.x - E.y * F.x - F.y * A.x) / 2\n\n# find the area of triangle BCE\narea_BCE = abs(B.x * C.y + C.x * E.y + E.x * B.y - B.y * C.x - C.y * E.x - E.y * B.x) / 2\n\n# find the area of rectangle ABCD\narea_ABCD = area_ABD + area_AEF + area_BCE\n\nprint(area_ABCD)"
+  },
+  {
+    "example_id": 232,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "a, b, c = symbols('a b c')\ns = Polygon(Point(0, 0), Point(a, 0), Point(b, c))\nR = s.circumradius\nprint(R)"
+  },
+  {
+    "example_id": 233,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0032",
+      "16.0",
+      "25.0",
+      "8.0",
+      "629.0",
+      "25.0"
+    ],
+    "annotated_answers": [
+      "62.8"
+    ],
+    "solution": "# Define the variables\nh = 16/100\nw = 4/100\ntextsize = 10\nwidth = 1\n\n# Define the points\np1 = Point(0, h)\np2 = Point(0, -h)\np3 = Point(4, h)\np4 = Point(4, -h)\n\n# Define the polygon\npolygon = Polygon(p1, p2, p3, p4)\n\n# Calculate the area\narea = polygon.area\n\n# Calculate the perimeter\nperimeter = polygon.perimeter\n\n# Calculate the circumference\ncircumference = 2*pi*sqrt(area/pi)\n\n# Calculate the shaded area\nshaded_area = (w*h)/2\n\n# Calculate the total area\ntotal_area = area + shaded_area\n\n# Calculate the total perimeter\ntotal_perimeter = perimeter + circumference\n\n# Print the results\nprint(\"The total area of the two shaded regions is: \", total_area)\nprint(\"The total perimeter of the two shaded regions is: \", total_perimeter)"
+  },
+  {
+    "example_id": 234,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.5"
+    ],
+    "solution": "a, b, c = symbols('a b c')\n\n# Calculate the semi-perimeter\ns = (a + b + c)/2\n\n# Calculate the area of the triangle\narea = sqrt(s * (s - a) * (s - b) * (s - c))\n\n# Calculate the circumradius\nr = area / (2 * sin(pi/3))\n\n# Calculate the radius of the inscribed circle\nradius = r / sin(pi/6)\n\nprint(radius)"
+  },
+  {
+    "example_id": 235,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "A = Point(3, 7)\nB = Point(3, 5)\nC = Point(-1, 1)\nD = Point(-1, 3)\nP = Polygon(A, B, C, D)\nprint(P.area)"
+  },
+  {
+    "example_id": 236,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.500000000000005"
+    ],
+    "annotated_answers": [
+      "74.0"
+    ],
+    "solution": "# Define variables\nd = 3\nn = 54\nh = 1\n\n# Calculate volume of rubber band\nV = (4/3) * math.pi * (1/100)**3\n\n# Calculate area of rubber band\nA = V / (math.pi * (1/100)**2)\n\n# Calculate area of ball\nA_ball = A * n\n\n# Calculate volume of ball\nV_ball = V * n\n\n# Calculate circumference of ball\nC_ball = 2 * math.pi * d\n\n# Calculate surface area of ball\nSA_ball = 2 * math.pi * d * n\n\n# Calculate diameter of ball after adding h rubber bands\nd_new = d + h\n\n# Calculate area of ball after adding h rubber bands\nA_ball_new = A * (n + h)\n\n# Calculate volume of ball after adding h rubber bands\nV_ball_new = V * (n + h)\n\n# Calculate circumference of ball after adding h rubber bands\nC_ball_new = 2 * math.pi * d_new\n\n# Calculate surface area of ball after adding h rubber bands\nSA_ball_new = 2 * math.pi * d_new * (n + h)\n\n# Calculate number of rubber bands to add to ball to increase diameter by h\nn_new = (SA_ball_new - SA_ball) / (2 * math.pi * d_new)\n\n# Print result\nprint(n_new)"
+  }
+]

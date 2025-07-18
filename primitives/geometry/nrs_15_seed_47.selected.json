@@ -1,0 +1,3311 @@
+[
+  {
+    "example_id": 0,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "587.6709940118866"
+    ],
+    "annotated_answers": [
+      "216.0"
+    ],
+    "solution": "import math\n\nside_length = 3 * math.sqrt(3)\nvolume = (4/3) * math.pi * side_length ** 3\nprint(volume)"
+  },
+  {
+    "example_id": 1,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "x = 3"
+  },
+  {
+    "example_id": 2,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "import math\nangle_A_B_C = 35\nangle_B_C_A = 35\nangle_C_D_A = 90 - (angle_A_B_C + angle_B_C_A)\nprint(angle_C_D_A)"
+  },
+  {
+    "example_id": 3,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "s = 1\nr = 9\nprint(r/s)"
+  },
+  {
+    "example_id": 4,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# The minimum number of small squares that must be colored black so that a line of symmetry lies on the diagonal $\\overline{BD}$ of square $ABCD$ is 4."
+  },
+  {
+    "example_id": 5,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.141592653589793"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from math import pi\n\narea = pi * 1**2\nprint(area)"
+  },
+  {
+    "example_id": 6,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "44.8"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from math import pi\n\nsurface_area = 112 * pi\nradius = surface_area / (2.5 * pi)\nprint(radius)"
+  },
+  {
+    "example_id": 7,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "diameter = 10\nheight = 5\ndiameter_new = diameter * 1.25\nheight_new = height * 0.8\nprint(height_new)"
+  },
+  {
+    "example_id": 8,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "import numpy as np\n\nA = np.array([3, 2])\nB = np.array([3, -2])\nC = np.array([-3, -2])\nD = np.array([-3, 0])\n\narea = np.abs(np.cross(B - A, C - A))\nprint(area)"
+  },
+  {
+    "example_id": 9,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0",
+      "90.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from sympy import sin, cos, tan\n\nA = 2 * cos(90)\n\nprint(tan(A))"
+  },
+  {
+    "example_id": 10,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.8090169943749475"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "import math\n\nx = math.cos(math.pi/5)\nprint(x)"
+  },
+  {
+    "example_id": 11,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "96.0"
+    ],
+    "annotated_answers": [
+      "68.0"
+    ],
+    "solution": "area = 100\nside = 2\nsquare_area = area - side * 2\nprint(square_area)"
+  },
+  {
+    "example_id": 12,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5235987755982988"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from math import pi\nvolume = pi / 6\nprint(volume)"
+  },
+  {
+    "example_id": 13,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.646712004329347"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "import math\n\nKL = 8\ntan_K = 15 / 8\n\nJL = math.atan(tan_K) * KL\nprint(JL)"
+  },
+  {
+    "example_id": 14,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "34.0"
+    ],
+    "annotated_answers": [
+      "34.0"
+    ],
+    "solution": "length, width, height = 10, 10, 12\nsurface_area = 2 * (length * width + length * height + width * height)\ncost = surface_area * 0.05\nprint(cost)"
+  },
+  {
+    "example_id": 15,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "36.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "from math import pi\n\n# volume of a cylinder\ndef volume(diameter, height):\n    return pi * diameter ** 2 * height / 3\n\n# volume of the smaller pipe\nsmall_pipe_volume = volume(2, 4)\n\n# volume of the larger pipe\nlarge_pipe_volume = volume(12, 4)\n\n# number of smaller pipes needed\nn = large_pipe_volume // small_pipe_volume\n\nprint(n)"
+  },
+  {
+    "example_id": 16,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\n\ns = (a + b + c) / 2\n\nd = sympy.sqrt(s * (s - a) * (s - b) * (s - c))\n\nprint(d)"
+  },
+  {
+    "example_id": 17,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "from sympy import *\nAB, BC, CD, DA = symbols('AB BC CD DA')\nFE = (AB + CD)/2\nCD = (AB + DA)/2\nprint(FE/CD)"
+  },
+  {
+    "example_id": 18,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1058.0",
+      "3.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "46.0"
+    ],
+    "solution": "from sympy import *\nAB = simplify(2116 * sqrt(2 + 1) / 6)\nprint(AB)"
+  },
+  {
+    "example_id": 19,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "length_GF = 4\nprint(length_GF)"
+  },
+  {
+    "example_id": 20,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import math\n\narea = 2\n\na = math.sqrt(area / 2)\n\nprint(a)"
+  },
+  {
+    "example_id": 21,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import sympy\n\nA, B, C, D, E, F = sympy.symbols('A B C D E F')\n\n# Area of quadrilateral DBEF\narea = sympy.integrate((E - A) * (F - D), (A, E), (D, F))\n\nprint(area)"
+  },
+  {
+    "example_id": 22,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "a, b, c, d = 1, 7, 2, 4\ne = a + b + c + d\nprint(e)"
+  },
+  {
+    "example_id": 23,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.05"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "QA = 0.67 * 15\nprint(QA)"
+  },
+  {
+    "example_id": 24,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "35594.0"
+    ],
+    "annotated_answers": [
+      "8918.0"
+    ],
+    "solution": "first_cube_edge_length = 11\nsecond_cube_edge_length = 3 * first_cube_edge_length\nsecond_cube_volume = second_cube_edge_length ** 3\ndifference = second_cube_volume - 343\nprint(difference)"
+  },
+  {
+    "example_id": 25,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "import math\n\npq = 34\nqr = 34\npr = 32\n\nqm = (pq + qr + pr) / 2\n\nprint(qm)"
+  },
+  {
+    "example_id": 26,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "60.00000000000001"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "import math\nprint(math.degrees(math.acos(0.5)))"
+  },
+  {
+    "example_id": 27,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.49489742783178"
+    ],
+    "annotated_answers": [
+      "8000.0"
+    ],
+    "solution": "surface_area = 600\nvolume = surface_area ** (1/2)\nprint(volume)"
+  },
+  {
+    "example_id": 28,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "26.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "perimeter = 8 + 8 + 10\nprint(perimeter)"
+  },
+  {
+    "example_id": 29,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\ndef count_symmetrical_letters(word):\n    count = 0\n    for letter in word:\n        if letter in [\"A\", \"E\", \"I\", \"O\", \"U\"]:\n            count += 1\n    return count\n\nprint(count_symmetrical_letters(\"MATHCOUNTS\"))"
+  },
+  {
+    "example_id": 30,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "from math import pi\n\nvolume = (pi * (3/2)**2 * 4) / 3\nprint(round(volume))"
+  },
+  {
+    "example_id": 31,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "31.17684853791735"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "from math import sqrt\n\na = sqrt(10**2 + 12**2)\nb = sqrt(10**2 + 10**2)\nc = sqrt(12**2 + 10**2)\nd = sqrt(12**2 + 12**2)\n\narea = (a + b + c + d) / 2\n\nprint(area)"
+  },
+  {
+    "example_id": 32,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "75.0"
+    ],
+    "solution": "width = 4\nlength = 4 * width\nshaded_area = 0.5 * width * length\ntotal_area = width * length\npercent = shaded_area / total_area\nprint(percent * 100)"
+  },
+  {
+    "example_id": 33,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "54.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "surface_area = 6 * 3 ** 2\nprint(surface_area)"
+  },
+  {
+    "example_id": 34,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import sympy\n\na, b, c, d = sympy.symbols('a b c d')\n\n# Find the length of the chords\nAB = sympy.sqrt(a**2 + b**2)\nCD = sympy.sqrt(c**2 + d**2)\n\n# Find the point of intersection\nP = sympy.Point((a + c) / 2, (b + d) / 2)\n\n# Find the length of the chords\nBP = sympy.sqrt((a - P.x)**2 + (b - P.y)**2)\nDP = sympy.sqrt((c - P.x)**2 + (d - P.y)**2)\n\n# Find the ratio\nprint(BP / DP)"
+  },
+  {
+    "example_id": 35,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import math\na = 1\nb = 1\nc = 1\nr = (a + math.sqrt(b)) / c\nprint(a + b + c)"
+  },
+  {
+    "example_id": 36,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "160.0"
+    ],
+    "annotated_answers": [
+      "210.0"
+    ],
+    "solution": "base_a = 52\nbase_b = 12\nheight = 5\narea = (base_a + base_b) * height / 2\nprint(area)"
+  },
+  {
+    "example_id": 37,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "102.0"
+    ],
+    "annotated_answers": [
+      "102.0"
+    ],
+    "solution": "from math import sqrt\ns = (13 + 17 + 12 * sqrt(2)) / 2\narea = sqrt(s * (s - 13) * (s - 17) * (s - 12 * sqrt(2)))\nprint(area)"
+  },
+  {
+    "example_id": 38,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "22.0"
+    ],
+    "annotated_answers": [
+      "44.0"
+    ],
+    "solution": "perimeter = 12 + 8 + 2\nprint(perimeter)"
+  },
+  {
+    "example_id": 39,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.1172827028131629"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "from math import tan\nprint(tan(315))"
+  },
+  {
+    "example_id": 40,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4992.0"
+    ],
+    "annotated_answers": [
+      "2304.0"
+    ],
+    "solution": "area = 96 * 104 / 2\nprint(area)"
+  },
+  {
+    "example_id": 41,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "import math\n\ndef area(side_length):\n    return side_length ** 2\n\nside_length = 1\nquadrilateral_area = area(side_length)\nprint(quadrilateral_area)"
+  },
+  {
+    "example_id": 42,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "from math import pi\n\nvolume = 4/3 * pi * radius ** 3\nsurface_area = 4 * pi * radius ** 2\n\nradius = (volume / surface_area) ** (1/3)\n\nprint(radius)"
+  },
+  {
+    "example_id": 43,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "print(8)"
+  },
+  {
+    "example_id": 44,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.333333333333333"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "import math\n\nradius = 3\nvolume = 30 * math.pi\nheight = volume / (math.pi * radius ** 2)\nprint(height)"
+  },
+  {
+    "example_id": 45,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-3.4247779607693793"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "import math\na = 6\nb = 3\nprint(a - math.pi * b)"
+  },
+  {
+    "example_id": 46,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "from math import pi\n\ndef get_min_rotation(n):\n    return 360 - n * 72\n\nprint(get_min_rotation(5))"
+  },
+  {
+    "example_id": 47,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "34.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "angle = 124\nx = angle - 90\nprint(x)"
+  },
+  {
+    "example_id": 48,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "29700.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "s = 0\nfor i in range(1, 100):\n    s += i\n    s += 5 * i\nprint(s)"
+  },
+  {
+    "example_id": 49,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "-1.0"
+    ],
+    "annotated_answers": [
+      "592.0"
+    ],
+    "solution": "from sympy import Symbol, solve, simplify, sqrt, pi\n\na, b, c, d, e, f = Symbol('a'), Symbol('b'), Symbol('c'), Symbol('d'), Symbol('e'), Symbol('f')\n\neq1 = (a*pi + b*sqrt(c)) / (d*pi - e*sqrt(f))\neq2 = simplify(eq1.subs({a: 1, b: 1, c: 1, d: 1, e: 1, f: 1}))\n\nans = eq2.subs({a: 1, b: 1, c: 1, d: 1, e: 1, f: 1})\n\nprint(ans)"
+  },
+  {
+    "example_id": 50,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "from math import pi\n\n# volume of each container\nvolume_old = pi * (4 / 100) ** 2 * 100\n\n# volume of new container\nvolume_new = pi * (8 / 100) ** 2 * 100\n\n# number of new containers needed\nnumber_new = int(volume_old / volume_new)\n\nprint(number_new)"
+  },
+  {
+    "example_id": 51,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "import math\n\ndef is_triangle(a, b, c):\n    if a**2 + b**2 == c**2:\n        return True\n    else:\n        return False\n\ndef triangle_side_lengths(p):\n    return [3*p-1, 3*p, p**2 + 1]\n\ncount = 0\nfor p in range(1, 1000):\n    if is_triangle(*triangle_side_lengths(p)):\n        count += 1\n\nprint(count)"
+  },
+  {
+    "example_id": 52,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "54.0"
+    ],
+    "annotated_answers": [
+      "198.0"
+    ],
+    "solution": "side = 3\ncube_side = 1\ncube_side_2 = 2\nsurface_area = 6 * side * cube_side + 6 * cube_side_2 * side\nprint(surface_area)"
+  },
+  {
+    "example_id": 53,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "26.56505117707799"
+    ],
+    "annotated_answers": [
+      "140.0"
+    ],
+    "solution": "import math\n\nangle_x = math.degrees(math.atan(3/6))\nprint(angle_x)"
+  },
+  {
+    "example_id": 54,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "from math import sin, degrees\n\ndef is_solution(x):\n    return sin(degrees(x)) == -0.31\n\nprint(sum(1 for x in range(0, 990, 1) if is_solution(x)))"
+  },
+  {
+    "example_id": 55,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.333333333333333"
+    ],
+    "annotated_answers": [
+      "15.08"
+    ],
+    "solution": "from math import pi\nvolume = (4 * 4) / 3\nprint(volume)"
+  },
+  {
+    "example_id": 56,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "47.0"
+    ],
+    "annotated_answers": [
+      "47.0"
+    ],
+    "solution": "import math\n\ndef area_of_pentagon(vertices):\n    area = 0\n    for i in range(len(vertices) - 1):\n        area += (vertices[i][0] * vertices[i + 1][1] - vertices[i + 1][0] * vertices[i][1])\n    area += (vertices[-1][0] * vertices[0][1] - vertices[0][0] * vertices[-1][1])\n    return abs(area / 2)\n\nvertices = [(-1, -1), (-3, 4), (1, 7), (6, 5), (3, -1)]\nprint(area_of_pentagon(vertices))"
+  },
+  {
+    "example_id": 57,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "156.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "import math\nbase_1 = 7\nbase_2 = 17\nheight = 13\narea = (base_1 + base_2) * height / 2\nprint(area)"
+  },
+  {
+    "example_id": 58,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.000000000000001"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\nside_a = 4 * math.sqrt(2)\nside_b = 2\n\nmedian = (side_a**2 + side_b**2)**0.5\n\nprint(median)"
+  },
+  {
+    "example_id": 59,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "def count_triangles(lengths):\n    count = 0\n    for i in range(len(lengths)):\n        for j in range(i+1, len(lengths)):\n            for k in range(j+1, len(lengths)):\n                if lengths[i] + lengths[j] > lengths[k] and lengths[j] + lengths[k] > lengths[i] and lengths[k] + lengths[i] > lengths[j]:\n                    count += 1\n    return count\n\nprint(count_triangles([2, 4, 6]))"
+  },
+  {
+    "example_id": 60,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\n# length of side A\na = 3\n# length of side B\nb = 5\n\n# length of side C\nc = math.sqrt(a**2 + b**2)\n\n# number of whole centimeter lengths possible for side C\nprint(int(c))"
+  },
+  {
+    "example_id": 61,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.7499999999999999"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\n# area of triangle EHJ\narea = (math.sqrt(3) / 2) * (math.sqrt(3) / 2)\nprint(area)"
+  },
+  {
+    "example_id": 62,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "70.71067811865476"
+    ],
+    "annotated_answers": [
+      "86.0"
+    ],
+    "solution": "import math\n\nk = 0.5 * math.sqrt(2)\nprint(100 * k)"
+  },
+  {
+    "example_id": 63,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "number_of_pairs = 12 / 6\nprint(number_of_pairs)"
+  },
+  {
+    "example_id": 64,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "from math import factorial\n\ndef sum_of_all_integral_values_of_x(a, b, c):\n    integral_values = [i for i in range(a, b + 1) if i % 1 == 0]\n    return sum(c - a + i for i in integral_values)\n\nprint(sum_of_all_integral_values_of_x(5, 6, 10))"
+  },
+  {
+    "example_id": 65,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5"
+    ],
+    "annotated_answers": [
+      "1.17"
+    ],
+    "solution": "depth = 1.5 * 1\nprint(depth)"
+  },
+  {
+    "example_id": 66,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "import math\n\ndef area(A, B, C):\n    return 0.5 * abs(A[0] * B[1] + B[0] * C[1] + C[0] * A[1] - A[1] * B[0] - B[1] * C[0] - C[1] * A[0])\n\nprint(area((-4, -1), (2, -1), (1, 3)))"
+  },
+  {
+    "example_id": 67,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-22.0",
+      "-50.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "a, b, c, d = 1, 2, 3, 4\narea1 = (a*c + b*d) * (a*d - b*c)\narea2 = (a*c - b*d) * (a*d + b*c)\nprint(area1, area2)"
+  },
+  {
+    "example_id": 68,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "distance = 16/2\nprint(distance)"
+  },
+  {
+    "example_id": 69,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.7"
+    ],
+    "annotated_answers": [
+      "1.3"
+    ],
+    "solution": "import math\n\nsemicircle_radius = 1\ntrapezoid_height = 8.7\ntrapezoid_base = 2 * semicircle_radius\ntrapezoid_area = trapezoid_base * trapezoid_height / 2\nprint(trapezoid_area)"
+  },
+  {
+    "example_id": 70,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.071067811865475"
+    ],
+    "annotated_answers": [
+      "4.14"
+    ],
+    "solution": "import math\nside_length = 10 / math.sqrt(2)\nprint(side_length)"
+  },
+  {
+    "example_id": 71,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "29.664793948382652"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "import math\n\nlength_of_side_a = math.sqrt(32**2 - 12**2)\nprint(length_of_side_a)"
+  },
+  {
+    "example_id": 72,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "perimeter = 20\nlength = 20 // 2\nprint(length)"
+  },
+  {
+    "example_id": 73,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "231.11111111111111"
+    ],
+    "annotated_answers": [
+      "640.0"
+    ],
+    "solution": "from math import pi\n\nr_plum = 2\nr_watermelon = 8\n\nV_plum = (4/3) * pi * r_plum ** 3\nV_watermelon = (4/3) * pi * r_watermelon ** 3\n\nV_sphere = V_plum + V_watermelon\n\nK = V_sphere / (pi * 3)\n\nprint(K)"
+  },
+  {
+    "example_id": 74,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.141592653589793"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import math\n\n# Area of the semicircle\nsemicircle_area = math.pi * 2\n\n# Area of the triangle\ntriangle_area = (semicircle_area / 2)\n\nprint(triangle_area)"
+  },
+  {
+    "example_id": 75,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.5"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "import math\n\nside_a = 5\nside_b = 5\nside_c = 6\n\narea = (side_a * side_b) / 2\nprint(area)"
+  },
+  {
+    "example_id": 76,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.605551275463989"
+    ],
+    "annotated_answers": [
+      "127.0"
+    ],
+    "solution": "a = 7\nb = 6\ns = (a + b) ** 0.5\nprint(s)"
+  },
+  {
+    "example_id": 77,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "60.00000000000001"
+    ],
+    "annotated_answers": [
+      "140.0"
+    ],
+    "solution": "import math\n\nobtuse_angle = math.degrees(math.acos(0.5))\nprint(obtuse_angle)"
+  },
+  {
+    "example_id": 78,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "w = 1\nx = 1\ny = 1\nz = 1\nprint(w + x + y + z)"
+  },
+  {
+    "example_id": 79,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3599.9999999999995"
+    ],
+    "annotated_answers": [
+      "3600.0"
+    ],
+    "solution": "base_edge = 20\nheight = 27\nvolume = (1/3) * base_edge**2 * height\nprint(volume)"
+  },
+  {
+    "example_id": 80,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "30.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "import math\n\ndef star_polygon_angle(n):\n    return 360 / n\n\nprint(star_polygon_angle(12))"
+  },
+  {
+    "example_id": 81,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "import sympy\na, b = sympy.symbols('a b')\nc = sympy.sqrt(a**2 + b**2)\narea = (a + b + c) / 2\nprint(area)"
+  },
+  {
+    "example_id": 82,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "110.11055363769388"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "import math\nside = 8\narea = (5 * side**2) / (4 * math.tan(math.pi / 5))\nprint(area)"
+  },
+  {
+    "example_id": 83,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.313708498984761"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "import math\na = 12\nb = 4\nc = math.sqrt(a**2 - b**2)\nprint(c)"
+  },
+  {
+    "example_id": 84,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "112.0"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "import math\n\nbase_1 = 4\nbase_2 = 10\nheight = 16\n\narea = (base_1 + base_2) * height / 2\n\nprint(area)"
+  },
+  {
+    "example_id": 85,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2500.0"
+    ],
+    "annotated_answers": [
+      "2500.0"
+    ],
+    "solution": "import math\n\ndef triangle_area(b, h):\n    return (b * h) / 2\n\ndef circle_area(r):\n    return math.pi * r ** 2\n\ndef max_triangle_area(diameter):\n    return triangle_area(diameter, diameter / 2)\n\nprint(max_triangle_area(100))"
+  },
+  {
+    "example_id": 86,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.94427190999916"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import math\nside_length = 10\narea_of_triangle_abe = 40\nside_of_triangle_abe = math.sqrt(area_of_triangle_abe * 2)\nprint(side_of_triangle_abe)"
+  },
+  {
+    "example_id": 87,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.10134583033141"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "import math\n\nperimeter = 28\narea = 49\nradius = math.sqrt(area / math.pi)\narc_length = perimeter - 2 * radius\nprint(arc_length)"
+  },
+  {
+    "example_id": 88,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-2.0"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "x, y = 3, 3\nx_prime = -x\ny_prime = -y\nx_double_prime = x_prime + 2\ny_double_prime = y_prime + 2\nprint(x_double_prime + y_double_prime)"
+  },
+  {
+    "example_id": 89,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "def count_equal_sides(sides):\n    count = 0\n    for i in range(len(sides)):\n        for j in range(i + 1, len(sides)):\n            if sides[i] == sides[j]:\n                count += 1\n    return count\n\nprint(count_equal_sides([2, 3, 5, 7, 11]))"
+  },
+  {
+    "example_id": 90,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.74"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import math\n\n# area of triangle ABE\narea_ABE = (10 * 10) / 2\n\n# area of triangle DEF\narea_DEF = (7.4 * 10) / 2\n\n# ratio of area of triangle DEF to that of triangle ABE\nratio = area_DEF / area_ABE\n\nprint(ratio)"
+  },
+  {
+    "example_id": 91,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\ndef is_convex_octagon(sides):\n    return len(sides) == 8 and all(sides[i]**2 + sides[i+1]**2 == sides[i+2]**2 for i in range(len(sides)-1))\n\ndef get_max_interior_right_angles(n):\n    for i in range(1, n+1):\n        if is_convex_octagon(i*[1]):\n            return i\n    return -1\n\nprint(get_max_interior_right_angles(100))"
+  },
+  {
+    "example_id": 92,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "60.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "area = 6 * 10\nprint(area)"
+  },
+  {
+    "example_id": 93,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "104.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from sympy import *\n\nlength, width = 16, 20\nheight = width\nsurface_area = 2 * (length * width + length * height + width * height)\ncost = surface_area * 0.05\nprint(cost)"
+  },
+  {
+    "example_id": 94,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "64.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "perimeter = 30 + 17 + 17\nprint(perimeter)"
+  },
+  {
+    "example_id": 95,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "print(14/2)"
+  },
+  {
+    "example_id": 96,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "198.4943324127921"
+    ],
+    "annotated_answers": [
+      "160.0"
+    ],
+    "solution": "import math\n\nlength_HC = 150\nlength_HD = 130\n\nlength_HP = math.sqrt(length_HC**2 + length_HD**2)\n\nprint(length_HP)"
+  },
+  {
+    "example_id": 97,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "31.176914536239792"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "import math\n\nheight = 3\nside_length = 6\n\narea = (side_length * math.sqrt(3)) * height\n\nprint(area)"
+  },
+  {
+    "example_id": 98,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "452.3893421169302"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "from math import pi\nK = pi * 12**2\nprint(K)"
+  },
+  {
+    "example_id": 99,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "224.0"
+    ],
+    "solution": "import math\n\nV = math.pi * (8**3 - 4**3) / 3\nn = int(V / (6 * math.pi))\nprint(n)"
+  },
+  {
+    "example_id": 100,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.5"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "import numpy as np\n\n# coordinates of the four points\nA = np.array([0, 1])\nB = np.array([1, 3])\nC = np.array([5, 2])\nD = np.array([4, 0])\n\n# area of quadrilateral\narea = 0.5 * np.abs(np.cross(B - A, C - A) + np.cross(C - B, D - B) + np.cross(D - C, A - C))\nprint(area)"
+  },
+  {
+    "example_id": 101,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "r = 8\nprint(r)"
+  },
+  {
+    "example_id": 102,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from math import pi\n\nvolume_first = pi * 2 ** 2 * 1\nvolume_second = pi * 1 ** 2 * 1\n\nheight_second = volume_second / (pi * 1 ** 2)\n\nprint(height_second)"
+  },
+  {
+    "example_id": 103,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "41.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\n\nm = (a**2 + b**2 - c**2) / (2 * a * b)\nn = (a**2 + c**2 - b**2) / (2 * a * c)\n\nperimeter = a + b + c + m + n\n\nprint(perimeter)"
+  },
+  {
+    "example_id": 104,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "18.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "from sympy import *\n\nx, y = symbols('x y')\n\nf = 4*x - 6\ng = -2*x + 12\n\narea = integrate(abs(f - g), (x, -oo, oo))\n\nprint(area)"
+  },
+  {
+    "example_id": 105,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "from sympy import solve, Symbol\n\nx, y = Symbol('x'), Symbol('y')\n\nrectangles = solve((x + 4) * (y + 3) == (x - 4) * (y - 3), (x, y))\n\nprint(len(rectangles))"
+  },
+  {
+    "example_id": 106,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.2"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "radius = 10\nheight = 10\nradius_new = radius * 0.8\nheight_new = height * 1.25\nvolume_old = 3.14 * radius ** 2 * height\nvolume_new = 3.14 * radius_new ** 2 * height_new\npercent_change = (volume_new - volume_old) / volume_old\nprint(abs(percent_change))"
+  },
+  {
+    "example_id": 107,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "84.0"
+    ],
+    "annotated_answers": [
+      "84.0"
+    ],
+    "solution": "import math\ns = (7 + 24 + 25) / 2\narea = math.sqrt(s * (s - 7) * (s - 24) * (s - 25))\nprint(area)"
+  },
+  {
+    "example_id": 108,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "2.0",
+      "4.0",
+      "61.0"
+    ],
+    "annotated_answers": [
+      "27.2"
+    ],
+    "solution": "from sympy import *\n\na, b, c = 10, 10, 12\n\naltitudes = [sqrt(a**2 + c**2), sqrt(b**2 + c**2), sqrt(a**2 + b**2)]\n\nprint(sum(altitudes))"
+  },
+  {
+    "example_id": 109,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\ntrapezoid_area = sympy.integrate((a + b)/2, (a, 0, c))\nprint(trapezoid_area)"
+  },
+  {
+    "example_id": 110,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "a, b, c = (10, 24), (0, 0), (20, 0)\narea = 240\n\n# Find the y-coordinate of A\n\ny = (area * (c[1] - b[1])) / (c[0] - b[0])\n\nprint(y)"
+  },
+  {
+    "example_id": 111,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-37.5625"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\narea = 8\n\nx = 5\ny = 4\n\na = (x + y) / 2\nb = (x + y) / 2\nc = (x + y) / 2\n\narea_of_triangle = (a * b * c) / 2\n\nprint(area - area_of_triangle)"
+  },
+  {
+    "example_id": 112,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.0"
+    ],
+    "annotated_answers": [
+      "11.5"
+    ],
+    "solution": "area = 5 * 8\nprint(area)"
+  },
+  {
+    "example_id": 113,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "import math\n\nn = 6\nprint(n * 2)"
+  },
+  {
+    "example_id": 114,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.7320508075688772"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import math\n\nvolume = 6 * math.pi * (6 / 2) ** 2\nsurface_area = 2 * math.pi * (6 / 2) ** 2\n\nradius = math.sqrt(volume / surface_area)\n\nprint(radius)"
+  },
+  {
+    "example_id": 115,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "a, b = 2, 3\nprint(a + b)"
+  },
+  {
+    "example_id": 116,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.870509320858122"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "volume = 63960\nheight = 30\nside_length = (volume / height) ** (1/3)\nprint(side_length)"
+  },
+  {
+    "example_id": 117,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "5.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "12.0",
+      "2.0",
+      "2.0",
+      "6.0",
+      "2.0",
+      "9.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "39.0"
+    ],
+    "solution": "import sympy\nx, y = sympy.symbols('x y')\n\na = sympy.sqrt((x - 0)**2 + (y - 5)**2)\nb = sympy.sqrt((x - 6)**2 + (y - 9)**2)\nc = sympy.sqrt((x - 12)**2 + (y - 0)**2)\n\narea = (a + b + c) / 2\nprint(area)"
+  },
+  {
+    "example_id": 118,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "56.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "perimeter = 2 * (12 + 16)\nprint(perimeter)"
+  },
+  {
+    "example_id": 119,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "30.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "print(30)"
+  },
+  {
+    "example_id": 120,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "600.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "import math\n\na = 60\nb = a + 180\nc = b + 180\nd = c + 180\n\nprint(d)"
+  },
+  {
+    "example_id": 121,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "80.0"
+    ],
+    "annotated_answers": [
+      "63.0"
+    ],
+    "solution": "inside = 0\nfor x in range(-5, 5):\n    for y in range(-4, 4):\n        if x > 5 or x < -5 or y > 4 or y < -4:\n            continue\n        inside += 1\nprint(inside)"
+  },
+  {
+    "example_id": 122,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "a, b, c = 1, 2, 3\narea = (b - a) * (c - a)\nprint(area)"
+  },
+  {
+    "example_id": 123,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "import math\n\ndef interior_angle(exterior_angle):\n    return exterior_angle * 6.5\n\ndef number_of_sides(interior_angle):\n    return math.ceil(360 / interior_angle)\n\nprint(number_of_sides(interior_angle(60)))"
+  },
+  {
+    "example_id": 124,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1152.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "base_perimeter = 3 * 4\nheight = 2 * base_perimeter\nvolume = (1/3) * base_perimeter ** 2 * height\nprint(volume)"
+  },
+  {
+    "example_id": 125,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "import math\n\ndef surface_area(length):\n    return 2 * length * length\n\nprint(surface_area(2))"
+  },
+  {
+    "example_id": 126,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "46.08533845493851"
+    ],
+    "annotated_answers": [
+      "55.0"
+    ],
+    "solution": "import math\nx = math.degrees(math.atan2(math.sin(70), math.sin(40)))\nprint(x)"
+  },
+  {
+    "example_id": 127,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.2"
+    ],
+    "annotated_answers": [
+      "1.4"
+    ],
+    "solution": "midpoint = 10 / 2\ndistance = 7.2 - midpoint\nprint(distance)"
+  },
+  {
+    "example_id": 128,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "300.0"
+    ],
+    "annotated_answers": [
+      "210.0"
+    ],
+    "solution": "x, y, z = 100, 100, 100\nprint(x + y + z)"
+  },
+  {
+    "example_id": 129,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "630.0"
+    ],
+    "annotated_answers": [
+      "720.0"
+    ],
+    "solution": "import math\n\nangles = [30, 60, 90, 120, 150, 180]\nsum = 0\nfor angle in angles:\n    sum += angle\nprint(sum)"
+  },
+  {
+    "example_id": 130,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "28.392304845413264"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "import math\n\nside_length = 6\n\n# Formula for the sum of the lengths of the edges of a pyramid\n# is the sum of the lengths of the base and the height\nsum_of_edges = side_length * 3 + math.sqrt(3) * side_length\n\nprint(sum_of_edges)"
+  },
+  {
+    "example_id": 131,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "import math\n\ndef volume(r):\n    return (4/3) * math.pi * r ** 3\n\ndef number_of_scoops(r, h):\n    return volume(r) / volume(1) * h / 5\n\nprint(number_of_scoops(2, 5))"
+  },
+  {
+    "example_id": 132,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.8509145574101993"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\nside_BC = 6\nside_AB = math.sqrt(10**2 + 3**2)\nside_AC = math.sqrt(10**2 + 10**2)\n\nmidpoint_D = (side_AB + side_BC) / 2\nmidpoint_E = (side_AC + side_BC) / 2\n\nsegment_DE = midpoint_E - midpoint_D\n\nprint(segment_DE)"
+  },
+  {
+    "example_id": 133,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "import math\n\n# Area of the trapezoid\narea = (8 * 8) / 2\n\n# Area of the triangle\ntriangle_area = (8 * 8) / 2\n\n# Area of the trapezoid\ntrapezoid_area = area - triangle_area\n\nprint(trapezoid_area)"
+  },
+  {
+    "example_id": 134,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.464101615137753"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ],
+    "solution": "import math\nperimeter = 5 + 2 * math.sqrt(3)\nprint(perimeter)"
+  },
+  {
+    "example_id": 135,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\nradius = 30\nvolume = 2700 * math.pi\nheight = volume / (math.pi * radius ** 2)\nprint(height)"
+  },
+  {
+    "example_id": 136,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.41887902047863906"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "import math\n\nradius = 10 * math.pi / 75\nprint(radius)"
+  },
+  {
+    "example_id": 137,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.00000000000001"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "import math\n\narea = 80\n\nx = math.sqrt(area / 2)\n\nK = x ** 2\n\nprint(K)"
+  },
+  {
+    "example_id": 138,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "99.75469913743412"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "import math\n\n# Hypotenuse of the first triangle\nhypotenuse = 100\n# Leg length of the first triangle\nleg = 7\n# Leg length of the second triangle\nleg_2 = math.sqrt(hypotenuse**2 - leg**2)\nprint(leg_2)"
+  },
+  {
+    "example_id": 139,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "from sympy import *\n\nr = 36\n\nV = (4/3)*pi*r**3\n\nA = 4*pi*r**2\n\nt = V/A\n\nprint(t)"
+  },
+  {
+    "example_id": 140,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "19713.493901275953"
+    ],
+    "annotated_answers": [
+      "17700.0"
+    ],
+    "solution": "import math\nradius = 25100\nangle = 45\ndistance = radius * math.radians(angle)\nprint(distance)"
+  },
+  {
+    "example_id": 141,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "a = 3 * 14 / 4 * 2\nprint(a)"
+  },
+  {
+    "example_id": 142,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.3386902103511544"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from math import tan\nprint(tan(180))"
+  },
+  {
+    "example_id": 143,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "third_side = 1 + 3\nprint(third_side)"
+  },
+  {
+    "example_id": 144,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.414213562373095"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "import math\na = 5 + 2 * math.cos(math.pi / 4)\nprint(a)"
+  },
+  {
+    "example_id": 145,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "x, y = 7, 4\nx1, y1 = 5, 3\nx2, y2 = 6, 8\n\nprint(x + y)"
+  },
+  {
+    "example_id": 146,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "import math\n\nvolume = 45 * math.pi\nradius = 3\nheight = volume / (math.pi * radius ** 2)\nprint(height)"
+  },
+  {
+    "example_id": 147,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.16515138991168"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "import math\n\nk = math.sqrt(100 - 16)\nprint(k)"
+  },
+  {
+    "example_id": 148,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.26429605180997"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import math\n\n# area of rhombus ABCD\narea = 24\n\n# angle BAD\nangle = 60\n\n# side length of rhombus BFDE\nside = math.sqrt(area / math.sin(math.radians(angle)))\n\nprint(side)"
+  },
+  {
+    "example_id": 149,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\n\ncos_a = (a**2 + b**2 - c**2) / (2 * a * b)\n\nprint(cos_a)"
+  },
+  {
+    "example_id": 150,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "55.0"
+    ],
+    "solution": "import math\n\ndistance = math.sqrt(8**2 + 12**2)\nprint(round(distance))"
+  },
+  {
+    "example_id": 151,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "19.098593171027442"
+    ],
+    "annotated_answers": [
+      "8.5"
+    ],
+    "solution": "import math\n\nside_a = 8\nside_b = 15\nside_c = 17\n\ns = (side_a + side_b + side_c) / 2\n\narea = math.sqrt(s * (s - side_a) * (s - side_b) * (s - side_c))\n\nradius = area / math.pi\n\nprint(radius)"
+  },
+  {
+    "example_id": 152,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "distance = 1/2\nprint(distance)"
+  },
+  {
+    "example_id": 153,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "200.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "volume = 20\nside_length = 5\nheight = 6\nvolume_of_pyramid_ABCH = 20\nvolume_of_prism = side_length * height * volume_of_pyramid_ABCH / 3\nprint(volume_of_prism)"
+  },
+  {
+    "example_id": 154,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "216.0"
+    ],
+    "annotated_answers": [
+      "162.0"
+    ],
+    "solution": "import math\n\n# Area of trapezoid\narea = (12 * 18 + 12 * 18) / 2\n\n# Print the area\nprint(area)"
+  },
+  {
+    "example_id": 155,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "A = 4\nprint(A)"
+  },
+  {
+    "example_id": 156,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "301.0"
+    ],
+    "solution": "from math import gcd\n\ndef count_green(r):\n    if r == 1:\n        return 1\n    else:\n        return 2 * count_green(r - 1)\n\ndef count_red(r):\n    if r == 1:\n        return 0\n    else:\n        return 2 * count_red(r - 1)\n\ndef count_total(r):\n    return count_green(r) + count_red(r)\n\ndef ratio(r):\n    return count_green(r) / count_total(r)\n\ndef find_m_n(r):\n    m, n = 1, 1\n    while ratio(r)!= ratio(r - 1):\n        m, n = n, gcd(m, n)\n        r -= 1\n    return m, n\n\ndef find_m_n_sum(r):\n    m, n = find_m_n(r)\n    return m + n\n\nprint(find_m_n_sum(100))"
+  },
+  {
+    "example_id": 157,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "216.0"
+    ],
+    "solution": "s = 1\nsquare_side = 6 * s**2\nprint(square_side)"
+  },
+  {
+    "example_id": 158,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "perimeter = 2 * (15 + 10)\nprint(perimeter)"
+  },
+  {
+    "example_id": 159,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.162"
+    ],
+    "annotated_answers": [
+      "0.54"
+    ],
+    "solution": "volume = 0.027\nsurface_area = 6 * volume\nprint(surface_area)"
+  },
+  {
+    "example_id": 160,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "284.0"
+    ],
+    "annotated_answers": [
+      "90.0"
+    ],
+    "solution": "x = 104\ny = 180\nprint(x + y)"
+  },
+  {
+    "example_id": 161,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.8284271247461903"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import math\n\ndef distance(a, b):\n    return math.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)\n\ndef max_distance(a, b, c, d):\n    return max(distance(a, b), distance(a, c), distance(a, d),\n               distance(b, c), distance(b, d), distance(c, d))\n\ndef main():\n    a = (2, 4)\n    b = (4, 4)\n    c = (4, 2)\n    d = (2, 2)\n    print(max_distance(a, b, c, d))\n\nif __name__ == '__main__':\n    main()"
+  },
+  {
+    "example_id": 162,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "34.0"
+    ],
+    "solution": "import math\n\n# Find the maximum length of the third side\nmax_length = math.ceil(math.sqrt(18**2 + 29**2))\n\n# Find the minimum length of the third side\nmin_length = math.floor(math.sqrt(18**2 + 29**2))\n\nprint(max_length - min_length)"
+  },
+  {
+    "example_id": 163,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "135.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\n\narea = (a * b * sympy.sin(sympy.acos((c ** 2 + b ** 2 - a ** 2) / (2 * b * c)))) / 2\n\nprint(area)"
+  },
+  {
+    "example_id": 164,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "area = 4 * 4\nprint(area)"
+  },
+  {
+    "example_id": 165,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "import math\n\narea = math.sqrt(12 * 12 + 9 * 9)\nprint(area)"
+  },
+  {
+    "example_id": 166,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "60.00000000000001"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "import math\n\nangle = math.degrees(math.acos(0.5))\nprint(angle)"
+  },
+  {
+    "example_id": 167,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "from sympy import symbols, solve\n\nm, n = symbols('m n')\n\nP, Q, R = symbols('P Q R')\n\neq1 = (P + Q + R)**2 - 2 * (P * Q * R)\neq2 = (m * P + n * Q + (m + n) * R)**2 - 2 * (m * P * Q + n * Q * R + (m + n) * P * R)\n\nsol = solve((eq1, eq2), (m, n))\n\nprint(sol)"
+  },
+  {
+    "example_id": 168,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "54.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "import math\nside_a, side_b, side_c = 6, 8, 10\nside_a_new = side_a * 1.5\nside_b_new = side_b * 1.5\nside_c_new = side_c * 1.5\narea = (side_a_new * side_b_new) / 2\nprint(area)"
+  },
+  {
+    "example_id": 169,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "46.0"
+    ],
+    "annotated_answers": [
+      "81.0"
+    ],
+    "solution": "import math\n\nangle_RAS = 74\nangle_RTB = 28\n\nangle_BR = angle_RAS - angle_RTB\n\nprint(angle_BR)"
+  },
+  {
+    "example_id": 170,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import math\n\nradius_beaker = 3\nradius_tank = 6\nvolume_beaker = math.pi * radius_beaker ** 2\nvolume_tank = math.pi * radius_tank ** 2\nnumber_of_beakers = volume_tank / volume_beaker\nprint(number_of_beakers)"
+  },
+  {
+    "example_id": 171,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import numpy as np\n\na, b, c = np.array([0, 1]), np.array([2, 1]), np.array([4, 0])\nd = a + b + c\nprint(d)"
+  },
+  {
+    "example_id": 172,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "26.56505117707799"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "import math\nx = math.degrees(math.atan2(3, 6))\nprint(x)"
+  },
+  {
+    "example_id": 173,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# Area of triangle APC\n# Area = (base * height) / 2\nbase = 8\nheight = 6\narea = (base * height) / 2\nprint(area)"
+  },
+  {
+    "example_id": 174,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5641895835477563"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import math\nlateral_surface_area = 24 * math.pi\nvolume = 24 * math.pi\nradius = math.sqrt(lateral_surface_area / (math.pi * volume))\nprint(radius)"
+  },
+  {
+    "example_id": 175,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "3.0",
+      "3.0",
+      "3.0",
+      "3.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "360.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\n\n# area of triangle ABC\ns = (a + b + c) / 2\narea = s * (s - a) * (s - b) * (s - c)\n\n# area of triangle AMN\nm = (a + b + c) / 3\nn = (a + b + c) / 3\narea_amn = (m + n) * (m - a) * (n - b) * (c - a)\n\nprint(area_amn)"
+  },
+  {
+    "example_id": 176,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "from sympy import pi\n\n# Area of the shaded region\narea = pi * (3**2 + 2**2) / 4\n\n# Total area of the two non-shaded regions\ntotal_area = 2 * area\n\nprint(total_area)"
+  },
+  {
+    "example_id": 177,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\n\np = (a**2 + b**2 - c**2) / (2 * a * b)\n\nprint(p)"
+  },
+  {
+    "example_id": 178,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "35.2"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "perimeter = 176\nside_length = perimeter / 5\nprint(side_length)"
+  },
+  {
+    "example_id": 179,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "from sympy import *\n\nx, y = symbols('x y')\n\narea = (x + 1) * (y + 1)\n\nprint(area)"
+  },
+  {
+    "example_id": 180,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "-5.0"
+    ],
+    "solution": "x = (7-1)/2\ny = (15-3)/2\nprint(x+y)"
+  },
+  {
+    "example_id": 181,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "54.0"
+    ],
+    "solution": "area = 6\nBD = 4 * area / 3\nprint(BD)"
+  },
+  {
+    "example_id": 182,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "x = 4\ny = 6\n\nif abs(x-y) < 1:\n    print(\"No solution\")\nelse:\n    print(abs(x-y))"
+  },
+  {
+    "example_id": 183,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1440.0"
+    ],
+    "annotated_answers": [
+      "864.0"
+    ],
+    "solution": "import math\n\nbase_area = 288\nheight = 15\nvolume = (base_area * height) / 3\nprint(volume)"
+  },
+  {
+    "example_id": 184,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "195936.0"
+    ],
+    "annotated_answers": [
+      "391872.0"
+    ],
+    "solution": "distance = 97968 * 30 / 15\nprint(distance)"
+  },
+  {
+    "example_id": 185,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-36.0"
+    ],
+    "annotated_answers": [
+      "126.0"
+    ],
+    "solution": "import math\n\nangle_aob = 54 - 90\nprint(angle_aob)"
+  },
+  {
+    "example_id": 186,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.75"
+    ],
+    "annotated_answers": [
+      "1152.0"
+    ],
+    "solution": "flour_used = 0.5\nwaffle_thickness = 0.0625\ngriddle_diameter = 24\nflour_needed = griddle_diameter * waffle_thickness * flour_used\nprint(flour_needed)"
+  },
+  {
+    "example_id": 187,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.09523809523809523"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "a, b, c = 6, 18, 63\na_over_b = a / b\nc_over_b = c / b\na_over_c = a / c\na_over_b_over_c = a_over_b / c_over_b\na_over_b_over_c_over_a = a_over_b_over_c / a\nprint(a * a_over_b_over_c_over_a)"
+  },
+  {
+    "example_id": 188,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "a, b = 10, 10\nprint(a + b)"
+  },
+  {
+    "example_id": 189,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "349.6154977894654"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "import math\n\nvolume = 60\nradius = math.sqrt(volume / math.pi)\nprint(4 / 3 * math.pi * radius ** 3)"
+  },
+  {
+    "example_id": 190,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0",
+      "2.0",
+      "7.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "12.25"
+    ],
+    "solution": "from sympy import symbols, sqrt\n\na, b, c = symbols('a b c')\n\nAB = b\nCD = c\nAD = 7\n\nBC = AB + CD\n\nBC_squared = BC ** 2\nAB_squared = AB ** 2\nCD_squared = CD ** 2\n\nnumerator = (AB_squared + CD_squared) * AD\ndenominator = 2 * BC_squared\n\nanswer = numerator / denominator\n\nprint(answer)"
+  },
+  {
+    "example_id": 191,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "32.0"
+    ],
+    "solution": "from sympy import symbols\nx, y = symbols('x y')\narea = (12 - 3*y) / 2\nprint(area)"
+  },
+  {
+    "example_id": 192,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "4.0",
+      "3.0",
+      "3.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "3.75"
+    ],
+    "solution": "import sympy as sp\n\nx, y = sp.symbols('x y')\n\narea = sp.integrate(sp.sqrt(1 - (x/2 + 1)**2), (x, -1, 1))\n\nprint(area)"
+  },
+  {
+    "example_id": 193,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "length = 12 - 8\nprint(length)"
+  },
+  {
+    "example_id": 194,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.6197751905438615"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from math import tan\nprint(tan(45))"
+  },
+  {
+    "example_id": 195,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.970562748477143"
+    ],
+    "annotated_answers": [
+      "32.0"
+    ],
+    "solution": "import numpy as np\n\ndef area_of_square(vertices):\n    \"\"\"\n    Calculate the area of a square given the vertices.\n    \"\"\"\n    area = 0\n    for i in range(len(vertices) - 1):\n        area += np.linalg.norm(vertices[i] - vertices[i + 1])\n    return area\n\nvertices = np.array([[-2, 2], [2, -2], [-2, -6], [-6, -2]])\nprint(area_of_square(vertices))"
+  },
+  {
+    "example_id": 196,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "157.07963267948966"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ],
+    "solution": "from math import pi\narea = (pi * 10 ** 2) / 2\nprint(area)"
+  },
+  {
+    "example_id": 197,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "from sympy import *\n\na, b, c = symbols('a b c')\n\nperimeter = a + b + c\n\ngreatest_perimeter = a + b + c + 2 * sqrt(a * b + b * c + c * a)\n\nleast_perimeter = a + b + c + 2 * sqrt(a * b + b * c + c * a)\n\nprint(greatest_perimeter - least_perimeter)"
+  },
+  {
+    "example_id": 198,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.56"
+    ],
+    "annotated_answers": [
+      "37.72"
+    ],
+    "solution": "a, b, c = 7, 24, 25\nsum = a + b + c\nprint(sum / 100)"
+  },
+  {
+    "example_id": 199,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\n\ns = (a + b + c) / 2\n\narea = sympy.sqrt(s * (s - a) * (s - b) * (s - c))\n\nprint(area)"
+  },
+  {
+    "example_id": 200,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.055502061411188"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import math\n\nlateral_surface_area = 3.5\nvolume = 3.5\n\nradius = math.sqrt(lateral_surface_area / math.pi)\n\nprint(radius)"
+  },
+  {
+    "example_id": 201,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-5.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "300.0"
+    ],
+    "solution": "from sympy import *\n\ns = Polygon(Point(0,0), Point(1,1), Point(1,0.5), Point(2.5,0.5), Point(2.5,-0.5), Point(1,-0.5), Point(1,-1))\nprint(s.area)"
+  },
+  {
+    "example_id": 202,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "22.5"
+    ],
+    "annotated_answers": [
+      "108.0"
+    ],
+    "solution": "v, w, x, y, z = 10, 15, 20, 25, 30\nx = (w + z) / 2\nprint(x)"
+  },
+  {
+    "example_id": 203,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "import sympy\nx = sympy.symbols('x')\narea = 30\nbase = sympy.sqrt(area)\nheight = 5\ns = (base * height) / 2\nprint(s.subs(base, x))"
+  },
+  {
+    "example_id": 204,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "166.0"
+    ],
+    "annotated_answers": [
+      "184.0"
+    ],
+    "solution": "a = (14**2 + 10**2 + 6**2) / 2\nprint(a)"
+  },
+  {
+    "example_id": 205,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "81.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "import sympy\n\nradius = 3\nunits = 27\n\nprint(radius * units)"
+  },
+  {
+    "example_id": 206,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2880.0"
+    ],
+    "annotated_answers": [
+      "384.0"
+    ],
+    "solution": "pentagon_area = 5 * (24**2)\nprint(pentagon_area)"
+  },
+  {
+    "example_id": 207,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.6666666666666666"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "import math\na, b, c = 4, 6, 14\nx = (a*c) / (b*c)\nprint(x)"
+  },
+  {
+    "example_id": 208,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "a = 3"
+  },
+  {
+    "example_id": 209,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2500.0"
+    ],
+    "annotated_answers": [
+      "2040.0"
+    ],
+    "solution": "import math\n\ndef area(l):\n    return l * l\n\nl = 50\n\nprint(area(l))"
+  },
+  {
+    "example_id": 210,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "18.84955592153876"
+    ],
+    "annotated_answers": [
+      "4.5"
+    ],
+    "solution": "from math import pi\n\nradius = 3\nheight = 2 * pi * radius\nprint(height)"
+  },
+  {
+    "example_id": 211,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "100.0",
+      "2.0",
+      "2.0",
+      "0.2",
+      "2.0",
+      "0.2",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "import sympy\n\ntheta = sympy.Symbol('theta')\n\narc_length = sympy.sqrt(sympy.sin(theta)**2 + sympy.cos(theta)**2)\n\narc_length_new = sympy.sqrt(sympy.sin(theta + 0.20)**2 + sympy.cos(theta + 0.20)**2)\n\npercent_change = (arc_length_new - arc_length) / arc_length * 100\n\nprint(percent_change)"
+  },
+  {
+    "example_id": 212,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "96.23408959407264"
+    ],
+    "annotated_answers": [
+      "145.0"
+    ],
+    "solution": "import math\na = 105\nb = 42\nc = math.sqrt(a**2 - b**2)\nprint(c)"
+  },
+  {
+    "example_id": 213,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "75.52248781407008"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "import math\n\nangle = math.degrees(math.acos(0.5 / 2))\nprint(angle)"
+  },
+  {
+    "example_id": 214,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.034960000000003",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "import math\n\nt = 1 - 0.32\nA = (-4.07, 0)\nB = (40.008, 0)\nC = (0, 20.616)\nX = (t * A[0] + (1 - t) * B[0], t * A[1] + (1 - t) * B[1])\n\nprint(X)"
+  },
+  {
+    "example_id": 215,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "72.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "x = 72\nprint(x)"
+  },
+  {
+    "example_id": 216,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.5"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "length = 2 + 19 / 2\nprint(length)"
+  },
+  {
+    "example_id": 217,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols('a b c')\ns = (a + b + c) / 2\n\n# area of triangle ABC\narea = sympy.sqrt(s * (s - a) * (s - b) * (s - c))\n\n# area of triangle ENG\neng_area = sympy.sqrt(s * (s - a) * (s - b) * (s - c) / 2)\n\nprint(eng_area)"
+  },
+  {
+    "example_id": 218,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.8011526357338304"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from math import sin\nprint(sin(180))"
+  },
+  {
+    "example_id": 219,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "450.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "import sympy\n\nx = sympy.symbols('x')\ny = -2*x + 8\ny_ = 0.5*x - 2\n\narea = sympy.integrate((y_ - y)**2, (x, -2, 4))\nprint(area)"
+  },
+  {
+    "example_id": 220,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "import sympy\nx, y = sympy.symbols('x y')\nsympy.integrate((x + y - 6)**2, (x, -sympy.oo, sympy.oo), (y, -sympy.oo, sympy.oo))"
+  },
+  {
+    "example_id": 221,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.800000000000001"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "length_of_BN = 3 * (5 - 2.4)\nprint(length_of_BN)"
+  },
+  {
+    "example_id": 222,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "from sympy import *\na, b, c, d = symbols('a b c d')\ns = (a + b + c + d) / 2\narea = s * (s - a) * (s - b) * (s - c) * (s - d)\nprint(area)"
+  },
+  {
+    "example_id": 223,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "22.13008677662021"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "import math\n\n# Radius of the first circle\nr1 = 10\n\n# Radius of the second circle\nr2 = 17\n\n# Length of the chord\nl = 16\n\n# Distance between the centers of the circles\nd = math.sqrt(r1**2 + r2**2 - 2 * r1 * r2 * math.cos(math.pi - math.acos(l / (2 * r1 + 2 * r2))))\n\nprint(d)"
+  },
+  {
+    "example_id": 224,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "84.0"
+    ],
+    "solution": "import math\n\ndef area(QABO):\n    return math.fabs(QABO[0][0] * QABO[1][1] - QABO[0][1] * QABO[1][0])\n\nQABO = [(0, 12), (2, 12), (12, 0)]\nprint(area(QABO))"
+  },
+  {
+    "example_id": 225,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "from sympy import *\n\nA, B, C, D, E, F, I = symbols('A B C D E F I')\n\narea = (D*E*F)/2\n\nprint(area)"
+  },
+  {
+    "example_id": 226,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "print(4 * 30)"
+  },
+  {
+    "example_id": 227,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "23.31"
+    ],
+    "solution": "from math import sqrt\n\ndef distance(x):\n    return sqrt(2 * x**2 + 2 * x**2 + 2 * x)\n\ndef time(x):\n    return distance(x) / sqrt(2) + distance(x) / 2 + 74 / 2\n\nx_opt = -1\nt_opt = float('inf')\nfor x in range(100):\n    t = time(x)\n    if t < t_opt:\n        x_opt = x\n        t_opt = t\n\nprint(x_opt)"
+  },
+  {
+    "example_id": 228,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "from sympy import *\n\na, b, c = symbols('a b c')\n\nAD = a\n\nAD_squared = a**2\n\nprint(AD_squared)"
+  },
+  {
+    "example_id": 229,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "84.0"
+    ],
+    "solution": "from sympy import *\nx, y, z = symbols('x y z')\na = (x + y + z) / 3\nb = (x + y + z) / 3\nc = (x + y + z) / 3\nd = (x + y + z) / 3\n\narea = (a * d - b * c) / 2\nprint(area)"
+  },
+  {
+    "example_id": 230,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "import math\nbase = 3 + 4 + 5\nheight = 6\nvolume = (base * height) / 3\nprint(volume)"
+  },
+  {
+    "example_id": 231,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "import sympy\n\nA, B, C, D, E, F = sympy.symbols('A B C D E F')\n\nrectangle_area = (A * B + C * D) / 2\n\ntriangle_area_1 = (A * E + B * E + E * F) / 2\ntriangle_area_2 = (A * D + B * D + D * F) / 2\ntriangle_area_3 = (C * E + D * E + E * F) / 2\n\nprint(rectangle_area)\nprint(triangle_area_1)\nprint(triangle_area_2)\nprint(triangle_area_3)"
+  },
+  {
+    "example_id": 232,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "import sympy\na, b, c = sympy.symbols('a b c')\ns = (a + b + c) / 2\nr = sympy.sqrt(s * (s - a) * (s - b) * (s - c))\nprint(r)"
+  },
+  {
+    "example_id": 233,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "25.12"
+    ],
+    "annotated_answers": [
+      "62.8"
+    ],
+    "solution": "import math\npi = 3.14\narea = (pi * 4) * (4 / 2)\nprint(area)"
+  },
+  {
+    "example_id": 234,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "3.5"
+    ],
+    "solution": "from sympy import symbols\nfrom sympy import sin, cos, sqrt\n\na, b, c = symbols('a b c')\n\ns = (a + b + c) / 2\n\nr = sqrt(s * (s - a) * (s - b) * (s - c))\n\nprint(r)"
+  },
+  {
+    "example_id": 235,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import numpy as np\n\nA = np.array([3, 7])\nB = np.array([3, 5])\nC = np.array([-1, 1])\nD = np.array([-1, 3])\n\narea = np.abs(np.cross(B - A, C - A))\nprint(area)"
+  },
+  {
+    "example_id": 236,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "74.0"
+    ],
+    "solution": "import math\n\ndef volume_of_rubber_band(length):\n    return math.pi * (length / 2) ** 2\n\ndef diameter_of_ball(number_of_rubber_bands):\n    return 2 * math.sqrt(volume_of_rubber_band(number_of_rubber_bands) / math.pi)\n\ndef increase_diameter(number_of_rubber_bands, increase_by):\n    return diameter_of_ball(number_of_rubber_bands) + increase_by\n\ndef number_of_rubber_bands_to_increase_diameter_by(increase_by):\n    return math.ceil(math.sqrt(2 * math.pi * (diameter_of_ball(54) + increase_by) / volume_of_rubber_band(54)))\n\nprint(number_of_rubber_bands_to_increase_diameter_by(1))"
+  }
+]

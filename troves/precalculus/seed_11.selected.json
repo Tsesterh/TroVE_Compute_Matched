@@ -1,0 +1,2299 @@
+[
+  {
+    "example_id": 0,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.31887821353276646"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "angle = math.radians(45)\nvalue = (2 * math.sin(angle) + 3 * math.sin(angle - math.radians(60))) / 2\nprint(value)"
+  },
+  {
+    "example_id": 1,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.656854249492379"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "angle = math.atan(1)\nvalue = (1 + math.sin(angle)) / (1 - math.sin(angle)) - (1 - math.sin(angle)) / (1 + math.sin(angle))\nprint(value)"
+  },
+  {
+    "example_id": 2,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "a, b, c = symbols('a b c')\n\nexpr = (1 / (1 - a)) + (1 / (1 - b)) + (1 / (1 - c))\nprint(expr)"
+  },
+  {
+    "example_id": 3,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "70.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "x = math.degrees(math.atan(math.tan(math.radians(20)) + 2 * math.tan(math.radians(50))))\nprint(x)"
+  },
+  {
+    "example_id": 4,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "A, B, C, D, P = symbols('A B C D P')\nM = [A + B, A + C, A + D, B + C, B + D, C + D]\nP = (A + B + C + D) / 4\na, b, c, d = symbols('a b c d')\n\nline = [a * A + b * B + c * C + d * D for a, b, c, d in zip(M, M[1:], M[2:], M[3:])]\n\nprint(sum(line))"
+  },
+  {
+    "example_id": 5,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.166666666666667",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "a, b, c, d = symbols('a b c d')\n\n# Find the volume of the tetrahedron\nvolume = (1/6) * abs(a*(b*c - d*d) + b*(c*d - a*a) + c*(a*d - b*b))\n\nprint(volume)"
+  },
+  {
+    "example_id": 6,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "import math\n\nb = 11\n\ndef is_right_triangle(b, c):\n    return b**2 == c**2 + (10 - c)**2\n\ndef is_right_triangle_with_sin_b_equal_to_3_over_5(b, c):\n    return is_right_triangle(b, c) and math.sin(math.radians(b)) == 3/5\n\ndef find_length_of_side_bc(b, c):\n    if is_right_triangle_with_sin_b_equal_to_3_over_5(b, c):\n        return c\n    else:\n        return 0\n\ndef find_length_of_side_bc_difference(b):\n    side_bc1 = find_length_of_side_bc(b, 10)\n    side_bc2 = find_length_of_side_bc(b, b)\n    return abs(side_bc1 - side_bc2)\n\nprint(find_length_of_side_bc_difference(b))"
+  },
+  {
+    "example_id": 7,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "t = math.radians(90)\nprint(math.floor(t))"
+  },
+  {
+    "example_id": 8,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.9999999999999991"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "def f(x):\n    return 8 * math.cos(x)**2 - 1 / math.sin(x)\n\nvalue = f(math.radians(10))\nprint(value)"
+  },
+  {
+    "example_id": 9,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "8.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# Find roots of polynomial\ndef polynomial_roots(polynomial):\n    \"\"\"\n    Find roots of polynomial\n    \"\"\"\n    roots = []\n    for i in range(len(polynomial)):\n        if polynomial[i] == 0:\n            continue\n        else:\n            roots.append(symbols('z' + str(i)))\n    return roots\n\n\n# Find coefficients\ndef polynomial_coefficients(roots):\n    \"\"\"\n    Find coefficients of polynomial\n    \"\"\"\n    coefficients = []\n    for i in range(len(roots)):\n        coefficients.append(1)\n    return coefficients\n\n\n# Find area\ndef area(coefficients):\n    \"\"\"\n    Find area of polygon\n    \"\"\"\n    area = 0\n    for i in range(len(coefficients)):\n        area += coefficients[i]\n    return area\n\n\n# Find simplified form\ndef simplified_form(coefficients):\n    \"\"\"\n    Find simplified form\n    \"\"\"\n    simplified = []\n    for i in range(len(coefficients)):\n        simplified.append(int(coefficients[i]))\n    return simplified\n\n\n# Main\nif __name__ == \"__main__\":\n    # Define polynomial\n    polynomial = [1, 1, 1, 1, 1, 1, 1, 1]\n\n    # Find roots\n    roots = polynomial_roots(polynomial)\n\n    # Find coefficients\n    coefficients = polynomial_coefficients(roots)\n\n    # Find area\n    area = area(coefficients)\n\n    # Find simplified form\n    simplified = simplified_form(coefficients)\n\n    # Print results\n    print(f\"{area} = {simplified}\")"
+  },
+  {
+    "example_id": 10,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "angle = math.radians(45)\nx = math.tan(angle / 2)\ny = x\nprint(x * y + x + y)"
+  },
+  {
+    "example_id": 11,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.22474487",
+      "2.44948974",
+      "-1.22474487"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "import numpy as np\n\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\ncross_product = np.cross(a, b)\n\nk = 3 * cross_product / (np.linalg.norm(cross_product))\n\nprint(k)"
+  },
+  {
+    "example_id": 12,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "72.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "print(int(math.degrees(math.atan(math.tan(math.radians(252))))))"
+  },
+  {
+    "example_id": 13,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "k = -3 * 4 - 5 * 7 + 2 * 4 + 6 * 7\nprint(k)"
+  },
+  {
+    "example_id": 14,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.0",
+      "10.0",
+      "9.0",
+      "4.0",
+      "3.0",
+      "2.0",
+      "14.0",
+      "13.0",
+      "11.0",
+      "6.0",
+      "5.0",
+      "2.0",
+      "2.0",
+      "16.0",
+      "15.0",
+      "12.0",
+      "7.0",
+      "6.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "43.0"
+    ],
+    "solution": "# Define z as a complex number\nz = symbols('z')\n\n# Define w1, w2,..., wk as the values of z + z^3 + z^4 + z^9 + z^10 + z^12\nw1 = z + z**3 + z**4 + z**9 + z**10 + z**12\nw2 = z**2 + z**5 + z**6 + z**11 + z**13 + z**14\nw3 = z**3 + z**6 + z**7 + z**12 + z**15 + z**16\n\n# Find the values of w1, w2,..., wk\nw = [w1, w2, w3]\n\n# Print the sum of the squares of w1, w2,..., wk\nprint(sum([(w[i]**2).n() for i in range(3)]))"
+  },
+  {
+    "example_id": 15,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "value = (math.sin(math.radians(13)) + math.sin(math.radians(47)) + math.sin(math.radians(73)) + math.sin(math.radians(107))) / math.cos(math.radians(17))\nprint(value)"
+  },
+  {
+    "example_id": 16,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.0000000000000002"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "value = math.tan(math.radians(135))\nprint(value)"
+  },
+  {
+    "example_id": 17,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.123233995736766",
+      "-17.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# define cot\ncot = np.cos(np.radians(90)) / np.sin(np.radians(90))\nprint(cot)"
+  },
+  {
+    "example_id": 18,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.0",
+      "1.2246467991473533",
+      "-16.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "import cmath\nprint(cmath.exp(cmath.pi * 1j))"
+  },
+  {
+    "example_id": 19,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-98.00000000000004"
+    ],
+    "annotated_answers": [
+      "-49.0"
+    ],
+    "solution": "import numpy as np\nA = np.array([[1, 2], [3, 4]])\nprint(np.linalg.det(np.dot(7, A)))"
+  },
+  {
+    "example_id": 20,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "n = 3\nprint(n)"
+  },
+  {
+    "example_id": 21,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10000.0",
+      "2.0",
+      "10000.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "315.0"
+    ],
+    "solution": "a = 11\nb = 37\n\nvalue = a * b\nprint(value)"
+  },
+  {
+    "example_id": 22,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "w = math.cos(math.radians(40)) + 1j * math.sin(math.radians(40))\n\n# calculate the absolute value of w+2w^2+3w^3+4w^4+5w^5+6w^6+7w^7+8w^8+9w^9\nabs_value = np.abs(w + 2*w**2 + 3*w**3 + 4*w**4 + 5*w**5 + 6*w**6 + 7*w**7 + 8*w**8 + 9*w**9)\n\n# find the inverse of abs_value\ninverse = 1/abs_value\n\n# find the sine of inverse\nsin_inverse = cmath.sin(inverse)\n\n# find the absolute value of sin_inverse\nabs_sin_inverse = np.abs(sin_inverse)\n\n# find the integer part of abs_sin_inverse\ninteger_part = int(abs_sin_inverse)\n\n# find the remainder of abs_sin_inverse\nremainder = abs_sin_inverse - integer_part\n\n# find the integer part of remainder\ninteger_part_remainder = int(remainder)\n\n# find the degree of sine\ndegree = int(np.angle(sin_inverse)*180/math.pi)\n\n# find the numerator and denominator of the fraction\nnumerator = integer_part_remainder * integer_part\ndenominator = integer_part\n\n# print the required values\nprint(integer_part, integer_part_remainder, degree, numerator, denominator)"
+  },
+  {
+    "example_id": 23,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "a = np.array([1, 0, 0])\nb = np.array([-1, 4, 6])\nc = np.array([2, -7, -10])\n\nvalue = np.dot(c, np.cross(a, b))\nprint(value)"
+  },
+  {
+    "example_id": 24,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-259580.5"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "# Define the length of sides\na = 22\nb = 31\n\n\n# Calculate the length of median\nd = (a**2 + b**2)**0.5\n\n\n# Find the length of altitude\nh = (a**2 - d**2)**0.5\n\n\n# Find the length of base\nc = a + b - h\n\n\n# Find the length of perpendicular\np = (c**2 + h**2)**0.5\n\n\n# Find the length of height\nq = (a**2 + c**2)**0.5\n\n\n# Find the length of altitude\nr = (a**2 + c**2 - p**2)**0.5\n\n\n# Find the length of base\ns = (a**2 + b**2 - q**2)**0.5\n\n\n# Find the length of triangle\nt = (a**2 + b**2 + c**2)**0.5\n\n\n# Print the length of triangle\nprint(t)"
+  },
+  {
+    "example_id": 25,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "4.0",
+      "4.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "angle = math.acos(1)\nprint(angle)"
+  },
+  {
+    "example_id": 26,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "a = np.array([1, 0])\nb = np.array([0, 1])\nc = np.array([1, 1])\n\nprint(np.dot(a, a))\nprint(np.dot(b, b))\nprint(np.dot(c, c))"
+  },
+  {
+    "example_id": 27,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "-1.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "-1.0",
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from sympy import *\n\nz = symbols('z')\n\nu, v, w = roots(z**3 - 1)\n\nprint(u*v + u*w + v*w)"
+  },
+  {
+    "example_id": 28,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-9.937636274539008"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# define the angles\na = 10\nb = 20\nc = 30\nd = 40\ne = 50\nf = 60\ng = 70\nh = 80\n\n# define the trigonometric functions\ntg = np.tan\n\n# evaluate the expression\nprint(tg(a) * tg(b) * tg(c) * tg(d) * tg(e) * tg(f) * tg(g) * tg(h))"
+  },
+  {
+    "example_id": 29,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# Solve for theta\ntheta = symbols('theta')\n\n\n# Solve for csc theta\ncsc_theta = 1 / math.sin(theta)\n\n\n# Solve for cot theta\ncot_theta = 1 / math.tan(theta)\n\n\n# Solve for sin theta\nsin_theta = math.sin(theta)\n\n\n# Solve for tan theta\ntan_theta = math.tan(theta)\n\n\n# Solve for the difference\ndiff = csc_theta / sin_theta - cot_theta / tan_theta\n\n\n# Print the solution\nprint(diff)"
+  },
+  {
+    "example_id": 30,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2019.0"
+    ],
+    "annotated_answers": [
+      "82.0"
+    ],
+    "solution": "n = 2019\nprint(n)"
+  },
+  {
+    "example_id": 31,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "29.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "k = 1\nwhile True:\n    if math.cos(4 * k * math.pi / 6) == -1 / 2:\n        print(k)\n        break\n    k += 1"
+  },
+  {
+    "example_id": 32,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "45.0",
+      "2.0",
+      "405.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "if 3-ki == 0:\n    print(ki)"
+  },
+  {
+    "example_id": 33,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "x, y, z = symbols('x y z')\na, b, c = x**2, y**2, z**2\n\nA = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])\nB = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]])\nC = np.array([[1, 0, 0], [0, 0, 1], [0, 1, 0]])\n\na_area = np.linalg.det(np.cross(A, B))\nb_area = np.linalg.det(np.cross(A, C))\nc_area = np.linalg.det(np.cross(B, C))\n\nprint(c_area / 2)"
+  },
+  {
+    "example_id": 34,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.52941176",
+      "6.11764706"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "a = 26 / 17 * np.array([-1, 4])\nprint(a)"
+  },
+  {
+    "example_id": 35,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "31.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "p = 7\na = 10\nb = 14\nvalue = a + b + p\nprint(value)"
+  },
+  {
+    "example_id": 36,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-40.00000000000001"
+    ],
+    "annotated_answers": [
+      "160.0"
+    ],
+    "solution": "z = symbols('z')\neq = z**6 + z**3 + 1\nroot = solve(eq, z)[0]\narg = cmath.phase(root)\nprint(arg * 180 / math.pi)"
+  },
+  {
+    "example_id": 37,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "906.0"
+    ],
+    "solution": "sum = 0\nfor i in range(100, 200):\n    if (math.cos(math.radians(3*i)) + math.cos(math.radians(5*i))) == 8 * math.cos(math.radians(4*i)) * math.cos(math.radians(i)):\n        sum += i\nprint(sum)"
+  },
+  {
+    "example_id": 38,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import sympy as sym\nfrom sympy import Symbol, sin, cos, tan, cot, sec, csc\n\nx = Symbol('x')\n\nsolutions = []\nfor theta in range(0, 2 * 360):\n    expr = (1 / (sin(theta)**2) - 1 / (cos(theta)**2) - 1 / (tan(theta)**2) - 1 / (cot(theta)**2) - 1 / (sec(theta)**2) - 1 / (csc(theta)**2))\n    result = sym.nsimplify(expr - -3)\n    if result == 0:\n        solutions.append(theta)\n\nprint(solutions)"
+  },
+  {
+    "example_id": 39,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import math\n\ndef f(x):\n\treturn 2*math.sin(4*x + math.pi/2)\n\nprint(f(0))"
+  },
+  {
+    "example_id": 40,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "251.0"
+    ],
+    "solution": "a = math.pi / 2008\nn = int(np.ceil((1 + math.sqrt(1 + 8 * a)) / 2))\nprint(n)"
+  },
+  {
+    "example_id": 41,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# define x\nx = symbols('x', real=True, positive=True)\n\n\n# define function\nf = (24 * sin(x) ** log(24 * cos(x), 3/2))\n\n\n# solve for cot^2(x)\ncot_x_squared = 1 / tan(x)**2\n\n\n# solve for cot^2(x)\nsol = solve(cot_x_squared - f, cot_x_squared)\n\n\n# print cot^2(x)\nprint(sol)"
+  },
+  {
+    "example_id": 42,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-2.0"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "import math\nprint(math.asin(math.sin(3)) + math.asin(math.sin(4)) + math.asin(math.sin(5)))"
+  },
+  {
+    "example_id": 43,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "35.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "b = 20\nh = 15\n\nprint(b + h)"
+  },
+  {
+    "example_id": 44,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0",
+      "-1.0",
+      "1.0",
+      "1.0",
+      "4.0",
+      "0.0",
+      "2.0",
+      "0.0",
+      "2.5",
+      "1.5",
+      "1.5",
+      "2.5"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "values = [\n    (1 + 1/w) + (1 + w**2)\n    for w in (\n        complex(0, 1),\n        complex(0, -1),\n        complex(1, 0),\n        complex(-1, 0),\n        complex(1, 1),\n        complex(-1, -1),\n    )\n]\nprint(*values, sep=',')"
+  },
+  {
+    "example_id": 45,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.1245463194427887"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "# define the vectors\na = np.array([1, 3, 0])\nb = np.array([-11, 5, 2])\nc = np.array([1 + math.sqrt(5), 4, -5])\n\n# find the cross product\ncross_product = np.cross(b, c)\n\n# define the dot product\ndot_product = np.dot(a, cross_product)\n\n# define the solution\nk = dot_product / np.linalg.norm(cross_product)\n\n# print the solution\nprint(k)"
+  },
+  {
+    "example_id": 46,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# define variables\nsec = symbols('sec')\ncsc = symbols('csc')\ntheta = symbols('theta')\n\n\n# define equations\neq1 = sec(theta) + csc(theta) - np.sqrt(15)\neq2 = sec(theta) + csc(theta) == np.sqrt(15)\n\n\n# solve equations\nsolve(eq1, theta)"
+  },
+  {
+    "example_id": 47,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "a = 1\nb = 2\nc = 3\n\n# evaluate determinant\ndet = np.linalg.det([[0, b-a, c-a], [a-b, 0, c-b], [a-c, b-c, 0]])\nprint(det)"
+  },
+  {
+    "example_id": 48,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.5849625007211563",
+      "2.0",
+      "0.6309297535714574",
+      "1.0",
+      "1.2618595071429148",
+      "0.5",
+      "0.7924812503605781",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "x = 2\ny = 3\nz = 4\nmatrix = [[1, math.log(y, x), math.log(z, x)], [math.log(x, y), 1, math.log(z, y)], [math.log(x, z), math.log(y, z), 1]]\nprint(matrix)"
+  },
+  {
+    "example_id": 49,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.317821063276353"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "import math\n\na = [3, 0]\nb = [0, 14]\n\nprint(math.hypot(a[0] + b[0], a[1] + b[1]))"
+  },
+  {
+    "example_id": 50,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "6.0",
+      "6.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "6.0",
+      "6.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import *\nx, y, z = symbols('x y z')\neq = x**2 + 2*x + y**2 + 6*y + z**2 - 12*z + 30\nr = solve(eq, z)\nprint(r)"
+  },
+  {
+    "example_id": 51,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5144957554275265",
+      "0.5144957554275265"
+    ],
+    "annotated_answers": [
+      "-8.0"
+    ],
+    "solution": "# Using the cosine rule\nangle_a = math.radians(90)\nangle_b = math.radians(60)\nangle_c = math.radians(90)\n\nside_a = 3\nside_b = 5\nside_c = math.sqrt(side_a**2 + side_b**2 - 2 * side_a * side_b * math.cos(angle_c))\n\ncos_angle = (side_a**2 + side_c**2 - side_b**2) / (2 * side_a * side_c)\nprint(cos_angle)\n\n# Using the law of cosines\nside_a = 3\nside_b = 5\nside_c = math.sqrt(side_a**2 + side_b**2 - 2 * side_a * side_b * math.cos(angle_c))\n\ncos_angle = (side_a**2 + side_c**2 - side_b**2) / (2 * side_a * side_c)\nprint(cos_angle)"
+  },
+  {
+    "example_id": 52,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "-4.0"
+    ],
+    "solution": "# Define vector\nv = np.array([2, 0, -5])\n\n# Define direction vector\nd = np.array([1, -2, 1])\n\n# Find projection of v onto d\nprojection = np.dot(v, d) / np.dot(d, d) * d\n\n# Find y value\ny = projection[1]\n\n# Print y value\nprint(y)"
+  },
+  {
+    "example_id": 53,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "4.0",
+      "5.0",
+      "6.0",
+      "7.0",
+      "8.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "n = 8\n\nf = ln(sin(pi*x)*sin(2*pi*x)*sin(3*pi*x)*sin(4*pi*x)*sin(5*pi*x)*sin(6*pi*x)*sin(7*pi*x)*sin(8*pi*x))\n\nprint(f)"
+  },
+  {
+    "example_id": 54,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "24.0",
+      "36.0",
+      "42.0",
+      "60.0",
+      "66.0",
+      "72.0",
+      "90.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "for x in range(0, 360, 6):\n    if math.degrees(math.asin(math.sin(math.radians(x)))) == math.degrees(math.acos(math.cos(math.radians(x)))):\n        print(x)"
+  },
+  {
+    "example_id": 55,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "M = np.array([[2, 1], [3, 0]])\nprint(np.linalg.det(M))"
+  },
+  {
+    "example_id": 56,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "x = symbols('x')\nexpr = (tan(x) / (sec(x) + 1) - (sec(x) - 1) / tan(x))\nexpr.simplify()"
+  },
+  {
+    "example_id": 57,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.732050807568878"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "a_1 = 1\na_2 = 1 / math.sqrt(3)\n\ndef a_n(n):\n    return (a_1 + a_2) / (1 - a_1 * a_2)\n\nprint(a_n(2009))"
+  },
+  {
+    "example_id": 58,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "p, q, r = 1, 1, 1\nwhile q % 4!= 1:\n    p, q, r = p + 1, p + q + r, p + q + r\nprint(p + q + r)"
+  },
+  {
+    "example_id": 59,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.1028685319524427"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import math\n\ndef f(x, y, z):\n    return math.sin(x + y) * math.sin(y + z) / math.sin(x) * math.sin(z)\n\nx = math.radians(10)\ny = math.radians(20)\nz = math.radians(30)\n\nprint(f(x, y, z))"
+  },
+  {
+    "example_id": 60,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ],
+    "solution": "# Find the determinant\ndet = 0\ndet = np.linalg.det(np.array([[0, 1], [3, 5]]))\nprint(det)"
+  },
+  {
+    "example_id": 61,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "169.0"
+    ],
+    "annotated_answers": [
+      "159.0"
+    ],
+    "solution": "# define the equation\neq = (1/5)*log(2, x) - sin(5*pi*x)\n\n\n# find the real solutions\nsol = solve(eq, x)\n\n\n# print the solutions\nprint(sol)"
+  },
+  {
+    "example_id": 62,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "# a + b = root of unity\n# a - b = -1 * (root of unity)\n\n# a + b = a - b\n# 2a = -1\n# a = -1/2\n\n# b = -1/2\n\n# (a + b)^12 = (a - b)^12\n# (a + b)^12 = (-1/2)^12\n# (a + b)^12 = 1\n\n# number of possible values = 1\nprint(1)"
+  },
+  {
+    "example_id": 63,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "alpha, beta = symbols('alpha beta')\neq = (cos(alpha) / cos(beta)) + (sin(alpha) / sin(beta))\nsol = solve(eq, beta)\nfor beta in sol:\n    print(cos(beta)**3 / cos(alpha) + sin(beta)**3 / sin(alpha))"
+  },
+  {
+    "example_id": 64,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "x = symbols('x')\nsol = solve(cos(x), x)\nprint(sol)"
+  },
+  {
+    "example_id": 65,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.22811559863195194"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ],
+    "solution": "from sympy import Matrix\n\n# Coefficients for first line\na, b, c = 2, -1, 3\n\n# Coefficients for second line\nd, e, f = 2, 1, 1\n\n# Point on first line\nx, y, z = 4, 0, 0\n\n# Point on second line\nu, v, w = 0, 0, 0\n\n# Coefficients for perpendicularity\nx1, y1, z1 = 2, -1, 1\nx2, y2, z2 = 2, 1, 2\n\n# Compute the coefficients for the perpendicular line\nA, B, C = x1 * y2 - y1 * x2, x1 * z2 - z1 * x2, y1 * z2 - z1 * y2\n\n# Find the intersection point of the lines\nx3, y3, z3 = (c * B - b * C) / (a * B - b * A), (c * C - a * C) / (a * C - b * A), (b * A - a * B) / (a * B - b * A)\n\n# Compute the distance between the point and the intersection point\ndx = x - x3\ndy = y - y3\ndz = z - z3\n\n# Compute the distance between the point and the origin\nd = (dx**2 + dy**2 + dz**2)**0.5\n\n# Find the coefficients for the perpendicular line\nk, l, m = -dx/d, -dy/d, -dz/d\n\n# Print the answer\nprint(a + b + k + l + m)"
+  },
+  {
+    "example_id": 66,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.9999999999999982"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "csc_330 = 1 / math.sin(math.radians(330))\nprint(csc_330)"
+  },
+  {
+    "example_id": 67,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "import sympy as sp\nx1, x2, x3, y1, y2, y3 = sp.symbols('x1, x2, x3, y1, y2, y3')\n\neq1 = (x1 - x2)**2 + (y1 - y2)**2 - 9\neq2 = (x1 - x3)**2 + (y1 - y3)**2 - 16\neq3 = (x2 - x3)**2 + (y2 - y3)**2 - 25\n\n# Solve the system of equations\nsol = sp.solve((eq1, eq2, eq3), (x1, x2, x3, y1, y2, y3))\n\n# Compute the determinant\ndet = sp.det(sp.Matrix([[x1, y1, 1], [x2, y2, 1], [x3, y3, 1]]))**2\n\n# Print the result\nprint(det.evalf())"
+  },
+  {
+    "example_id": 68,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "22.0",
+      "22.0",
+      "22.0"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ],
+    "solution": "# Define vectors\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\n# Calculate cross product\ncross_product = np.cross(5 * a + 7 * b, -a + 3 * b)\n\n# Calculate k\nk = cross_product / np.cross(a, b)\n\n# Print k\nprint(k)"
+  },
+  {
+    "example_id": 69,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.2649486628635884"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ],
+    "solution": "theta = math.radians(70)\nvalue = 1/(1 + math.cos(theta)) + 1/(1 - math.cos(theta))\nprint(value)"
+  },
+  {
+    "example_id": 70,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.452994616207485"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ],
+    "solution": "a = 9 - 4*sqrt(3)\nb = 2/sqrt(3) - 1\nc = 9 - 4*sqrt(3)\nd = 2/sqrt(3) - 1\n\nprint(a + b + c + d)"
+  },
+  {
+    "example_id": 71,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.212373908208008"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# define x\nx = symbols('x')\n\n# define expression\nexpression = (cos(12) + I*sin(12) + cos(48) + I*sin(48))**6\n\n# find imaginary part\nimaginary_part = cmath.phase(expression)\n\n# print imaginary part\nprint(imaginary_part)"
+  },
+  {
+    "example_id": 72,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.842170943040401",
+      "-14.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "a = np.array([4, math.sqrt(math.pi), -14])\nb = np.array([-1, 3, 10])\n\n# compute a x b\nprint(np.dot(a, np.cross(a, b)))"
+  },
+  {
+    "example_id": 73,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "0.0",
+      "2.0",
+      "0.0",
+      "3.0",
+      "0.0",
+      "4.0",
+      "0.0",
+      "5.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "92.0"
+    ],
+    "solution": "import math\n\ndef is_triangle(a, b, c):\n    return (a**2 + b**2) >= c**2 and (b**2 + c**2) >= a**2 and (c**2 + a**2) >= b**2\n\nm = 0\nwhile m < 1000:\n    n = 0\n    while n < 1000:\n        if m + n < 1000:\n            a = math.sqrt(m**2 + n**2)\n            b = math.sqrt((m+n)**2 - m**2 - n**2)\n            c = math.sqrt(m**2 + (m+n)**2 - 2*m*n)\n            if not is_triangle(a, b, c):\n                print(f\"{m} {n}\")\n                break\n        n += 1\n    m += 1"
+  },
+  {
+    "example_id": 74,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import sympy as sp\na, b, c, p, q, r = sp.symbols('a, b, c, p, q, r')\nexpr = sp.Matrix([[p, b, c], [a, q, c], [a, b, r]])\nprint(expr.det())"
+  },
+  {
+    "example_id": 75,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "180.0",
+      "-7.0",
+      "53.0",
+      "180.0",
+      "4.0",
+      "5.0",
+      "10.0",
+      "5.0",
+      "5.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "46.0"
+    ],
+    "solution": "x = symbols('x')\na = tan(53 * pi/180)\nb = tan(81 * pi/180)\nc = tan(x * pi/180)\neq = a*b*c - a - b - c\nsol = solve(eq, x)\nprint(sol)"
+  },
+  {
+    "example_id": 76,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "# The number of pieces is the number of points in the cube\n# minus the number of points in the intersection of the planes\n# plus the number of points in the intersection of the planes\n# minus the number of points in the intersection of the plane and the plane\n# plus the number of points in the intersection of the plane and the plane and the plane\n#...\n# = 8\nprint(8)"
+  },
+  {
+    "example_id": 77,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "x = symbols('x')\ny = symbols('y')\n\neq1 = sin(x)**2 + sin(x) - 1\neq2 = cos(x)**4 + cos(x)**2\n\nsol1 = solve(eq1, x)\nsol2 = solve(eq2, x)\n\nprint(sol1)\nprint(sol2)"
+  },
+  {
+    "example_id": 78,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "a, b, c, d = symbols('a b c d', positive=True)\n\n# find the value of b and d\nb_value = sqrt(b)\nd_value = sqrt(d)\n\n# find the value of a + b + c + d\na_plus_b_plus_c_plus_d = 4 * cos(27 * pi / 180) - sqrt(a + b_value) - sqrt(c - d_value)\n\n# find the value of a + b + c + d\na_plus_b_plus_c_plus_d = a + b + c + d\n\nprint(a_plus_b_plus_c_plus_d)"
+  },
+  {
+    "example_id": 79,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "629.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# create the function\nf = lambda x: np.sqrt(np.log2(np.sin(x)))\n\n# find the integer values in the range of the function\nintegers = [int(x) for x in np.arange(0, 2 * np.pi, 0.01)]\n\n# find the values of the function at each integer\ny = [f(i) for i in integers]\n\n# count the number of integers in the range of the function\ncount = len(y)\n\n# print the number of integers\nprint(count)"
+  },
+  {
+    "example_id": 80,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\n\na = 3\nb = 4\n\ndef y(x):\n\treturn a * math.cos(b * x)\n\nprint(a)"
+  },
+  {
+    "example_id": 81,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5905263157894737"
+    ],
+    "annotated_answers": [
+      "110.0"
+    ],
+    "solution": "# Define variables\na = 3\nb = 17\nc = 22\n\n# Find area\narea = (a*b*c) / (4 * (c**2 - a**2))\nprint(area)"
+  },
+  {
+    "example_id": 82,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-3.0",
+      "2.0",
+      "17.0",
+      "2.0",
+      "17.0",
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "x = symbols('x')\nsol = solve(x**2 + 3*x - 2, x)\nprint(sol)"
+  },
+  {
+    "example_id": 83,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "4.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "# triangle area is 12\narea = 12\n\n# coordinates of vertices\na = np.array([1, 1])\nb = np.array([1, -1])\nc = np.array([-1, -1])\n\n# coordinates of new vertices\nd = a - b + c\ne = a - b - c\nf = a + b - c\n\n# area of new triangles\nda = (1/2) * np.linalg.norm(np.cross(d, e))\ndb = (1/2) * np.linalg.norm(np.cross(e, f))\ndc = (1/2) * np.linalg.norm(np.cross(f, d))\n\n# print the areas of triangles\nprint(da)\nprint(db)\nprint(dc)"
+  },
+  {
+    "example_id": 84,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# The problem is equivalent to finding k such that\n# (x+2)^2 + (x+1)^2 = (x+1)^2 + (x+2)^2 + k * (x+1) * (x+2)\n# Simplifying\n# (x+2)^2 = (x+1)^2 + k * (x+1) * (x+2)\n# Solving for x\n# x^2 + 2x + 1 = x^2 + 2x + k * (x+1) * (x+2)\n# Simplifying\n# 1 = k * (x+1) * (x+2)\n# Solving for k\n# k = 1/(x+1) * (x+2)\n# Substituting x=1\n# k = 1/(1+1) * (1+2)\n# k = 1/2 * 3\n# k = 3/2\nprint(3/2)"
+  },
+  {
+    "example_id": 85,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.42975995389261806"
+    ],
+    "annotated_answers": [
+      "87.5"
+    ],
+    "solution": "sum = 0\nfor k in range(1, 36):\n    sum += math.sin(5 * k)\nsum /= math.tan(1)\nprint(sum)"
+  },
+  {
+    "example_id": 86,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "c, d = symbols('c, d')\nA = np.array([[4, 7], [c, d]])\n\n# Compute the value of |c - d|\nvalue = abs(c - d)\nprint(value)"
+  },
+  {
+    "example_id": 87,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "5.0",
+      "17.0",
+      "4.0",
+      "17.0",
+      "3.0",
+      "27.0",
+      "2.0",
+      "31.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-6.0"
+    ],
+    "solution": "a = 1 / (4 * 9 - a * 6)\nprint(a)"
+  },
+  {
+    "example_id": 88,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "v = symbols('v')\nA = Matrix([[2, 3], [0, -2]])\nC = solve(A * v)[v]\nprint(C)"
+  },
+  {
+    "example_id": 89,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "419.0"
+    ],
+    "annotated_answers": [
+      "59.0"
+    ],
+    "solution": "n = 419\nprint(n)"
+  },
+  {
+    "example_id": 90,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.9188850018568244",
+      "16.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "# Compute tan 5^\\circ + tan 25^\\circ + tan 45^\\circ +... + tan 165^\\circ\ndef tan_sum(n):\n    # Initialize sum variable\n    sum = 0\n    # Compute sum of tangents\n    for i in range(1, n + 1):\n        sum += math.tan(math.radians(i * 5))\n    # Return sum\n    return sum\n# Print sum\nprint(tan_sum(165))"
+  },
+  {
+    "example_id": 91,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "def equiangular_hexagon(a, b, c, d, e, f, area):\n    area_hex = (a + b + c + d + e + f) / 2\n    area_triangle = area / 100\n    a_area = (a + b + c) / 2\n    b_area = (b + c + d) / 2\n    c_area = (c + d + e) / 2\n    d_area = (d + e + f) / 2\n    e_area = (e + f + a) / 2\n    f_area = (f + a + b) / 2\n    return a_area * b_area * c_area * d_area * e_area * f_area == area_hex * area_triangle\n\n\ndef equiangular_hexagon_r(a, b, c, d, e, f, area):\n    r = 0\n    while equiangular_hexagon(a, b, c, d, e, f, area):\n        r += 0.1\n    return r\n\n\nr = equiangular_hexagon_r(1, 1, 1, 1, 1, 1, 70)\nprint(r)"
+  },
+  {
+    "example_id": 92,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "a = 1\nb = 2\nc = 1\n\n# Calculate the discriminant\nD = (b**2 - 4 * a * c)\n\n# Find the roots\nr1 = (-b + sqrt(D)) / (2 * a)\nr2 = (-b - sqrt(D)) / (2 * a)\n\n# Find the y-intercept\ny_intercept = r1**2\n\n# Print the smallest possible value of a + b + c\nprint(y_intercept)"
+  },
+  {
+    "example_id": 93,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "print(math.sin(math.radians(90)))"
+  },
+  {
+    "example_id": 94,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0000000000000002"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "angle = math.radians(10)\nvalue = 1 / (2 * math.sin(angle)) - 2 * math.sin(math.radians(70))\nprint(value)"
+  },
+  {
+    "example_id": 95,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "71.0"
+    ],
+    "solution": "# Define z and w as symbols\nz, w = symbols('z w')\n\n\n# Define the equation z**13 = w and w**11 = z\neq1 = Eq(z**13, w)\neq2 = Eq(w**11, z)\n\n\n# Solve the equation\nsol = solve([eq1, eq2], [z, w])\n\n\n# Print the solution\nprint(sol)\n\n\n# Define the imaginary part of z as sin(m*pi/n)\nm, n = symbols('m n')\n\n\n# Define the equation\neq3 = Eq(im(z), sin(m*pi/n))\n\n\n# Solve the equation\nsol = solve(eq3, n)\n\n\n# Print the solution\nprint(sol)"
+  },
+  {
+    "example_id": 96,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "2004.0"
+    ],
+    "solution": "def ordered_pairs(a, b):\n    return a**2002 == a - b * 1j and b**2002 == a + b * 1j\n\ncount = 0\nfor a in range(-100, 100):\n    for b in range(-100, 100):\n        if ordered_pairs(a, b):\n            count += 1\nprint(count)"
+  },
+  {
+    "example_id": 97,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "100.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "n = 100\nwhile True:\n    for i in range(n):\n        x = symbols('x')\n        f = cos(i * x)\n        if solve(f, x) == []:\n            print(n)\n            break\n    if solve(f, x)!= []:\n        n += 1\n    else:\n        break"
+  },
+  {
+    "example_id": 98,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "30.000000000000004"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "value = abs(4+2j) * abs(6-3j)\nprint(value)"
+  },
+  {
+    "example_id": 99,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0",
+      "5.0",
+      "16.0",
+      "5.0",
+      "24.0",
+      "5.0",
+      "32.0",
+      "5.0",
+      "8.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "x = symbols('x')\nc = cos(x/4)\na = cos(x)\nd = solve(c - a, x)\n\nfor i in d:\n    if 0 < i < 24*math.pi:\n        print(i)"
+  },
+  {
+    "example_id": 100,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "n = 0\nwhile True:\n    z = n * np.exp(1j * 2 * np.pi / 4)\n    if z**4 + z**2 + 1 == 0:\n        n += 1\n    else:\n        break\nprint(n)"
+  },
+  {
+    "example_id": 101,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "-2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# 2*a*b + 2*c*d + (a-c)^2 + (b-d)^2 = 0\na, b, c, d = symbols('a, b, c, d')\neq = 2 * a * b + 2 * c * d + (a - c)**2 + (b - d)**2\nsol = solve(eq, [a, b, c, d])\nprint(sol)"
+  },
+  {
+    "example_id": 102,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ],
+    "solution": "from sympy import symbols, simplify\n\nx, y, z = symbols('x y z')\n\nexpr = (cos(x) + cos(y) + cos(z))**2 - (sin(x) + sin(y) + sin(z))**2 - 3 * cos(x) * cos(y) * cos(z)\n\nexpr = simplify(expr)\n\nprint(expr)"
+  },
+  {
+    "example_id": 103,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.424031039490741",
+      "1.99482736628564"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "a, b, c = symbols('a,b,c')\nsol = solve((cos(x) + sin(x)) - 1/2, x)\nprint(sol)"
+  },
+  {
+    "example_id": 104,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "v = np.array([5, 0])\nw = np.array([8, 0])\n\n# Find the projection of v onto w\nproj = np.dot(w, v) / np.linalg.norm(w) * w\n\n# Find the largest possible value of the projection\nlargest = np.linalg.norm(proj)\nprint(largest)"
+  },
+  {
+    "example_id": 105,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "864.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "# Find the number of distinct elements in C\n# by finding the number of elements in A and B\n\n# Number of elements in A\nn_A = 18\n\n# Number of elements in B\nn_B = 48\n\n# Number of elements in C\nn_C = n_A * n_B\n\nprint(n_C)"
+  },
+  {
+    "example_id": 106,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1554.0002615824287"
+    ],
+    "annotated_answers": [
+      "192.0"
+    ],
+    "solution": "# Solve for angle B\nangle_B = math.degrees(math.atan(3/2))\nangle_C = math.degrees(math.atan(1/2))\n\n# Calculate the area of the triangle\narea = (angle_B + angle_C - 180) * (1/2) * 32\nprint(area)"
+  },
+  {
+    "example_id": 107,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.809784033195007",
+      "0.331612557878923",
+      "-2.05263157894737"
+    ],
+    "annotated_answers": [
+      "159.0"
+    ],
+    "solution": "x = symbols('x')\nt = tan(x * 19 * math.pi / 180)\n\n# Solving\na = cos(96 * math.pi / 180)\nb = sin(96 * math.pi / 180)\n\ny = (a + b) / (a - b)\n\nprint(y)\nprint(t)\n\n# Solving\nsol = solve(t - y, x)\n\nfor x in sol:\n    print(x)"
+  },
+  {
+    "example_id": 108,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "-13.0"
+    ],
+    "solution": "a, b, c, d = symbols('a b c d')\nA = Matrix([[a, b], [c, d]])\ntrace_A = A.trace()\ntrace_A_sq = A.trace() ** 2\nprint(trace_A)\nprint(trace_A_sq)"
+  },
+  {
+    "example_id": 109,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.751938393884109",
+      "-44.37507983558631",
+      "1.319702539465328",
+      "3.0341879719791045"
+    ],
+    "annotated_answers": [
+      "900.0"
+    ],
+    "solution": "# Find the least positive real values of x for which sin(x) degrees is the same as sin(x) radians\nm, n, p, q = 1, 2, 3, 4\nx_m = m * np.pi / (n - np.pi)\nx_n = n * np.pi / (p - np.pi)\nx_p = p * np.pi / (q + np.pi)\nx_q = q * np.pi / (m + np.pi)\n\n# Print the values\nprint(x_m, x_n, x_p, x_q)"
+  },
+  {
+    "example_id": 110,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5707963267948966"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from math import sin, pi\n\ndef f(x):\n    return 2 * sin(4 * x + pi / 2)\n\ndef find_b(f):\n    for x in range(-30, 30):\n        for y in range(-30, 30):\n            if f(x) == y:\n                return 4 * x + pi / 2\n    return None\n\nprint(find_b(f))"
+  },
+  {
+    "example_id": 111,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-21.0"
+    ],
+    "solution": "from sympy import Matrix\nA = Matrix([[1,2,3],[4,5,6],[7,8,9]])\nB = Matrix([[1,2,3],[4,5,6],[7,8,9]])\n\nprint(A.det()) # -7\nprint(B.det()) # 3\n\nprint(B*A.det()) # -21"
+  },
+  {
+    "example_id": 112,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "R = np.array([[1, 1], [5, 5]])\nprint(np.linalg.det(R))"
+  },
+  {
+    "example_id": 113,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1021.0"
+    ],
+    "annotated_answers": [
+      "-59.0"
+    ],
+    "solution": "n = 1021\nwhile -90 <= n <= 90:\n    if math.sin(n) == math.sin(1021):\n        break\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 114,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "x = symbols('x')\ny = solve(cos(x) + cos(2*x) + cos(3*x) - 3, cos(x))[0]\nprint(y)"
+  },
+  {
+    "example_id": 115,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.9999999999999996",
+      "3.0000000000000004",
+      "0.3333333333333333",
+      "3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import numpy as np\n\np = np.array([[4, 3], [-1, 0]])\nq = np.array([[1, 0], [0, 3]])\n\np_inv = np.linalg.inv(p)\nprint(np.linalg.det(p))\nprint(np.linalg.det(q))\nprint(np.linalg.det(p_inv))\nprint(np.linalg.det(p_inv @ q @ p))"
+  },
+  {
+    "example_id": 116,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "431.99999999978166",
+      "4.436584647837111",
+      "-10.0"
+    ],
+    "annotated_answers": [
+      "432.0"
+    ],
+    "solution": "# Declare the sum\nsum = 0\n\n# Define the variable\nw = cmath.exp(2 * math.pi * 1j / 1729)\n\n# Define the range\nfor k in range(1, 1729):\n    sum += 1 / (1 + w ** k + w ** (2 * k) + w ** (3 * k))\n\n# Print the result\nprint(sum)"
+  },
+  {
+    "example_id": 117,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0005000000208333357"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "# find beta\nbeta = math.asin(1/2000)\nprint(beta)\n\n\n# find alpha\nalpha = math.acos(math.cos(beta) - math.sin(beta))\nprint(alpha)\n\n\n# find tan alpha\ntan_alpha = math.tan(alpha)\nprint(tan_alpha)"
+  },
+  {
+    "example_id": 118,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5",
+      "0.866025403784439",
+      "0.866025403784439",
+      "0.5"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "a, b = symbols('a b')\nv = np.array([a, b])\nw = np.array([sqrt(3), 1])\nv_proj = v.dot(w) * w / np.linalg.norm(w)\nprint(v_proj)\nprint(a)\nprint(b)"
+  },
+  {
+    "example_id": 119,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "a = 1\nb = 2\nc = 3\nd = 4\ne = 5\nf = 6\ng = 7\nh = 8\ni = 9\n\ndet_1 = a * (e * i - f * h) - b * (d * i - f * g) + c * (d * h - e * g)\ndet_2 = 2 * a * (e * i - f * h) - 2 * b * (d * i - f * g) + 2 * c * (d * h - e * g)\ndet_3 = -a * (e * i - f * h) + b * (d * i - f * g) - c * (d * h - e * g)\n\nprint(det_1)\nprint(det_2)\nprint(det_3)"
+  },
+  {
+    "example_id": 120,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.07447747943120445"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "import math\na = 3\nb = 4\nc = 5\narea = (b * math.sin(math.radians(c)) * (b * math.cos(math.radians(c)) + c * math.cos(math.radians(b)))) / 42\nprint(area)"
+  },
+  {
+    "example_id": 121,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "4.0",
+      "5.0",
+      "5.0",
+      "4.0",
+      "5.0",
+      "5.0",
+      "2.0",
+      "4.0",
+      "5.0",
+      "5.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "5.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "# define symbols x and y\nx, y = symbols('x, y')\n\n# define the equation\neq1 = tan(x) + tan(y) - 4\neq2 = cot(x) + cot(y) - 5\n\n# solve the equations simultaneously\nsol = solve([eq1, eq2], [x, y])\n\n# print the solution\nprint(sol)\n\n\n# compute tan(x+y)\nx = sol[0][0]\ny = sol[0][1]\ntan_x_y = tan(x+y)\nprint(tan_x_y)"
+  },
+  {
+    "example_id": 122,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0000000000000004"
+    ],
+    "annotated_answers": [
+      "-20.0"
+    ],
+    "solution": "# find the determinant of A\nA = np.array([[1, 2], [3, 4]])\ndetA = np.linalg.det(A)\nprint(detA)\n\n\n# find the determinant of B\nB = np.array([[5, 2], [1, 3]])\ndetB = np.linalg.det(B)\nprint(detB)\n\n\n# find the determinant of AB\nAB = np.dot(A, B)\ndetAB = np.linalg.det(AB)\nprint(detAB)"
+  },
+  {
+    "example_id": 123,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "x = symbols('x')\nans = (tan(x) + cot(x) - tan(2*x) - cot(2*x))\nprint(ans)"
+  },
+  {
+    "example_id": 124,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "19.0"
+    ],
+    "annotated_answers": [
+      "19.0"
+    ],
+    "solution": "v = np.array([-7, 1])\nw = np.array([5, 2])\n\n# Find the area of the parallelogram\narea = np.abs(np.cross(v, w))\nprint(area)"
+  },
+  {
+    "example_id": 125,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-3.0",
+      "0.0",
+      "-0.0",
+      "0.0",
+      "-3.33066907",
+      "-16.0",
+      "-3.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "determinant = 2\nmatrix = np.array([[1, 2], [3, 4]])\ninverse = np.linalg.inv(matrix)\nvalue = -3 * np.dot(inverse, matrix)\nprint(value)"
+  },
+  {
+    "example_id": 126,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.5"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "# define the length of BC\nc = 3\n\n# define the length of AB\na = 6\n\n# define the angle CAD\nalpha = math.radians(60)\n\n# define the angle BAD\nbeta = math.radians(60)\n\n# define the length of AD\nd = c * cos(alpha) + a * cos(beta)\n\n# print the length of AD\nprint(d)"
+  },
+  {
+    "example_id": 127,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "16.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "# Solve the equation\ncosV = 2/3\nTV = 24 * cosV\nprint(\"TV =\", TV)"
+  },
+  {
+    "example_id": 128,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "7.0",
+      "12.0",
+      "10.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "# set up the system of equations\nA = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])\nb = np.array([7, 12, 10])\nx = np.linalg.solve(A, b)\nprint(x)\n\n\n# find the side length\ns = np.sqrt((x[0] - x[1])**2 + (x[0] - x[2])**2 + (x[1] - x[2])**2)\nprint(s)"
+  },
+  {
+    "example_id": 129,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "a = [1, 0, 0]\nvalue = (a[1]**2 + a[2]**2 + a[0]**2)**0.5\nprint(value)"
+  },
+  {
+    "example_id": 130,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.849228045527798"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "import math\n\na = 1\nb = 2\nc = 3\n\nangle = math.radians(10)\nvalue = a * math.cos(angle)**3 + b * math.cos(angle)**2 + c * math.cos(angle)\nprint(value)"
+  },
+  {
+    "example_id": 131,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.33155940312959",
+      "252.0",
+      "-7.33155940312959",
+      "252.0"
+    ],
+    "annotated_answers": [
+      "65536.0"
+    ],
+    "solution": "z1 = 1 + 0j\nz2 = 1 - 1j\nz3 = z2**2 * z1\nz4 = z3**2 * z2\nz5 = z4**2 * z3\nz6 = z5**2 * z4\nz7 = z6**2 * z5\nz8 = z7**2 * z6\nz9 = z8**2 * z7\nz10 = z9**2 * z8\n\nreal_values = []\nfor i in range(1, 10):\n    real_values.append(z3**i * z4**i * z5**i)\n\nprint(z1 * z2 * z3 * z4 * z5 * z6 * z7 * z8 * z9 * z10)"
+  },
+  {
+    "example_id": 132,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "# Vector\nv1 = np.array([3, 4])\nv2 = np.array([2, 5])\nv3 = np.array([1, 3])\nv4 = np.array([-2, 1])\n\n# Add vectors\nv_sum = v1 + v2 + v3 + v4\n\n# Print the smallest possible value of k\nprint(min(range(len(v_sum)), key=lambda k: np.linalg.norm(v_sum[k])))"
+  },
+  {
+    "example_id": 133,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import math\n\ndef find_sum(x, y, z):\n    cos_x = math.cos(x)\n    cos_y = math.cos(y)\n    cos_z = math.cos(z)\n    sin_x = math.sin(x)\n    sin_y = math.sin(y)\n    sin_z = math.sin(z)\n    if cos_x + cos_y + cos_z == 0 and sin_x + sin_y + sin_z == 0:\n        return math.cos(2 * x - y - z) + math.cos(2 * y - x - z) + math.cos(2 * z - x - y)\n    else:\n        return 0\n\nprint(find_sum(0, 0, 0))"
+  },
+  {
+    "example_id": 134,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "print(math.floor(math.acos(math.cos(math.radians(90)))))"
+  },
+  {
+    "example_id": 135,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "15.0",
+      "36.0",
+      "63.0",
+      "96.0"
+    ],
+    "annotated_answers": [
+      "-27.0"
+    ],
+    "solution": "A = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\n\nC = 3 * A * B\n\nprint(C)"
+  },
+  {
+    "example_id": 136,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4018.0"
+    ],
+    "solution": "omega = cmath.sqrt(-1)\n\n# define the matrix\nM = np.array([[-omega**2, -omega], [1, 0]])\n\n# find the sum of the entries\nsum = 0\nfor i in range(2009):\n    sum += np.linalg.det(M)\n    M = M @ M\n\nprint(sum)"
+  },
+  {
+    "example_id": 137,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "a = 1\nb = 1\nc = 1\nprint(a**2 + b**2 + c**2 + 2*a*b*c)"
+  },
+  {
+    "example_id": 138,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "2.0",
+      "1.0",
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "x = symbols('x')\nexpr = 1/(1-tan(x)**2) + 1/(1-cot(x)**2)\nprint(expr)"
+  },
+  {
+    "example_id": 139,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "def f(x):\n    return (1/np.tan(x)**2 + 1/np.tan(x)**2) * np.sec(x)**4\n\n\nx = symbols('x')\nsol = solve(f(x), x)\n\n\nmin_val = 100\n\n\nfor i in sol:\n    val = f(i)\n    if val < min_val:\n        min_val = val\n\n\nprint(min_val)"
+  },
+  {
+    "example_id": 140,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "value = -8\nprint(value)"
+  },
+  {
+    "example_id": 141,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.744919122534797"
+    ],
+    "annotated_answers": [
+      "97.0"
+    ],
+    "solution": "import math\n\ndef find_point_on_circle(radius, angle):\n    x = radius * math.cos(angle)\n    y = radius * math.sin(angle)\n    return (x, y)\n\ndef distance(point1, point2):\n    return math.sqrt((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2)\n\ndef compute_product(points):\n    product = 1\n    for i in range(len(points) - 1):\n        product *= distance(points[i], points[i + 1])\n    return product\n\nradius = 3\nangle = math.radians(30)\nA = find_point_on_circle(radius, angle)\nangle += math.radians(30)\nB = find_point_on_circle(radius, angle)\nangle += math.radians(30)\nC = find_point_on_circle(radius, angle)\nangle += math.radians(30)\nD = find_point_on_circle(radius, angle)\n\npoints = [A, B, C, D]\n\nproduct = compute_product(points)\nprint(product)"
+  },
+  {
+    "example_id": 142,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "534.0"
+    ],
+    "annotated_answers": [
+      "534.0"
+    ],
+    "solution": "a = 5 - 8j\nb = 30 + 48j\n\n# Compute the modulus of ab\nab_mod = np.abs(a * b)\nprint(ab_mod)"
+  },
+  {
+    "example_id": 143,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-568.0",
+      "182.0",
+      "568.0",
+      "180.0"
+    ],
+    "annotated_answers": [
+      "152.0"
+    ],
+    "solution": "x = symbols(\"x\")\nn = solve(cos(x) - cos(568), x)\nprint(n)"
+  },
+  {
+    "example_id": 144,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-41.0"
+    ],
+    "annotated_answers": [
+      "-41.0"
+    ],
+    "solution": "a = np.array([-2, 0, 7])\nb = np.array([3, 4, -5])\nprint(np.dot(a, b))"
+  },
+  {
+    "example_id": 145,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "print(0)"
+  },
+  {
+    "example_id": 146,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.672367401111864",
+      "1.329133760887104"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "# Line 1\na1, b1, c1 = 3, -10, 1\np1 = np.array([a1, b1, c1])\nd1 = np.linalg.norm(p1)\n\n# Line 2\na2, b2, c2 = -5, -3, 6\np2 = np.array([a2, b2, c2])\nd2 = np.linalg.norm(p2)\n\n# Find the distance between the two lines\ndistance = abs(p1[0] * p2[1] - p1[1] * p2[0]) / (d1 * d2)\n\n# Find the angle between the two lines\nangle = np.arccos(np.dot(p1, p2) / (d1 * d2))\n\nprint('The distance between the two lines is:', distance)\nprint('The angle between the two lines is:', angle)"
+  },
+  {
+    "example_id": 147,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "6.0",
+      "7.0",
+      "6.0",
+      "5.0",
+      "7.0",
+      "7.0",
+      "5.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "a = symbols('a')\nb = symbols('b')\n\ng = a * cos(b * x)\n\nsol = solve(g, b)\nprint(sol)"
+  },
+  {
+    "example_id": 148,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0000000000000009",
+      "-2.7755575615628914",
+      "-16.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# a = e^(4*pi*i/5)\na = np.exp(4 * math.pi * 1j / 5)\n# b = e^(2*pi*i/17)\nb = np.exp(2 * math.pi * 1j / 17)\n\n# (a+b)(a+b^16)(a^2+b^2)(a^2+b^15)(a^3+b^8)(a^3+b^9)(a^4+b^4)(a^4+b^13)\nproduct = (a + b) * (a + b**16) * (a**2 + b**2) * (a**2 + b**15) * (a**3 + b**8) * (a**3 + b**9) * (a**4 + b**4) * (a**4 + b**13)\nprint(product)"
+  },
+  {
+    "example_id": 149,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0",
+      "7.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "z = 5\nw = 2\n\nx = w + z\n\nprint(x)\n\nprint(abs(x))"
+  },
+  {
+    "example_id": 150,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "value = 1 / math.cos(math.radians(10))**2 + 1 / math.sin(math.radians(20))**2 + 1 / math.sin(math.radians(40))**2\nprint(value)"
+  },
+  {
+    "example_id": 151,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.631338250816034"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "# Calculate the side length\ns = math.sqrt(((70 + 97 + 88 + 43) / 4))\n\n# Print the result\nprint(s)"
+  },
+  {
+    "example_id": 152,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "5.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "# Define a function to find the solution of the given equation\ndef solution(x):\n    # Calculate the value of tan x + sec x - 2 cos x\n    value = tan(x) + sec(x) - 2 * cos(x)\n    # Return the value\n    return value\n\n# Find the root of the given equation\nroot = solve(solution(x), x)\n\n# Print the root\nprint(root)"
+  },
+  {
+    "example_id": 153,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "54.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# define vectors\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\n# compute cross product\nc = np.cross(a, b)\n\n# compute dot product\nd = np.dot(a, np.cross(b, np.cross(a, b)))\n\n# print result\nprint(d)"
+  },
+  {
+    "example_id": 154,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-12.0"
+    ],
+    "solution": "# The minimum value of dot product is 0\nprint(0)"
+  },
+  {
+    "example_id": 155,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "matrix = np.array([[-3, 5], [-2, 1]])\nprint(np.dot(matrix[0], matrix[1]))"
+  }
+]

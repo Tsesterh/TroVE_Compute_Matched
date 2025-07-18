@@ -1,0 +1,6714 @@
+[
+  {
+    "example_id": 0,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "product = 2**3 * 4**5 * 6**7 * 8**9\nremainder = product % 13\nprint(remainder)"
+  },
+  {
+    "example_id": 1,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1440.0"
+    ],
+    "annotated_answers": [
+      "1440.0"
+    ],
+    "solution": "N = 2010\nfor num in range(N, 0, -1):\n    if num % 7 == 5 and num % 11 == 10 and num % 13 == 10:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 2,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "303.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "N = 2003\nprimes = [2]\nfor num in range(3, N, 2):\n    is_prime = True\n    for prime in primes:\n        if num % prime == 0:\n            is_prime = False\n            break\n    if is_prime:\n        primes.append(num)\nnum_primes = len(primes)\nprint(num_primes)"
+  },
+  {
+    "example_id": 3,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "factors = []\nfor i in range(1, 10):\n    if 10 % i == 0:\n        factors.append(i)\nprint(factors)"
+  },
+  {
+    "example_id": 4,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "num_batches = 44 // 20\nnum_donuts = 44 % 20\nprint(num_donuts)"
+  },
+  {
+    "example_id": 5,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "num = 3**65**10\ncubes = []\nfor num in range(1, int(num**(1/3) + 1)):\n    if num**3 == num:\n        cubes.append(num)\nprint(len(cubes))"
+  },
+  {
+    "example_id": 6,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "n = 21\nremainder = (n + 4 + n + 6 + n + 8) % 9\nprint(remainder)"
+  },
+  {
+    "example_id": 7,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "1.3333333333333333"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "total_milk = 8\ntotal_coffee = 8\nmilk = total_milk/4\ncoffee = total_coffee/6\nprint(milk, coffee)"
+  },
+  {
+    "example_id": 8,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "product = 1\nfor num in range(1, 13, 2):\n    product *= num\nprint(product % 10)"
+  },
+  {
+    "example_id": 9,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "num = 682\ndigits = [int(digit) for digit in str(num)]\nproduct = digits[0] * digits[-1]\nprint(product)"
+  },
+  {
+    "example_id": 10,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "10001011000.0"
+    ],
+    "annotated_answers": [
+      "100002.0"
+    ],
+    "solution": "num_1 = 101\nnum_2 = 1011\nsum_2 = num_1 + num_2\nprint(bin(sum_2))"
+  },
+  {
+    "example_id": 11,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "740.0"
+    ],
+    "solution": "L = 26*10**18*7114*4*4*10**18\nans = int(L % 10000)\nprint(ans)"
+  },
+  {
+    "example_id": 12,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1058.0"
+    ],
+    "annotated_answers": [
+      "1058.0"
+    ],
+    "solution": "n = 160\nfor num in range(1399):\n    if (n * num) % 1399 == 1:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 13,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "106.0"
+    ],
+    "solution": "N = 1000\nfor num in range(N):\n    if num % 7 == 1:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 14,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9261000.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "a = 210**3\nb = 210**3 + 210\nprint(a)"
+  },
+  {
+    "example_id": 15,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "def lcm(a, b):\n    return a * b / gcd(a, b)\n\ndef gcd(a, b):\n    while b!= 0:\n        t = b\n        b = a % b\n        a = t\n    return a\n\nn = 280 / 40\nprint(n)"
+  },
+  {
+    "example_id": 16,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "def sum_of_integers(base):\n    sum_ = 0\n    for num in range(1, base):\n        num_base_2 = bin(num)[2:]\n        num_base_3 = oct(num)[2:]\n        if len(num_base_2) == len(num_base_3) * 2:\n            sum_ += num\n    return sum_\n\nprint(sum_of_integers(3))"
+  },
+  {
+    "example_id": 17,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "product = 2\nfor num in range(4, 99, 2):\n    product *= num\nprint(product % 10)"
+  },
+  {
+    "example_id": 18,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "300.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "b = 103 // 4 * 12\nprint(b)"
+  },
+  {
+    "example_id": 19,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "def base3_digits(num):\n    digits = []\n    while num > 0:\n        digits.append(num % 3)\n        num //= 3\n    return digits\n\ndef base6_digits(num):\n    digits = []\n    while num > 0:\n        digits.append(num % 6)\n        num //= 6\n    return digits\n\ndef base10_digits(num):\n    digits = []\n    while num > 0:\n        digits.append(num % 10)\n        num //= 10\n    return digits\n\ndef average_of_four_digit_base3_numbers(num):\n    average = 0\n    for num in range(1000, 10000):\n        digits = base3_digits(num)\n        if len(digits) == 4 and all(d < 3 for d in digits):\n            num_in_base6 = 0\n            for i, d in enumerate(digits):\n                num_in_base6 += d * 6**i\n            if base6_digits(num_in_base6) == digits:\n                average += num\n    return average / num\n\nprint(average_of_four_digit_base3_numbers(10000))"
+  },
+  {
+    "example_id": 20,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "236.0"
+    ],
+    "solution": "number_of_soldiers = 200\n\n# Divide into groups of 4\ngroups_of_4 = number_of_soldiers // 4\nnumber_of_soldiers -= groups_of_4 * 4\n\n# Divide into groups of 3\ngroups_of_3 = number_of_soldiers // 3\nnumber_of_soldiers -= groups_of_3 * 3\n\n# Divide into groups of 11\ngroups_of_11 = number_of_soldiers // 11\n\nprint(groups_of_4 + groups_of_3 + groups_of_11)"
+  },
+  {
+    "example_id": 21,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "20.0",
+      "25.0",
+      "40.0",
+      "45.0",
+      "60.0",
+      "65.0",
+      "80.0",
+      "85.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "a = 100\nb = 20\nfor num in range(1, a):\n    if (num * (num-1)) % b == 4 * num % b:\n        print(num)"
+  },
+  {
+    "example_id": 22,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "41956.0"
+    ],
+    "annotated_answers": [
+      "11014.0"
+    ],
+    "solution": "num = 123_4 * 3_4\nprint(num)"
+  },
+  {
+    "example_id": 23,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.05625"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "decimal = 9/160\nprint(decimal % 1)"
+  },
+  {
+    "example_id": 24,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "N = 29\nM = 5\n\nresult = (N**13 - M**13) % 7\nprint(result)"
+  },
+  {
+    "example_id": 25,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from math import gcd\n\ndef max_gcd(n):\n    return gcd(13*n+8, 5*n+3)\n\nprint(max_gcd(1000))"
+  },
+  {
+    "example_id": 26,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "192.0"
+    ],
+    "annotated_answers": [
+      "313.0"
+    ],
+    "solution": "num_dozen_eggs = 200 // 12\nnum_baker_dozen_eggs = 1\ntotal_eggs = num_dozen_eggs * 12 + num_baker_dozen_eggs\nprint(total_eggs - 1)"
+  },
+  {
+    "example_id": 27,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "145176.0"
+    ],
+    "annotated_answers": [
+      "21126.0"
+    ],
+    "solution": "print(315_6 * 4_6)"
+  },
+  {
+    "example_id": 28,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "6.0",
+      "8.0",
+      "10.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "n = 2\nwhile n < 10:\n    n += 2\n    print(n)"
+  },
+  {
+    "example_id": 29,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "cube = 0\nwhile True:\n    cube += 1\n    cube_sum = cube + 2\n    if cube_sum % 3 == 0:\n        print(cube)\n        break"
+  },
+  {
+    "example_id": 30,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "negative_products = 0\nfor a in range(-200, -1):\n    product = 1\n    for b in range(1, a):\n        if a % b == 0:\n            product *= b\n    if product < 0:\n        negative_products += 1\nprint(negative_products)"
+  },
+  {
+    "example_id": 31,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "75.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "num_bad = 0\nfor num in range(100, 200):\n    if num % 4 == 0:\n        continue\n    is_bad = True\n    for digit in str(num):\n        if digit == \":\":\n            is_bad = False\n            break\n    if is_bad:\n        num_bad += 1\nprint(num_bad)"
+  },
+  {
+    "example_id": 32,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.0"
+    ],
+    "annotated_answers": [
+      "88.0"
+    ],
+    "solution": "num_m = 0\nfor m in range(1, 100):\n    if (m % 10) == 1 or (m % 10) == 3 or (m % 10) == 7 or (m % 10) == 9:\n        num_m += 1\nprint(num_m)"
+  },
+  {
+    "example_id": 33,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "perfect_squares = []\nlargest = 0\nfor num in range(100, 1000):\n    square = num**2\n    if square in perfect_squares:\n        largest = len(perfect_squares)\n        break\n    perfect_squares.append(square)\nprint(largest)"
+  },
+  {
+    "example_id": 34,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "154.0"
+    ],
+    "annotated_answers": [
+      "66.0"
+    ],
+    "solution": "N_6 = 531340\nN_8 = 124154\nN_10 = N_6 * 8**2 + N_8 * 6**2\nremainder = N_10 % 210\nprint(remainder)"
+  },
+  {
+    "example_id": 35,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "39.0"
+    ],
+    "annotated_answers": [
+      "1147.0"
+    ],
+    "solution": "primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]\nmax_product = 0\nfor i in range(len(primes)):\n    for j in range(i+1, len(primes)):\n        product = primes[i] * primes[j]\n        if product < 40:\n            max_product = max(max_product, product)\nprint(max_product)"
+  },
+  {
+    "example_id": 36,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "111010101434.0"
+    ],
+    "annotated_answers": [
+      "76028.0"
+    ],
+    "solution": "n1 = 324\nn2 = 111010101110\nprint(n1 + n2)"
+  },
+  {
+    "example_id": 37,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "num = 16**17 * 17**18 * 18**19\nunits_digit = num % 10\nprint(units_digit)"
+  },
+  {
+    "example_id": 38,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "30.0"
+    ],
+    "annotated_answers": [
+      "75.0"
+    ],
+    "solution": "a = 1575\nb = 1050\ngcd = a*7//b*3\nprint(gcd)"
+  },
+  {
+    "example_id": 39,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "def gcd(a, b):\n    if b == 0:\n        return a\n    return gcd(b, a % b)\n\ndef find_gcf(numbers):\n    gcf = 1\n    for number in numbers:\n        gcf = gcd(gcf, number)\n    return gcf\n\ndef three_digit_numbers():\n    for num1 in range(100, 1000):\n        for num2 in range(num1, 1000):\n            for num3 in range(num2, 1000):\n                if num1 < num2 < num3:\n                    yield num1 * 100 + num2 * 10 + num3\n\nnumbers = list(three_digit_numbers())\ngcf = find_gcf(numbers)\nprint(gcf)"
+  },
+  {
+    "example_id": 40,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "1.0",
+      "4.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "possible_values = [0, 1, 4, 9]\nprint(possible_values)"
+  },
+  {
+    "example_id": 41,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "product = 1 * 3 * 5 * 7 * 9 * 11 * 13\nones_digit = product % 10\nprint(ones_digit)"
+  },
+  {
+    "example_id": 42,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "1.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "9.0",
+      "9.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "129.0"
+    ],
+    "solution": "n = 3**17 + 3**10\nn_plus_1 = n + 1\nn_plus_1_digits = [int(digit) for digit in str(n_plus_1)]\nn_plus_1_digits.sort()\nprint(n_plus_1_digits)"
+  },
+  {
+    "example_id": 43,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1342.0"
+    ],
+    "annotated_answers": [
+      "6710.0"
+    ],
+    "solution": "r = 1342 % 13\n\nfor i in range(1342, 2 * 1342, 1342):\n    if i % 13 == r:\n        print(i)\n        break"
+  },
+  {
+    "example_id": 44,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "119.0",
+      "39.0"
+    ],
+    "annotated_answers": [
+      "142.0"
+    ],
+    "solution": "N = 4641\nfor i in range(100, 1000):\n    j = N // i\n    if i * j == N:\n        print(i, j)\n        break"
+  },
+  {
+    "example_id": 45,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from math import gcd\n\ndef euclidean_algorithm(a, b):\n    while b!= 0:\n        t = a % b\n        a = b\n        b = t\n    return a\n\ndef modular_inverse(a, n):\n    return pow(a, n-2, n)\n\ndef modular_exponentiation(base, exponent, modulus):\n    result = 1\n    while exponent > 0:\n        if exponent % 2 == 1:\n            result = (result * base) % modulus\n        exponent = exponent // 2\n        base = (base * base) % modulus\n    return result\n\ndef find_nth_digit(n, base):\n    if n == 1:\n        return 0\n    if n == 2:\n        return 5\n    d = int(n ** 0.5)\n    a = 10 ** (d * 2 - 1)\n    b = 10 ** (d - 1)\n    c = 10 ** (d - 2)\n    r = n % d\n    if r == 0:\n        r = d\n    if r <= d - 2:\n        x = a + (b + c) * (r - 1)\n    else:\n        x = a + (b + c) * (d - r)\n    return x % base\n\ndef solve(n):\n    num_digits = int(n ** 0.5) + 1\n    digits = [0] * num_digits\n    for i in range(num_digits):\n        digits[i] = find_nth_digit(n - i * num_digits, 10)\n    return int(''.join(map(str, digits)))\n\ndef main():\n    n = 4037\n    result = solve(n)\n    print(result)\n\nif __name__ == '__main__':\n    main()"
+  },
+  {
+    "example_id": 46,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.01",
+      "126.57999999999998",
+      "0.01",
+      "126.56999999999998",
+      "0.01",
+      "126.55999999999997",
+      "0.01",
+      "126.54999999999997",
+      "0.01",
+      "126.53999999999996"
+    ],
+    "annotated_answers": [
+      "59.0"
+    ],
+    "solution": "dollars = [27.47, 35.23, 37.37, 26.52]\ncoins = [0.01, 0.05, 0.10, 0.25, 0.50, 1.00]\ntotal = sum(dollars)\nfor coin in coins:\n    while coin <= total:\n        total -= coin\n        print(f\"{coin}: {total}\")"
+  },
+  {
+    "example_id": 47,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "6.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "b = 10\nwhile b > 0:\n    if 2013 % b == 3:\n        print(b)\n    b -= 1"
+  },
+  {
+    "example_id": 48,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "314.0"
+    ],
+    "solution": "a = 0\nfor num in [3, 5, 7, 9]:\n    a = (a * 10 + 2) % num\nprint(a)"
+  },
+  {
+    "example_id": 49,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "23.0",
+      "7.0"
+    ],
+    "annotated_answers": [
+      "64.0"
+    ],
+    "solution": "import sympy\n\nu = sympy.var('u')\neq = 14*u - 46\n\nsolutions = sympy.solve(eq, u)\n\nsmallest_solutions = []\nfor solution in solutions:\n    if solution > 0:\n        smallest_solutions.append(solution)\n\nprint(sum(smallest_solutions)/len(smallest_solutions))"
+  },
+  {
+    "example_id": 50,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "num_left_over = 7 % 4\nprint(num_left_over)"
+  },
+  {
+    "example_id": 51,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "53.0"
+    ],
+    "annotated_answers": [
+      "203.0"
+    ],
+    "solution": "coins = 53\nbags = 7\ntotal_coins = coins * bags\nmin_coins = total_coins // bags\nprint(min_coins)"
+  },
+  {
+    "example_id": 52,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "90.0"
+    ],
+    "annotated_answers": [
+      "89.0"
+    ],
+    "solution": "num1 = 81_9\nnum2 = 72_9\nprint(num1 - num2)"
+  },
+  {
+    "example_id": 53,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "a, b, c = 1, 2, 3\nremainder = a + b + c\nprint(remainder)"
+  },
+  {
+    "example_id": 54,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10101.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "N = 10101\nprimes = [2]\nfor num in range(3, N, 2):\n    is_prime = True\n    for prime in primes:\n        if num % prime == 0:\n            is_prime = False\n            break\n    if is_prime:\n        primes.append(num)\nsmallest = primes[0]\nlargest = primes[-1]\nprint(smallest + largest)"
+  },
+  {
+    "example_id": 55,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "m = 24\nn = 28\nlcm = 112\ngcd = 8\nresult = lcm / gcd\nprint(result)"
+  },
+  {
+    "example_id": 56,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0",
+      "6.0",
+      "12.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "n = 48\nm = 156\ndivisors = []\nfor i in range(1, n + 1):\n    if n % i == 0:\n        divisors.append(i)\nfor j in range(1, m + 1):\n    if m % j == 0:\n        if j in divisors:\n            print(j)"
+  },
+  {
+    "example_id": 57,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ],
+    "solution": "n = 12\nk = 15\nlcm = n*k\ngcd = n*k\ndenominator = lcm/gcd\nprint(denominator)"
+  },
+  {
+    "example_id": 58,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "num_factors = 0\nfor i in range(1, 1000 + 1, 20):\n    if i % 20 == 0:\n        num_factors += 1\nprint(num_factors)"
+  },
+  {
+    "example_id": 59,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "num = 13**19 * 19**13\nprint(num % 10)"
+  },
+  {
+    "example_id": 60,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "222.0"
+    ],
+    "annotated_answers": [
+      "222.0"
+    ],
+    "solution": "for n in range(0, 2293):\n    if 31 * n % 2293 == 3:\n        print(n)\n        break"
+  },
+  {
+    "example_id": 61,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "num = 3/7\ndecimal_rep = str(num)\nprint(decimal_rep[-9])"
+  },
+  {
+    "example_id": 62,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "132.0"
+    ],
+    "annotated_answers": [
+      "3300.0"
+    ],
+    "solution": "r = 13200 // 100\nprint(r)"
+  },
+  {
+    "example_id": 63,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "factors = []\nfor num in range(1, 300, 3):\n    if num % 3 == 0:\n        factors.append(num)\nprint(len(factors))"
+  },
+  {
+    "example_id": 64,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "48.0"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ],
+    "solution": "a = 5\nb = 53\nlast_digit_a = str(a)[-1]\nlast_digit_b = str(b)[-2:]\nlast_two_digits_a_minus_b = str(a-b)[-2:]\nprint(last_two_digits_a_minus_b)"
+  },
+  {
+    "example_id": 65,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "60.0"
+    ],
+    "solution": "num_fractions = 0\nfor num in range(1, 100):\n    if num % 33 == 0:\n        num_fractions += 1\nprint(num_fractions)"
+  },
+  {
+    "example_id": 66,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2743.0"
+    ],
+    "annotated_answers": [
+      "2743.0"
+    ],
+    "solution": "max_num = 14**3 - 1\nprint(max_num)"
+  },
+  {
+    "example_id": 67,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "841.0"
+    ],
+    "solution": "for k in range(1000):\n    if k % 3 == 1 and k % 4 == 1 and k % 5 == 1 and k % 6 == 1 and k % 7 == 1:\n        print(k)\n        break"
+  },
+  {
+    "example_id": 68,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10199.0"
+    ],
+    "annotated_answers": [
+      "11189.0"
+    ],
+    "solution": "for num in range(10000, 100000):\n    digits = [int(digit) for digit in str(num)]\n    if sum(digits) == 20:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 69,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 101):\n    sum = (sum + num) % 6\nprint(sum)"
+  },
+  {
+    "example_id": 70,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "S = sum(range(2010, 4019))\nprint(S % 2009)"
+  },
+  {
+    "example_id": 71,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "b = 5\nwhile b > 1:\n    if 5 * b == 151:\n        break\n    b -= 1\nprint(b)"
+  },
+  {
+    "example_id": 72,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "131.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "integer_a = 55\na = 131\nprint(a)"
+  },
+  {
+    "example_id": 73,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "110889.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "a_list = list(range(1, 1000))\nb_list = list(range(1, 1000))\npairs = []\nfor a in a_list:\n    for b in b_list:\n        if a * b == 0:\n            continue\n        if (a * 14 * b) % (9 * a) == 0:\n            pairs.append((a, b))\nnum_pairs = len(pairs)\nprint(num_pairs)"
+  },
+  {
+    "example_id": 74,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "128.0"
+    ],
+    "solution": "values = [2, 4, 8]\ntotal = 0\nfor _ in range(3):\n    num = values.pop()\n    total += num\nprint(total)"
+  },
+  {
+    "example_id": 75,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "def fibonacci_sequence(n):\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fibonacci_sequence(n-1) + fibonacci_sequence(n-2)\n\ndef gcd(a, b):\n    while b!= 0:\n        a, b = b, a % b\n    return a\n\ndef max_gcd_consecutive_fibonacci(n):\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return max(gcd(fibonacci_sequence(n-1), fibonacci_sequence(n)), max_gcd_consecutive_fibonacci(n-1))\n\nprint(max_gcd_consecutive_fibonacci(3))"
+  },
+  {
+    "example_id": 76,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "from sympy.utilities.iterables import multiset_permutations\n\ndef get_relatively_prime_pairs(digits):\n    pairs = []\n    for perm in multiset_permutations(digits):\n        for i in range(len(perm) - 1):\n            if perm[i] * perm[i + 1] % (perm[i] + perm[i + 1]) == 1:\n                pairs.append((perm[i], perm[i + 1]))\n    return pairs\n\ndef is_relatively_prime(digits):\n    pairs = get_relatively_prime_pairs(digits)\n    return len(pairs) == len(set(pairs))\n\ndef get_relatively_prime_integers(digits):\n    integers = []\n    for perm in multiset_permutations(digits):\n        if is_relatively_prime(perm):\n            integers.append(int(\"\".join(map(str, perm))))\n    return integers\n\nprint(len(get_relatively_prime_integers([1, 2, 3, 4, 5, 6])))"
+  },
+  {
+    "example_id": 77,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "a = 1000\nb = 10\na_b = a - b\na_b_last_digit = a_b % 10\nprint(a_b_last_digit)"
+  },
+  {
+    "example_id": 78,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.274"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import N\nnum = N(137/500)\nprint(num)"
+  },
+  {
+    "example_id": 79,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "49.0"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ],
+    "solution": "n = 12\nwhile (n % 3!= 1) or (n % 4!= 1) or (n % 5!= 4):\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 80,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "70.0"
+    ],
+    "annotated_answers": [
+      "687.0"
+    ],
+    "solution": "X = 6\nY = 1\nD = 9\nXYD = X * 10 + Y + D\nprint(XYD)"
+  },
+  {
+    "example_id": 81,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "341.0"
+    ],
+    "annotated_answers": [
+      "231.0"
+    ],
+    "solution": "n = 508\na = 33\nb = 11\na_inv = 77\n\nb_inv = pow(a_inv, n-2, n)\n\nprint(b_inv)"
+  },
+  {
+    "example_id": 82,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "def gcd(a, b):\n    while b!= 0:\n        a, b = b, a % b\n    return a\n\ndef consecutive_product(a, b):\n    product = 1\n    for i in range(a, b+1):\n        product *= i\n    return product\n\ndef consecutive_gcd(a, b):\n    return gcd(consecutive_product(a, b), consecutive_product(b, a+1))\n\nprint(consecutive_gcd(1, 4))"
+  },
+  {
+    "example_id": 83,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "56.0"
+    ],
+    "annotated_answers": [
+      "35.0"
+    ],
+    "solution": "n = 2\npositive_divisors_2n = 28\npositive_divisors_3n = 30\npositive_divisors_6n = positive_divisors_2n + positive_divisors_3n - 2\nprint(positive_divisors_6n)"
+  },
+  {
+    "example_id": 84,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "fraction = 4321 / (5**7 * 2**8)\ndigits = str(fraction).split('.')[-1]\nsum_of_digits = sum([int(digit) for digit in digits])\nprint(sum_of_digits)"
+  },
+  {
+    "example_id": 85,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "m = 6\nn = 0\nlargest_divisor = 9\nprint(largest_divisor)"
+  },
+  {
+    "example_id": 86,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1909.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def gcd(a, b):\n    while b!= 0:\n        a, b = b, a % b\n    return a\n\ndef f(x):\n    return 12*x+7\n\ndef g(x):\n    return 5*x+2\n\nsum = 0\nfor x in range(1, 1000):\n    sum += gcd(f(x), g(x))\n\nprint(sum)"
+  },
+  {
+    "example_id": 87,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "a = 20\nb = 60\ngcd = a if b % a == 0 else b\nprint(gcd)"
+  },
+  {
+    "example_id": 88,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "N = 1\nfor i in range(2, 11):\n    if i % 5!= 0:\n        N *= i\nprint(N % 10)"
+  },
+  {
+    "example_id": 89,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "product = 1\nfor num in range(1, 100):\n    product *= 2**num\nprint(product % 100)"
+  },
+  {
+    "example_id": 90,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "n = 0\nfor m in range(1, 9):\n    if m % 8 == 1:\n        n += 1\nremainder = 3**n % 8\nprint(remainder)"
+  },
+  {
+    "example_id": 91,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "58.0"
+    ],
+    "solution": "largest = 0\nfor i in range(999, 100, -1):\n    sum_of_three = i + i + i\n    if sum_of_three < 220:\n        largest = i\n        break\nprint(largest)"
+  },
+  {
+    "example_id": 92,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "27.110883423451916"
+    ],
+    "annotated_answers": [
+      "105.0"
+    ],
+    "solution": "x = 735\na = 2\nsquare_root = x**(1/2)\nprint(square_root)"
+  },
+  {
+    "example_id": 93,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "remainder = (91145 + 91146 + 91147 + 91148) % 4\nprint(remainder)"
+  },
+  {
+    "example_id": 94,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.041666666666666664"
+    ],
+    "annotated_answers": [
+      "116.0"
+    ],
+    "solution": "b = 24**-1 % 11**2\nprint(b)"
+  },
+  {
+    "example_id": 95,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "a = 3339\nb = 2961\nc = 1491\n\ndef gcd(a, b):\n    if b == 0:\n        return a\n    return gcd(b, a % b)\n\ngcd_abc = gcd(gcd(a, b), c)\nprint(gcd_abc)"
+  },
+  {
+    "example_id": 96,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "def gcd(a, b):\n    while b!= 0:\n        a, b = b, a % b\n    return a\n\n\ndef factorial(n):\n    result = 1\n    for i in range(2, n+1):\n        result *= i\n    return result\n\n\ndef solve(n):\n    factorial_n = factorial(n)\n    factorial_n_plus_2 = factorial_n + 2\n    factorial_n_plus_8 = factorial_n + 8\n    gcd_1 = gcd(factorial_n_plus_2, factorial_n_plus_8)\n    print(gcd_1)\n\n\nsolve(10)"
+  },
+  {
+    "example_id": 97,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "729.0"
+    ],
+    "solution": "cubes = [i**3 for i in range(1, 100)]\nsquares = [i**2 for i in range(1, 100)]\nfor i in range(1, 100):\n    if i**3 in squares and i**2 in cubes:\n        print(i**3)\n        break"
+  },
+  {
+    "example_id": 98,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "units = 19**19 + 99**99\nprint(units % 10)"
+  },
+  {
+    "example_id": 99,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "45537549124.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "a = [0, 1]\nb = [1, 2]\nfor n in range(2, 51):\n    a.append(a[n-1] + b[n-2])\n    b.append(a[n-2] + b[n-1])\nprint(a[50] + b[50])"
+  },
+  {
+    "example_id": 100,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11211.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "A = 101\nB = 111\nAB = A * B\nA7 = A % 10\nB7 = B % 10\nprint(AB, A7, B7)"
+  },
+  {
+    "example_id": 101,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "351.5"
+    ],
+    "annotated_answers": [
+      "103.0"
+    ],
+    "solution": "num_pages = 7 * 100 + 3\nnum_leaves = (num_pages / 2)\nprint(num_leaves)"
+  },
+  {
+    "example_id": 102,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "lcm = 144\ngcd = 144 / 9\nsum = lcm / gcd\nprint(sum)"
+  },
+  {
+    "example_id": 103,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "n = 10\nwhile n % 10!= 1:\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 104,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "sum_squares = sum([x**2 for x in range(1, 10)])\nprint(sum_squares % 10)"
+  },
+  {
+    "example_id": 105,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "import math\nmax_num_draws = 16\nfor num_draws in range(max_num_draws):\n    product = 0\n    for num in range(num_draws):\n        product = product * 10 + num + 1\n    root = math.sqrt(product)\n    if root % 1 == 0:\n        print(num_draws)\n        break"
+  },
+  {
+    "example_id": 106,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "gcd = 1\nwhile gcd!= 1:\n    if 2863 % gcd == 0 and 1344 % gcd == 0:\n        break\n    gcd += 1\nprint(gcd)"
+  },
+  {
+    "example_id": 107,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "91.0"
+    ],
+    "annotated_answers": [
+      "91.0"
+    ],
+    "solution": "factors = [1, 2, 3, 4, 6, 9, 12, 18, 36]\nsum_of_factors = sum(factors)\nprint(sum_of_factors)"
+  },
+  {
+    "example_id": 108,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from math import factorial\nN = 20\nfact = factorial(N)\nlast_18 = str(fact)[-18:]\nfirst_digit = int(last_18[0])\nprint(first_digit)"
+  },
+  {
+    "example_id": 109,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "remainder = 2003 % 11\nprint(remainder)"
+  },
+  {
+    "example_id": 110,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "b = 321 % 10 + 1\nprint(b)"
+  },
+  {
+    "example_id": 111,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "n = 3\nk = 0\nfor i in range(2**n):\n    if i % 13 == 3:\n        k += 1\nprint(k)"
+  },
+  {
+    "example_id": 112,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "468.0"
+    ],
+    "annotated_answers": [
+      "270.0"
+    ],
+    "solution": "def sum_proper_divisors(num):\n    sum = 0\n    for i in range(1, int(num**0.5) + 1):\n        if num % i == 0:\n            sum += i\n            if num // i!= i:\n                sum += num // i\n    return sum\n\nprint(sum_proper_divisors(198))"
+  },
+  {
+    "example_id": 113,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2420.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "base = 10\nn1 = 44\nn2 = 55\nresult = n1 * n2\nprint(result)"
+  },
+  {
+    "example_id": 114,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "31.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n\ndef reverse(n):\n    return int(str(n)[::-1])\n\n\nn = 17\nwhile True:\n    n += 1\n    if is_prime(n) and is_prime(reverse(n)):\n        print(n)\n        break"
+  },
+  {
+    "example_id": 115,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "144.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import math\n\nn = 120\nnum_factors = 0\nfor i in range(1, int(math.sqrt(n))+1):\n    if n % i == 0:\n        num_factors += 2\n\na = num_factors\nb = n\nc = math.gcd(a, b)\n\nprint(a+b+c)"
+  },
+  {
+    "example_id": 116,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "favorite_number = 100\nremainder_1 = favorite_number % 7\nremainder_2 = (favorite_number * 5) % 7\nprint(remainder_1, remainder_2)"
+  },
+  {
+    "example_id": 117,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "sum_of_cubes = 0\nfor cube in range(1, 22):\n    sum_of_cubes += cube**3\nprint(sum_of_cubes % 10)"
+  },
+  {
+    "example_id": 118,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "k = 0\nwhile True:\n    k += 1\n    num = k * 357000\n    if num % 18 == 0:\n        print(k)\n        break"
+  },
+  {
+    "example_id": 119,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1000.0"
+    ],
+    "annotated_answers": [
+      "8000.0"
+    ],
+    "solution": "from math import gcd\n\ndef lcm(a, b):\n    return a * b / gcd(a, b)\n\nr = 1\nwhile lcm(r, 700)!= 7000:\n    r += 1\nprint(r)"
+  },
+  {
+    "example_id": 120,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8529.0"
+    ],
+    "annotated_answers": [
+      "695.0"
+    ],
+    "solution": "N = 852_9\nprint(N)"
+  },
+  {
+    "example_id": 121,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import math\n\nnum = 5\npower = 999999\nmodulus = 7\nremainder = pow(num, power, modulus)\nprint(remainder)"
+  },
+  {
+    "example_id": 122,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "754.0"
+    ],
+    "solution": "N = 3254\nbase = 6\nremainder = N % base\nprint(remainder)"
+  },
+  {
+    "example_id": 123,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.41025641025641024"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "x = 3**-1 + 13**-1\nx = x % 19\nprint(x)"
+  },
+  {
+    "example_id": 124,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "72.0"
+    ],
+    "annotated_answers": [
+      "216.0"
+    ],
+    "solution": "from math import ceil\n\nmultiple = ceil(16 / 72) * 72\nprint(multiple)"
+  },
+  {
+    "example_id": 125,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "remainder = sum(range(1, 199, 2)) % 7\nprint(remainder)"
+  },
+  {
+    "example_id": 126,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "102.0"
+    ],
+    "solution": "m = 24*n + 51\ngcd = 3*n\nprint(gcd)"
+  },
+  {
+    "example_id": 127,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "131.0"
+    ],
+    "annotated_answers": [
+      "71.0"
+    ],
+    "solution": "pages = 12 * 10 + 11\nprint(pages)"
+  },
+  {
+    "example_id": 128,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "red = 8\ngreen = 13\nwhite = int((red + green) / 16)\nprint(white)"
+  },
+  {
+    "example_id": 129,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "31.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "num_congruent_to_5 = 0\nfor num in range(-200, 201):\n    if num % 13 == 5:\n        num_congruent_to_5 += 1\nprint(num_congruent_to_5)"
+  },
+  {
+    "example_id": 130,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "42.0"
+    ],
+    "annotated_answers": [
+      "39.0"
+    ],
+    "solution": "x = 42\nx %= 47\nprint(x)"
+  },
+  {
+    "example_id": 131,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "90.0"
+    ],
+    "solution": "num_terms = 0\nfor n in range(1, 1001):\n    term = n / 1375\n    if int(term) == term:\n        num_terms += 1\nprint(num_terms)"
+  },
+  {
+    "example_id": 132,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "664.0"
+    ],
+    "annotated_answers": [
+      "6647.0"
+    ],
+    "solution": "num = 340\nbase = 7\n\ndef to_base(num, base):\n    digits = '01234567'\n    if num == 0:\n        return '0'\n    res = ''\n    while num > 0:\n        res = digits[num % base] + res\n        num //= base\n    return res\n\nprint(to_base(num, base))"
+  },
+  {
+    "example_id": 133,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "611.0"
+    ],
+    "annotated_answers": [
+      "611.0"
+    ],
+    "solution": "for i in range(999, 100, -1):\n    product = 1\n    for j in str(i):\n        product *= int(j)\n    if product == 6:\n        print(i)\n        break"
+  },
+  {
+    "example_id": 134,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7359999999.999999"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "product = (9.2 * 10**2) * (8 * 10**6)\nprint(product)"
+  },
+  {
+    "example_id": 135,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "remainder = pow(1999, 2000, 5)\nprint(remainder)"
+  },
+  {
+    "example_id": 136,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import math\n\ndef is_prime(n):\n    if n == 2 or n == 3:\n        return True\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef sum_digits(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n //= 10\n    return total\n\ndef probability_prime(n):\n    if n == 1:\n        return 0\n    if n == 2 or n == 3:\n        return 1\n    if sum_digits(n)!= 9:\n        return 0\n    return 1 / math.sqrt(10 ** 8)\n\nprint(probability_prime(10000000))"
+  },
+  {
+    "example_id": 137,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1200.0"
+    ],
+    "annotated_answers": [
+      "12007.0"
+    ],
+    "solution": "num = 441\nbase = 7\nanswer = ''\nwhile num > 0:\n    answer = str(num % base) + answer\n    num //= base\nprint(answer)"
+  },
+  {
+    "example_id": 138,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "num_solutions = 0\nfor x in range(12):\n    if (x-1) % 12 == (1-x) % 12 and (x-2) % 12 == (2-x) % 12:\n        num_solutions += 1\nprint(num_solutions)"
+  },
+  {
+    "example_id": 139,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "num_3digit_numbers = 0\nfor h in range(1, 10):\n    for t in range(h, 10):\n        for u in range(t, 10):\n            if (h % t == 0 and\n                h % u == 0 and\n                t % u == 0 and\n                h!= t and\n                h!= u and\n                t!= u):\n                num_3digit_numbers += 1\nprint(num_3digit_numbers)"
+  },
+  {
+    "example_id": 140,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "num = 3740\nif num % 18 == 0:\n    print(num % 10)\nelse:\n    print(num % 18)"
+  },
+  {
+    "example_id": 141,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "35760.0"
+    ],
+    "annotated_answers": [
+      "41305.0"
+    ],
+    "solution": "num_1 = 1234_5 + 2341_5\nprint(num_1)"
+  },
+  {
+    "example_id": 142,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "N = int(8**0.5)\nprint(N)"
+  },
+  {
+    "example_id": 143,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "503.0"
+    ],
+    "annotated_answers": [
+      "503.0"
+    ],
+    "solution": "N = 18632\nnum_congruent = 0\nfor num in range(N):\n    if num % 37 == 23:\n        num_congruent += 1\nprint(num_congruent)"
+  },
+  {
+    "example_id": 144,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "n = 2\nremainder = (n + 2) * (n + 4) * (n + 6) % 7\nprint(remainder)"
+  },
+  {
+    "example_id": 145,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "100.0"
+    ],
+    "annotated_answers": [
+      "1681.0"
+    ],
+    "solution": "def is_perfect_square(num):\n    return num**0.5 == int(num**0.5)\n\nfor num in range(100, 10000):\n    if is_perfect_square(num) and is_perfect_square(num // 100):\n        print(num)\n        break"
+  },
+  {
+    "example_id": 146,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "100.0"
+    ],
+    "annotated_answers": [
+      "97.0"
+    ],
+    "solution": "primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]\nsum = 0\nfor i in range(3):\n    sum += primes[i]\nsum_squared = sum ** 2\nprint(sum_squared)"
+  },
+  {
+    "example_id": 147,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "49.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "num_marbles = 239 + 174 + 83\nremaining_marbles = num_marbles // 10\nprint(remaining_marbles)"
+  },
+  {
+    "example_id": 148,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "35.0"
+    ],
+    "solution": "x = 4\ny = 7\nz = (x*y) % 9\nprint(z)"
+  },
+  {
+    "example_id": 149,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "n = 9\nproduct = 1\nfor num in range(2, n):\n    product *= num\nremainder = product % 10\nprint(remainder)"
+  },
+  {
+    "example_id": 150,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13333.0"
+    ],
+    "annotated_answers": [
+      "108.0"
+    ],
+    "solution": "a = 200\nb = 400\ngcd = 6\nlcm = a * b // gcd\nprint(lcm)"
+  },
+  {
+    "example_id": 151,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.2857142857142858",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "remainder = (7j+3) * 3 / 7\nprint(remainder)"
+  },
+  {
+    "example_id": 152,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "10011010010.0"
+    ],
+    "annotated_answers": [
+      "110102.0"
+    ],
+    "solution": "a = 1\nb = 11\nc = 111\nd = 1111\nprint(bin(a+b+c+d))"
+  },
+  {
+    "example_id": 153,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "units_digit = 7**53 % 10\nprint(units_digit)"
+  },
+  {
+    "example_id": 154,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "num = (972 - 268) * (973 - 267) * (974 - 266) + (968 - 272) * (967 - 273) * (966 - 274) - (999 - 222) ** 3\nunits_digit = num % 10\nprint(units_digit)"
+  },
+  {
+    "example_id": 155,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6049.5"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "rows_A = 105\nrows_B = rows_A + 6\nnum_band_members_B = rows_B * (rows_B - 2) / 2\nprint(num_band_members_B)"
+  },
+  {
+    "example_id": 156,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14816.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "sum = 0\nfor A in range(4):\n    for B in range(4):\n        for C in range(4):\n            ABC = str(A) + str(B) + str(C)\n            ABC_4 = int(ABC, 4)\n            ABC_9 = ABC_4 + 200\n            sum += ABC_9\nprint(sum)"
+  },
+  {
+    "example_id": 157,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5636.0"
+    ],
+    "solution": "# least positive four-digit multiple of 4\nmultiple = 1000\nwhile multiple % 4!= 0:\n    multiple += 1\n\n# sum of least and greatest positive four-digit multiples of 4\nsum_of_multiples = 0\nfor i in range(1000, multiple, -1):\n    sum_of_multiples += i\nfor i in range(multiple, 1000, -1):\n    sum_of_multiples += i\nprint(sum_of_multiples)"
+  },
+  {
+    "example_id": 158,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "43.0"
+    ],
+    "annotated_answers": [
+      "43.0"
+    ],
+    "solution": "mod = 47\nb = 35\nfor i in range(1, mod):\n    if (b * i) % mod == 1:\n        print(i)\n        break"
+  },
+  {
+    "example_id": 159,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "num_perfect_powers = 0\nfor num in range(2, 24):\n    if 2**24 == num**num:\n        num_perfect_powers += 1\nprint(num_perfect_powers)"
+  },
+  {
+    "example_id": 160,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.875"
+    ],
+    "annotated_answers": [
+      "29.0"
+    ],
+    "solution": "result = (3**(-1)+5**(-1))**(-1) % 31\nprint(result)"
+  },
+  {
+    "example_id": 161,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "16.0",
+      "4.0",
+      "6.0",
+      "5.0",
+      "19.0",
+      "5.0",
+      "9.0",
+      "6.0",
+      "49.0",
+      "4.0",
+      "29.0",
+      "7.0",
+      "26.0",
+      "2.0",
+      "18.0",
+      "17.0",
+      "29.0",
+      "3.0",
+      "49.0"
+    ],
+    "annotated_answers": [
+      "1155.0"
+    ],
+    "solution": "N = 10000\nfor i in range(1, N):\n    for j in range(i, N):\n        a = i % 10\n        b = j % 10\n        if a == b:\n            continue\n        c = (i * j) % 10\n        d = (i * j) // 10\n        if (c == d) or (c == 0) or (d == 0):\n            continue\n        if (a * 10 + b) % (c * 10 + d) == 0:\n            print(i, j, c, d)\n            break"
+  },
+  {
+    "example_id": 162,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.214465011907717"
+    ],
+    "annotated_answers": [
+      "900.0"
+    ],
+    "solution": "k = 240**(1/3)\nprint(k)"
+  },
+  {
+    "example_id": 163,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "1.0",
+      "1.0",
+      "0.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "-2213.0"
+    ],
+    "solution": "base_3_digits = [1, 2, 1]\naddends = [2122, 1200, 2111]\nfor addend in addends:\n    digit = addend % 3\n    base_3_digits.append(digit)\n    addend //= 3\nprint(base_3_digits)"
+  },
+  {
+    "example_id": 164,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "# brute force\nnums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nproducts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nleast_sum = 0\nfor num in nums:\n    product = products[nums.index(num)]\n    if product == 84:\n        least_sum = sum(nums[:nums.index(num) + 1])\n        break\nprint(least_sum)\n\n# math\nnums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nproducts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nleast_sum = 0\nfor num in nums:\n    product = products[nums.index(num)]\n    if product == 84:\n        least_sum = sum(nums[:nums.index(num) + 1])\n        break\nprint(least_sum)\n\n# scipy\nimport scipy.misc\nnums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nproducts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nleast_sum = 0\nfor num in nums:\n    product = products[nums.index(num)]\n    if product == 84:\n        least_sum = sum(nums[:nums.index(num) + 1])\n        break\nprint(least_sum)\n\n# sympy\nfrom sympy import prod\nnums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nproducts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nleast_sum = 0\nfor num in nums:\n    product = prod(nums[:nums.index(num) + 1])\n    if product == 84:\n        least_sum = sum(nums[:nums.index(num) + 1])\n        break\nprint(least_sum)"
+  },
+  {
+    "example_id": 165,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.3525"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "frac = 141 / 400\nprint(frac)"
+  },
+  {
+    "example_id": 166,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2016.0"
+    ],
+    "solution": "numbers = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]\nsum = 0\nfor num in numbers:\n    divisors = []\n    for i in range(1, num):\n        if num % i == 0:\n            divisors.append(i)\n    if len(divisors) == 4:\n        sum += num\nprint(sum)"
+  },
+  {
+    "example_id": 167,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "def get_divisors(n):\n    divisors = []\n    for i in range(1, int(n ** 0.5) + 1):\n        if n % i == 0:\n            divisors.append(i)\n            if n // i!= i:\n                divisors.append(n // i)\n    return divisors\n\ndef get_bouncy_prime(n):\n    if n < 2:\n        return False\n    divisors = get_divisors(n)\n    if len(divisors) == 2 and divisors[0] == 1 and divisors[1] == n:\n        return True\n    return False\n\ndef get_smallest_bouncy_prime():\n    smallest_bouncy_prime = 0\n    for n in range(2, 100000000):\n        if get_bouncy_prime(n):\n            smallest_bouncy_prime = n\n            break\n    return smallest_bouncy_prime\n\nsmallest_bouncy_prime = get_smallest_bouncy_prime()\nprint(smallest_bouncy_prime)"
+  },
+  {
+    "example_id": 168,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "for i in range(1, 13):\n    if i % 13!= 0:\n        print(i)\n        break"
+  },
+  {
+    "example_id": 169,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "m = 3\nm_list = [x for x in range(1, m, 1) if x!= m]\nprint(m_list)"
+  },
+  {
+    "example_id": 170,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-111.0"
+    ],
+    "annotated_answers": [
+      "-36.0"
+    ],
+    "solution": "N = 333_4\nM = 344_5\nprint(N - M)"
+  },
+  {
+    "example_id": 171,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "num_bags = 3\nnum_pencils = 123\nremainder = num_pencils % num_bags\nprint(remainder)"
+  },
+  {
+    "example_id": 172,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "x = 10\nlast_division = 10\nmoney_per_division = 10\nmoney_received_by_younger_brother = last_division - money_per_division\nprint(money_received_by_younger_brother)"
+  },
+  {
+    "example_id": 173,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "k = 0\nwhile k < 6:\n    if pow(3, k, 6) == 1:\n        k += 1\n    else:\n        print(k)\n        break"
+  },
+  {
+    "example_id": 174,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "809.0"
+    ],
+    "annotated_answers": [
+      "5067.0"
+    ],
+    "solution": "num1 = 3210\nnum2 = 2401\nprint(num1 - num2)"
+  },
+  {
+    "example_id": 175,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "t = 1\nwhile True:\n    if (19*t+5*t) % t == 0:\n        print(t)\n        break\n    t += 1"
+  },
+  {
+    "example_id": 176,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "factors = [2, 3, 5, 7, 11, 13, 17, 19, 23]\npowers = [23, 19, 17, 13, 11, 7, 5, 3, 2]\nexponents = []\nfor factor, power in zip(factors, powers):\n    for _ in range(power):\n        exponents.append(factor)\nprint(exponents)"
+  },
+  {
+    "example_id": 177,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "57.0"
+    ],
+    "annotated_answers": [
+      "57.0"
+    ],
+    "solution": "for n in range(398):\n    if (7*n) % 398 == 1:\n        print(n)\n        break"
+  },
+  {
+    "example_id": 178,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "27.0"
+    ],
+    "annotated_answers": [
+      "41.0"
+    ],
+    "solution": "# Camera A\nstart_time = 6\ntime_interval = 11\ntotal_time = 12\n\n# Camera B\nstart_time_B = 7\ntime_interval_B = 7\ntotal_time_B = 12\n\n# Camera A and Camera B take a picture at the same time at four different times\ntimes = [start_time, start_time + time_interval, start_time + 2 * time_interval, start_time + 3 * time_interval]\ntimes_B = [start_time_B, start_time_B + time_interval_B, start_time_B + 2 * time_interval_B, start_time_B + 3 * time_interval_B]\n\n# Find the time when Camera A and Camera B take their last picture together\nlast_time = max(times[-1], times_B[-1])\n\n# Calculate the time before noon\ntime_before_noon = last_time - total_time\n\nprint(time_before_noon)"
+  },
+  {
+    "example_id": 179,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1016.0"
+    ],
+    "solution": "from sympy import Symbol\nfrom sympy.solvers import solve\n\nr = Symbol('r')\nsol = solve(r**2 + 4*r + 4 - r**2 - 2*r - 1, r)\nprint(sol)"
+  },
+  {
+    "example_id": 180,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "160.0"
+    ],
+    "solution": "n = 9\ncount = 0\nfor i in range(1, n + 1):\n    if n % i == 0:\n        count += 1\nprint(count)"
+  },
+  {
+    "example_id": 181,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "233.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "def double_factorial(n):\n    product = 1\n    for i in range(1, n+1, 2):\n        product *= i\n    return product % 10\n\nsum_units_digits = 0\nfor i in range(1, 50):\n    sum_units_digits += double_factorial(i) % 10\nprint(sum_units_digits)"
+  },
+  {
+    "example_id": 182,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-13.0"
+    ],
+    "annotated_answers": [
+      "1076.0"
+    ],
+    "solution": "a = 62\nb = 75\nn = 1001\nprint(a-b)"
+  },
+  {
+    "example_id": 183,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.6333333333333333"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "a = 2\nb = 3\nm = 7\nL = (a+b)**-1 % m\nR = (a**-1 + b**-1) % m\nprint(L-R)"
+  },
+  {
+    "example_id": 184,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "remainder = 729 % 15\nprint(remainder)"
+  },
+  {
+    "example_id": 185,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "146.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "product = 288\n\nif product % 2 == 0:\n    num1 = product // 2\n    num2 = num1 + 2\nelse:\n    num1 = (product // 2) + 1\n    num2 = num1 + 2\n\nif num1 > num2:\n    greater = num1\nelse:\n    greater = num2\n\nprint(greater)"
+  },
+  {
+    "example_id": 186,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "23.0"
+    ],
+    "annotated_answers": [
+      "23.0"
+    ],
+    "solution": "from sympy import gcd\n\nnumber1 = 6432\nnumber2 = 132\nresult = gcd(number1, number2) + 11\nprint(result)"
+  },
+  {
+    "example_id": 187,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "226.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 100, 2):\n    if num % 144 == 0:\n        sum += num\nprint(sum)"
+  },
+  {
+    "example_id": 188,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.1",
+      "1.7000000000000002",
+      "2.3000000000000003",
+      "2.9000000000000004",
+      "3.5000000000000004",
+      "4.1000000000000005",
+      "4.7",
+      "5.3",
+      "5.8999999999999995",
+      "6.499999999999999"
+    ],
+    "annotated_answers": [
+      "0.8"
+    ],
+    "solution": "num = 0.5\nfor i in range(10):\n    num = 0.6 + num\n    print(num)"
+  },
+  {
+    "example_id": 189,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "def sum_of_powers(n):\n    return sum(2**i for i in range(n))\n\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\ndef largest_gcd(n):\n    return gcd(sum_of_powers(n), sum_of_powers(n+1))\n\nprint(largest_gcd(3))"
+  },
+  {
+    "example_id": 190,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "d = 2 % 7\nprint(d)"
+  },
+  {
+    "example_id": 191,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "143.0"
+    ],
+    "annotated_answers": [
+      "104.0"
+    ],
+    "solution": "M = 130\nN = 13\nM_plus_N = M + N\nprint(M_plus_N)"
+  },
+  {
+    "example_id": 192,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.702702702702703",
+      "289"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "decimal_place = 290\nfrac = 1/37\nprint(int(frac*10**(decimal_place+1)))"
+  },
+  {
+    "example_id": 193,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "print(54 % 6)"
+  },
+  {
+    "example_id": 194,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ],
+    "solution": "def base_3(num):\n    return str(num)[::-1]\n\ndef base_4(num):\n    return str(num)[::-2]\n\ndef is_palindrome(num):\n    return str(num) == str(num)[::-1]\n\nfor num in range(1, 1000):\n    if is_palindrome(base_3(num)) and is_palindrome(base_4(num)):\n        print(num)\n        break"
+  },
+  {
+    "example_id": 195,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "202.0"
+    ],
+    "solution": "a = 1\nb = 1\nfor num in range(3, 2010, 2):\n    if num % 2 == 1:\n        if str(1/num)[2:] == str(1/num)[:-2]:\n            a *= num\n            b *= num\nprint(a+b)"
+  },
+  {
+    "example_id": 196,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "18.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "sum_of_digits = 0\nfor digit in str(5913):\n    sum_of_digits += int(digit)\nprint(sum_of_digits)"
+  },
+  {
+    "example_id": 197,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "104.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "def rectangle_area(l1, l2):\n    return l1 * l2\n\n\ndef increase_side(side, percentage):\n    return int(side * (1 + percentage / 100))\n\n\ndef decrease_side(side, percentage):\n    return int(side * (1 - percentage / 100))\n\n\ndef smallest_rectangle(l1, l2):\n    l1_new = increase_side(l1, 30)\n    l2_new = decrease_side(l2, 20)\n    return rectangle_area(l1_new, l2_new)\n\n\nprint(smallest_rectangle(10, 10))"
+  },
+  {
+    "example_id": 198,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2220.0"
+    ],
+    "solution": "from math import factorial\n\ndef is_multiple_of_30(n):\n    if n % 30 == 0:\n        return True\n    else:\n        return False\n\ndef multiples_of_30(n):\n    multiples = []\n    for i in range(n):\n        if is_multiple_of_30(i):\n            multiples.append(i)\n    return multiples\n\ndef number_of_digits(n):\n    return len(str(n))\n\ndef number_of_0_2(n):\n    num_0 = 0\n    num_2 = 0\n    for digit in str(n):\n        if digit == '0':\n            num_0 += 1\n        elif digit == '2':\n            num_2 += 1\n    return num_0, num_2\n\ndef least_positive_integer_multiple_of_30(n):\n    multiples = multiples_of_30(n)\n    least_multiple = 0\n    for multiple in multiples:\n        num_0, num_2 = number_of_0_2(multiple)\n        if num_0 == 0 and num_2 == 0:\n            least_multiple = multiple\n            break\n    return least_multiple\n\nn = 100\nprint(least_positive_integer_multiple_of_30(n))"
+  },
+  {
+    "example_id": 199,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "728.0"
+    ],
+    "annotated_answers": [
+      "119.0"
+    ],
+    "solution": "sum = 0\nfor num in range(10, 100):\n    if num % 7 == 0:\n        sum += num\nprint(sum)"
+  },
+  {
+    "example_id": 200,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "decimal = 54317 / 80000\nprint(len(str(decimal).split('.')[1]))"
+  },
+  {
+    "example_id": 201,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "18.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "num = 10\nwhile num < 100:\n    digits = [int(digit) for digit in str(num)]\n    if num == sum(digits) * 2:\n        print(num)\n    num += 1"
+  },
+  {
+    "example_id": 202,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "22.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "n = 22\nprint(n)"
+  },
+  {
+    "example_id": 203,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "num = 17**13 - 17\nprint(num % 10)"
+  },
+  {
+    "example_id": 204,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.111111111111111",
+      "37"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "repetend = 0\nfor i in range(1, 39):\n    repetend = 10 * repetend + 1\nprint(repetend)"
+  },
+  {
+    "example_id": 205,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "34.0"
+    ],
+    "annotated_answers": [
+      "34.0"
+    ],
+    "solution": "for n in range(101):\n    if (123456 % 101) == n:\n        print(n)"
+  },
+  {
+    "example_id": 206,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]\nproduct = 1\nfor prime in primes:\n    product *= prime\nprint(product % 10)"
+  },
+  {
+    "example_id": 207,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "product = 17 * 18\nresidue = product % 4\nprint(residue)"
+  },
+  {
+    "example_id": 208,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6347.0"
+    ],
+    "annotated_answers": [
+      "319.0"
+    ],
+    "solution": "num = 634_7\nprint(num)"
+  },
+  {
+    "example_id": 209,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "42.0"
+    ],
+    "solution": "n_sum = 0\nfor n in range(1, 100):\n    if n**2 in [1200]:\n        n_sum += n\nprint(n_sum)"
+  },
+  {
+    "example_id": 210,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "def divisors(N):\n    divisors = []\n    for num in range(1, N+1):\n        if N % num == 0:\n            divisors.append(num)\n    return len(divisors)\n\nprint(divisors(196))"
+  },
+  {
+    "example_id": 211,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "32.0"
+    ],
+    "annotated_answers": [
+      "32.0"
+    ],
+    "solution": "a = 16\nb = 21\n\nfor n in range(37):\n    if (a - b) % 37 == n:\n        print(n)\n        break"
+  },
+  {
+    "example_id": 212,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1092.0"
+    ],
+    "annotated_answers": [
+      "25.0"
+    ],
+    "solution": "from math import sqrt\n\nN = 500\ndistinct_primes = set()\nfor num in range(1, int(sqrt(N)) + 1):\n    if N % num == 0:\n        distinct_primes.add(num)\n        distinct_primes.add(N // num)\n\nsum_distinct_primes = sum(distinct_primes)\nprint(sum_distinct_primes)"
+  },
+  {
+    "example_id": 213,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "123.0"
+    ],
+    "solution": "N = 30\nnum_divisors = 0\nfor num in range(1, N+1):\n    if N % num == 0:\n        num_divisors += 1\nprint(num_divisors)"
+  },
+  {
+    "example_id": 214,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "num_factors = 0\nfor num in range(1, 20):\n    factors = 1\n    for factor in range(1, num):\n        if num % factor == 0:\n            factors += 1\n    if factors > num_factors:\n        num_factors = factors\nprint(num_factors)"
+  },
+  {
+    "example_id": 215,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "32.0",
+      "65.0",
+      "98.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "x = 0\nwhile x <= 100:\n    if (64*x) % 66 == 2:\n        print(x)\n    x += 1"
+  },
+  {
+    "example_id": 216,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-24.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "A = sum([i for i in range(1, 2**4) if pow(i, 2**4-2, 2**4) == 1])\nB = sum([i for i in range(1, 2**4) if pow(i, 2**4-2, 2**4) == 0])\nprint(A-B)"
+  },
+  {
+    "example_id": 217,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "220690.0"
+    ],
+    "annotated_answers": [
+      "2145.0"
+    ],
+    "solution": "pirate_debt = 2345*6 + 41324*5\nprint(pirate_debt)"
+  },
+  {
+    "example_id": 218,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "53.0"
+    ],
+    "annotated_answers": [
+      "53.0"
+    ],
+    "solution": "# my father's age in base three\nage = 1222\n# convert from base three to base ten\nage_in_base_ten = int(str(age), 3)\nprint(age_in_base_ten)"
+  },
+  {
+    "example_id": 219,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "num_divisors = 0\nfor i in range(1, 7):\n    if 1452 % i == 0:\n        num_divisors += 1\nprint(num_divisors)"
+  },
+  {
+    "example_id": 220,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "13.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "product = 4**5 * 5**13\nprint(len(str(product)))"
+  },
+  {
+    "example_id": 221,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "52.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "expression = 2005**2 + 2005**0 + 2005**0 + 2005**5\nprint(expression % 100)"
+  },
+  {
+    "example_id": 222,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "465.0"
+    ],
+    "annotated_answers": [
+      "248.0"
+    ],
+    "solution": "lcm = 3720\ngcd = 8\nnum1 = 120\nnum2 = lcm // gcd\nprint(num2)"
+  },
+  {
+    "example_id": 223,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "n = 100\nbase_64 = 64\nbase_62 = 62\n\ndef convert_base(n, base_in, base_out):\n    digits = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'\n    if n == 0:\n        return '0'\n    res = ''\n    while n > 0:\n        n, remainder = divmod(n, base_out)\n        res = digits[remainder] + res\n    return res\n\nprint(convert_base(n, base_64, base_62))"
+  },
+  {
+    "example_id": 224,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "n = 2\nn %= 47\nprint(n)"
+  },
+  {
+    "example_id": 225,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "141.0"
+    ],
+    "annotated_answers": [
+      "6152.0"
+    ],
+    "solution": "n = 1\nfor digit in '41':\n    n = n * 10 + int(digit, 8)\nprint(n)"
+  },
+  {
+    "example_id": 226,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "a = 2\nb = 4\nremainder = (a**2 + b**2) % 3\nprint(remainder)"
+  },
+  {
+    "example_id": 227,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "27557247.25"
+    ],
+    "annotated_answers": [
+      "21022.0"
+    ],
+    "solution": "lcm = 10508\na = (lcm - 5) / 2\na2 = a ** 2\na2_4a = a2 - 4 * a\na2_4a_1 = a2_4a + 1\nprint(a2_4a_1)"
+  },
+  {
+    "example_id": 228,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "130.0"
+    ],
+    "annotated_answers": [
+      "190.0"
+    ],
+    "solution": "primes = [11, 23, 37, 59]\nsum = 0\nfor prime in primes:\n    sum += prime\nprint(sum)"
+  },
+  {
+    "example_id": 229,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "P = 9\nb = P + 1\nprint(b)"
+  },
+  {
+    "example_id": 230,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.0"
+    ],
+    "annotated_answers": [
+      "14.8"
+    ],
+    "solution": "ages = [13, 14, 15, 16, 17, 18, 19]\nages_product = 705600\nages_mean = sum(ages) / len(ages)\nprint(ages_mean)"
+  },
+  {
+    "example_id": 231,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "max_num = 0\nfor i in range(1, 1000):\n    sum = (i + 1) + (i + 2) + (i + 3) + (i + 4)\n    if sum % i == 0:\n        max_num = i\n        break\nprint(max_num)"
+  },
+  {
+    "example_id": 232,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "sum_p = 0\nfor num in range(2, 1000, 2):\n    if num % 8 == 1:\n        sum_p += num\nprint(sum_p)"
+  },
+  {
+    "example_id": 233,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "63.0"
+    ],
+    "annotated_answers": [
+      "63.0"
+    ],
+    "solution": "def convert_to_base_10(num, base):\n    return int(str(num), base)\n\nnum_in_7 = 62\nnum_in_5 = 34\n\nnum_in_10 = convert_to_base_10(num_in_7, 7) + convert_to_base_10(num_in_5, 5)\nprint(num_in_10)"
+  },
+  {
+    "example_id": 234,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "from sympy import gcd\nn = 10\nprint(gcd(n + 7, 2*n + 1))"
+  },
+  {
+    "example_id": 235,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "n = 1\nwhile True:\n    if 617*n % 18 == 943*n % 18:\n        break\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 236,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "81.0"
+    ],
+    "annotated_answers": [
+      "225.0"
+    ],
+    "solution": "from math import gcd\nnum1 = 6**210\nnum2 = 15**4\nprint(gcd(num1,num2))"
+  },
+  {
+    "example_id": 237,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "28.0"
+    ],
+    "annotated_answers": [
+      "100100.0"
+    ],
+    "solution": "base = 2\nnum = '11011'\nresult = str(int(num, base) * (base - 1) + base - 1)\nprint(result)"
+  },
+  {
+    "example_id": 238,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "units_digit = 7**7 % 10\nprint(units_digit)"
+  },
+  {
+    "example_id": 239,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "year = 1\nwhile True:\n    if year % 12 == 0:\n        print(year)\n        break\n    year += 1"
+  },
+  {
+    "example_id": 240,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "for t in range(1, 23):\n    if (t+2) % t == 0:\n        print(t)"
+  },
+  {
+    "example_id": 241,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "4435.0"
+    ],
+    "solution": "print(123 % 5)"
+  },
+  {
+    "example_id": 242,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1260.0"
+    ],
+    "annotated_answers": [
+      "44.0"
+    ],
+    "solution": "avg = 0\nfor i in range(100, 1000):\n    num = i\n    while num > 0:\n        digit = num % 10\n        if digit > 0:\n            avg += digit\n        num //= 10\navg = avg / 10\nprint(avg)"
+  },
+  {
+    "example_id": 243,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "print(71 % 3)"
+  },
+  {
+    "example_id": 244,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "n = 12345\nfor i in range(6):\n    if n % 6 == 0:\n        print(i)\n        break\n    n += 1"
+  },
+  {
+    "example_id": 245,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "num_digits_2 = len(bin(87)[2:])\nnum_digits_3 = len(oct(87)[2:])\nprint(num_digits_2 - num_digits_3)"
+  },
+  {
+    "example_id": 246,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "101010.0"
+    ],
+    "annotated_answers": [
+      "3255.0"
+    ],
+    "solution": "base = 5\nnum = 101010\nprint(num)"
+  },
+  {
+    "example_id": 247,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "180.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "num = 12 * 15\nprint(num)"
+  },
+  {
+    "example_id": 248,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "3.0",
+      "5.0",
+      "7.0",
+      "8.0",
+      "9.0",
+      "11.0",
+      "13.0",
+      "15.0",
+      "16.0",
+      "17.0",
+      "19.0",
+      "21.0",
+      "23.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "for a in range(1, 24):\n    if a % 24 == 0:\n        continue\n    if pow(a, 24-1, 24) == a:\n        print(a)"
+  },
+  {
+    "example_id": 249,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "decimal = 1/2**10\nprint(len(str(decimal).split('.')[1]))"
+  },
+  {
+    "example_id": 250,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "1.0",
+      "0.0",
+      "2.0",
+      "0.0",
+      "4.0",
+      "0.0",
+      "8.0",
+      "0.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "A, B = 0, 0\nwhile A < 1000:\n    while B < 1000:\n        if A*A*A%7+B*B*B%7==666%7:\n            print(A, B)\n        B += 1\n    A += 1\n    B = 0"
+  },
+  {
+    "example_id": 251,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "13.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "x = 4\ny = 7\nnum = (x + 1)**2 * (y + 5)**3\nremainder = num % 19\nprint(remainder)"
+  },
+  {
+    "example_id": 252,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "29.0"
+    ],
+    "annotated_answers": [
+      "29.0"
+    ],
+    "solution": "last_day = 28\nif 2008 % 4 == 0:\n    last_day = 29\nprint(last_day)"
+  },
+  {
+    "example_id": 253,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "num_divisible_by_20 = 0\nfor num in range(15, 85, 20):\n    num_divisible_by_20 += 1\nprint(num_divisible_by_20)"
+  },
+  {
+    "example_id": 254,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "255.0"
+    ],
+    "annotated_answers": [
+      "255.0"
+    ],
+    "solution": "largest_binary_integer = 2**8 - 1\nprint(largest_binary_integer)"
+  },
+  {
+    "example_id": 255,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "6.0",
+      "24.0",
+      "120.0",
+      "720.0",
+      "5040.0",
+      "40320.0",
+      "362880.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "lcm = 1\nfor i in range(2, 10):\n    lcm = lcm * i\n    print(lcm)"
+  },
+  {
+    "example_id": 256,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "n = 80325\nfor i in range(2, n):\n    if n % i == 0:\n        n = i\n        break\nprint(n)"
+  },
+  {
+    "example_id": 257,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1332.0"
+    ],
+    "annotated_answers": [
+      "1030.0"
+    ],
+    "solution": "from math import gcd\n\ndef reduce_fraction(numerator, denominator):\n    a = numerator\n    b = denominator\n    while gcd(a, b)!= 1:\n        a, b = b, a % b\n    return a, b\n\n\nnumerator, denominator = reduce_fraction(1331, 1)\nprint(numerator + denominator)"
+  },
+  {
+    "example_id": 258,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "3.0",
+      "6.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "divisible_by_3 = []\nfor i in range(10):\n    if i % 3 == 0:\n        divisible_by_3.append(i)\nprint(divisible_by_3)"
+  },
+  {
+    "example_id": 259,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "33.0",
+      "25.0",
+      "20.0",
+      "9.0",
+      "6.0",
+      "5.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "num_divisible_by_3 = 33\nnum_divisible_by_4 = 25\nnum_divisible_by_5 = 20\nnum_divisible_by_3_and_4 = 9\nnum_divisible_by_3_and_5 = 6\nnum_divisible_by_4_and_5 = 5\nnum_divisible_by_3_and_4_and_5 = 1\nprint(num_divisible_by_3, num_divisible_by_4, num_divisible_by_5, num_divisible_by_3_and_4, num_divisible_by_3_and_5, num_divisible_by_4_and_5, num_divisible_by_3_and_4_and_5)"
+  },
+  {
+    "example_id": 260,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "i = 1\nwhile 3**i % 7!= 5:\n    i += 1\nj = 1\nwhile 5**j % 7!= 3:\n    j += 1\nprint(i*j % 6)"
+  },
+  {
+    "example_id": 261,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "exponent = 2005\nbase = 5\ntens_digit = int(str(base**exponent)[-2])\nprint(tens_digit)"
+  },
+  {
+    "example_id": 262,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "AB = 912673\nA, B = int(str(AB)[0]), int(str(AB)[1])\nprint(A + B)"
+  },
+  {
+    "example_id": 263,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4096.0"
+    ],
+    "solution": "import math\nfrom math import sqrt\n\ndef is_cube(n):\n    return n ** (1/3) == int(n ** (1/3))\n\ndef is_fourth_power(n):\n    return n ** (1/4) == int(n ** (1/4))\n\nfor i in range(1, 1000):\n    if is_cube(i) and is_fourth_power(i):\n        print(i)\n        break"
+  },
+  {
+    "example_id": 264,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "remainder = sum(range(11)) % 9\nprint(remainder)"
+  },
+  {
+    "example_id": 265,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1060.0"
+    ],
+    "annotated_answers": [
+      "235.0"
+    ],
+    "solution": "# Use the sieve of Eratosthenes\nprimes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]\nprime_sum = 0\nfor prime in primes:\n    if prime < 100:\n        prime_sum += prime\nprint(prime_sum)"
+  },
+  {
+    "example_id": 266,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "remainder = 194 % 11\nprint(remainder)"
+  },
+  {
+    "example_id": 267,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "factors = [2, 4, 6, 8, 10, 12]\nperfect_squares = []\nfor num in factors:\n    if num**0.5 == int(num**0.5):\n        perfect_squares.append(num)\nnum_perfect_squares = len(perfect_squares)\nprint(num_perfect_squares)"
+  },
+  {
+    "example_id": 268,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "24.0",
+      "8.0",
+      "18.0",
+      "9.0",
+      "16.0",
+      "12.0",
+      "12.0",
+      "16.0",
+      "9.0",
+      "18.0",
+      "8.0",
+      "24.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "x = 0\ny = 0\nfor i in range(1, 30):\n    for j in range(1, 30):\n        if i * j == 144:\n            x = i\n            y = j\n            print((x, y))"
+  },
+  {
+    "example_id": 269,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0",
+      "120.0"
+    ],
+    "annotated_answers": [
+      "129.0"
+    ],
+    "solution": "for i in range(1, 100):\n    for j in range(1, 100):\n        if (i * j) % 3 == 0:\n            if i + j == 120:\n                print(i + j)\n                break"
+  },
+  {
+    "example_id": 270,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "N = 14\nways = 0\nfor tens in range(1, N, 10):\n    for hundreds in range(1, N, 10):\n        if tens + hundreds % 11 == 0:\n            ways += 1\nprint(ways)"
+  },
+  {
+    "example_id": 271,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "108.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from math import gcd, lcm\n\ndef lcm(x, y):\n    return x * y / gcd(x, y)\n\nm = 1\nn = 108\nwhile True:\n    if gcd(m, n) == 2 and lcm(m, n) == 108:\n        print((m, n))\n    m += 1\n    if m > n:\n        break"
+  },
+  {
+    "example_id": 272,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "34.0"
+    ],
+    "annotated_answers": [
+      "25.0"
+    ],
+    "solution": "N = 13 * 7 + 17 * 3\nremainder = N % 36\nprint(remainder)"
+  },
+  {
+    "example_id": 273,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "import sympy as sp\n\nN = sp.sqrt(196)\nfactors = []\nfor i in range(1, N + 1):\n    if N % i == 0:\n        factors.append(i)\nsum_of_factors = sum(factors)\nprint(sum_of_factors)"
+  },
+  {
+    "example_id": 274,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-15.0",
+      "50.0",
+      "2.0",
+      "3.0",
+      "50.0",
+      "2.0",
+      "150.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import sympy\n\nn = 50\nx = sympy.Symbol('x')\ny = sympy.Symbol('y')\n\n# 24^x - 15^x\nf = sympy.exp(sympy.log(24, 2) * x) - sympy.exp(sympy.log(15, 2) * x)\n\n# f(n)\nremainder = f.subs(x, n)\nprint(remainder)"
+  },
+  {
+    "example_id": 275,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "k = 0\nwhile True:\n    for num in range(3, 6*k+3, 6):\n        if num % 3 == 0 or num % 2 == 0 or num % 1 == 0:\n            break\n    else:\n        break\n    k += 1\nprint(k)"
+  },
+  {
+    "example_id": 276,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "remainder = 1529 % 6\nprint(remainder)"
+  },
+  {
+    "example_id": 277,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "144.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "def boxed(x):\n    factors = []\n    for num in range(1, x):\n        if x % num == 0:\n            factors.append(num)\n    product = 1\n    for factor in factors:\n        product *= factor\n    return product\n\nprint(boxed(12))"
+  },
+  {
+    "example_id": 278,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "111.0"
+    ],
+    "solution": "n = 1\nwhile True:\n    if (171 - 80) % n == 0 and (468 - 13) % n == 0:\n        print(n)\n        break\n    n += 1"
+  },
+  {
+    "example_id": 279,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "108.0"
+    ],
+    "annotated_answers": [
+      "108.0"
+    ],
+    "solution": "def convert_to_base_10(num, base):\n    result = 0\n    for digit in str(num):\n        result = result * base + int(digit)\n    return result\n\nprint(convert_to_base_10(1230, 4))"
+  },
+  {
+    "example_id": 280,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "990.0"
+    ],
+    "annotated_answers": [
+      "990.0"
+    ],
+    "solution": "for num in range(1000, 0, -1):\n    if num % 11 == 0:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 281,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "223.0"
+    ],
+    "annotated_answers": [
+      "556.0"
+    ],
+    "solution": "a = 123\nb = 100\nprint(a+b)"
+  },
+  {
+    "example_id": 282,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "pages_with_digits_sum_to_4 = 0\nfor page in range(1, 1000):\n    digits = [int(digit) for digit in str(page)]\n    if sum(digits) == 4:\n        pages_with_digits_sum_to_4 += 1\nprint(pages_with_digits_sum_to_4)"
+  },
+  {
+    "example_id": 283,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "# UPC code: 9-78094-11006-x\n# n = 1 + 9 + 7 + 8 + 0 + 9 + 4 + 1 + 1 + 0 + 0 + 6 + x\n# n = 29 + x\n# n is divisible by 10 if x = 0\nprint(0)"
+  },
+  {
+    "example_id": 284,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "units = 2**2010 % 10\nprint(units)"
+  },
+  {
+    "example_id": 285,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "75.0"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ],
+    "solution": "age = 75\nwhile True:\n    if age % 2 == 1:\n        break\n    if age % 3 == 1:\n        break\n    if age % 4 == 1:\n        break\n    if age % 6 == 1:\n        break\n    if age % 7 == 0:\n        break\n    age += 1\nprint(age)"
+  },
+  {
+    "example_id": 286,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "n = 1\nwhile True:\n    fractions = [i/n for i in range(1, n+1)]\n    terminating = []\n    for fraction in fractions:\n        if fraction.is_integer():\n            terminating.append(fraction)\n    if len(terminating) == n/2:\n        print(n)\n        break\n    n += 1"
+  },
+  {
+    "example_id": 287,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "n = pow(2, 16, 17)\nprint(pow(pow(2, n, 17), 2, 17) - 2)"
+  },
+  {
+    "example_id": 288,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "num = 355\nbase = 6\nlast_digit = num % base\nprint(last_digit)"
+  },
+  {
+    "example_id": 289,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "number = 120301232\nbase = 4\nremainder = number % 8\nprint(remainder)"
+  },
+  {
+    "example_id": 290,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "668.0"
+    ],
+    "solution": "x = pow(100, 996, 997)\nprint(x)"
+  },
+  {
+    "example_id": 291,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5304.0"
+    ],
+    "annotated_answers": [
+      "528.0"
+    ],
+    "solution": "num = 6_8 * 7_8\nprint(num)"
+  },
+  {
+    "example_id": 292,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "product = 1\nfor i in range(4):\n    product *= i + 1\n    if product > 1000:\n        break\nprint(sum(range(1, 5)))"
+  },
+  {
+    "example_id": 293,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "divisors = [1, 2, 4, 5, 10, 11, 20, 25, 50, 125]\neven_divisors = [2, 4, 10, 20]\nprint(len(even_divisors))"
+  },
+  {
+    "example_id": 294,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "600.0",
+      "600.0",
+      "-1111.0",
+      "600.0",
+      "603.0",
+      "-1114.0",
+      "600.0",
+      "606.0",
+      "-1117.0",
+      "600.0"
+    ],
+    "annotated_answers": [
+      "801.0"
+    ],
+    "solution": "for a in range(600, 900, 3):\n    for b in range(600, 900, 3):\n        c = 89 - a - b\n        if a + b + c == 89:\n            print(a, b, c)"
+  },
+  {
+    "example_id": 295,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "x = 40\ngcd = x + 3\nlcm = x * (x + 3)\nprint(lcm // gcd)"
+  },
+  {
+    "example_id": 296,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9000.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "base_3_digits = 0\nbase_6_digits = 0\nfor num in range(1000, 10000):\n    base_3_repr = str(num)[::-1]\n    base_3_digits += 1 if len(base_3_repr) == 4 else 0\n    base_6_repr = str(num)[::-1]\n    base_6_digits += 1 if len(base_6_repr) == 2 else 0\nprint(base_3_digits, base_6_digits)"
+  },
+  {
+    "example_id": 297,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "68.0"
+    ],
+    "annotated_answers": [
+      "46.0"
+    ],
+    "solution": "sum = 0\nfor x in range(1, 1000):\n    if 67 % (2*x - 23) == 0:\n        sum += x\nprint(sum)"
+  },
+  {
+    "example_id": 298,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "for i in range(9, 225, 9):\n    if i ** 0.5 == int(i ** 0.5):\n        print(i)\n        break"
+  },
+  {
+    "example_id": 299,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "units_digit = 3\nfor exponent in range(1, 2009):\n    units_digit *= 3\n    units_digit %= 10\nprint(units_digit)"
+  },
+  {
+    "example_id": 300,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "from math import factorial\n\nN = 7\nremainder = factorial(N) % 23\nprint(remainder)"
+  },
+  {
+    "example_id": 301,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "1241.0"
+    ],
+    "solution": "sum = 0\nfor num in range(100, 1000):\n    if num**3 in range(100, 1000):\n        sum += num**3\nprint(sum)"
+  },
+  {
+    "example_id": 302,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "34.0"
+    ],
+    "solution": "a = 2**306 * 3**340\nn = 1\nwhile a**(1/n)!= int(a**(1/n)):\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 303,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "num_multiples = 0\nfor num in range(1, 4001):\n    if num % 100 == 0:\n        num_multiples += 1\nprint(num_multiples)"
+  },
+  {
+    "example_id": 304,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "a, b = 4, 5\nprint((a+10)*(b+10) % 20)"
+  },
+  {
+    "example_id": 305,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "N = 1\nwhile 7 + (30 * N) in [2, 3, 5, 7]:\n    N += 1\nprint(N)"
+  },
+  {
+    "example_id": 306,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "16592.0"
+    ],
+    "solution": "n = 0\nsum = 0\nwhile n < 10000:\n    factors = 0\n    for i in range(2005, n+2005):\n        if i % n == 0:\n            factors += 1\n    if factors == 21:\n        sum += n\n    n += 1\nprint(sum)"
+  },
+  {
+    "example_id": 307,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "78.0"
+    ],
+    "annotated_answers": [
+      "78.0"
+    ],
+    "solution": "sum_of_units_digits = 0\nfor i in range(0, 50, 3):\n    sum_of_units_digits += i % 10\nprint(sum_of_units_digits)"
+  },
+  {
+    "example_id": 308,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import re\n\nE = re.search(\"E\", \"GMMGMMGEM\").start()\nprint(E)"
+  },
+  {
+    "example_id": 309,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "767.0",
+      "112.0"
+    ],
+    "annotated_answers": [
+      "109.0"
+    ],
+    "solution": "green_beads = 476 + 104 + 281 - 94\nred_beads = 32 + 16 + 80 - 16\nprint(green_beads, red_beads)"
+  },
+  {
+    "example_id": 310,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]\nodd_numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]\nintersection = set(primes).intersection(odd_numbers)\nprint(len(intersection))"
+  },
+  {
+    "example_id": 311,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "num = 527\nnum_base4 = 0\nfor digit in str(num):\n    num_base4 += int(digit)\nprint(num_base4)"
+  },
+  {
+    "example_id": 312,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "122.0"
+    ],
+    "annotated_answers": [
+      "122.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 100):\n    if num % 4 == 3 and num % 3 == 1 and num % 5 == 1:\n        sum += num\nprint(sum)"
+  },
+  {
+    "example_id": 313,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "26.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "X = 2*3 + 4*5\nprint(X)"
+  },
+  {
+    "example_id": 314,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "n = 27\nn_divisors = 1\nwhile n > 1:\n    n_divisors += 1\n    n //= 2\nprint(n_divisors)"
+  },
+  {
+    "example_id": 315,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "n = 7\nprint(n)"
+  },
+  {
+    "example_id": 316,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from math import sqrt\n\n\ndef is_prime(num):\n    if num == 1 or num % 2 == 0:\n        return False\n    for i in range(3, int(sqrt(num)) + 1, 2):\n        if num % i == 0:\n            return False\n    return True\n\n\ndef get_distinct_primes(num):\n    primes = []\n    for i in range(1, num + 1):\n        if is_prime(i):\n            primes.append(i)\n    return primes\n\n\ndef get_increasing_sequences(nums):\n    sequences = []\n    for i in range(len(nums) - 2):\n        for j in range(i + 1, len(nums) - 1):\n            for k in range(j + 1, len(nums)):\n                if nums[i] + nums[j] + nums[k] == 20:\n                    sequences.append(nums[i:k + 1])\n    return sequences\n\n\ndistinct_primes = get_distinct_primes(20)\nsequences = get_increasing_sequences(distinct_primes)\nprint(len(sequences))"
+  },
+  {
+    "example_id": 317,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "prime_numbers = []\nnumbers = [13, 17, 19, 31, 37, 71, 73, 79, 97]\nfor num in numbers:\n    if num > 1000000000:\n        break\n    if num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0:\n        continue\n    prime_numbers.append(num)\nprint(len(prime_numbers))"
+  },
+  {
+    "example_id": 318,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "s1 = \"11001010100101011\"\ns2 = \"110100011000100\"\nn = int(s1, 10) + int(s2, 10)\nm = int(bin(n)[2:], 2)\nprint(n-m)"
+  },
+  {
+    "example_id": 319,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "num1 = 180\nnum2 = 168\n\ndef gcf(num1, num2):\n    if num1 % num2 == 0:\n        return num2\n    else:\n        return gcf(num2, num1 % num2)\n\ngcf_result = gcf(num1, num2)\nprint(gcf_result)"
+  },
+  {
+    "example_id": 320,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "73.0"
+    ],
+    "solution": "N = 100000000\nprimes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]\nlargest_prime = 0\nfor prime in primes:\n    if N % prime == 0:\n        largest_prime = prime\n        break\nprint(largest_prime)"
+  },
+  {
+    "example_id": 321,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "steps_taken = 0\nfor step in range(130, 127, -3):\n    steps_taken += 1\nfor step in range(3, 7, 4):\n    steps_taken += 1\nprint(steps_taken)"
+  },
+  {
+    "example_id": 322,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.0"
+    ],
+    "annotated_answers": [
+      "365.0"
+    ],
+    "solution": "n = 365 // 28\nprint(n)"
+  },
+  {
+    "example_id": 323,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "product = 2**3 * 3**1 * 4**3 * 5**8\nnum_digits = len(str(product))\nprint(num_digits)"
+  },
+  {
+    "example_id": 324,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.5768876036600566",
+      "47"
+    ],
+    "annotated_answers": [
+      "981.0"
+    ],
+    "solution": "num_digits = 100\nbase = 3\nnum = 0\nwhile num_digits > 0:\n    num *= base\n    num += 1\n    num_digits -= 1\nprint(num)"
+  },
+  {
+    "example_id": 325,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1560.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "n = 1560\nwhile n % 1560!= 0:\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 326,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "55.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "a = 32\nb = 23\nprint(a + b)"
+  },
+  {
+    "example_id": 327,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "from itertools import permutations\n\ndef get_change(amount):\n    digits = [int(digit) for digit in str(amount)]\n    permutations_of_digits = permutations(digits)\n    for permutation in permutations_of_digits:\n        change = int(''.join([str(digit) for digit in permutation]))\n        if change > amount:\n            break\n        if change!= amount:\n            yield change\n\nfor change in get_change(10):\n    print(change)"
+  },
+  {
+    "example_id": 328,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "192.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "b = 121\nc = 71\nprint(b+c)"
+  },
+  {
+    "example_id": 329,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "b = 2\nwhile True:\n    if 5 * 25 % b == 137 % b:\n        break\n    b += 1\nprint(b)"
+  },
+  {
+    "example_id": 330,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "product = 1\nfor num in range(2, 51):\n    product += num\nprint(product % 10)"
+  },
+  {
+    "example_id": 331,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "185.0"
+    ],
+    "annotated_answers": [
+      "215.0"
+    ],
+    "solution": "num_stamps = 30\nnum_pages = 200 // num_stamps\nlast_page_num_stamps = 5\nnum_stamps_required = num_pages * num_stamps + last_page_num_stamps\nprint(num_stamps_required)"
+  },
+  {
+    "example_id": 332,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "202.0"
+    ],
+    "annotated_answers": [
+      "202.0"
+    ],
+    "solution": "number = 28 * 7 + 6\nprint(number)"
+  },
+  {
+    "example_id": 333,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "3.0",
+      "4.0",
+      "6.0",
+      "8.0"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ],
+    "solution": "base = 10\ndigits = [3, 6, 4, 8, 1]\ndigits_set = set(digits)\nif len(digits_set) == len(digits):\n    print(digits_set)\nelse:\n    print(36, 64, 81)"
+  },
+  {
+    "example_id": 334,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "factors = [1, 3, 5, 7, 9, 11]\nsum = 0\nfor factor in factors:\n    sum += factor\nprint(sum % 10)"
+  },
+  {
+    "example_id": 335,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "42.0"
+    ],
+    "annotated_answers": [
+      "60.0"
+    ],
+    "solution": "gcd = 6\nlcm = 126\nm = 126 // gcd\nn = lcm // gcd\nprint(m + n)"
+  },
+  {
+    "example_id": 336,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2005.0"
+    ],
+    "annotated_answers": [
+      "406.0"
+    ],
+    "solution": "product = 2005\nif product == 1:\n    print(0)\nelse:\n    num1 = product // 2\n    num2 = product - num1\n    print(num1 + num2)"
+  },
+  {
+    "example_id": 337,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "remainder = 2004 % 12\nprint(remainder)"
+  },
+  {
+    "example_id": 338,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1358.0"
+    ],
+    "annotated_answers": [
+      "25168.0"
+    ],
+    "solution": "binary_num = '10101001110'\noctal_num = int(binary_num, 2)\nprint(octal_num)"
+  },
+  {
+    "example_id": 339,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "remainder = 289 + 9 * 51 + 3**6 + 4 * 187\nremainder %= 17\nprint(remainder)"
+  },
+  {
+    "example_id": 340,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "7.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "A = 3\nB = 9\nAB = A * B\nAB_digits = [int(digit) for digit in str(AB)]\nprint(AB_digits)"
+  },
+  {
+    "example_id": 341,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "121.0"
+    ],
+    "solution": "nums = []\nfor i in range(1, 100):\n    divisors = 0\n    for j in range(1, i):\n        if i % j == 0:\n            divisors += 1\n    if divisors == 3:\n        nums.append(i)\nprint(nums[4])"
+  },
+  {
+    "example_id": 342,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2010.0"
+    ],
+    "annotated_answers": [
+      "201.0"
+    ],
+    "solution": "n = 2010\nwhile n % 10!= 0:\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 343,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "41.0"
+    ],
+    "solution": "def is_prime(n):\n    if n == 1 or n == 0:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n\ndef p(n):\n    return n ** 2 - n + 41\n\n\nn = 0\nwhile True:\n    n += 1\n    if p(n) == 1 or p(n) == 0:\n        continue\n    if is_prime(p(n)) and is_prime(p(n + 1)):\n        common_factor = p(n) // p(n + 1)\n        print(common_factor)\n        break"
+  },
+  {
+    "example_id": 344,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "m = 2**1980 * 3**384 * 5**1694 * 7**343\nk = 2\nn = 0\nwhile True:\n    n += 1\n    if pow(n, k, m) == 1:\n        break\nprint(n+k)"
+  },
+  {
+    "example_id": 345,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "remainder = 7**17 % 5\nprint(remainder)"
+  },
+  {
+    "example_id": 346,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "220.0"
+    ],
+    "annotated_answers": [
+      "284.0"
+    ],
+    "solution": "def proper_divisors(N):\n    divisors = []\n    for num in range(1, N, 1):\n        if N % num == 0:\n            divisors.append(num)\n    return divisors\n\n\ndef sum_proper_divisors(N):\n    divisors = proper_divisors(N)\n    return sum(divisors)\n\n\nsum_divisors = sum_proper_divisors(284)\nprint(sum_divisors)"
+  },
+  {
+    "example_id": 347,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "t = 12\nprint(t)"
+  },
+  {
+    "example_id": 348,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "power = 12\nbase = 35\nones_digit = str(base**power)[-1]\nprint(ones_digit)"
+  },
+  {
+    "example_id": 349,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "5.0",
+      "8.0",
+      "11.0",
+      "14.0",
+      "17.0",
+      "20.0",
+      "23.0",
+      "26.0",
+      "29.0",
+      "32.0",
+      "35.0",
+      "38.0",
+      "41.0",
+      "44.0",
+      "47.0",
+      "50.0",
+      "53.0",
+      "56.0",
+      "59.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "n = 0\nwhile n < 60:\n    if 4*n % 6 == 2:\n        print(n)\n    n += 1"
+  },
+  {
+    "example_id": 350,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.12312312312312312"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "num = 123\nden = 999\ndecimal = num / den\ndigit = decimal % 1\nprint(digit)"
+  },
+  {
+    "example_id": 351,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "233.0"
+    ],
+    "solution": "n = 0\nnum = 942\nwhile num % 15 == 0:\n    n += 1\n    num //= 15\nprint(n)"
+  },
+  {
+    "example_id": 352,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3224.0"
+    ],
+    "annotated_answers": [
+      "3224.0"
+    ],
+    "solution": "N = 6300\nsum_odd_divisors = 0\nfor divisor in range(1, N, 2):\n    if N % divisor == 0:\n        sum_odd_divisors += divisor\nprint(sum_odd_divisors)"
+  },
+  {
+    "example_id": 353,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 7, 2):\n    sum += num\ngreatest_factor = sum // 6\nprint(greatest_factor)"
+  },
+  {
+    "example_id": 354,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "202.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "time_to_wait = 8*60 + 35 - (5*60 + 13)\nprint(time_to_wait)"
+  },
+  {
+    "example_id": 355,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "num = 14_8 ** 2\nprint(num % 10)"
+  },
+  {
+    "example_id": 356,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.7611111111111111"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "p = 7\nsum_mod_p = 0\nfor i in range(2, p):\n    sum_mod_p = (sum_mod_p + (i-1)**(-1) * (p-i)**(-1)) % p\nprint(sum_mod_p)"
+  },
+  {
+    "example_id": 357,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "451.0"
+    ],
+    "annotated_answers": [
+      "451.0"
+    ],
+    "solution": "num = 10**51 - 9\nsum = 0\nwhile num > 0:\n    sum += num % 10\n    num //= 10\nprint(sum)"
+  },
+  {
+    "example_id": 358,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 12345678+1):\n    sum += num\nremainder = sum % 5\nprint(remainder)"
+  },
+  {
+    "example_id": 359,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "fibonacci = [1, 1]\nfor num in range(2, 100):\n    fibonacci.append(fibonacci[-1] + fibonacci[-2])\nremainder = fibonacci[-1] % 4\nprint(remainder)"
+  },
+  {
+    "example_id": 360,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "P = 0\nfor i in range(1, 5):\n    P += i\nprint(P)"
+  },
+  {
+    "example_id": 361,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "num_repeating_decimals = 0\nfor n in range(1, 30):\n    if n % 30 == 0:\n        num_repeating_decimals += 1\nprint(num_repeating_decimals)"
+  },
+  {
+    "example_id": 362,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ],
+    "solution": "def is_prime(num):\n    if num < 2:\n        return False\n    for i in range(2, int(num ** 0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n\ndef consecutive_primes(num):\n    primes = [2]\n    for i in range(3, num, 2):\n        if is_prime(i):\n            primes.append(i)\n    return primes\n\n\ndef sum_consecutive_primes(primes):\n    return sum(primes)\n\n\ndef least_possible_sum(num):\n    primes = consecutive_primes(num)\n    return sum_consecutive_primes(primes)\n\n\nprint(least_possible_sum(3))"
+  },
+  {
+    "example_id": 363,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "338.0"
+    ],
+    "annotated_answers": [
+      "321.0"
+    ],
+    "solution": "n = 39500 // 123 + 17\nprint(n)"
+  },
+  {
+    "example_id": 364,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.962809493114328"
+    ],
+    "annotated_answers": [
+      "60.0"
+    ],
+    "solution": "x = 720\na = 3\nx_root = x ** (1/3)\nprint(x_root)"
+  },
+  {
+    "example_id": 365,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "17.0"
+    ],
+    "annotated_answers": [
+      "38.0"
+    ],
+    "solution": "for num in range(1, 1000, 1):\n    if num % 3 == 2 and num % 7 == 3:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 366,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.35625"
+    ],
+    "solution": "num = 57\nden = 160\nwhile num % 10!= 0:\n    num *= 10\n    den *= 10\nprint(num // den)"
+  },
+  {
+    "example_id": 367,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "10901.0"
+    ],
+    "annotated_answers": [
+      "10901.0"
+    ],
+    "solution": "def is_palindrome(num):\n    return str(num) == str(num)[::-1]\n\ndef find_smallest_palindrome_divisible_by_11(n):\n    for i in range(10**(n-1), 10**n):\n        if is_palindrome(i) and i % 11 == 0:\n            return i\n\nprint(find_smallest_palindrome_divisible_by_11(5))"
+  },
+  {
+    "example_id": 368,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "423.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "b = 423 % 10**3\nprint(b)"
+  },
+  {
+    "example_id": 369,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "36.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "# Count number of days with 3 in tens digit\nnum_days = 0\nfor month in range(1, 13):\n    for day in range(1, 32):\n        if str(day)[0] == '3':\n            num_days += 1\nprint(num_days)"
+  },
+  {
+    "example_id": 370,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "87.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "fraction = [4, 37, 3, 11, 23, 9]\ntotal = sum(fraction)\nprint(total)"
+  },
+  {
+    "example_id": 371,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "product = 720\nnums = [1, 2, 3]\nfor num in range(4, 100):\n    nums.append(num)\n    product = product * num\n    if product > 720:\n        nums.pop()\n        break\nprint(nums[-1])"
+  },
+  {
+    "example_id": 372,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.24444444444444444"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "# calculate the number of times one gear will turn\n# in one second\ng1 = 33/3\ng2 = 45\n\n# calculate the number of seconds until both gears\n# will have their marks pointing due north\nseconds = g1 / g2\n\n# print the result\nprint(seconds)"
+  },
+  {
+    "example_id": 373,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "n = 13\nremainder = (2*n + 1) % 7\nprint(remainder)"
+  },
+  {
+    "example_id": 374,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0",
+      "5.0",
+      "6.0",
+      "7.0",
+      "8.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "numbers = [22, 11, 19, 21]\nfor digit in range(1, 10):\n    if digit not in numbers:\n        print(digit)"
+  },
+  {
+    "example_id": 375,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "remainder = (13**13 + 5) % 6\nprint(remainder)"
+  },
+  {
+    "example_id": 376,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "42.0"
+    ],
+    "solution": "n = 4\nprint(n)"
+  },
+  {
+    "example_id": 377,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40.0"
+    ],
+    "annotated_answers": [
+      "409.0"
+    ],
+    "solution": "base = 9\nnum1 = 58\nnum2 = 18\nresult = num1 - num2\nprint(result)"
+  },
+  {
+    "example_id": 378,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "for x in range(1, 1000):\n    if x**2 + x == int(x**2 + x):\n        print(x)\n        break"
+  },
+  {
+    "example_id": 379,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "44.0"
+    ],
+    "annotated_answers": [
+      "44.0"
+    ],
+    "solution": "from sympy import mod_inverse\nprint(mod_inverse(17, 83))"
+  },
+  {
+    "example_id": 380,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "47.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "b = 47\nwhile b > 0:\n    if b % 2 == 1:\n        break\n    b //= 2\nprint(b)"
+  },
+  {
+    "example_id": 381,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3504.0"
+    ],
+    "annotated_answers": [
+      "3504.0"
+    ],
+    "solution": "num = 3456\nwhile True:\n    num += 1\n    if sum(map(int, str(num))) == 12:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 382,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "A = 1\nfor i in range(1, 300, 2):\n    if 300 % i == 0:\n        A *= i\ndistinct_primes = set()\nfor prime in range(2, 300, 2):\n    if prime * prime <= A:\n        while A % prime == 0:\n            A //= prime\n            distinct_primes.add(prime)\nprint(sum(distinct_primes))"
+  },
+  {
+    "example_id": 383,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2310.0"
+    ],
+    "annotated_answers": [
+      "2079.0"
+    ],
+    "solution": "k = 2010\nwhile True:\n    k += 1\n    if (17*k) % 66 == 0 and (13*k) % 105 == 0:\n        break\nprint(k)"
+  },
+  {
+    "example_id": 384,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "625.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "num = 5**100\nsum = num % 1000\nprint(sum)"
+  },
+  {
+    "example_id": 385,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "remainder = sum([7438, 7439, 7440, 7441, 7442, 7443, 7444, 7445]) % 8\nprint(remainder)"
+  },
+  {
+    "example_id": 386,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "71428571428.0"
+    ],
+    "annotated_answers": [
+      "715.0"
+    ],
+    "solution": "T = 1000000000000\nquotient = T // 14\nprint(quotient)"
+  },
+  {
+    "example_id": 387,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "remainder = 2**8 % 5\nprint(remainder)"
+  },
+  {
+    "example_id": 388,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "182.0"
+    ],
+    "annotated_answers": [
+      "66.0"
+    ],
+    "solution": "N = 0\nfor num_students in range(8, 50, 6):\n    N += num_students\nprint(N)"
+  },
+  {
+    "example_id": 389,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "69.0"
+    ],
+    "annotated_answers": [
+      "69.0"
+    ],
+    "solution": "divisible_by_13 = 0\nfor num in range(100, 1000):\n    if num % 13 == 0:\n        divisible_by_13 += 1\nprint(divisible_by_13)"
+  },
+  {
+    "example_id": 390,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1512.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "product = 5 * 6 * 7 * 8 * 9 * 10\nprint(product // 100)"
+  },
+  {
+    "example_id": 391,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# 1. List of faces\nfaces = [1, 2, 3, 4, 5, 6]\n# 2. Vertex values\nvertex_values = []\nfor face in faces:\n    vertex_values.append(face)\n# 3. Add vertex values\nvertex_sum = sum(vertex_values)\n# 4. Largest number that must divide\nmax_divisor = vertex_sum // 2\nprint(max_divisor)"
+  },
+  {
+    "example_id": 392,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "99.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "N = 99\nfor num in range(N, 10, -1):\n    if num % num % 10 == 0 and num % 10!= 0:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 393,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "N = 1234567890\nremainder = N % 6\nprint(remainder)"
+  },
+  {
+    "example_id": 394,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.72",
+      "-5.0"
+    ],
+    "annotated_answers": [
+      "6.72",
+      "-05"
+    ],
+    "solution": "num = 21\ndenom = 2**2 * 5**7\nprint(num/denom)"
+  },
+  {
+    "example_id": 395,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "889.0"
+    ],
+    "annotated_answers": [
+      "333.0"
+    ],
+    "solution": "a = 997\nb = 1000\nresult = pow(a, b-2, b)\nprint(result)"
+  },
+  {
+    "example_id": 396,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "43436.0"
+    ],
+    "solution": "num = 999\nbase = 6\nprint(num % base)"
+  },
+  {
+    "example_id": 397,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "n = 2\nn %= 11\nprint(n)"
+  },
+  {
+    "example_id": 398,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "475.2"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "a, b = 4*66/5, 32*66/5\nprint(a+b)"
+  },
+  {
+    "example_id": 399,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "n = 1\nwhile n % 130!= 1 and n % 231!= 1:\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 400,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "952.0"
+    ],
+    "annotated_answers": [
+      "935.0"
+    ],
+    "solution": "X = 1000\nwhile X % 17!= 0:\n    X -= 8\nprint(X)"
+  },
+  {
+    "example_id": 401,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "n = 10\ngcds = []\nfor num in range(n + 5, n + 11):\n    gcd = gcd(num, n)\n    gcds.append(gcd)\nprint(gcds)"
+  },
+  {
+    "example_id": 402,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3087.0"
+    ],
+    "annotated_answers": [
+      "30325.0"
+    ],
+    "solution": "n = 4321\nm = 1234\nprint(n-m)"
+  },
+  {
+    "example_id": 403,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "factors = [1, 2, 3, 4, 6, 8, 12, 18, 24, 48]\nprint(len(factors))"
+  },
+  {
+    "example_id": 404,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "sum = 0\nfor i in range(1, 10):\n    sum += 11**i\ntens_digit = sum % 100 // 10\nprint(tens_digit)"
+  },
+  {
+    "example_id": 405,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "33.0"
+    ],
+    "solution": "quarters = 5\nif quarters < 10:\n    num_quarters = quarters\nelse:\n    num_quarters = quarters - 3\nprint(num_quarters)"
+  },
+  {
+    "example_id": 406,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "n = 4\nwhile True:\n    num = (1+2+3+n)**2\n    if num**0.25 == int(num**0.25):\n        break\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 407,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "def get_unit_digit(number, base):\n    return number % base\n\nn = 413_6 - 215_6\nprint(get_unit_digit(n, 6))"
+  },
+  {
+    "example_id": 408,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "product = 121 * 122 * 123\nresidue = product % 4\nprint(residue)"
+  },
+  {
+    "example_id": 409,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "nums = [1, -2, 3, -4, 5, -6, 7, -8, 9, -10, 11]\nsum = 0\nfor num in nums:\n    sum += num\nremainder = sum % 8\nprint(remainder)"
+  },
+  {
+    "example_id": 410,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40507599.0"
+    ],
+    "annotated_answers": [
+      "11121123.0"
+    ],
+    "solution": "a = 2012_3\nb = 201_3\nproduct = a * b\nprint(product)"
+  },
+  {
+    "example_id": 411,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "292.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "num_of_numbers = 0\nfor num in range(1, 1000):\n    num_of_divisors = 0\n    for i in range(1, num):\n        if num % i == 0:\n            num_of_divisors += 1\n    if num_of_divisors == 3:\n        num_of_numbers += 1\nprint(num_of_numbers)"
+  },
+  {
+    "example_id": 412,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "remainder = 0\nfor num in range(2000, 2007):\n    remainder += num\nremainder = remainder % 7\nprint(remainder)"
+  },
+  {
+    "example_id": 413,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "560.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "gcd = 9\nlcm = 7*6*5*4*3*2*1\nif lcm % gcd == 0:\n    print(lcm // gcd)\nelse:\n    print(\"No solution\")"
+  },
+  {
+    "example_id": 414,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "a = 71 % 10\nb = a - 1\nprint(a)"
+  },
+  {
+    "example_id": 415,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "A = 38271\nB = 27138\ndiff = 0\nfor i in range(len(str(A))):\n    diff += (A % 10) - (B % 10)\n    A //= 10\n    B //= 10\nprint(diff)"
+  },
+  {
+    "example_id": 416,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "53.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 10):\n    factors = []\n    for i in range(1, num + 1):\n        if num % i == 0:\n            factors.append(i)\n    if len(factors) == 4:\n        sum += num\n        if sum > 15:\n            break\nprint(sum)"
+  },
+  {
+    "example_id": 417,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "195.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "b = 13*15\nprint(b)"
+  },
+  {
+    "example_id": 418,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "17.0"
+    ],
+    "annotated_answers": [
+      "62.0"
+    ],
+    "solution": "a = 17\nprint(a)"
+  },
+  {
+    "example_id": 419,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "nums = [1, 12, 123, 1234, 12345, 123456, 1234567, 12345678]\nsum_of_nums = sum(nums)\nn = sum_of_nums % 9\nprint(n)"
+  },
+  {
+    "example_id": 420,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "a = 3\nb = 5\nnum_divisors = 0\nfor num in range(1, a):\n    if num % a == 0 and num % b == 0:\n        num_divisors += 1\nprint(num_divisors)"
+  },
+  {
+    "example_id": 421,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "48.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "num_congruent = 0\nfor num in range(100, 1000):\n    if num % 19 == 7:\n        num_congruent += 1\nprint(num_congruent)"
+  },
+  {
+    "example_id": 422,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-50.0"
+    ],
+    "annotated_answers": [
+      "-449.0"
+    ],
+    "solution": "x = -1199 // 24\nprint(x)"
+  },
+  {
+    "example_id": 423,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "pages_in_common = 0\nfor num1 in range(1, 51):\n    num2 = 50 - num1\n    if num1 % 10 == num2 % 10:\n        pages_in_common += 1\nprint(pages_in_common)"
+  },
+  {
+    "example_id": 424,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 13):\n    sum = (sum + num) % 4\nprint(sum)"
+  },
+  {
+    "example_id": 425,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "49.0"
+    ],
+    "annotated_answers": [
+      "42.0"
+    ],
+    "solution": "num_correct = 0\nfor num in range(1, 100, 1):\n    if num % 4 == 0 or num % 3 == 0:\n        num_correct += 1\nprint(num_correct)"
+  },
+  {
+    "example_id": 426,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "m = 18\nn = 10\nremainder = (m + n) % 14\nprint(remainder)"
+  },
+  {
+    "example_id": 427,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "for n in range(1, 13):\n    num = (n + 1) / (13 - n)\n    if isprime(num):\n        print(n)\n        break"
+  },
+  {
+    "example_id": 428,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "19090.0"
+    ],
+    "annotated_answers": [
+      "12023.0"
+    ],
+    "solution": "num1 = 2121_3\nnum2 = 212_3\nprint(num1 - num2)"
+  },
+  {
+    "example_id": 429,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "num = 46656\nperfect_squares = []\nfor num in range(1, int(num**0.5) + 1):\n    if num**2 == num:\n        perfect_squares.append(num)\nnum_perfect_squares = len(perfect_squares)\nprint(num_perfect_squares)"
+  },
+  {
+    "example_id": 430,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4051.0"
+    ],
+    "annotated_answers": [
+      "3859.0"
+    ],
+    "solution": "print(817_9 - 145_9 - 266_9)"
+  },
+  {
+    "example_id": 431,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "119.0"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ],
+    "solution": "def is_palindrome(num):\n    return str(num) == str(num)[::-1]\n\nnum_palindromes = 0\nfor num in range(1, 2007):\n    if is_palindrome(num):\n        num_palindromes += 1\nprint(num_palindromes)"
+  },
+  {
+    "example_id": 432,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "143.0"
+    ],
+    "solution": "num_1 = 1001\nnum_2 = 2431\ngcf = 1\nfor i in range(1, min(num_1, num_2) + 1):\n    if num_1 % i == 0 and num_2 % i == 0:\n        gcf = i\n        break\nprint(gcf)"
+  },
+  {
+    "example_id": 433,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "def gcd(a, b):\n    if b == 0:\n        return a\n    else:\n        return gcd(b, a % b)\n\ndef f(a):\n    return gcd(3 * a ** 2 + 19 * a + 30, a ** 2 + 6 * a + 9)\n\nmax_value = 0\nfor a in range(1, 1000):\n    f_a = f(a)\n    if f_a - a > max_value:\n        max_value = f_a - a\nprint(max_value)"
+  },
+  {
+    "example_id": 434,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "M = 3\nN = 5\nremainder = (M+N) % 6\nprint(remainder)"
+  },
+  {
+    "example_id": 435,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.370000000000005"
+    ],
+    "annotated_answers": [
+      "37.0"
+    ],
+    "solution": "alice = 25.67\nbailey = 17.21\ncindy = 39.17\ndaniel = 26.32\ntotal = alice + bailey + cindy + daniel\nremainder = total % 100\nprint(remainder)"
+  },
+  {
+    "example_id": 436,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "P = 251\nremainder = P % 16\nprint(remainder)"
+  },
+  {
+    "example_id": 437,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "100.0"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ],
+    "solution": "num_digits = len(str(10**100 - 9**100))\nprint(num_digits)"
+  },
+  {
+    "example_id": 438,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2009.0"
+    ],
+    "annotated_answers": [
+      "2000.0"
+    ],
+    "solution": "num_repeating_fractions = 0\nfor num in range(1, 2010):\n    fraction = num**2 / 2010\n    if fraction % 1!= 0:\n        num_repeating_fractions += 1\nprint(num_repeating_fractions)"
+  },
+  {
+    "example_id": 439,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "base = 3\nnum_digits = 4\npalindrome = 1\nwhile palindrome < 10**num_digits:\n    palindrome *= base\n    palindrome += 1\nprint(base)"
+  },
+  {
+    "example_id": 440,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "72.0"
+    ],
+    "annotated_answers": [
+      "427.0"
+    ],
+    "solution": "base = 7\nnum1 = 126\nnum2 = 54\nanswer = num1 - num2\nprint(answer)"
+  },
+  {
+    "example_id": 441,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "200.0"
+    ],
+    "annotated_answers": [
+      "512.0"
+    ],
+    "solution": "m = 200\nprint(m)"
+  },
+  {
+    "example_id": 442,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.2"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "num_remainders = 0\nfor num in range(1, 101):\n    if num % 5 == 1:\n        num_remainders += 1\npercent = num_remainders / 100\nprint(percent)"
+  },
+  {
+    "example_id": 443,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "32.0"
+    ],
+    "annotated_answers": [
+      "19.0"
+    ],
+    "solution": "least_integer = 3 * 4 + 4 * 5\nprint(least_integer)"
+  },
+  {
+    "example_id": 444,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "129.0"
+    ],
+    "annotated_answers": [
+      "777.0"
+    ],
+    "solution": "N = 100\nwhile N < 1000:\n    factors = [1]\n    for num in range(2, N, 1):\n        if N % num == 0:\n            factors.append(num)\n    if sum(factors) == 47:\n        print(N)\n        break\n    N += 1"
+  },
+  {
+    "example_id": 445,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "num = 29 * 79 + 31 * 81\nunits_digit = num % 10\nprint(units_digit)"
+  },
+  {
+    "example_id": 446,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1559.0"
+    ],
+    "annotated_answers": [
+      "338.0"
+    ],
+    "solution": "num1 = 235\nnum2 = 1324\nbase = 7\nbase10 = num1 + num2\nprint(base10)"
+  },
+  {
+    "example_id": 447,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "n1 = 2\nn2 = 2\nproduct = n1 * n2\nprint(product % 4)"
+  },
+  {
+    "example_id": 448,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "remainder = (129**34 + 96**38) % 11\nprint(remainder)"
+  },
+  {
+    "example_id": 449,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "36.0"
+    ],
+    "annotated_answers": [
+      "43.0"
+    ],
+    "solution": "m = 6**2\nprint(m)"
+  },
+  {
+    "example_id": 450,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "6.0",
+      "12.0",
+      "20.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "sum = 0\nfor i in range(4):\n    sum += 2 * (i + 1)\n    print(sum)\n    if sum == sum ** 0.5:\n        print(sum)\n        break"
+  },
+  {
+    "example_id": 451,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "base_5 = 269\nbase_10 = 269\nsum_digits = 0\nwhile base_10 > 0:\n    sum_digits += base_10 % 5\n    base_10 //= 5\nprint(sum_digits)"
+  },
+  {
+    "example_id": 452,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.0",
+      "13.0",
+      "13.0",
+      "13.0",
+      "13.0",
+      "13.0",
+      "13.0",
+      "13.0",
+      "13.0",
+      "13.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]\nfor x in range(11, 100):\n    if x in primes:\n        continue\n    for y in range(11, 100):\n        if y in primes:\n            continue\n        for z in range(11, 100):\n            if z in primes:\n                continue\n            if x + y + z + 1 in primes:\n                print(x + 1)\n                break"
+  },
+  {
+    "example_id": 453,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "sum_of_inverses = 0\nfor num in range(1, 13):\n    sum_of_inverses += 13 - num\n    sum_of_inverses %= 13\nprint(sum_of_inverses)"
+  },
+  {
+    "example_id": 454,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "n = 4\nsuperfactorial = 1\nfor i in range(1, n+1):\n    superfactorial *= i\nsuperfactorial **= superfactorial\nunits_digit = str(superfactorial)[-1]\nprint(units_digit)"
+  },
+  {
+    "example_id": 455,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "sum = 0\nfor num in range(1, 9):\n    sum += 16 - num % 16\nprint(sum % 16)"
+  },
+  {
+    "example_id": 456,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "77.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "sum = 0\nfor i in range(1, 100):\n    sum += i\n    if sum % 77 == 0:\n        print(i)\n        break\n    else:\n        sum -= i"
+  },
+  {
+    "example_id": 457,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "76.0"
+    ],
+    "solution": "base_7 = 321\nbase_5 = 321\nprint(base_7 - base_5)"
+  },
+  {
+    "example_id": 458,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "39.0"
+    ],
+    "solution": "base_4 = 332\nbase_3 = 212\nbase_10 = base_4 - base_3\nprint(base_10)"
+  },
+  {
+    "example_id": 459,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "units = 18**6 % 10\nprint(units)"
+  },
+  {
+    "example_id": 460,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "52.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "for n in range(101):\n    if -314159 % 101 == n:\n        print(n)"
+  },
+  {
+    "example_id": 461,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "a = 225\nb = 327\nN = 66\nremainder = (a**N - b**N) % 17\nprint(remainder)"
+  },
+  {
+    "example_id": 462,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "a = 5\nb = 10\nc = 15\nremainder = (a % 7) + (b % 7) + (c % 7)\nprint(remainder)"
+  },
+  {
+    "example_id": 463,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "137.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "# The population of Penteria increases by 5 every minute.\n# All but the initial ones die at the end of every hour.\n# If 137 Penteria are alive after 506 minutes, how many were there at the beginning?\n\n# The initial population is 1.\n# The population increases by 5 every minute.\n# The population is 1 + 5 + 5 +... + 5 = 5 + 5 +... + 5 = 5(1 + 1 +... + 1) = 5(2^5 - 1) = 5(32) = 128.\n# At the end of every hour, all but the initial ones die.\n# The initial population is 1.\n# The population decreases by 1 every hour.\n# The population is 1 - 1 -... - 1 = 1 - 1 -... - 1 = 1 - 1(2^5 - 1) = 1 - 1(32) = 1 - 32 = -31.\n# Therefore, the population of Penteria is 128 - (-31) = 159.\n# Therefore, 137 Penteria were there at the beginning.\n# Therefore, the initial population was 137.\n\nprint(137)"
+  },
+  {
+    "example_id": 464,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "n = 142857\nmodulus = 18\nprint(n % modulus)"
+  },
+  {
+    "example_id": 465,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "from math import factorial\n\ndef greatest_odd_factor_of_5_factorial():\n    n = 5\n    while True:\n        if n % 2 == 1 and n <= factorial(n):\n            return n\n        n += 1\n\nprint(greatest_odd_factor_of_5_factorial())"
+  },
+  {
+    "example_id": 466,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "89.0"
+    ],
+    "solution": "residue = 9 % 100\nprint(residue)"
+  },
+  {
+    "example_id": 467,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "P = 9\nb = 10\nQ = P // 2\nprint(P - 2)"
+  },
+  {
+    "example_id": 468,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "31.0",
+      "27.0",
+      "29.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "nums = [840, 960, 1200]\nnum_divisors = [0, 0, 0]\nfor num in nums:\n    divisors = [1]\n    for i in range(2, int(num ** 0.5) + 1):\n        if num % i == 0:\n            divisors.append(i)\n            divisors.append(num // i)\n    num_divisors.append(len(divisors))\nprint(num_divisors)"
+  },
+  {
+    "example_id": 469,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "a = 4\nb = 2\nc = 18\nremainder = (2 * a + b - c) % 19\nprint(remainder)"
+  },
+  {
+    "example_id": 470,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1950.0"
+    ],
+    "annotated_answers": [
+      "1950.0"
+    ],
+    "solution": "expression = 2**2001 * 5**1950 // 4**27\nprint(len(str(expression)))"
+  },
+  {
+    "example_id": 471,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "240.0"
+    ],
+    "solution": "# The number of tiles she can use is 10\n# and the least number of tiles she can use is 10\nprint(10)"
+  },
+  {
+    "example_id": 472,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "27.0"
+    ],
+    "annotated_answers": [
+      "64.0"
+    ],
+    "solution": "# Find the perfect square\nfor num in range(11, 101):\n    root = num ** 0.5\n    if root == int(root):\n        break\n# Find the perfect cube\nfor num in range(11, 101):\n    root = num ** (1/3)\n    if root == int(root):\n        break\n# Check if they are equal\nif num == root ** 3:\n    print(num)"
+  },
+  {
+    "example_id": 473,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "59.0"
+    ],
+    "annotated_answers": [
+      "59.0"
+    ],
+    "solution": "positive_two_digit_ints = []\nfor num in range(10, 100):\n    first_digit = int(str(num)[0])\n    second_digit = int(str(num)[1])\n    if num == first_digit + second_digit + first_digit * second_digit:\n        positive_two_digit_ints.append(num)\nmean = sum(positive_two_digit_ints) / len(positive_two_digit_ints)\nprint(mean)"
+  },
+  {
+    "example_id": 474,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.46153846153846156"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "frac = 6 / 13\nprint(frac)"
+  },
+  {
+    "example_id": 475,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "18.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "b = 10\nresult = 6 + 6 + 5 + 1\nprint(result)"
+  },
+  {
+    "example_id": 476,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "27.0"
+    ],
+    "annotated_answers": [
+      "352.0"
+    ],
+    "solution": "# 8 + 9 + 10 = 27\nprint(27)"
+  },
+  {
+    "example_id": 477,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "60.0"
+    ],
+    "solution": "n = 1\nwhile True:\n    divisors = set(range(1, n+1))\n    product = 1\n    for divisor in divisors:\n        product *= divisor\n    if product == n**6:\n        break\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 478,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "number = 20_7\nmultiple = number % 11\nprint(11 - multiple)"
+  },
+  {
+    "example_id": 479,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "12.0",
+      "18.0",
+      "24.0",
+      "30.0",
+      "36.0",
+      "42.0",
+      "48.0",
+      "54.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "n = 1\nwhile n < 10:\n    apples = 6*n\n    print(apples)\n    n += 1"
+  },
+  {
+    "example_id": 480,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "steps = 11\ntotal_steps = 139\nremainder = total_steps % steps\nprint(remainder)"
+  },
+  {
+    "example_id": 481,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "remainder = sum([2**i for i in range(101)]) % 7\nprint(remainder)"
+  },
+  {
+    "example_id": 482,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "sum = 0\nfor num in range(33818, 33823):\n    sum += num**2\nremainder = sum % 17\nprint(remainder)"
+  },
+  {
+    "example_id": 483,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "n = 10\nwhile n > 1:\n    n //= 11\nprint(n)"
+  },
+  {
+    "example_id": 484,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "A = 1\nB = 2\nC = 3\nsum = A + B + C\nprint(sum)"
+  },
+  {
+    "example_id": 485,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "52.0"
+    ],
+    "annotated_answers": [
+      "127.0"
+    ],
+    "solution": "for num in range(26, 1000000, 2):\n    if num % 25 == 2:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 486,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "num = 629\nnum_base_7 = str(num)\nnum_base_8 = str(num)\ncommon_digits = 0\nfor digit in num_base_7:\n    if digit in num_base_8:\n        common_digits += 1\nprint(common_digits)"
+  },
+  {
+    "example_id": 487,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2045.0"
+    ],
+    "solution": "def base_5_quotient(dividend, divisor):\n    quotient = []\n    remainder = dividend\n    while remainder >= divisor:\n        remainder = remainder - divisor\n        quotient.append(divisor)\n    return quotient\nprint(base_5_quotient(413, 2))"
+  },
+  {
+    "example_id": 488,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "n = 8\nn %= 17\nprint(n)"
+  },
+  {
+    "example_id": 489,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "32.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def sum_digits(num):\n    return sum(int(digit) for digit in str(num))\n\nnum = 8888\nresult = sum_digits(num)\nprint(result)"
+  },
+  {
+    "example_id": 490,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1215.75"
+    ],
+    "annotated_answers": [
+      "499.0"
+    ],
+    "solution": "hours = 3.5\nlabor = hours * 242.5\nequipment = 367\ntotal = labor + equipment\nprint(total)"
+  },
+  {
+    "example_id": 491,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "remainder = pow(5, 30, 7)\nprint(remainder)"
+  },
+  {
+    "example_id": 492,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "remainder = 2 * 3 % 5\nprint(remainder)"
+  },
+  {
+    "example_id": 493,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0",
+      "6.0",
+      "9.0",
+      "12.0",
+      "18.0",
+      "27.0",
+      "36.0",
+      "54.0",
+      "108.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "num = 2**5 * 3**6\nfactors = []\nfor i in range(1, int(num**0.5) + 1):\n    if num % i**2 == 0:\n        factors.append(i)\nprint(factors)"
+  },
+  {
+    "example_id": 494,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "621.0"
+    ],
+    "annotated_answers": [
+      "621.0"
+    ],
+    "solution": "largest_number = 999\nfor num in range(largest_number, 0, -1):\n    digits = [int(digit) for digit in str(num)]\n    product = 1\n    for digit in digits:\n        product *= digit\n    if product == 12:\n        print(num)\n        break"
+  },
+  {
+    "example_id": 495,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "201.0"
+    ],
+    "solution": "n = 100\nm = 13\nwhile n > m:\n    n -= m\nprint(n)"
+  },
+  {
+    "example_id": 496,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "n = 3\na = 1\nb = 2\ninverse_ab = pow(a*b, -1, n)\ninverse_a = pow(a, -1, n)\ninverse_b = pow(b, -1, n)\nremainder = (inverse_a + inverse_b) * inverse_ab % n\nprint(remainder)"
+  }
+]

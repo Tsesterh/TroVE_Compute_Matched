@@ -1,0 +1,3219 @@
+[
+  {
+    "example_id": 0,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "import sympy\n\n# find the length of $AD$\nAD = sympy.sqrt(2**2 + 3**2)\n\n# find the area of triangle $ABC$\narea = (AD * AD) / 2\n\nprint(area)"
+  },
+  {
+    "example_id": 1,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import sympy\n\ntheta = sympy.Symbol('theta')\nexpr = (1 + sympy.sin(theta)) / (1 - sympy.sin(theta)) - (1 - sympy.sin(theta)) / (1 + sympy.sin(theta))\nexpr = expr.expand()\nprint(expr)"
+  },
+  {
+    "example_id": 2,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from sympy import simplify\nfrom sympy.abc import a, b, c\n\nsummation = (1 / (1 - a)) + (1 / (1 - b)) + (1 / (1 - c))\nprint(simplify(summation))"
+  },
+  {
+    "example_id": 3,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "70.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "print(20 + 50)"
+  },
+  {
+    "example_id": 4,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from sympy import *\nA, B, C, D = symbols('A B C D')\nP = (A + B + C + D)/4\nM = [(A + B)/2, (A + C)/2, (A + D)/2, (B + C)/2, (B + D)/2, (C + D)/2]\nunit_cost = 0\nfor i in range(6):\n    unit_cost += M[i]*(P - M[i])\nprint(unit_cost)"
+  },
+  {
+    "example_id": 5,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.666666666666664"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import numpy as np\ndef tetrahedron_volume(A, B, C, D):\n    \"\"\"\n    Input: Four vertices of a tetrahedron as 3D points.\n    Output: Volume of the tetrahedron.\n    \"\"\"\n    # Calculate the surface area of each triangle\n    # by using the formula: 2 * (a * b + b * c + c * a)\n    AB = 2 * (A[0] * B[0] + B[0] * B[1] + B[1] * A[1])\n    BC = 2 * (B[0] * C[0] + C[0] * C[1] + C[1] * B[1])\n    CD = 2 * (C[0] * D[0] + D[0] * D[1] + D[1] * C[1])\n    DA = 2 * (D[0] * A[0] + A[0] * A[1] + A[1] * D[1])\n    # Calculate the volume of the tetrahedron by using the formula:\n    # 1/6 * (area of triangle ABC + area of triangle BCD + area of triangle CDA + area of triangle DAB)\n    volume = 1/6 * (AB + BC + CD + DA)\n    return volume\n\n# Test the function\nprint(tetrahedron_volume(np.array([0, 1, 2]), np.array([3, 0, 1]), np.array([4, 3, 6]), np.array([2, 3, 2])))"
+  },
+  {
+    "example_id": 6,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "from math import sin\n\ndef sine_law(a, b, c):\n    return (c * sin(a)) / (a * sin(b))\n\ndef perimeter(a, b, c):\n    return a + b + c\n\ndef triangle_side(a, b, c):\n    return (a**2 + b**2 + c**2) / (2 * perimeter(a, b, c))\n\ndef length_diff(a, b, c):\n    return abs(triangle_side(a, b, c) - triangle_side(10, b, c))\n\nb = 10 + 10\nprint(length_diff(10, b, 10 * sin(10 / b)))"
+  },
+  {
+    "example_id": 7,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import math\nt = math.radians(90)\nprint(int(t))"
+  },
+  {
+    "example_id": 8,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "10.0",
+      "8.0",
+      "100.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from sympy import sin, cos\nprint(8*cos(100)*cos(100) - 1/sin(10))"
+  },
+  {
+    "example_id": 9,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "0.7",
+      "0.7",
+      "2.0",
+      "-0.7",
+      "0.7",
+      "2.0",
+      "0.7",
+      "0.7",
+      "2.0",
+      "-0.7",
+      "0.7",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "from sympy import roots, S\nfrom sympy.abc import z\n\nf = z**7 + z**6 + z**5 + z**4 + z**3 + z**2 + z + 1\nroots = roots(f, z)\n\narea = 0\nfor root in roots:\n    area += root.n(1)**2\n\nprint(area)"
+  },
+  {
+    "example_id": 10,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.265625"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from math import atan, pi\n\nx = atan(1) / (2 * pi)\ny = atan(1) / (2 * pi)\n\nprint(x * y + x + y)"
+  },
+  {
+    "example_id": 11,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.44"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "import numpy as np\na = np.array([1,2])\nb = np.array([3,4])\nk = np.dot(a,b) / np.dot(b,b)\nprint(k)"
+  },
+  {
+    "example_id": 12,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "72.0"
+    ],
+    "annotated_answers": [
+      "72.0"
+    ],
+    "solution": "import math\nn = int(math.degrees(math.atan(math.tan(252 * math.pi / 180))))\nprint(n)"
+  },
+  {
+    "example_id": 13,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "import numpy as np\n\n# Line 1\na1, b1, c1 = -1, -3, -5\n\n# Line 2\na2, b2, c2 = 2, 4, 6\n\n# Find k\nk = (b2*c1 - b1*c2) / (a1*b2 - a2*b1)\n\n# Print k\nprint(k)"
+  },
+  {
+    "example_id": 14,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12.0",
+      "11.0",
+      "10.0",
+      "9.0",
+      "8.0",
+      "7.0",
+      "6.0",
+      "5.0",
+      "4.0",
+      "3.0",
+      "2.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "43.0"
+    ],
+    "solution": "from sympy import Symbol, expand, factor, simplify\nz = Symbol('z')\nexpansions = [z**i for i in range(13)]\nfactored = expand(sum(expansions))\nsimplified = factor(simplify(factored))\nprint(simplified)"
+  },
+  {
+    "example_id": 15,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.0",
+      "180.0",
+      "47.0",
+      "180.0",
+      "2.0",
+      "73.0",
+      "180.0",
+      "17.0",
+      "180.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "from sympy import sin, cos, pi\n\nsin_13 = sin(13 * pi / 180)\nsin_47 = sin(47 * pi / 180)\nsin_73 = sin(73 * pi / 180)\nsin_107 = sin(107 * pi / 180)\n\ncos_17 = cos(17 * pi / 180)\n\nprint((sin_13 + sin_47 + sin_73 + sin_107) / cos_17)"
+  },
+  {
+    "example_id": 16,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-1.0000000000000002"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "import math\nprint(math.tan(math.radians(135)))"
+  },
+  {
+    "example_id": 17,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import sympy\nprint(sympy.cot(sympy.pi/2))"
+  },
+  {
+    "example_id": 18,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "from sympy import exp, pi\nprint(exp(pi*1j))"
+  },
+  {
+    "example_id": 19,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-98.0"
+    ],
+    "annotated_answers": [
+      "-49.0"
+    ],
+    "solution": "from sympy import Matrix, det\nA = Matrix([[1, 2], [3, 4]])\nprint(det(7*A))"
+  },
+  {
+    "example_id": 20,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "n = 4\nprint(n)"
+  },
+  {
+    "example_id": 21,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "315.0"
+    ],
+    "solution": "a, b = 0, 0\nfor p in [(11, 37), (a, b)]:\n    a, b = b, p[0] - p[1]\nprint(a * b)"
+  },
+  {
+    "example_id": 22,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "90.0",
+      "1.0",
+      "9.0",
+      "8.0",
+      "8.0",
+      "7.0",
+      "7.0",
+      "6.0",
+      "6.0",
+      "5.0",
+      "5.0",
+      "4.0",
+      "4.0",
+      "3.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "1.0",
+      "1.0",
+      "9.0",
+      "8.0",
+      "8.0",
+      "7.0",
+      "7.0",
+      "6.0",
+      "6.0",
+      "5.0",
+      "5.0",
+      "4.0",
+      "4.0",
+      "3.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "1.0",
+      "90.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "from sympy import Symbol, sin, simplify\n\nw = Symbol('w')\nn = 90\na = simplify(1 / (w + 2 * w ** 2 + 3 * w ** 3 + 4 * w ** 4 + 5 * w ** 5 + 6 * w ** 6 + 7 * w ** 7 + 8 * w ** 8 + 9 * w ** 9))\nb = a / sin(n * Symbol('deg'))\nprint(a + b + n)"
+  },
+  {
+    "example_id": 23,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-88.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import numpy as np\n\na = np.array([1, 0, 0])\nb = np.array([-1, 4, 6])\nc = np.array([2, -7, -10])\n\nab = np.cross(a, b)\nac = np.cross(a, c)\n\nmax_value = np.dot(ac, ab)\nprint(max_value)"
+  },
+  {
+    "example_id": 24,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "import sympy\na, b, c = sympy.symbols('a b c')\ns = (a + b + c) / 2\narea = sympy.sqrt(s * (s - a) * (s - b) * (s - c))\nmedian = sympy.sqrt(area / a)\nab = (a * b) / median\nprint(ab)"
+  },
+  {
+    "example_id": 25,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from math import acos\nprint(acos(1))"
+  },
+  {
+    "example_id": 26,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from sympy import Matrix\n\na = Matrix([1, 1])\nb = Matrix([2, 3])\n\nprint(a.dot(b))"
+  },
+  {
+    "example_id": 27,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "-1.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "-1.0",
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import sympy\n\nu, v, w = sympy.roots(sympy.Symbol('z') ** 3 - 1)\nprint(u * v + u * w + v * w)"
+  },
+  {
+    "example_id": 28,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "3.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "3.0",
+      "1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "3.0",
+      "1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "1.0",
+      "8.0",
+      "3.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "1.0",
+      "5.0",
+      "8.0",
+      "1.0",
+      "8.0",
+      "3.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "180.0",
+      "90.0",
+      "45.0",
+      "36.0",
+      "7.0",
+      "180.0",
+      "2.0",
+      "45.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import sympy\n\ntangents = [sympy.tan(i * sympy.pi / 180) for i in range(1, 9)]\nprint(sympy.prod(tangents))"
+  },
+  {
+    "example_id": 29,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from sympy import cot, tan, csc, sec\nfrom sympy.abc import theta\n\nexpr = cot(theta)/tan(theta) - csc(theta)/sec(theta)\nprint(expr)"
+  },
+  {
+    "example_id": 30,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.5440357391184132",
+      "16.0"
+    ],
+    "annotated_answers": [
+      "82.0"
+    ],
+    "solution": "from math import sin, cos, pi\n\nn = 2019\n\nsec_n = 1 / cos(n * pi / 180)\n\nsum = 0\nfor i in range(2, n + 1):\n    sum += 1 / cos(i * pi / 180)\n\nprint(sec_n - sum)"
+  },
+  {
+    "example_id": 31,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "29.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "from math import cos, pi\n\ndef find_k(n):\n    x = (n * pi) / 6\n    if cos(4 * x) == -0.5:\n        return n\n    else:\n        return find_k(n + 1)\n\nk = find_k(1)\nprint(k)"
+  },
+  {
+    "example_id": 32,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "k = 3/2\nprint(k)"
+  },
+  {
+    "example_id": 33,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "from sympy import *\na, b, c = symbols('a b c')\ns = (a + b + c) / 2\narea = sqrt(s * (s - a) * (s - b) * (s - c))\nprint(area)"
+  },
+  {
+    "example_id": 34,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5294117647058822"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "a = 26 / 17\nprint(a)"
+  },
+  {
+    "example_id": 35,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "a = 4\nb = 3\np = 7\n\nprint(a + b + p)"
+  },
+  {
+    "example_id": 36,
+    "selected_solution_index": 14,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "9.0",
+      "2.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "160.0"
+    ],
+    "solution": "from sympy import solve, Symbol, exp\n\nz = Symbol('z')\ntheta = solve(z**6 + z**3 + 1, z)[0]\nprint(theta)"
+  },
+  {
+    "example_id": 37,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.13616648397474387"
+    ],
+    "annotated_answers": [
+      "906.0"
+    ],
+    "solution": "from math import cos\n\ndef cos_power(x, n):\n    return cos(x) ** n\n\n\ndef cos_power_sum(x_start, x_end, n):\n    return sum(cos_power(x, n) for x in range(x_start, x_end + 1))\n\n\ndef solve(n):\n    x_start = 100\n    x_end = 200\n    return cos_power_sum(x_start, x_end, n) - cos_power_sum(x_start, x_end, n + 2)\n\n\nprint(solve(3))"
+  },
+  {
+    "example_id": 38,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import Symbol, solve, sin, cos, tan, cot, sec, csc\n\ntheta = Symbol('theta', real=True, positive=True)\n\neq = (1/sin(theta)**2 - 1/cos(theta)**2 - 1/tan(theta)**2 - 1/cot(theta)**2 - 1/sec(theta)**2 - 1/csc(theta)**2)\n\nsolve(eq.expand() == -3, theta)"
+  },
+  {
+    "example_id": 39,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "from sympy import sin, pi\na = 2*sin(4*pi/2 + pi)\nprint(a)"
+  },
+  {
+    "example_id": 40,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "251.0"
+    ],
+    "solution": "n = 1\nwhile True:\n    sum = 0\n    for k in range(1, n + 1):\n        sum += 2 * cos(k ** 2 * a) * sin(k * a)\n    if int(sum) == sum:\n        break\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 41,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import sympy\nx = sympy.Symbol('x')\ncot_squared = sympy.cot(x) ** 2\nsolve = sympy.solve(cot_squared - 3 / 2, cot_squared)\nprint(solve)"
+  },
+  {
+    "example_id": 42,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-2.0"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "from sympy import sin, asin, pi\nprint(asin(sin(3)) + asin(sin(4)) + asin(sin(5)))"
+  },
+  {
+    "example_id": 43,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.840402866513374",
+      "18.79385241571817"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "import math\n\ntheta = math.radians(20)\n\nb = 20 * math.sin(theta)\nh = 20 * math.cos(theta)\n\nprint(b, h)"
+  },
+  {
+    "example_id": 44,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "1.0",
+      "4.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from sympy import Symbol\n\n\nomega = Symbol('omega')\n\n\ndef f(x):\n    return (1 + x) / (1 + x**2)\n\n\nprint(f(omega) + f(omega**2))"
+  },
+  {
+    "example_id": 45,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "import numpy as np\na = np.array([1, 3, 0])\nb = np.array([-11, 5, 2])\nc = np.array([1 + np.sqrt(5), 4, -5])\n\n# find k\nk = np.dot(np.cross(a, b), c) / np.dot(np.cross(b, c), a)\nprint(k)"
+  },
+  {
+    "example_id": 46,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import solve, symbols\n\nsec, csc, theta = symbols('sec csc theta')\neq = sec(theta) + csc(theta) - sqrt(15)\n\nsol = solve(eq, theta)\nprint(sol)"
+  },
+  {
+    "example_id": 47,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import sympy as sym\n\na, b, c = sym.symbols(\"a b c\")\ndet = sym.det(sym.Matrix([[0, b - a, c - a], [a - b, 0, c - b], [a - c, b - c, 0]]))\nprint(det)"
+  },
+  {
+    "example_id": 48,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import sympy\n\nx, y, z = sympy.symbols('x y z')\nexpr = sympy.Matrix([[1, sympy.log(y, x), sympy.log(z, x)], [sympy.log(x, y), 1, sympy.log(z, y)], [sympy.log(x, z), sympy.log(y, z), 1]])\nprint(expr)"
+  },
+  {
+    "example_id": 49,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.317821063276353"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "from math import sqrt\n\na_magnitude = 3\nb_magnitude = 14\n\ndistance = sqrt((a_magnitude ** 2) + (b_magnitude ** 2))\nprint(distance)"
+  },
+  {
+    "example_id": 50,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "6.0",
+      "2.0",
+      "12.0",
+      "30.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import sympy as sym\nx, y, z = sym.symbols('x y z')\neq = x**2 + 2*x + y**2 + 6*y + z**2 - 12*z + 30\nradius = sym.sqrt(eq)\nprint(radius)"
+  },
+  {
+    "example_id": 51,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "4.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "-8.0"
+    ],
+    "solution": "from sympy import *\na, b, c = symbols('a b c')\nalpha = acos((b**2 + c**2 - a**2) / (2 * b * c))\nprint(b * c * sin(alpha))"
+  },
+  {
+    "example_id": 52,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.6666666666666667"
+    ],
+    "annotated_answers": [
+      "-4.0"
+    ],
+    "solution": "import numpy as np\nv = np.array([2, 1, -5])\nw = np.array([1, -2, 1])\nprojection = np.dot(v, w) / np.dot(w, w) * w\ny = projection[1]\nprint(y)"
+  },
+  {
+    "example_id": 53,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "from math import log10, sin\n\nn = 8\nprint(n)"
+  },
+  {
+    "example_id": 54,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import math\n\ndef inverse_trig(fun):\n    return lambda x: math.acos(math.cos(x))\n\nsin_1 = inverse_trig(math.sin)\ncos_1 = inverse_trig(math.cos)\n\nprint([x for x in range(0, int(math.pi)) if sin_1(6*x) == cos_1(x)])"
+  },
+  {
+    "example_id": 55,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-3.0000000000000004"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "import numpy as np\n\nM = np.array([[2, 1], [3, 0]])\nprint(np.linalg.det(M))"
+  },
+  {
+    "example_id": 56,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import sympy\nx = sympy.Symbol('x')\nexpr = (sympy.tan(x)/(sympy.sec(x) + 1) - (sympy.sec(x) - 1)/sympy.tan(x))\nprint(expr)"
+  },
+  {
+    "example_id": 57,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import math\na_1 = 1\na_2 = 1 / math.sqrt(3)\n\n\ndef calculate_a_n(a_n, a_n_plus_1):\n    return (a_n + a_n_plus_1) / (1 - a_n * a_n_plus_1)\n\n\na_2009 = calculate_a_n(a_2008, a_2009)\nprint(a_2009)"
+  },
+  {
+    "example_id": 58,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "import math\n\n\ndef cos_sum(alpha, beta, gamma):\n    return math.cos(alpha) + math.cos(beta) + math.cos(gamma)\n\n\ndef sin_sum(alpha, beta, gamma):\n    return math.sin(alpha) + math.sin(beta) + math.sin(gamma)\n\n\np = 1\nq = 2\nr = 3\nalpha = math.radians(p)\nbeta = math.radians(q)\ngamma = math.radians(r)\n\nwhile cos_sum(alpha, beta, gamma)!= 1:\n    p += 1\n    q += 2\n    r += 3\n    alpha = math.radians(p)\n    beta = math.radians(q)\n    gamma = math.radians(r)\n\nprint(p + q + r)"
+  },
+  {
+    "example_id": 59,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "30.0",
+      "30.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import sin\n\nx = sin(90 - 120)\ny = sin(120 - 150)\nz = sin(150 - 180)\n\nprint(sin(x + y) / (sin(x) * sin(z)))"
+  },
+  {
+    "example_id": 60,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-3.0"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ],
+    "solution": "import sympy\nprint(sympy.det(sympy.Matrix([[0, 1], [3, 5]])))"
+  },
+  {
+    "example_id": 61,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "2.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "159.0"
+    ],
+    "solution": "import sympy\nx = sympy.Symbol('x')\nexpression = sympy.log(x, 2)/5 - sympy.sin(5*sympy.pi*x)\nprint(expression)"
+  },
+  {
+    "example_id": 62,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2634508800.0",
+      "11.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "from sympy import Symbol\nfrom sympy import binomial\nfrom sympy import factorial\nfrom sympy import sqrt\n\na = Symbol('a', real=True)\nb = Symbol('b', real=True)\n\nresult = binomial(12, 2) * factorial(11) * (a - b)**11 * (a + b)**1\nprint(result)"
+  },
+  {
+    "example_id": 63,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.06391899015777"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from sympy import acos, asin, cos, sin, simplify\n\nalpha = acos(1/3)\nbeta = acos(1/2)\n\nexpr = simplify(cos(beta)**3/cos(alpha) + sin(beta)**3/sin(alpha))\nprint(expr)"
+  },
+  {
+    "example_id": 64,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-0.5984600690578581"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "from math import cos\nprint(cos(180))"
+  },
+  {
+    "example_id": 65,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "1.0",
+      "2.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ],
+    "solution": "import sympy\na, b, k, u, t = sympy.symbols('a b k u t')\nx1, y1, z1 = sympy.symbols('x1 y1 z1')\nx2, y2, z2 = sympy.symbols('x2 y2 z2')\nx3, y3, z3 = sympy.symbols('x3 y3 z3')\n\n# line 1\nx1 = 2\ny1 = -1\nz1 = 3\n\n# line 2\nx2 = 2\ny2 = 1\nz2 = 1\n\n# line 3\nx3 = 4\ny3 = a\nz3 = b\n\n# perpendicularity\nsympy.Eq(sympy.diff(x1*y2 - y1*x2, u), 0)\nsympy.Eq(sympy.diff(x2*y3 - y2*x3, t), 0)\n\n# intersection\nsympy.Eq(x1 + t*x2 - u*x3, x3)\nsympy.Eq(y1 + t*y2 - u*y3, y3)\nsympy.Eq(z1 + t*z2 - u*z3, z3)\n\n# solve\nsol = sympy.solve([\n    sympy.Eq(x1 + t*x2 - u*x3, x3),\n    sympy.Eq(y1 + t*y2 - u*y3, y3),\n    sympy.Eq(z1 + t*z2 - u*z3, z3),\n    sympy.Eq(sympy.diff(x1*y2 - y1*x2, u), 0),\n    sympy.Eq(sympy.diff(x2*y3 - y2*x3, t), 0)\n])\n\nprint(sol)"
+  },
+  {
+    "example_id": 66,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0023264614041396"
+    ],
+    "annotated_answers": [
+      "-2.0"
+    ],
+    "solution": "from math import sin, degrees\n\n# Find sin 330\nsin_330 = sin(degrees(330))\n\n# Find csc\ncsc = 1 / sin_330\n\nprint(csc)"
+  },
+  {
+    "example_id": 67,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "from sympy import Matrix, symbols\nx_1, x_2, x_3, y_1, y_2, y_3 = symbols('x_1 x_2 x_3 y_1 y_2 y_3')\nA = Matrix([[x_1 - x_2, y_1 - y_2, 1], [x_1 - x_3, y_1 - y_3, 1], [x_2 - x_3, y_2 - y_3, 1]])\nprint(A.det() ** 2)"
+  },
+  {
+    "example_id": 68,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "22.0"
+    ],
+    "solution": "from sympy import *\n\na = Matrix([1,2,3])\nb = Matrix([4,5,6])\n\na_cross_b = a.cross(b)\n\nleft_hand_side = (5*a + 7*b).cross(a-3*b)\nright_hand_side = a.cross(b)\n\nk = simplify(left_hand_side.cross(right_hand_side))\n\nprint(k)"
+  },
+  {
+    "example_id": 69,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "7.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "7.0"
+    ],
+    "annotated_answers": [
+      "100.0"
+    ],
+    "solution": "import sympy as sp\n\ndef solve(theta):\n    tan_theta = sp.tan(theta)\n    cos_theta = sp.cos(theta)\n    return (1 / (1 + cos_theta)) + (1 / (1 - cos_theta))\n\nprint(solve(sp.pi/7))"
+  },
+  {
+    "example_id": 70,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "94.0",
+      "11.0",
+      "118.0",
+      "3.0",
+      "33.0"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ],
+    "solution": "from sympy import *\na, b, c, d = 9 - 4*sqrt(3), 2/sqrt(3) - 1, (9 - 4*sqrt(3))/33, (9 - 4*sqrt(3))/33\nprint(a + b + c + d)"
+  },
+  {
+    "example_id": 71,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0",
+      "48.0",
+      "12.0",
+      "5.0",
+      "48.0",
+      "12.0",
+      "6.0",
+      "48.0",
+      "12.0",
+      "48.0",
+      "12.0",
+      "5.0",
+      "20.0",
+      "12.0",
+      "48.0",
+      "3.0",
+      "48.0",
+      "12.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from sympy import Symbol, cos, sin, I\n\nn = 6\nexpr = (cos(12) + I * sin(12) + cos(48) + I * sin(48)) ** n\n\n# Find the imaginary part of expr\nprint(expr.as_real_imag()[1])"
+  },
+  {
+    "example_id": 72,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.842170943040401",
+      "-14.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "import numpy as np\na = np.array([4, np.sqrt(np.pi), -14])\nb = np.array([-1, 3, 10])\nprint(np.dot(a, np.cross(a, b)))"
+  },
+  {
+    "example_id": 73,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "90.0"
+    ],
+    "annotated_answers": [
+      "92.0"
+    ],
+    "solution": "import math\n\ndef f(x):\n    sin_sq = math.sin(math.radians(x)) ** 2\n    cos_sq = math.cos(math.radians(x)) ** 2\n    sin_cos = math.sin(math.radians(x)) * math.cos(math.radians(x))\n    return (sin_sq + cos_sq + sin_cos) == 1\n\ndef g(x):\n    return not f(x)\n\nm = 0\nwhile g(m):\n    m += 1\n\nn = 90 - m\nprint(m + n)"
+  },
+  {
+    "example_id": 74,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import sympy\np, q, r, a, b, c = sympy.symbols('p q r a b c')\nexpr = sympy.Matrix([[p, b, c], [a, q, c], [a, b, r]])\nprint(expr.det())\nprint(p/(p-a) + q/(q-b) + r/(r-c))"
+  },
+  {
+    "example_id": 75,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "180.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "-1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "1.0",
+      "-1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "53.0",
+      "180.0",
+      "180.0",
+      "1.0",
+      "-1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "-1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "53.0",
+      "180.0"
+    ],
+    "annotated_answers": [
+      "46.0"
+    ],
+    "solution": "import sympy as sym\nfrom sympy import tan\nx = sym.Symbol('x')\n\n# tan 53 = tan 81 = tan x\n\neq1 = tan(53*sym.pi/180) * tan(81*sym.pi/180) * tan(x*sym.pi/180)\neq2 = tan(53*sym.pi/180) + tan(81*sym.pi/180) + tan(x*sym.pi/180)\n\n# solve\nprint(eq1 - eq2)"
+  },
+  {
+    "example_id": 76,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "from sympy import Symbol\n\nx = Symbol('x', real=True)\ny = Symbol('y', real=True)\nz = Symbol('z', real=True)\n\npieces = 1 + 2 + 2 + 1\nprint(pieces)"
+  },
+  {
+    "example_id": 77,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import sympy as sp\n\ntheta = sp.Symbol('theta')\n\nprint(sp.expand((sp.sin(theta)**2 + sp.sin(theta))**2))"
+  },
+  {
+    "example_id": 78,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "10.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "import sympy as sp\n\na, b, c, d = sp.symbols('a b c d')\n\neq = 4 * sp.cos(27 * sp.pi / 180)\neq = eq.expand()\n\neq = eq.subs(b, sp.sqrt(b))\neq = eq.subs(d, sp.sqrt(d))\n\neq = eq.subs(a + b + c + d, 0)\n\nprint(eq)"
+  },
+  {
+    "example_id": 79,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1000.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import numpy as np\ny = lambda x: np.sqrt(np.log2(np.sin(x)))\nnum_int = np.arange(0, 10, 0.01).size\nprint(num_int)"
+  },
+  {
+    "example_id": 80,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "import math\na = 3 * math.cos(4 * math.pi)\nprint(a)"
+  },
+  {
+    "example_id": 81,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "110.0"
+    ],
+    "solution": "import sympy\n\na, b, c = sympy.symbols(\"a b c\")\n\ncot_2a = sympy.cot(2*a)\ncot_2b = sympy.cot(2*b)\ncot_2c = sympy.cot(2*c)\n\narea = (a*b*c) / (4 * sympy.sqrt(cot_2a*cot_2b*cot_2c))\n\nprint(area)"
+  },
+  {
+    "example_id": 82,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "print(cot(pi/2 - 3*pi/2))"
+  },
+  {
+    "example_id": 83,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "import sympy\n\nA, B, C = sympy.symbols('A B C')\n\narea = sympy.sqrt(\n    sympy.det(\n        sympy.Matrix([[A, B, C],\n                       [B, A, C],\n                       [C, C, A]])\n    )\n)\n\nprint(area)"
+  },
+  {
+    "example_id": 84,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "k = (AB^2 + BC^2 + CD^2 + DA^2) / (AC^2 + BD^2 + k * MN^2)\nprint(k)"
+  },
+  {
+    "example_id": 85,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "25.0",
+      "15.0",
+      "5.0",
+      "30.0",
+      "20.0",
+      "10.0"
+    ],
+    "annotated_answers": [
+      "87.5"
+    ],
+    "solution": "from sympy import cot, tan\nfrom sympy.abc import r\n\nsum = cot(5) + cot(10) + cot(15) + cot(20) + cot(25) + cot(30)\n\nprint(sum - tan(r))"
+  },
+  {
+    "example_id": 86,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "from sympy import *\nc, d = symbols('c d')\nv = Matrix([1, 1])\nA = Matrix([[4, 7], [c, d]])\nprint(A * v)\nprint(abs(c - d))"
+  },
+  {
+    "example_id": 87,
+    "selected_solution_index": 0,
+    "is_success": false,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "-6.0"
+    ],
+    "solution": "import sympy\nx, y = sympy.symbols('x y')\nt, u = sympy.symbols('t u')\n\np1 = sympy.Matrix([[0, 6], [4, -6]])\np2 = sympy.Matrix([[1, -7], [a, 9]])\n\np3 = p1 + t * p2\np4 = p2 + u * p1\n\nsol = sympy.solve((p3[0] - p4[0]) == 0, (p3[1] - p4[1]) == 0)\n\na = sol[0][0]\n\nprint(a)"
+  },
+  {
+    "example_id": 88,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import numpy as np\n\nC = 1\nwhile True:\n    norm = np.linalg.norm(np.array([2, 3, 0, -2]))\n    if norm <= C:\n        break\n    C += 1\n\nprint(C)"
+  },
+  {
+    "example_id": 89,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "83.0"
+    ],
+    "annotated_answers": [
+      "59.0"
+    ],
+    "solution": "n = int(419/5)\nprint(n)"
+  },
+  {
+    "example_id": 90,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "3.0",
+      "1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "1.0",
+      "8.0",
+      "3.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "-1.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "3.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "3.0",
+      "1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "180.0",
+      "90.0",
+      "45.0",
+      "36.0",
+      "7.0",
+      "180.0",
+      "2.0",
+      "45.0",
+      "1.0",
+      "3.0",
+      "1.0",
+      "4.0",
+      "5.0",
+      "4.0",
+      "2.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0",
+      "1.0",
+      "5.0",
+      "8.0",
+      "1.0",
+      "8.0",
+      "3.0",
+      "5.0",
+      "8.0",
+      "5.0",
+      "8.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "import sympy\nfrom sympy import tan\n\ndef sum_of_tangents(n):\n    return sum(tan(i*sympy.pi/180) for i in range(1, n+1))\n\nprint(sum_of_tangents(8))"
+  },
+  {
+    "example_id": 91,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "from sympy import sqrt, Symbol\ns = Symbol('s')\nt = sqrt(3)*s\nr = 1/t\nprint(r)"
+  },
+  {
+    "example_id": 92,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "# Use sympy\nfrom sympy import solve, Symbol\n\ndef find_smallest(a, b, c):\n    return solve(a*x**4 - b*x**2 + c*y**2, x)[0]\n\nx = Symbol('x')\ny = Symbol('y')\n\na = 1\nb = 2\nc = 1\n\nsmallest = find_smallest(a, b, c)\nprint(smallest)"
+  },
+  {
+    "example_id": 93,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.8939966636005579"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from math import sin\nprint(sin(90))"
+  },
+  {
+    "example_id": 94,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5",
+      "2.0",
+      "70.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from sympy import sin\nprint(1/2*sin(10)/sin(10) - 2*sin(70))"
+  },
+  {
+    "example_id": 95,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "71.0"
+    ],
+    "solution": "import sympy as sp\n\nn = sp.symbols('n')\nm = sp.symbols('m')\n\nz = sp.symbols('z')\nw = sp.symbols('w')\n\neq1 = sp.Eq(z**13, w)\neq2 = sp.Eq(w**11, z)\neq3 = sp.Eq(sp.im(z), sp.sin(sp.pi*m/n))\n\nsol = sp.solve([eq1, eq2, eq3], [n, m])\n\nprint(sol)"
+  },
+  {
+    "example_id": 96,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2002.0"
+    ],
+    "annotated_answers": [
+      "2004.0"
+    ],
+    "solution": "from sympy import *\n\na, b = symbols('a b')\nexpr = (a + b * I) ** 2002\n\nprint(expr.subs(a, a - b * I))"
+  },
+  {
+    "example_id": 97,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "180.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import math\n\nn = 1\nwhile math.cos(n * math.pi / 180) % 1!= 0:\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 98,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "30.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "print((4+2j)*(6-3j))"
+  },
+  {
+    "example_id": 99,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "import sympy\nx = sympy.Symbol('x')\ncondition = sympy.cos(x/4) - sympy.cos(x)\nsolutions = sympy.solve(condition, x)\nprint(len(solutions))"
+  },
+  {
+    "example_id": 100,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "def roots_unity(z):\n    return (z**4 + z**2 + 1) % z == 0\n\ndef nth_roots_unity(n):\n    return roots_unity(n**0.25)\n\ndef smallest_n(n):\n    while nth_roots_unity(n):\n        n += 1\n    return n - 1\n\nprint(smallest_n(1))"
+  },
+  {
+    "example_id": 101,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import sympy\n\na, b, c, d = sympy.symbols(\"a b c d\")\n\neq1 = sympy.Matrix([[a, b], [c, d]])**2\neq2 = sympy.Matrix([[c, a], [d, b]])\n\nsol = sympy.solve([eq1 - eq2], [a, b, c, d])\n\nprint(len(sol))"
+  },
+  {
+    "example_id": 102,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "3.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "-3.0"
+    ],
+    "solution": "import sympy\nx, y, z = sympy.symbols('x y z')\nf1 = sympy.cos(x) + sympy.cos(y) + sympy.cos(z)\nf2 = sympy.sin(x) + sympy.sin(y) + sympy.sin(z)\nf3 = f1**2 + f2**2 - 3 * f1 * f2 * sympy.tan(x) * sympy.tan(y) * sympy.tan(z)\nprint(f3)"
+  },
+  {
+    "example_id": 103,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "a = -1\nb = 4\nc = 3\nprint(a + b + c)"
+  },
+  {
+    "example_id": 104,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "import numpy as np\nv = np.array([1, 1])\nw = np.array([1, 0])\n\n# Compute projection of v onto w\nproj = (w @ v) / (w @ w) * w\n\n# Compute norm of projection\nprint(np.linalg.norm(proj))"
+  },
+  {
+    "example_id": 105,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "47.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "# Import numpy\nimport numpy as np\n# Import math\nimport math\n\n# Define A\nA = np.array([complex(math.cos(2*math.pi/18), math.sin(2*math.pi/18)) for i in range(18)])\n# Define B\nB = np.array([complex(math.cos(2*math.pi/48), math.sin(2*math.pi/48)) for i in range(48)])\n# Define C\nC = np.array([complex(math.cos(2*math.pi/i), math.sin(2*math.pi/i)) for i in range(1, 48)])\n\n# Find the number of distinct elements in C\ndistinct_elements = np.unique(C)\nprint(len(distinct_elements))"
+  },
+  {
+    "example_id": 106,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "-0.982793723247329",
+      "2.0",
+      "-0.463647609000806",
+      "2.0",
+      "1.44644133224814",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "192.0"
+    ],
+    "solution": "import sympy as sp\n\nA = sp.atan(1/2)\nB = sp.atan(3/2)\nC = sp.pi - A - B\n\ns = (A + B + C) / 2\narea = sp.sqrt(s*(s-A)*(s-B)*(s-C))\n\nprint(area)"
+  },
+  {
+    "example_id": 107,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "19.0",
+      "0.68999"
+    ],
+    "annotated_answers": [
+      "159.0"
+    ],
+    "solution": "from math import sin, cos\nfrom sympy import tan, Symbol\nx = Symbol('x', real=True)\nexpr = tan(19 * x) - (cos(96) + sin(96))/(cos(96) - sin(96))\nsol = expr.n(5)\nprint(sol)"
+  },
+  {
+    "example_id": 108,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0000000000000004"
+    ],
+    "annotated_answers": [
+      "-13.0"
+    ],
+    "solution": "import numpy as np\nA = np.array([[1, 2], [3, 4]])\nprint(np.linalg.det(A))"
+  },
+  {
+    "example_id": 109,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "900.0"
+    ],
+    "solution": "m = 1\nn = 2\np = 3\nq = 4\nprint(m + n + p + q)"
+  },
+  {
+    "example_id": 110,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import math\n\ndef f(x):\n    return 2 * math.sin(4 * x + math.pi / 2)\n\nb = math.pi / 4"
+  },
+  {
+    "example_id": 111,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0000000000001075"
+    ],
+    "annotated_answers": [
+      "-21.0"
+    ],
+    "solution": "import numpy as np\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\nprint(np.linalg.det(np.dot(B, A)))"
+  },
+  {
+    "example_id": 112,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-6.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "from sympy import Matrix\n\nR = Matrix([[1, 1], [5, -1]])\nprint(R.det())"
+  },
+  {
+    "example_id": 113,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1021.0"
+    ],
+    "annotated_answers": [
+      "-59.0"
+    ],
+    "solution": "def sin(x):\n    import math\n    return math.sin(math.radians(x))\n\nn = 90\nwhile True:\n    if sin(n) == sin(1021):\n        break\n    n += 1\n\nprint(n)"
+  },
+  {
+    "example_id": 114,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "from sympy import *\n\nx = symbols('x')\ncos_x = cos(x)\ncos_2x = cos(2*x)\ncos_3x = cos(3*x)\n\neq1 = cos_x + cos_2x + cos_3x\neq2 = 3\n\nsolve([eq1, eq2], cos_x)\n\nsin_x = sin(x)\nsin_2x = sin(2*x)\nsin_3x = sin(3*x)\n\nprint(sin_x + sin_2x + sin_3x)"
+  },
+  {
+    "example_id": 115,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.3333333333333333",
+      "0.0",
+      "-1.0",
+      "0.33333333",
+      "1.33333333"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import numpy as np\np = np.array([[4, 3], [-1, 0]])\np_inv = np.linalg.inv(p)\nprint(np.linalg.det(p_inv))\nprint(p_inv)"
+  },
+  {
+    "example_id": 116,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "432.0000000132475",
+      "-8.491405545070844",
+      "-9.0"
+    ],
+    "annotated_answers": [
+      "432.0"
+    ],
+    "solution": "import numpy as np\n\n# compute the sum\nsum = 0\nfor k in range(1, 1729):\n    sum += 1 / (1 + np.exp(2 * np.pi * 1j / 1729) ** k + np.exp(4 * np.pi * 1j / 1729) ** k + np.exp(6 * np.pi * 1j / 1729) ** k)\n\nprint(sum)"
+  },
+  {
+    "example_id": 117,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "import sympy\nalpha, beta = sympy.symbols('alpha beta')\n\ncos_alpha_beta = sympy.cos(alpha + beta)\nsin_alpha_beta = sympy.sin(alpha - beta)\n\neq1 = cos_alpha_beta + sin_alpha_beta\neq2 = sympy.tan(beta)\n\nsol = sympy.solve([eq1, eq2], [alpha, beta])\n\nprint(sol)"
+  },
+  {
+    "example_id": 118,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [],
+    "annotated_answers": [
+      "-1.0"
+    ],
+    "solution": "import sympy\n\na, b = sympy.symbols('a, b')\n\nprojection = sympy.sqrt(3) * sympy.sqrt(a - b * sympy.sqrt(3))\n\nconstraints = [\n    a == 2 + b * sympy.sqrt(3),\n    sympy.sqrt(a - b * sympy.sqrt(3)) == sympy.sqrt(3),\n]\n\nsolution = sympy.solve(constraints, [a, b])\n\nprint(solution)"
+  },
+  {
+    "example_id": 119,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "5.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "import sympy as sp\na, b, c, d, e, f, g, h, i = sp.symbols('a b c d e f g h i')\nmatrix = sp.Matrix([[a, b, c], [2 * d + 5 * g, 2 * e + 5 * h, 2 * f + 5 * i], [-g, -h, -i]])\nprint(matrix)"
+  },
+  {
+    "example_id": 120,
+    "selected_solution_index": 10,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.73205080756888",
+      "4.0",
+      "0.5",
+      "-3.0",
+      "4.0",
+      "4.0",
+      "3.0",
+      "0.5"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "from sympy import sin, cos, sqrt\nb, c = 3, 4\nA = (b * sin(c) * (b * cos(c) + c * cos(b))) ** 0.5\nprint(A)"
+  },
+  {
+    "example_id": 121,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.6"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "tan_x = 4 / 5\ntan_y = 4 / 5\ntan_x_plus_y = tan_x + tan_y\nprint(tan_x_plus_y)"
+  },
+  {
+    "example_id": 122,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.000000000000008"
+    ],
+    "annotated_answers": [
+      "-20.0"
+    ],
+    "solution": "import numpy as np\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\nprint(np.linalg.det(np.dot(A, B)))"
+  },
+  {
+    "example_id": 123,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0",
+      "9.0",
+      "27.0",
+      "27.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import tan, cot\nprint(tan(9) + cot(9) - tan(27) - cot(27))"
+  },
+  {
+    "example_id": 124,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "19.0"
+    ],
+    "annotated_answers": [
+      "19.0"
+    ],
+    "solution": "import numpy as np\n\nv = np.array([-7, 1])\nw = np.array([5, 2])\n\narea = np.abs(np.cross(v, w))\nprint(area)"
+  },
+  {
+    "example_id": 125,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "from sympy import Matrix\nA = Matrix([[1, 2], [3, 4]])\ndetA = A.det()\nprint(detA)"
+  },
+  {
+    "example_id": 126,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.196152422706631"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import math\n\na = 3\nb = 6\n\nad = math.sqrt(a**2 + b**2 - 2*a*b*math.cos(math.radians(60)))\n\nprint(ad)"
+  },
+  {
+    "example_id": 127,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.8410686705679303"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "import math\n\nTV = math.acos(2/3)\nprint(TV)"
+  },
+  {
+    "example_id": 128,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.899494936611665"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "import math\n\np = (7, 12, 10)\nq = (8, 8, 1)\nr = (11, 3, 9)\n\nside_length = math.sqrt(\n    (p[0] - q[0]) ** 2 + (p[1] - q[1]) ** 2 + (p[2] - q[2]) ** 2\n)\n\nprint(side_length)"
+  },
+  {
+    "example_id": 129,
+    "selected_solution_index": 8,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import numpy as np\na = np.array([1, 0, 0])\ncross_product = np.cross(a, np.array([1, 0, 0]))\nprint(np.dot(cross_product, cross_product))"
+  },
+  {
+    "example_id": 130,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "x = 1/3\na = -3 * x\nb = -2 * x\nc = -x\nd = 1\nprint(abs(a) + abs(b) + abs(c) + abs(d))"
+  },
+  {
+    "example_id": 131,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-2.0",
+      "1.0",
+      "6.0",
+      "2.0",
+      "5.0",
+      "1.0",
+      "6.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "2.0",
+      "1.0",
+      "6.0",
+      "2.0",
+      "5.0",
+      "1.0",
+      "6.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "-2.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "8.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "2.0",
+      "-2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "8.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "2.0",
+      "-2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "5.0",
+      "-2.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "8.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "2.0",
+      "-2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "5.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "4.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "8.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "2.0",
+      "3.0",
+      "-1.0",
+      "3.0",
+      "2.0",
+      "-2.0",
+      "2.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "3.0",
+      "3.0",
+      "5.0",
+      "1.0",
+      "3.0",
+      "2.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "65536.0"
+    ],
+    "solution": "from sympy import Symbol, Eq, solve\n\nz1 = Symbol('z1', real=False)\nz2 = Symbol('z2', real=False)\nz3 = Symbol('z3')\nz4 = Symbol('z4')\nz5 = Symbol('z5')\n\neq1 = Eq(z2, z1**2*z3)\neq2 = Eq(z3**2, z4*z5)\neq3 = Eq(z5, z4**2*z2)\neq4 = Eq(z4**2, 2*z3)\n\nsol = solve([eq1, eq2, eq3, eq4], [z1, z2, z3, z4, z5])\nprint(sol)"
+  },
+  {
+    "example_id": 132,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "k = 6 - 5\nprint(k)"
+  },
+  {
+    "example_id": 133,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "4.0",
+      "4.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from sympy import *\nx, y, z = symbols('x y z')\nf = cos(x) + cos(y) + cos(z) - sin(x) - sin(y) - sin(z)\nf = f.expand()\nf = f.rewrite(sin)\nf = f.rewrite(cos)\nf = f.simplify()\nprint(f)"
+  },
+  {
+    "example_id": 134,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import math\n\nt = math.radians(45)\n\nprint(math.floor(t))"
+  },
+  {
+    "example_id": 135,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-9.0",
+      "0.0",
+      "0.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "-27.0"
+    ],
+    "solution": "from sympy import Matrix\nA = Matrix([[-1, 0], [0, 1]])\nB = Matrix([[3, 0], [0, 1]])\nprint(3 * A * B)"
+  },
+  {
+    "example_id": 136,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2010.0"
+    ],
+    "annotated_answers": [
+      "4018.0"
+    ],
+    "solution": "from sympy import Matrix, symbols\n\nomega = symbols('omega')\nM = Matrix([[-omega**2, -omega], [1, 0]])\n\nsum_of_entries = 0\nfor i in range(2010):\n    sum_of_entries += M.det()\n\nprint(sum_of_entries)"
+  },
+  {
+    "example_id": 137,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.5286364178202281"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import numpy as np\na, b, c = np.random.random(3)\na2, b2, c2, ab = a**2, b**2, c**2, a*b\nprint(a2 + b2 + c2 + 2*ab)"
+  },
+  {
+    "example_id": 138,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "import sympy as sym\nx = sym.Symbol('x')\nprint(sym.simplify(1/(1 - sym.tan(x)**2) + 1/(1 - sym.cot(x)**2)))"
+  },
+  {
+    "example_id": 139,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "from sympy import Symbol, sec, tan, expand, solve\nalpha, beta = map(Symbol, '\u03b1\u03b2')\nexpr = (sec(alpha)**4/tan(beta)**2 + sec(beta)**4/tan(alpha)**2)\nsol = solve(expand(expr), sec(alpha)**2)\nprint(sol)"
+  },
+  {
+    "example_id": 140,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-63.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "import sympy as sym\na, b, c, d = sym.symbols(\"a b c d\")\ndet_matrix = sym.det(sym.Matrix([[b, a], [d, c]]))\nprint(det_matrix.subs([[a, -8], [b, 1], [c, 1], [d, -8]]))"
+  },
+  {
+    "example_id": 141,
+    "selected_solution_index": 9,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "97.0"
+    ],
+    "solution": "from sympy import symbols, sqrt\nx, y = symbols('x, y')\nP = (x, y)\nC = (2, 0)\nAB = sqrt(x**2 + y**2)\nBD = sqrt((x - 2)**2 + y**2)\nCD = sqrt((x + 2)**2 + y**2)\nPA = AB * BD * CD\nprint(PA)"
+  },
+  {
+    "example_id": 142,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "534.0"
+    ],
+    "annotated_answers": [
+      "534.0"
+    ],
+    "solution": "from sympy import Abs\na = 5 - 8j\nb = 30 + 48j\nprint(Abs(a * b))"
+  },
+  {
+    "example_id": 143,
+    "selected_solution_index": 3,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "568.0"
+    ],
+    "annotated_answers": [
+      "152.0"
+    ],
+    "solution": "n = round(568 / 180 * 180)\nprint(n)"
+  },
+  {
+    "example_id": 144,
+    "selected_solution_index": 13,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-41.0"
+    ],
+    "annotated_answers": [
+      "-41.0"
+    ],
+    "solution": "from numpy import dot\nprint(dot([-2, 0, 7], [3, 4, -5]))"
+  },
+  {
+    "example_id": 145,
+    "selected_solution_index": 6,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "import math\n\ndef f(x):\n    return math.sin(6 * math.pi * x) - x\n\ndef find_roots(f, a, b):\n    if f(a) * f(b) > 0:\n        return []\n    while f(a) * f(b) < 0:\n        c = (a + b) / 2\n        if f(c) * f(a) < 0:\n            b = c\n        else:\n            a = c\n    return [a, b]\n\ndef count_roots(f, a, b):\n    return len(find_roots(f, a, b))\n\nprint(count_roots(f, 0, 1))"
+  },
+  {
+    "example_id": 146,
+    "selected_solution_index": 11,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.74734012447073"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "import numpy as np\n\nline1 = np.array([3, -10, 1])\nline2 = np.array([-5, -3, 6])\n\nd = np.linalg.norm(line1 - line2)\nprint(d)"
+  },
+  {
+    "example_id": 147,
+    "selected_solution_index": 2,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "from sympy import *\nx = symbols('x')\ny = 3 * cos(4 * x)\nprint(solve(y, x)[0])"
+  },
+  {
+    "example_id": 148,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0",
+      "19.0",
+      "16.0",
+      "19.0",
+      "18.0",
+      "17.0",
+      "18.0",
+      "15.0",
+      "18.0",
+      "2.0",
+      "17.0",
+      "31.0",
+      "17.0",
+      "18.0",
+      "17.0",
+      "16.0",
+      "17.0",
+      "9.0",
+      "17.0",
+      "8.0",
+      "17.0",
+      "3.0",
+      "16.0",
+      "32.0",
+      "16.0",
+      "25.0",
+      "16.0",
+      "24.0",
+      "16.0",
+      "19.0",
+      "16.0",
+      "17.0",
+      "16.0",
+      "13.0",
+      "16.0",
+      "10.0",
+      "16.0",
+      "9.0",
+      "16.0",
+      "4.0",
+      "15.0",
+      "33.0",
+      "15.0",
+      "29.0",
+      "15.0",
+      "26.0",
+      "15.0",
+      "25.0",
+      "15.0",
+      "24.0",
+      "15.0",
+      "23.0",
+      "15.0",
+      "20.0",
+      "15.0",
+      "18.0",
+      "15.0",
+      "14.0",
+      "15.0",
+      "11.0",
+      "15.0",
+      "10.0",
+      "15.0",
+      "5.0",
+      "14.0",
+      "40.0",
+      "14.0",
+      "39.0",
+      "14.0",
+      "34.0",
+      "14.0",
+      "30.0",
+      "14.0",
+      "28.0",
+      "14.0",
+      "27.0",
+      "14.0",
+      "26.0",
+      "14.0",
+      "25.0",
+      "14.0",
+      "24.0",
+      "14.0",
+      "21.0",
+      "14.0",
+      "19.0",
+      "14.0",
+      "17.0",
+      "14.0",
+      "15.0",
+      "14.0",
+      "12.0",
+      "14.0",
+      "11.0",
+      "14.0",
+      "6.0",
+      "13.0",
+      "44.0",
+      "13.0",
+      "41.0",
+      "13.0",
+      "40.0",
+      "13.0",
+      "35.0",
+      "13.0",
+      "33.0",
+      "13.0",
+      "31.0",
+      "13.0",
+      "29.0",
+      "13.0",
+      "28.0",
+      "13.0",
+      "27.0",
+      "13.0",
+      "26.0",
+      "13.0",
+      "25.0",
+      "2.0",
+      "13.0",
+      "22.0",
+      "13.0",
+      "21.0",
+      "13.0",
+      "20.0",
+      "13.0",
+      "18.0",
+      "13.0",
+      "16.0",
+      "13.0",
+      "13.0",
+      "13.0",
+      "12.0",
+      "13.0",
+      "7.0",
+      "12.0",
+      "45.0",
+      "12.0",
+      "42.0",
+      "12.0",
+      "41.0",
+      "12.0",
+      "38.0",
+      "12.0",
+      "37.0",
+      "12.0",
+      "36.0",
+      "12.0",
+      "34.0",
+      "2.0",
+      "12.0",
+      "32.0",
+      "12.0",
+      "30.0",
+      "12.0",
+      "29.0",
+      "12.0",
+      "28.0",
+      "12.0",
+      "27.0",
+      "12.0",
+      "26.0",
+      "2.0",
+      "12.0",
+      "23.0",
+      "12.0",
+      "22.0",
+      "12.0",
+      "21.0",
+      "12.0",
+      "19.0",
+      "12.0",
+      "17.0",
+      "12.0",
+      "14.0",
+      "12.0",
+      "13.0",
+      "11.0",
+      "48.0",
+      "11.0",
+      "46.0",
+      "11.0",
+      "43.0",
+      "11.0",
+      "42.0",
+      "11.0",
+      "39.0",
+      "11.0",
+      "38.0",
+      "2.0",
+      "11.0",
+      "37.0",
+      "11.0",
+      "36.0",
+      "11.0",
+      "35.0",
+      "2.0",
+      "11.0",
+      "33.0",
+      "11.0",
+      "31.0",
+      "11.0",
+      "30.0",
+      "11.0",
+      "29.0",
+      "11.0",
+      "28.0",
+      "11.0",
+      "27.0",
+      "11.0",
+      "24.0",
+      "11.0",
+      "23.0",
+      "11.0",
+      "22.0",
+      "11.0",
+      "20.0",
+      "11.0",
+      "18.0",
+      "11.0",
+      "15.0",
+      "11.0",
+      "14.0",
+      "10.0",
+      "53.0",
+      "10.0",
+      "52.0",
+      "10.0",
+      "49.0",
+      "10.0",
+      "47.0",
+      "10.0",
+      "44.0",
+      "10.0",
+      "43.0",
+      "10.0",
+      "40.0",
+      "10.0",
+      "39.0",
+      "2.0",
+      "10.0",
+      "38.0",
+      "10.0",
+      "37.0",
+      "10.0",
+      "36.0",
+      "2.0",
+      "10.0",
+      "34.0",
+      "10.0",
+      "32.0",
+      "10.0",
+      "31.0",
+      "2.0",
+      "10.0",
+      "30.0",
+      "10.0",
+      "29.0",
+      "10.0",
+      "28.0",
+      "10.0",
+      "25.0",
+      "10.0",
+      "24.0",
+      "10.0",
+      "21.0",
+      "10.0",
+      "19.0",
+      "10.0",
+      "16.0",
+      "10.0",
+      "15.0",
+      "9.0",
+      "54.0",
+      "9.0",
+      "53.0",
+      "9.0",
+      "50.0",
+      "9.0",
+      "48.0",
+      "9.0",
+      "46.0",
+      "9.0",
+      "45.0",
+      "9.0",
+      "44.0",
+      "9.0",
+      "41.0",
+      "9.0",
+      "40.0",
+      "9.0",
+      "39.0",
+      "9.0",
+      "38.0",
+      "9.0",
+      "37.0",
+      "2.0",
+      "9.0",
+      "35.0",
+      "9.0",
+      "33.0",
+      "9.0",
+      "32.0",
+      "2.0",
+      "9.0",
+      "31.0",
+      "9.0",
+      "30.0",
+      "9.0",
+      "29.0",
+      "9.0",
+      "26.0",
+      "9.0",
+      "25.0",
+      "9.0",
+      "22.0",
+      "9.0",
+      "20.0",
+      "8.0",
+      "55.0",
+      "8.0",
+      "54.0",
+      "8.0",
+      "51.0",
+      "8.0",
+      "49.0",
+      "8.0",
+      "47.0",
+      "8.0",
+      "46.0",
+      "2.0",
+      "8.0",
+      "45.0",
+      "8.0",
+      "42.0",
+      "8.0",
+      "41.0",
+      "8.0",
+      "40.0",
+      "8.0",
+      "39.0",
+      "8.0",
+      "38.0",
+      "2.0",
+      "8.0",
+      "36.0",
+      "8.0",
+      "34.0",
+      "8.0",
+      "32.0",
+      "8.0",
+      "31.0",
+      "8.0",
+      "30.0",
+      "8.0",
+      "27.0",
+      "8.0",
+      "26.0",
+      "8.0",
+      "23.0",
+      "7.0",
+      "61.0",
+      "7.0",
+      "56.0",
+      "7.0",
+      "55.0",
+      "7.0",
+      "52.0",
+      "7.0",
+      "50.0",
+      "7.0",
+      "48.0",
+      "7.0",
+      "47.0",
+      "2.0",
+      "7.0",
+      "46.0",
+      "7.0",
+      "43.0",
+      "7.0",
+      "42.0",
+      "7.0",
+      "41.0",
+      "7.0",
+      "40.0",
+      "7.0",
+      "39.0",
+      "7.0",
+      "37.0",
+      "7.0",
+      "35.0",
+      "7.0",
+      "33.0",
+      "7.0",
+      "28.0",
+      "7.0",
+      "27.0",
+      "7.0",
+      "24.0",
+      "6.0",
+      "62.0",
+      "6.0",
+      "57.0",
+      "6.0",
+      "56.0",
+      "6.0",
+      "53.0",
+      "6.0",
+      "51.0",
+      "6.0",
+      "49.0",
+      "6.0",
+      "47.0",
+      "6.0",
+      "44.0",
+      "6.0",
+      "43.0",
+      "6.0",
+      "42.0",
+      "6.0",
+      "41.0",
+      "6.0",
+      "40.0",
+      "6.0",
+      "38.0",
+      "6.0",
+      "34.0",
+      "6.0",
+      "29.0",
+      "6.0",
+      "28.0",
+      "5.0",
+      "63.0",
+      "5.0",
+      "58.0",
+      "5.0",
+      "57.0",
+      "5.0",
+      "54.0",
+      "5.0",
+      "50.0",
+      "5.0",
+      "48.0",
+      "5.0",
+      "45.0",
+      "5.0",
+      "44.0",
+      "5.0",
+      "43.0",
+      "5.0",
+      "42.0",
+      "5.0",
+      "39.0",
+      "5.0",
+      "35.0",
+      "4.0",
+      "64.0",
+      "4.0",
+      "59.0",
+      "4.0",
+      "58.0",
+      "4.0",
+      "55.0",
+      "4.0",
+      "51.0",
+      "4.0",
+      "49.0",
+      "4.0",
+      "44.0",
+      "4.0",
+      "43.0",
+      "4.0",
+      "36.0",
+      "3.0",
+      "65.0",
+      "3.0",
+      "60.0",
+      "3.0",
+      "59.0",
+      "3.0",
+      "52.0",
+      "3.0",
+      "50.0",
+      "3.0",
+      "37.0",
+      "2.0",
+      "66.0",
+      "2.0",
+      "53.0",
+      "2.0",
+      "51.0",
+      "67.0",
+      "52.0",
+      "68.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "from sympy import expand, simplify\nfrom sympy.abc import a, b\n\neq = (a + b) * (a + b**16) * (a**2 + b**2) * (a**2 + b**15) * (a**3 + b**8) * (a**3 + b**9) * (a**4 + b**4) * (a**4 + b**13)\nprint(simplify(expand(eq)))"
+  },
+  {
+    "example_id": 149,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "min_abs_value = 5 - 2\nprint(min_abs_value)"
+  },
+  {
+    "example_id": 150,
+    "selected_solution_index": 1,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "18.0",
+      "-2.0",
+      "9.0",
+      "-2.0",
+      "18.0",
+      "-2.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "from sympy import cos, sin, pi\nprint(1 / cos(pi/18)**2 + 1 / sin(pi/9)**2 + 1 / sin(pi/18)**2)"
+  },
+  {
+    "example_id": 151,
+    "selected_solution_index": 4,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "43.0",
+      "3.0",
+      "70.0",
+      "3.0",
+      "2.0",
+      "22.0",
+      "3.0",
+      "97.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "from sympy import sqrt\ns = (sqrt(70) + sqrt(97) + sqrt(88) + sqrt(43)) / 3\nprint(s)"
+  },
+  {
+    "example_id": 152,
+    "selected_solution_index": 7,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import sympy\nx = sympy.symbols(\"x\")\nsolution = sympy.solve(sympy.tan(x) + sympy.sec(x) - 2*sympy.cos(x), x)\nprint(len(solution))"
+  },
+  {
+    "example_id": 153,
+    "selected_solution_index": 12,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import numpy as np\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\ncross_product = np.cross(a, b)\ndot_product = np.dot(a, cross_product)\nprint(dot_product)"
+  },
+  {
+    "example_id": 154,
+    "selected_solution_index": 0,
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "-12.0"
+    ],
+    "solution": "import numpy as np\nv = np.array([3, 0])\nw = np.array([0, 4])\nprint(np.dot(v, w))"
+  },
+  {
+    "example_id": 155,
+    "selected_solution_index": 5,
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "print(-3 * -2 + 5 * 1)"
+  }
+]

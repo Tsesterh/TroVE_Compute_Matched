@@ -1,0 +1,4110 @@
+[
+  {
+    "example_id": 0,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "52.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "result = 52\nprint(result)"
+  },
+  {
+    "example_id": 1,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-195.0",
+      "360.0",
+      "150.0",
+      "75.0",
+      "75.0",
+      "150.0"
+    ],
+    "annotated_answers": [
+      "110.0"
+    ],
+    "solution": "# number of students\nn = 360\n# number of students who don't take calculus\nm = 15\n# number of students who take calculus\np = 15\n# number of students who take physics\nq = 180\n# number of students who take chemistry\nr = 180\n# number of students who take both calculus and chemistry\ns = 75\n# number of students who take both physics and chemistry\nt = 75\n# number of students who take both physics and calculus\nu = 30\n\n# number of students who take calculus\np = n - m - q - r - s - t - u\n\n# number of students who take physics\nq = 2 * r\n\n# number of students who take chemistry\nr = s + t\n\n# number of students who take both physics and calculus\nu = s + t\n\n# number of students who take both calculus and chemistry\nv = s + t\n\nprint(p, q, r, s, t, u)"
+  },
+  {
+    "example_id": 2,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2020.0",
+      "-11.0",
+      "-11.0",
+      "11.0",
+      "11.0",
+      "11.0"
+    ],
+    "annotated_answers": [
+      "165.0"
+    ],
+    "solution": "result = datetime.datetime(2020, 11, 11, 11, 11, 11).strftime('%Y-%m-%d %H:%M:%S')\nprint(result)"
+  },
+  {
+    "example_id": 3,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0",
+      "1.0",
+      "2.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "# Get current date and time\ndate = datetime.datetime.now()\n\n# Calculate the number of rectangles\nrectangles = 0\n\n# Iterate over each row\nfor i in range(6):\n    # Iterate over each column\n    for j in range(6):\n        # Check if the current cell is a unit square\n        if (i + j) % 2 == 0:\n            # If so, increment the number of rectangles\n            rectangles += 1\n\n# Print the number of rectangles\nprint(rectangles)"
+  },
+  {
+    "example_id": 4,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1024.0"
+    ],
+    "annotated_answers": [
+      "1024.0"
+    ],
+    "solution": "# calculate the number of ways to go to lunch\nnum_ways = 2**10\nprint(num_ways)"
+  },
+  {
+    "example_id": 5,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "# create list of tourist locations\nlocations = ['Rome', 'Venice', 'Florence', 'Milan', 'Naples']\n\n# choose three locations to visit\nthree_locations = locations[0:3]\n\n# print the number of ways to choose three locations to visit\nprint(len(three_locations))"
+  },
+  {
+    "example_id": 6,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "90.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "def palindrome(x):\n    return str(x) == str(x)[::-1]\n\ndef four_digit_palindromes():\n    count = 0\n    for i in range(10**3, 10**4):\n        if palindrome(i):\n            count += 1\n    return count\n\nprint(four_digit_palindromes())"
+  },
+  {
+    "example_id": 7,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "28.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "import math\nprint(math.comb(8, 6))"
+  },
+  {
+    "example_id": 8,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "180.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "wearing_bathing_suit = 70\nwearing_sunglasses = 110\nwearing_hat = 95\nwearing_both_bathing_suit_and_sunglasses = 30\nwearing_both_bathing_suit_and_hat = 25\nwearing_both_sunglasses_and_hat = 40\n\nwearing_all_three = (wearing_bathing_suit + wearing_sunglasses + wearing_hat) - (wearing_both_bathing_suit_and_sunglasses + wearing_both_bathing_suit_and_hat + wearing_both_sunglasses_and_hat)\nprint(wearing_all_three)"
+  },
+  {
+    "example_id": 9,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "8.0",
+      "3.0",
+      "8.0",
+      "3.0",
+      "1.0",
+      "6.0",
+      "8.0",
+      "3.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "262144.0"
+    ],
+    "solution": "# Declare variable\ndice = [1, 2, 3, 4, 5, 6, 7, 8]\n\n# Define a function\ndef toss_dice(dice, times):\n    result = []\n    for _ in range(times):\n        roll = [random.choice(dice)]\n        for _ in range(1, times):\n            roll.append(random.choice(dice))\n        result.append(roll)\n    return result\n\n# Generate 6 random rolls\nrolls = toss_dice(dice, 6)\n\n# Print the result\nprint(rolls)"
+  },
+  {
+    "example_id": 10,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "# Compute the number of paths\nnumber_of_paths = 0\nfor i in range(0, 3):\n    for j in range(0, 3):\n        for k in range(0, 3):\n            if i == j or i == k or j == k:\n                continue\n            number_of_paths += 1\nprint(number_of_paths)"
+  },
+  {
+    "example_id": 11,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "363.0"
+    ],
+    "annotated_answers": [
+      "363.0"
+    ],
+    "solution": "reserved = 0\nfor i in range(12, 23):\n    reserved += 33\nprint(reserved)"
+  },
+  {
+    "example_id": 12,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# minimum value of f(n) is 1\nprint(1)"
+  },
+  {
+    "example_id": 13,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "80.0"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "# Compute number of ways to fill committee\nresult = math.comb(4, 1) * math.comb(6, 3)\nprint(result)"
+  },
+  {
+    "example_id": 14,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.04057480980557904"
+    ],
+    "annotated_answers": [
+      "0.076"
+    ],
+    "solution": "# define variables\nn_girls = 15\nn_boys = 15\nn_girls_freshmen = 12\nn_boys_freshmen = 11\n\n# define function\ndef probability(group_size):\n    # define variables\n    n_girls_group = group_size\n    n_boys_group = group_size\n\n    # find probability\n    prob = (math.comb(n_girls_freshmen, n_girls_group) * math.comb(n_boys_freshmen, n_boys_group)) / math.comb(n_girls, n_girls_group) / math.comb(n_boys, n_boys_group)\n\n    return prob\n\n# compute probability\nprob_group_size_5 = probability(5)\n\nprint(prob_group_size_5)"
+  },
+  {
+    "example_id": 15,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "ways = binomial(16, 4) - binomial(16, 12)\nprint(ways)"
+  },
+  {
+    "example_id": 16,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "sum = 0\nfor i in range(1, 2006):\n    sum += math.factorial(i)\n\nprint(sum % 10)"
+  },
+  {
+    "example_id": 17,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "128.0"
+    ],
+    "annotated_answers": [
+      "968.0"
+    ],
+    "solution": "# Number of ways to answer at least 3 false\n# = number of ways to answer the remaining 7 true\n# = $2^7$\nresult = 2 ** 7\nprint(result)"
+  },
+  {
+    "example_id": 18,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "90.0"
+    ],
+    "annotated_answers": [
+      "90.0"
+    ],
+    "solution": "# Define a function to check if a number is a palindrome\ndef is_palindrome(n):\n    return str(n) == str(n)[::-1]\n\n# Define a function to check if a number is four-digit\ndef is_four_digit(n):\n    return len(str(n)) == 4\n\n# Define a function to check if a number is four-digit palindrome\ndef is_four_digit_palindrome(n):\n    return is_palindrome(n) and is_four_digit(n)\n\n# Compute the total number of four-digit palindromes\ntotal = 0\nfor i in range(1000, 10000):\n    if is_four_digit_palindrome(i):\n        total += 1\n\n# Print the total number of four-digit palindromes\nprint(total)"
+  },
+  {
+    "example_id": 19,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1540.0"
+    ],
+    "annotated_answers": [
+      "1540.0"
+    ],
+    "solution": "from math import factorial\n\ndef binomial(n, k):\n    return factorial(n) // (factorial(k) * factorial(n - k))\n\nprint(binomial(22, 19))"
+  },
+  {
+    "example_id": 20,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "105.0"
+    ],
+    "annotated_answers": [
+      "105.0"
+    ],
+    "solution": "print(math.factorial(15) // (math.factorial(2) * math.factorial(13)))"
+  },
+  {
+    "example_id": 21,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "105.0"
+    ],
+    "annotated_answers": [
+      "105.0"
+    ],
+    "solution": "# Number of ways to select 13 students from 15 students\nresult = math.comb(15, 13)\nprint(result)"
+  },
+  {
+    "example_id": 22,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "import math\nprint(math.comb(7, 2))"
+  },
+  {
+    "example_id": 23,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "91125.0"
+    ],
+    "annotated_answers": [
+      "96.0"
+    ],
+    "solution": "n = 9\n\nones = 0\ntwos = 0\nfours = 0\n\nfor i in range(n):\n    for j in range(i, n):\n        ones += 1\n        twos += 1\n        fours += 1\n\nprint(ones * twos * fours)"
+  },
+  {
+    "example_id": 24,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "# Length of the word\nlength = 3\n\n# Alphabet\nalphabet = 'TARGET'\n\n# Number of sequences\nsequences = 0\n\n# For each possible letter\nfor i in range(len(alphabet)):\n    # For each possible letter\n    for j in range(i+1, len(alphabet)):\n        # For each possible letter\n        for k in range(j+1, len(alphabet)):\n            # If letter is T\n            if alphabet[i] == 'T':\n                # If letter is not repeated\n                if alphabet[j]!= alphabet[k]:\n                    # If letter is not repeated\n                    if alphabet[k]!= alphabet[j]:\n                        # Increment number of sequences\n                        sequences += 1\n\n# Print the number of sequences\nprint(sequences)"
+  },
+  {
+    "example_id": 25,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "count = 0\nfor i in range(1, 100):\n    if math.gcd(i, 10) == 1:\n        if str(i)[-1] == '3':\n            count += 1\nprint(count)"
+  },
+  {
+    "example_id": 26,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "100.0"
+    ],
+    "annotated_answers": [
+      "300.0"
+    ],
+    "solution": "count = 0\nfor i in range(1, 1000):\n    if str(i)[-1] == '8':\n        count += 1\nprint(count)"
+  },
+  {
+    "example_id": 27,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "# define function\ndef arrange_letters(word):\n    # check length of word\n    if len(word) <= 1:\n        return 1\n    else:\n        # find all possible permutations\n        permutations = math.factorial(len(word)) // math.factorial(len(word) - 1)\n        # print permutations\n        return permutations\n\n# call function\nprint(arrange_letters('ELEVEN'))"
+  },
+  {
+    "example_id": 28,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "168.0"
+    ],
+    "annotated_answers": [
+      "835.0"
+    ],
+    "solution": "n_multiples_of_3 = 0\nn_multiples_of_4 = 0\nn_multiples_of_12 = 0\n\nfor i in range(1, 2005):\n    if i % 3 == 0 or i % 4 == 0:\n        n_multiples_of_3 += 1\n        n_multiples_of_4 += 1\n    if i % 12 == 0:\n        n_multiples_of_12 += 1\n\nprint(2005 - n_multiples_of_3 - n_multiples_of_4 + n_multiples_of_12)"
+  },
+  {
+    "example_id": 29,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "n = 0\nwhile True:\n    mean = 0\n    for i in range(n+1):\n        mean += math.comb(n, i)\n    mean /= (n+1)\n    if abs(mean - 51.2) < 0.0001:\n        break\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 30,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "70.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "result = 2 * math.factorial(7) / (math.factorial(3) * math.factorial(4))\nprint(result)"
+  },
+  {
+    "example_id": 31,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "720.0"
+    ],
+    "annotated_answers": [
+      "180.0"
+    ],
+    "solution": "# Define the word\nword = \"Hawaii\"\n\n# Define the number of letters in the word\nn = len(word)\n\n# Define the number of distinct rearrangements\nresult = math.factorial(n) / math.factorial(n - 6)\n\n# Print the result\nprint(result)"
+  },
+  {
+    "example_id": 32,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "27.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "# compute number of integers between 17/3 and 17/3^2\nnum_ints = 0\nfor i in range(int(17/3), int((17/3)**2)):\n    num_ints += 1\nprint(num_ints)"
+  },
+  {
+    "example_id": 33,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "result = 5 - 2\nprint(result)"
+  },
+  {
+    "example_id": 34,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.033698267000000004"
+    ],
+    "annotated_answers": [
+      "0.03"
+    ],
+    "solution": "prob = (0.323)**3\nprint(prob)"
+  },
+  {
+    "example_id": 35,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "n = 5\nk = 2\n\nresult = math.comb(n+k-1, k)\nprint(result)"
+  },
+  {
+    "example_id": 36,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "325.0"
+    ],
+    "annotated_answers": [
+      "650.0"
+    ],
+    "solution": "result = math.comb(26, 2)\nprint(result)"
+  },
+  {
+    "example_id": 37,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "x = 5\nprint((x + 1 - x) // (x - x + 1))"
+  },
+  {
+    "example_id": 38,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "720.0"
+    ],
+    "solution": "result = math.comb(7, 5)\nprint(result)"
+  },
+  {
+    "example_id": 39,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "62.0"
+    ],
+    "solution": "# Number of ways to assign each of 6 friends to either the chemistry class or the biology class if one of these six, Manoj, refuses to be in a class without any of his friends\n\ndef assign_friends(n):\n    return math.factorial(n) / (math.factorial(2) * math.factorial(n-2))\n\nprint(assign_friends(6))"
+  },
+  {
+    "example_id": 40,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "# Calculate the number of distinct arrangements\n# Golden Delicious apple trees\ngolden_delicious = 2\n# Bartlett pear trees\nbartlett = 5\n# Total number of distinct arrangements\ntotal = math.factorial(golden_delicious + bartlett) // (math.factorial(golden_delicious) * math.factorial(bartlett))\nprint(total)"
+  },
+  {
+    "example_id": 41,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "56.0"
+    ],
+    "annotated_answers": [
+      "960.0"
+    ],
+    "solution": "# number of people\nn = 8\n\n# number of ways to sit around the table without considering the people who sit next to pierre and thomas\nresult = math.factorial(n) / (math.factorial(3) * math.factorial(5))\n\n# print the result\nprint(result)"
+  },
+  {
+    "example_id": 42,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0",
+      "2.0",
+      "5.0",
+      "126.0",
+      "10.0",
+      "2.0",
+      "5.0",
+      "630.0",
+      "10.0",
+      "2.0",
+      "5.0",
+      "630.0",
+      "10.0",
+      "2.0",
+      "5.0",
+      "252.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "# number of ways to divide 10 players into 2 teams of 5\n# including Steve and Danny\nn = math.factorial(10) // (math.factorial(5) * math.factorial(5))\n\n# number of ways to divide 10 players into 2 teams of 5\n# without Steve and Danny\nm = math.factorial(9) // (math.factorial(4) * math.factorial(5))\n\n# number of ways to divide 10 players into 2 teams of 5\n# without Steve and Danny, where Steve and Danny are on the same team\np = math.factorial(9) // (math.factorial(4) * math.factorial(4))\n\n# number of ways to divide 10 players into 2 teams of 5\n# without Steve and Danny, where Steve and Danny are on the same team\n# and Steve and Danny are on the same team\nq = math.factorial(9) // (math.factorial(4) * math.factorial(4))\n\nprint(\"Number of ways to divide 10 players into 2 teams of 5 without Steve and Danny:\", m)\nprint(\"Number of ways to divide 10 players into 2 teams of 5 without Steve and Danny and Steve and Danny are on the same team:\", p)\nprint(\"Number of ways to divide 10 players into 2 teams of 5 without Steve and Danny and Steve and Danny are on the same team and Steve and Danny are on the same team:\", q)\nprint(\"Number of ways to divide 10 players into 2 teams of 5 including Steve and Danny:\", n)"
+  },
+  {
+    "example_id": 43,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "63.0"
+    ],
+    "solution": "import math\n\ndef point_in_rectangle(x, y):\n    return x > 5 and x < -5 and y > 4 and y < -4\n\ndef count_points_in_rectangle():\n    count = 0\n    for x in range(-5, 5):\n        for y in range(-5, 5):\n            if point_in_rectangle(x, y):\n                count += 1\n    return count\n\nprint(count_points_in_rectangle())"
+  },
+  {
+    "example_id": 44,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "45.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "# Number of handshakes\nnum_handshakes = 10 * 9 / 2\nprint(num_handshakes)"
+  },
+  {
+    "example_id": 45,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-1.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "def get_distinct_elements(n):\n    result = set()\n    for i in range(4):\n        result.add(n-2+i*2)\n    result.add(n/2)\n    return len(result)\n\ndef distinct_elements(n):\n    return get_distinct_elements(n) == 3\n\ndef get_n(distinct_elements):\n    for i in range(100):\n        n = random.randint(1, 100)\n        if distinct_elements(n):\n            return n\n    return -1\n\nprint(get_n(distinct_elements))"
+  },
+  {
+    "example_id": 46,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "2.0",
+      "2.0",
+      "1.0",
+      "3.0",
+      "3.0",
+      "1.0",
+      "4.0",
+      "2.0",
+      "4.0",
+      "1.0",
+      "5.0",
+      "5.0",
+      "1.0",
+      "6.0",
+      "3.0",
+      "2.0",
+      "6.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "25.0"
+    ],
+    "solution": "# Define a function to generate the given row of numbers\ndef get_row_of_numbers(n):\n    # Define a function to generate a list of divisors of a given number\n    def get_divisors(num):\n        # Initialize an empty list to store divisors\n        divisors = []\n        # Iterate from 1 to the square root of the number\n        for i in range(1, int(math.sqrt(num)) + 1):\n            # Check if the number is divisible by i\n            if num % i == 0:\n                # If divisible, append i to the list\n                divisors.append(i)\n                # If i is not the square of any number, also append num/i\n                if i * i!= num:\n                    divisors.append(num // i)\n        # Return the list of divisors\n        return divisors\n\n    # Initialize an empty list to store the row of numbers\n    row = []\n    # Iterate from 1 to n\n    for i in range(1, n + 1):\n        # Get the list of divisors of the current number\n        divisors = get_divisors(i)\n        # Append the current number to the row\n        row.append(i)\n        # Append the divisors to the row in reverse order\n        for j in range(len(divisors) - 1, -1, -1):\n            row.append(divisors[j])\n    # Return the row of numbers\n    return row\n\n# Test the function with n = 6\nprint(get_row_of_numbers(6))"
+  },
+  {
+    "example_id": 47,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def is_odd(n):\n    return n % 2!= 0\n\n\ndef is_digit(n):\n    return n >= 3 and n <= 6\n\n\ndef get_unique_digits(digits):\n    return [d for d in digits if is_digit(d) and d not in digits[:-1]]\n\n\ndef get_unique_odd_digits(digits):\n    return [d for d in get_unique_digits(digits) if is_odd(d)]\n\n\ndef get_unique_odd_digits_count(digits):\n    return len(get_unique_odd_digits(digits))\n\n\ndef get_unique_odd_digits_count_using_combinations(digits):\n    return math.comb(len(digits), 3)\n\n\ndigits = [3, 4, 5, 6]\n\nprint(get_unique_odd_digits_count(digits))\nprint(get_unique_odd_digits_count_using_combinations(digits))"
+  },
+  {
+    "example_id": 48,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "6720.0"
+    ],
+    "solution": "# Create a dictionary\nword = \"PARABOLA\"\ndict = {}\n\n# Create a list\nlist = []\n\n# Get the length of the word\nlength = len(word)\n\n# Iterate through the word\nfor i in range(length):\n    # Get the letter at the current position\n    letter = word[i]\n\n    # Add the letter to the dictionary\n    dict[letter] = 1\n\n    # Add the letter to the list\n    list.append(letter)\n\n# Sort the list\nlist.sort()\n\n# Iterate through the list\nfor i in range(length):\n    # Get the letter at the current position\n    letter = list[i]\n\n    # Get the number of times the letter appears in the word\n    count = dict[letter]\n\n    # Print the letter and the number of times it appears\n    print(letter, count)\n\n# Print the word\nprint(word)"
+  },
+  {
+    "example_id": 49,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4495.0"
+    ],
+    "annotated_answers": [
+      "4495.0"
+    ],
+    "solution": "result = math.comb(31, 28)\nprint(result)"
+  },
+  {
+    "example_id": 50,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "22308.0"
+    ],
+    "annotated_answers": [
+      "840.0"
+    ],
+    "solution": "# Total number of members in the band\nN = 14\n\n# Total number of quintets\nQ = N - 1\n\n# Number of boys\nB = 3\n\n# Number of girls\nG = 2\n\n# Number of ways to select quintet\nresult = math.comb(Q, B) * math.comb(Q, G)\nprint(result)"
+  },
+  {
+    "example_id": 51,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "16.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "print(sum(binomial(4, i) for i in range(5)))"
+  },
+  {
+    "example_id": 52,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0"
+    ],
+    "annotated_answers": [
+      "540.0"
+    ],
+    "solution": "# Find the number of ways to stack up the cars\n# using the number of ways to choose 3 cars from 6\n# and the number of ways to choose 3 lanes from 3\nresult = math.comb(6, 3) * math.comb(3, 3)\nprint(result)"
+  },
+  {
+    "example_id": 53,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "45.0"
+    ],
+    "annotated_answers": [
+      "90.0"
+    ],
+    "solution": "result = 45\nprint(result)"
+  },
+  {
+    "example_id": 54,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1905.0"
+    ],
+    "annotated_answers": [
+      "147.0"
+    ],
+    "solution": "result = 0\nfor i in range(3):\n    n = 100 + 200*i\n    n_fact = math.factorial(n)\n    result += len(str(n_fact)) - 1\nprint(result)"
+  },
+  {
+    "example_id": 55,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "result = 0\nfor a in range(1, 10):\n    for b in range(a + 1, 10):\n        for c in range(b + 1, 10):\n            if a * b * c == 2310:\n                result += 1\nprint(result)"
+  },
+  {
+    "example_id": 56,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "97.0"
+    ],
+    "solution": "# Define a function to compute 200!\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# Compute 200!\nresult = factorial(200)\n\n# Find the greatest positive integer n such that 3^n is a factor of 200!\nfor i in range(1, 200):\n    if result % 3**i == 0:\n        print(i)\n        break"
+  },
+  {
+    "example_id": 57,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "900.0"
+    ],
+    "annotated_answers": [
+      "27.0"
+    ],
+    "solution": "num_of_palindromes = 0\nfor i in range(10000, 100000):\n    if str(i) == str(i)[::-1]:\n        num_of_palindromes += 1\nprint(num_of_palindromes)"
+  },
+  {
+    "example_id": 58,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "306.0"
+    ],
+    "annotated_answers": [
+      "306.0"
+    ],
+    "solution": "n = 18\nk = 16\nresult = math.factorial(n) // math.factorial(k)\nprint(result)"
+  },
+  {
+    "example_id": 59,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "288.0"
+    ],
+    "solution": "import itertools\n\nguys = list(range(4))\ngirls = list(range(4, 8))\n\npositions = ['President', 'Vice-President', 'Treasurer']\n\ngirls_and_guys = list(itertools.product(girls, guys))\n\n# at least one girl\ngirls_and_guys_with_girl = []\nfor g, gs in enumerate(girls_and_guys):\n    for p in positions:\n        if p in gs:\n            girls_and_guys_with_girl.append(gs)\n            break\n\n# at least one guy\ngirls_and_guys_with_guy = []\nfor g, gs in enumerate(girls_and_guys_with_girl):\n    for p in positions:\n        if p in gs:\n            girls_and_guys_with_guy.append(gs)\n            break\n\nprint(len(girls_and_guys_with_guy))\n\n# at least one girl and at least one guy\ngirls_and_guys_with_guy_and_girl = []\nfor g, gs in enumerate(girls_and_guys_with_guy):\n    for p in positions:\n        if p in gs:\n            girls_and_guys_with_guy_and_girl.append(gs)\n            break\n\nprint(len(girls_and_guys_with_guy_and_girl))"
+  },
+  {
+    "example_id": 60,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "156.0"
+    ],
+    "solution": "green_purple = set([1, 2])\nn = 11\nk = 3\nresult = math.comb(n - len(green_purple), k - len(green_purple))\nprint(result)"
+  },
+  {
+    "example_id": 61,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "220.0"
+    ],
+    "annotated_answers": [
+      "9240.0"
+    ],
+    "solution": "def group_division(n, m, k, h):\n    # Define a list of groups\n    groups = [[] for _ in range(m)]\n\n    # Add Henry to the first group\n    groups[0].append(h)\n\n    # Add the remaining people to the remaining groups\n    for i in range(1, m):\n        for j in range(n - m + 1):\n            groups[i].append(j + m)\n\n    # Return the number of ways to divide the people\n    return math.factorial(n) / math.factorial(m) / math.factorial(n - m)\n\nprint(group_division(12, 3, 4, 1))"
+  },
+  {
+    "example_id": 62,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "28800.0"
+    ],
+    "solution": "# define a function to check if a seating arrangement is valid\ndef is_valid_seating_arrangement(arrangement):\n    # for each pair of adjacent members, check if they are of the same party\n    for i in range(len(arrangement) - 1):\n        if arrangement[i]!= arrangement[i + 1] and arrangement[i]!= arrangement[i - 1]:\n            return False\n    return True\n\n# define a function to get all possible seating arrangements\ndef get_seating_arrangements(n_democrats, n_republicans, n_independents):\n    # get all possible seating arrangements\n    arrangements = permutations(range(n_democrats + n_republicans + n_independents))\n    # filter out invalid seating arrangements\n    valid_arrangements = []\n    for arrangement in arrangements:\n        if is_valid_seating_arrangement(arrangement):\n            valid_arrangements.append(arrangement)\n    return valid_arrangements\n\n# define a function to count the number of valid seating arrangements\ndef count_valid_seating_arrangements(n_democrats, n_republicans, n_independents):\n    # get all possible seating arrangements\n    arrangements = get_seating_arrangements(n_democrats, n_republicans, n_independents)\n    # count the number of valid seating arrangements\n    return len(arrangements)\n\n# get the number of valid seating arrangements\nn_democrats = 5\nn_republicans = 5\nn_independents = 1\nresult = count_valid_seating_arrangements(n_democrats, n_republicans, n_independents)\nprint(result)"
+  },
+  {
+    "example_id": 63,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# number of slices with pepperoni\nn_pepperoni = 5\n\n# number of slices with mushrooms\nn_mushrooms = 8\n\n# number of slices with both pepperoni and mushrooms\nn_pep_and_mush = n_pepperoni + n_mushrooms\n\n# number of slices with neither pepperoni nor mushrooms\nn_neither = 12 - n_pep_and_mush\n\n# print result\nprint(n_pep_and_mush)"
+  },
+  {
+    "example_id": 64,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "45.0"
+    ],
+    "solution": "# 10 is the last number in the row\n# next number is 10 + 1\nresult = 10 + 1\nprint(result)"
+  },
+  {
+    "example_id": 65,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "525.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "# Number of cupcakes\nn = 10\n\n# Number of colors of frosting\nk = 6\n\n# Number of cupcakes of each color\nm = [4, 2, 2, 2, 3, 3]\n\n# Total number of combinations\nresult = math.factorial(n) / (math.factorial(m[0]) * math.factorial(m[1]) * math.factorial(m[2]) * math.factorial(m[3]) * math.factorial(m[4]) * math.factorial(m[5]))\nprint(result)"
+  },
+  {
+    "example_id": 66,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "result = (math.factorial(10) + math.factorial(11) + math.factorial(12)) / (math.factorial(10) + math.factorial(11))\nprint(result)"
+  },
+  {
+    "example_id": 67,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "144.0",
+      "6.0",
+      "36.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "def get_num_seatings(n):\n    # Get the number of seatings for n people\n    num_seatings = 0\n    for perm in permutations(range(n)):\n        if (perm[0] + 1) % n == perm[1]:\n            num_seatings += 1\n    return num_seatings\n\n\ndef get_num_seatings_john_sam(n):\n    # Get the number of seatings for n people with John and Sam next to each other\n    num_seatings = 0\n    for perm in permutations(range(n)):\n        if (perm[0] + 1) % n == perm[1] and (perm[1] + 1) % n == perm[2]:\n            num_seatings += 1\n    return num_seatings\n\n\nn = 6\nnum_seatings = get_num_seatings(n)\nprint(\"There are %d seatings for %d people\" % (num_seatings, n))\nnum_seatings_john_sam = get_num_seatings_john_sam(n)\nprint(\"There are %d seatings for %d people with John and Sam next to each other\" % (num_seatings_john_sam, n))"
+  },
+  {
+    "example_id": 68,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1201.0"
+    ],
+    "annotated_answers": [
+      "1201.0"
+    ],
+    "solution": "print(301**4%10000)"
+  },
+  {
+    "example_id": 69,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1000.0"
+    ],
+    "annotated_answers": [
+      "19.0"
+    ],
+    "solution": "# Initialize variables\nn = 0\ntotal = 70\n\n# Loop until find the solution\nwhile n < 1000:\n    n += 1\n    squares = 0\n    for i in range(3):\n        squares += math.comb(n, i)\n    if squares == total:\n        break\n\nprint(n)"
+  },
+  {
+    "example_id": 70,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "720.0"
+    ],
+    "annotated_answers": [
+      "480.0"
+    ],
+    "solution": "ways = 6 * 5 * 4 * 3 * 2\nprint(ways)"
+  },
+  {
+    "example_id": 71,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "# Number of diagonals is 5\nprint(5)"
+  },
+  {
+    "example_id": 72,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6402373705728000.0"
+    ],
+    "annotated_answers": [
+      "12441600.0"
+    ],
+    "solution": "# number of candidates\nn = 6 + 4 + 5 + 3\n# total number of ways to arrange the candidates\nresult = math.factorial(n)\n# print the result\nprint(result)"
+  },
+  {
+    "example_id": 73,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "504.0"
+    ],
+    "annotated_answers": [
+      "504.0"
+    ],
+    "solution": "result = 6 * 4 * 3 * 7\nprint(result)"
+  },
+  {
+    "example_id": 74,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.05",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": ""
+  },
+  {
+    "example_id": 75,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "28.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "def is_perfect_square(n):\n    return int(n ** 0.5) ** 2 == n\n\ndef perfect_squares(min_value, max_value):\n    return sum(1 for i in range(min_value, max_value + 1) if is_perfect_square(i))\n\nprint(perfect_squares(10, 1000))"
+  },
+  {
+    "example_id": 76,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "49.0",
+      "4.0",
+      "48.0",
+      "6.0",
+      "47.0",
+      "8.0",
+      "46.0",
+      "10.0",
+      "45.0"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ],
+    "solution": "for x, y in permutations(range(1, 101), 2):\n    if x + 2 * y == 100:\n        print((x, y))"
+  },
+  {
+    "example_id": 77,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40320.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "# number of different pizzas\ndef pizza(toppings):\n    return len(set(permutations(toppings)))\n\n# number of toppings\nN = 8\n\n# list of toppings\ntoppings = [1, 2, 3, 4, 5, 6, 7, 8]\n\n# number of pizzas\nprint(pizza(toppings))"
+  },
+  {
+    "example_id": 78,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "720.0",
+      "720.0"
+    ],
+    "annotated_answers": [
+      "720.0"
+    ],
+    "solution": "def circular_seating(num_seats, num_people):\n    # Create list of all possible seatings\n    all_seatings = []\n    for perm in permutations(range(num_people)):\n        all_seatings.append(list(perm) + list(perm)[0:2])\n\n    # Create list of all possible rotations\n    all_rotations = []\n    for perm in permutations(range(num_people)):\n        all_rotations.append(list(perm[1:] + perm[0:1]))\n\n    # Create list of all unique seatings\n    unique_seatings = []\n    for i in range(len(all_seatings)):\n        if all_seatings[i] not in all_seatings[i+1:]:\n            unique_seatings.append(all_seatings[i])\n\n    # Create list of all unique rotations\n    unique_rotations = []\n    for i in range(len(all_rotations)):\n        if all_rotations[i] not in all_rotations[i+1:]:\n            unique_rotations.append(all_rotations[i])\n\n    # Count number of unique seatings and rotations\n    num_unique_seatings = len(unique_seatings)\n    num_unique_rotations = len(unique_rotations)\n\n    # Return number of unique seatings and rotations\n    return num_unique_seatings, num_unique_rotations\n\n# Test function with input values\nnum_seats, num_people = 7, 6\nprint(circular_seating(num_seats, num_people))"
+  },
+  {
+    "example_id": 79,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.708203932499369"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "# define the points A, B, C, and D\nA = (-3,3)\nB = (3,0)\nC = (0,-4)\nD = (0,0)\n\n# calculate the distance between the points\ndistance = math.sqrt((B[0] - A[0])**2 + (B[1] - A[1])**2)\nprint(distance)"
+  },
+  {
+    "example_id": 80,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# find the product of the numbers on the cards\ndef product(cards):\n    return math.prod([int(x) for x in cards])\n\n# generate all possible combinations of three cards\nfor cards in permutations('2001', 3):\n    if product(cards)!= 0:\n        print(cards)\n        break\n\n# find the number of possible combinations\ncount = 0\nfor cards in permutations('2001', 3):\n    if product(cards)!= 0:\n        count += 1\nprint(count)"
+  },
+  {
+    "example_id": 81,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "604800.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "count = 0\nfor n in permutations(range(10)):\n    if n[0] > n[1] and n[1] > n[2]:\n        count += 1\nprint(count)"
+  },
+  {
+    "example_id": 82,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1003.0"
+    ],
+    "annotated_answers": [
+      "1963.0"
+    ],
+    "solution": "result = 0\nfor i in range(2, 2008):\n    if i % 2 == 0:\n        result += 1\nprint(result)"
+  },
+  {
+    "example_id": 83,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "main_courses = 3\nprint(main_courses)"
+  },
+  {
+    "example_id": 84,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "rectangles = 0\nfor i in range(3):\n    for j in range(3):\n        rectangles += 1\nprint(rectangles)"
+  },
+  {
+    "example_id": 85,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "result = 200 / 4\nprint(result)"
+  },
+  {
+    "example_id": 86,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13366080.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "# number of chocolate chip cookies\nn_chocolate = 6\n# number of oatmeal cookies\nn_oatmeal = 6\n# number of peanut butter cookies\nn_peanut_butter = 6\n\n# total number of cookies\nn_total = n_chocolate + n_oatmeal + n_peanut_butter\n\n# number of different assortments of six cookies\nn_assortments = math.factorial(n_total) // math.factorial(n_total - 6)\n\nprint(n_assortments)"
+  },
+  {
+    "example_id": 87,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "772.0"
+    ],
+    "annotated_answers": [
+      "772.0"
+    ],
+    "solution": "def is_not_multiple_of_7(n):\n    if n % 7 == 0:\n        return False\n    else:\n        return True\n\n\ndef is_positive(n):\n    if n > 0:\n        return True\n    else:\n        return False\n\n\ndef is_three_digit(n):\n    if len(str(n)) == 3:\n        return True\n    else:\n        return False\n\n\ndef count_positive_three_digit_numbers_not_multiple_of_7():\n    count = 0\n    for i in range(100, 1000):\n        if is_positive(i) and is_three_digit(i) and is_not_multiple_of_7(i):\n            count += 1\n    return count\n\n\nprint(count_positive_three_digit_numbers_not_multiple_of_7())"
+  },
+  {
+    "example_id": 88,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "# number of lamps\nn = 10\n# number of tables\nm = 3\n# number of ways to put all the lamps on the tables\nresult = math.comb(n, m)\nprint(result)"
+  },
+  {
+    "example_id": 89,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "result = math.factorial(4)\nprint(result)"
+  },
+  {
+    "example_id": 90,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "4.0",
+      "8.0",
+      "16.0",
+      "1.0",
+      "3.0",
+      "5.0",
+      "9.0",
+      "17.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "numbers = [0, 1, 2, 4, 8, 16]\ndistinct_elements = set(numbers)\nsum_of_distinct_elements = []\n\nfor i in distinct_elements:\n    for j in distinct_elements:\n        if i!= j:\n            sum_of_distinct_elements.append(i + j)\n\nprint(sum_of_distinct_elements)"
+  },
+  {
+    "example_id": 91,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "import math\nk = 0\nwhile True:\n    p = (10/21)**2\n    if p < 1:\n        break\n    k += 1\nprint(k)"
+  },
+  {
+    "example_id": 92,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "6840.0"
+    ],
+    "solution": "members = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T']\noffices = ['president', 'vice-president', 'treasurer']\n\n# Create a dictionary to store the number of members for each office\noffices_members = {}\nfor office in offices:\n    offices_members[office] = 0\n\n# Create a dictionary to store the number of members for each office\noffices_members = {}\nfor office in offices:\n    offices_members[office] = 0\n\n# Create a dictionary to store the number of members for each office\noffices_members = {}\nfor office in offices:\n    offices_members[office] = 0\n\n# Fill the dictionary\nfor member in members:\n    for office in offices:\n        if offices_members[office] < 2:\n            offices_members[office] += 1\n            break\n\n# Print the result\nprint(offices_members)"
+  },
+  {
+    "example_id": 93,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "12600.0"
+    ],
+    "annotated_answers": [
+      "12600.0"
+    ],
+    "solution": "def grocery_store_combinations(fruit, soup):\n    return math.comb(fruit, 2) * math.comb(soup, 3)\n\nprint(grocery_store_combinations(15, 10))"
+  },
+  {
+    "example_id": 94,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "9.0018"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "dice = [i for i in range(1, 9)]\n\ndef roll_dice(n):\n    return sum([random.choice(dice) for _ in range(n)])\n\ndef expected_value_of_sum(n):\n    return sum(roll_dice(n) for _ in range(10000)) / 10000\n\nprint(expected_value_of_sum(2))"
+  },
+  {
+    "example_id": 95,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "1041.0"
+    ],
+    "solution": "# Finding the 1000th term\ndef is_term(n):\n    if n**5 == n:\n        return False\n    if n**3 == n:\n        return False\n    if n**2 == n:\n        return False\n    return True\n\n\ndef find_term(n):\n    term = 1\n    while not is_term(term):\n        term += 1\n    return term\n\n\nprint(find_term(1000))"
+  },
+  {
+    "example_id": 96,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0",
+      "4.0",
+      "2.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# 1.\nresult = 3\nprint(result)\n\n# 2.\nresult = 4\nprint(result)\n\n# 3.\nresult = 2\nprint(result)\n\n# 4.\nresult = 1\nprint(result)\n\n# 5.\nresult = 1\nprint(result)\n\n# 6.\nresult = 1\nprint(result)\n\n# 7.\nresult = 1\nprint(result)\n\n# 8.\nresult = 1\nprint(result)\n\n# 9.\nresult = 1\nprint(result)\n\n# 10.\nresult = 1\nprint(result)\n\n# 11.\nresult = 1\nprint(result)\n\n# 12.\nresult = 1\nprint(result)\n\n# 13.\nresult = 1\nprint(result)\n\n# 14.\nresult = 1\nprint(result)\n\n# 15.\nresult = 1\nprint(result)\n\n# 16.\nresult = 1\nprint(result)\n\n# 17.\nresult = 1\nprint(result)\n\n# 18.\nresult = 1\nprint(result)\n\n# 19.\nresult = 1\nprint(result)\n\n# 20.\nresult = 1\nprint(result)"
+  },
+  {
+    "example_id": 97,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "300.0"
+    ],
+    "annotated_answers": [
+      "300.0"
+    ],
+    "solution": "# Find the number of even palindromes between 10,000 and 70,000\ndef is_palindrome(n):\n    \"\"\"\n    Return True if n is a palindrome, False otherwise.\n    \"\"\"\n    return str(n) == str(n)[::-1]\n\n\ndef is_even(n):\n    \"\"\"\n    Return True if n is even, False otherwise.\n    \"\"\"\n    return n % 2 == 0\n\n\ndef find_palindromes(start, end):\n    \"\"\"\n    Return the number of even palindromes between start and end.\n    \"\"\"\n    count = 0\n    for i in range(start, end + 1):\n        if is_palindrome(i) and is_even(i):\n            count += 1\n    return count\n\n\nprint(find_palindromes(10000, 70000))"
+  },
+  {
+    "example_id": 98,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "60.0"
+    ],
+    "solution": "import itertools\n\ndef arrange(word):\n    return len(list(itertools.permutations(word)))\n\nprint(arrange(\"CEASE\"))"
+  },
+  {
+    "example_id": 99,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "2.0",
+      "1.0",
+      "1.0",
+      "2.0",
+      "0.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "x = [0,1,2]\ny = [0,1,2]\n\nfor i in x:\n    for j in y:\n        if (i == 1 or j == 0 or j == 2) and (i == 0 or i == 2 or j == 1):\n            print(i, j)"
+  },
+  {
+    "example_id": 100,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "165.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": "def count_rectangles(h, w):\n    rectangles = 0\n    for i in range(0, h - 1):\n        for j in range(0, w - 1):\n            rectangles += 1\n    return rectangles\n\ndef solve():\n    h, w = 5, 4\n    rectangles = count_rectangles(h, w)\n    return rectangles\n\nsolve()"
+  },
+  {
+    "example_id": 101,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "ways = 0\nfor a in range(1,5):\n    for b in range(a,5):\n        if a**2 + b**2 == 10**2:\n            ways += 1\nprint(ways)"
+  },
+  {
+    "example_id": 102,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "51.0"
+    ],
+    "solution": "n = 25\nresult = math.floor(math.log(n, 3))\nprint(result)"
+  },
+  {
+    "example_id": 103,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "result = 0\nfor n in range(2, 101):\n    if math.comb(n, 2) % 2 == 1:\n        result += 1\nprint(result)"
+  },
+  {
+    "example_id": 104,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "75.0"
+    ],
+    "annotated_answers": [
+      "222.0"
+    ],
+    "solution": "num = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]\nresult = 0\nfor i in num:\n    if i**(1/3) % 1!= 0:\n        result += 1\nprint(result)"
+  },
+  {
+    "example_id": 105,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "36.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "result = math.comb(9, 2)\nprint(result)"
+  },
+  {
+    "example_id": 106,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "450.0"
+    ],
+    "annotated_answers": [
+      "450.0"
+    ],
+    "solution": "# Define variables\nnum = 1000\nsum_digits = 0\ncount = 0\n\n# Iterate through numbers\nfor i in range(num, 10000):\n    # Get digits of number\n    digits = [int(x) for x in str(i)]\n\n    # Check if last digit equals sum of first two digits\n    if digits[-1] == sum(digits[:2]):\n        # Increment count\n        count += 1\n\n# Print result\nprint(count)"
+  },
+  {
+    "example_id": 107,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "180.0"
+    ],
+    "solution": "# Find the total number of ways to arrange the beads in a 2x3 grid\nnum_beads = 6\ngrid_size = 2 * 3\nnum_permutations = math.factorial(grid_size) // (math.factorial(num_beads) * math.factorial(grid_size - num_beads))\n\n# Find the number of ways to arrange the beads in a 2x3 grid that are the same after rotations and reflections\nnum_rotations = 4\nnum_reflections = 2\nnum_same_permutations = num_permutations // (num_rotations * num_reflections)\n\nprint(num_same_permutations)"
+  },
+  {
+    "example_id": 108,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "420.0"
+    ],
+    "solution": "# Number of beads\nn = 7\n\n# Number of colors\nk = 7\n\n# Number of hexagonal grid\nm = 7\n\n# Total number of ways\nresult = math.factorial(n) // (math.factorial(k) * math.factorial(m))\nprint(result)"
+  },
+  {
+    "example_id": 109,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "1.0",
+      "1.0",
+      "0.0",
+      "0.0",
+      "1.0",
+      "2.0",
+      "0.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "165.0"
+    ],
+    "solution": "def get_pascal_triangle(n):\n    for i in range(n):\n        print(list(permutations(range(i+1))))\n\n\nget_pascal_triangle(11)"
+  },
+  {
+    "example_id": 110,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1023.0"
+    ],
+    "annotated_answers": [
+      "1024.0"
+    ],
+    "solution": "row = 10\nresult = 0\nfor i in range(0, row):\n    result += math.comb(row, i)\nprint(result)"
+  },
+  {
+    "example_id": 111,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "100.0"
+    ],
+    "annotated_answers": [
+      "245.0"
+    ],
+    "solution": "result = 100 * 1\nprint(result)"
+  },
+  {
+    "example_id": 112,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "56.0"
+    ],
+    "annotated_answers": [
+      "560.0"
+    ],
+    "solution": "result = math.comb(8, 3)\nprint(result)"
+  },
+  {
+    "example_id": 113,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40320.0"
+    ],
+    "annotated_answers": [
+      "1440.0"
+    ],
+    "solution": "# Define the people who don't want to sit next to each other\nnot_wanting_to_sit_next_to_each_other = ['Alice', 'Bob', 'Eve']\n\n# Create a list of all the people\npeople = ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace', 'Harry']\n\n# Create a list of all the possible seatings\npossible_seatings = permutations(people)\n\n# Count the number of possible seatings\ncount = 0\n\n# Iterate through the possible seatings\nfor possible_seating in possible_seatings:\n    # If none of the people who don't want to sit next to each other sit next to each other\n    if not any(person_1 == person_2 for person_1, person_2 in zip(possible_seating, possible_seating[1:]) if person_1 in not_wanting_to_sit_next_to_each_other and person_2 in not_wanting_to_sit_next_to_each_other):\n        # Increment the count\n        count += 1\n\n# Print the count\nprint(count)"
+  },
+  {
+    "example_id": 114,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "count = 0\nfor a in range(1, 11):\n    for b in range(1, 37):\n        if math.sqrt(a + math.sqrt(b)) % 1 == 0:\n            count += 1\nprint(count)"
+  },
+  {
+    "example_id": 115,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "96.0"
+    ],
+    "annotated_answers": [
+      "96.0"
+    ],
+    "solution": "def is_perfect_square(n):\n    x = int(n**0.5)\n    return x**2 == n\n\ndef is_not_perfect_square(n):\n    return not is_perfect_square(n)\n\ncount = 0\nfor i in range(100, 201):\n    if is_not_perfect_square(i):\n        count += 1\n\nprint(count)"
+  },
+  {
+    "example_id": 116,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "12439920.0"
+    ],
+    "annotated_answers": [
+      "29700.0"
+    ],
+    "solution": "# Find the total number of ways to assign the jerseys\ntotal_ways = math.factorial(6) * math.factorial(6) * math.factorial(4)\n\n# Find the number of ways to assign the jerseys such that at least one girl and one boy are on each team\ngirl_boy_ways = 0\n\n# Find the number of ways to assign the jerseys such that at least one girl is on each team\ngirl_ways = 0\n\n# Find the number of ways to assign the jerseys such that at least one boy is on each team\nboy_ways = 0\n\n# Iterate through all possible combinations\nfor combination in permutations(range(12), 3):\n    # If the combination includes a girl and a boy\n    if combination[0] % 2 == 0 and combination[1] % 2 == 1:\n        # Increment the number of ways to assign the jerseys such that at least one girl and one boy are on each team\n        girl_boy_ways += 1\n\n    # If the combination includes a girl\n    if combination[0] % 2 == 0:\n        # Increment the number of ways to assign the jerseys such that at least one girl is on each team\n        girl_ways += 1\n\n    # If the combination includes a boy\n    if combination[1] % 2 == 1:\n        # Increment the number of ways to assign the jerseys such that at least one boy is on each team\n        boy_ways += 1\n\n# Print the number of ways to assign the jerseys\nprint(total_ways - girl_boy_ways - girl_ways - boy_ways)"
+  },
+  {
+    "example_id": 117,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "81.0"
+    ],
+    "annotated_answers": [
+      "81.0"
+    ],
+    "solution": "# The number of three-digit numbers that are multiples of 11 is 27\nresult = 0\nfor i in range(100, 1000):\n    if i % 11 == 0:\n        result += 1\nprint(result)"
+  },
+  {
+    "example_id": 118,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "1.0",
+      "0.0",
+      "0.0",
+      "2.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "35.0"
+    ],
+    "solution": "a = 0\nb = 0\nc = 0\nwhile a <= 25:\n    while b <= 25:\n        while c <= 25:\n            if a**3 + b**2 + c <= 50:\n                print(a,b,c)\n            c += 1\n        c = 0\n        b += 1\n    b = 0\n    a += 1"
+  },
+  {
+    "example_id": 119,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "512.0"
+    ],
+    "solution": "def divisors(n):\n    return [i for i in range(1, n + 1) if n % i == 0]\n\ndivisors(72)\n\ndef is_prime(n):\n    if n == 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef subset(divisors, is_composite):\n    return len([i for i in divisors if is_composite(i)])\n\nsubsets = []\nfor i in range(0, 11):\n    subsets.append(subset(divisors(72), is_prime))\n\nprint(subsets)"
+  },
+  {
+    "example_id": 120,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "720.0"
+    ],
+    "annotated_answers": [
+      "360.0"
+    ],
+    "solution": "word = 'CIRCLE'\nways = 1\nfor i in range(len(word)):\n    ways *= len(word) - i\nprint(ways)"
+  },
+  {
+    "example_id": 121,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "51.0"
+    ],
+    "annotated_answers": [
+      "149.0"
+    ],
+    "solution": "n = 51\nprint(n)"
+  },
+  {
+    "example_id": 122,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def check_prime(n):\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef find_primes():\n    primes = []\n    for i in range(10, 100):\n        if check_prime(i):\n            primes.append(i)\n    return primes\n\ndef find_numbers():\n    primes = find_primes()\n    numbers = []\n    for i in range(100, 1000):\n        if i % 100 == 0 or i % 10 == 0:\n            continue\n        num = [int(j) for j in str(i)]\n        if num[0] > 5 and num[1] > 4 and num[1] < 8 and num[2] in primes:\n            numbers.append(i)\n    return numbers\n\ndef main():\n    numbers = find_numbers()\n    print(len(numbers))\n\nif __name__ == '__main__':\n    main()"
+  },
+  {
+    "example_id": 123,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "# list of all possible words\nwords = ['AAA', 'AAB', 'AAC', 'ABA', 'ABB', 'ABC', 'ACA', 'ACB', 'ACC', 'BAA', 'BAB', 'BAC', 'BBA', 'BBB', 'BBC', 'BCA', 'BCB', 'BCC', 'CAA', 'CAB', 'CAC', 'CBA', 'CBB', 'CBC', 'CCA', 'CCB', 'CCC']\n\n# list of all possible letters\nletters = ['A', 'B', 'C']\n\n# position of word BAB in the list\npos = [i for i, x in enumerate(words) if x == 'BAB'][0] + 1\n\n# print the result\nprint(pos)"
+  },
+  {
+    "example_id": 124,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "78.0"
+    ],
+    "annotated_answers": [
+      "10080.0"
+    ],
+    "solution": "result = math.factorial(8) // (2 ** 8 * math.factorial(2))\nprint(result)"
+  },
+  {
+    "example_id": 125,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "220.0"
+    ],
+    "annotated_answers": [
+      "220.0"
+    ],
+    "solution": "ways = binomial(12,9)\nprint(ways)"
+  },
+  {
+    "example_id": 126,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "15.0",
+      "2.0",
+      "105.0",
+      "4.0",
+      "1365.0",
+      "1.0",
+      "2.0",
+      "4.0",
+      "1485.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "# Number of ways to use 1-piece boxes\nways_1 = math.comb(15, 1)\n\n# Number of ways to use 2-piece boxes\nways_2 = math.comb(15, 2)\n\n# Number of ways to use 4-piece boxes\nways_4 = math.comb(15, 4)\n\n# Number of ways to use 1, 2, or 4-piece boxes\nways_all = ways_1 + ways_2 + ways_4\n\nprint(\"Number of ways to use 1-piece boxes:\", ways_1)\nprint(\"Number of ways to use 2-piece boxes:\", ways_2)\nprint(\"Number of ways to use 4-piece boxes:\", ways_4)\nprint(\"Number of ways to use 1, 2, or 4-piece boxes:\", ways_all)"
+  },
+  {
+    "example_id": 127,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "56.0"
+    ],
+    "annotated_answers": [
+      "56.0"
+    ],
+    "solution": "# Number of ways to choose 3 people from 8 people\nresult = math.comb(8, 3)\nprint(result)"
+  },
+  {
+    "example_id": 128,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "43.0",
+      "4.0",
+      "445.0",
+      "4.0",
+      "11641.0",
+      "8.0",
+      "679661.0",
+      "64.0",
+      "165.0",
+      "640247.0"
+    ],
+    "annotated_answers": [
+      "12500.0"
+    ],
+    "solution": "zips = 0\nfor i in range(100, 1000):\n    for j in range(100, 1000):\n        for k in range(100, 1000):\n            if i > 4 and j > 4 and k > 4:\n                zips += 1\nprint(zips)"
+  },
+  {
+    "example_id": 129,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "70.0"
+    ],
+    "annotated_answers": [
+      "70.0"
+    ],
+    "solution": "# Define a function\ndef select_teams(num_teams, num_selected):\n    return math.comb(num_teams, num_selected)\n\n# Call the function\nnum_teams = 8\nnum_selected = 4\nresult = select_teams(num_teams, num_selected)\nprint(result)"
+  },
+  {
+    "example_id": 130,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "num_seating = 0\n\nfor seating in permutations([1, 2, 3, 4, 5, 6]):\n    if seating[0] == 1 and seating[5] == 6:\n        num_seating += 1\n\nprint(num_seating)"
+  },
+  {
+    "example_id": 131,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0",
+      "1.0",
+      "9.0"
+    ],
+    "annotated_answers": [
+      "2880.0"
+    ],
+    "solution": "# number of even digits in a number is the same as the number of odd digits\n# so we only need to count the number of odd digits\nodd_digit_count = 0\n\n# count the number of odd digits in each of the 9 digits\nfor i in range(1, 10):\n    if i % 2!= 0:\n        odd_digit_count += 1\n\n# check if the number of odd digits is 9\nif odd_digit_count == 9:\n    print(\"There is one 9-digit number that can be made using each of the digits 1 through 9 exactly once with the digits alternating between odd and even.\")\nelse:\n    print(\"There are no 9-digit numbers that can be made using each of the digits 1 through 9 exactly once with the digits alternating between odd and even.\")"
+  },
+  {
+    "example_id": 132,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "# Compute the number of ways to place 5 different beads on a bracelet\n# if rotations and flips of the bracelet are not treated as different arrangements\nn = 5\nresult = math.factorial(n)\nprint(result)"
+  },
+  {
+    "example_id": 133,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "7.0"
+    ],
+    "solution": "import math\n\ndef atleast_one(n):\n    return 1 - math.pow(1 - 1/5, n) >= 3/4\n\ndef solve():\n    return 1 - atleast_one(1)\n\nprint(solve())"
+  },
+  {
+    "example_id": 134,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "118.0"
+    ],
+    "annotated_answers": [
+      "165.0"
+    ],
+    "solution": "# Number of colors\nn = 5\n\n# Number of squares\nm = 4\n\n# Initialize list to store coloring of squares\ncoloring = []\n\n# Initialize counter\ncount = 0\n\n# Loop through all permutations of colors\nfor perm in permutations(range(n), m):\n    # Check if coloring is rotation of previous coloring\n    if not coloring:\n        coloring = perm\n    else:\n        # Check if coloring is rotation of previous coloring\n        if perm == coloring or perm == coloring[::-1]:\n            continue\n        else:\n            # Increment counter\n            count += 1\n\n# Print result\nprint(count)"
+  },
+  {
+    "example_id": 135,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "20160.0"
+    ],
+    "solution": "result = math.comb(9, 8)\nprint(result)"
+  },
+  {
+    "example_id": 136,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "495.0"
+    ],
+    "annotated_answers": [
+      "495.0"
+    ],
+    "solution": "n = 12\nr = 4\n\nresult = math.comb(n, r)\nprint(result)"
+  },
+  {
+    "example_id": 137,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3003.0"
+    ],
+    "annotated_answers": [
+      "3003.0"
+    ],
+    "solution": "print(6435-11440+8008)"
+  },
+  {
+    "example_id": 138,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "13.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Get the number of items in C\nn = 7\n\n# Get the number of items in A\nm = 20\n\n# Get the number of items in B\nk = 10\n\n# Get the number of items not in B\np = n - k\n\n# Compute the number of items in B, but not in C\nq = m - n\n\nprint(q)"
+  },
+  {
+    "example_id": 139,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5040.0"
+    ],
+    "annotated_answers": [
+      "25.0"
+    ],
+    "solution": "# Create a list of cookies\ncookies = ['chocolate chip', 'chocolate chip', 'chocolate chip',\n         'sugar','sugar','sugar','sugar']\n\n# Number of ways to eat cookies\nnum_ways = len(list(permutations(cookies)))\nprint(num_ways)"
+  },
+  {
+    "example_id": 140,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40320.0"
+    ],
+    "annotated_answers": [
+      "1680.0"
+    ],
+    "solution": "def get_permutations(n):\n    return len(list(permutations(range(n), n)))\n\n\nn = 8\nr = 8\n\nresult = get_permutations(n) // get_permutations(n - r)\nprint(result)"
+  },
+  {
+    "example_id": 141,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "98.0",
+      "1.0",
+      "2.0",
+      "97.0",
+      "1.0",
+      "3.0",
+      "96.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "x = 1\nwhile x < 100:\n    y = 1\n    while y < 100:\n        z = 1\n        while z < 100:\n            if x + y + z == 100:\n                print(x, y, z)\n            z += 1\n        y += 1\n    x += 1"
+  },
+  {
+    "example_id": 142,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "def num_of_ways_to_select_5_students_from_6_students(n, k):\n    # compute binomial coefficient\n    result = math.comb(n, k)\n    return result\n\nprint(num_of_ways_to_select_5_students_from_6_students(6, 5))"
+  },
+  {
+    "example_id": 143,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.4899"
+    ],
+    "annotated_answers": [
+      "8.5"
+    ],
+    "solution": "def get_product(marbles):\n    return marbles[0] * marbles[1]\n\ndef get_random_marbles():\n    marbles = [random.randint(1, 5) for _ in range(2)]\n    return marbles\n\ndef get_expected_value():\n    marbles = get_random_marbles()\n    while marbles[0] == marbles[1]:\n        marbles = get_random_marbles()\n\n    return get_product(marbles)\n\ndef get_expected_value_of_product_of_numbers():\n    expected_values = [get_expected_value() for _ in range(10000)]\n    return sum(expected_values) / len(expected_values)\n\nexpected_value = get_expected_value_of_product_of_numbers()\nprint(expected_value)"
+  },
+  {
+    "example_id": 144,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1430.0"
+    ],
+    "annotated_answers": [
+      "1430.0"
+    ],
+    "solution": "import math\n\ndef binomial(n, k):\n    return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))\n\nprint(binomial(13, 4) + binomial(13, 9))"
+  },
+  {
+    "example_id": 145,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "2520.0"
+    ],
+    "annotated_answers": [
+      "2520.0"
+    ],
+    "solution": "ways = binomial_coefficient(10,2) * binomial_coefficient(8,3)\nprint(ways)"
+  },
+  {
+    "example_id": 146,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "10.0"
+    ],
+    "annotated_answers": [
+      "5120.0"
+    ],
+    "solution": "n = 10\nk = 1\nresult = math.comb(n, k)\nprint(result)"
+  },
+  {
+    "example_id": 147,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "225.0"
+    ],
+    "solution": "import math\n\ndef solution(upper_class, lower_class, upper_class_demand, lower_class_demand):\n    upper_class_battalions = math.floor(upper_class / upper_class_demand)\n    lower_class_battalions = math.floor(lower_class / lower_class_demand)\n    return upper_class_battalions * lower_class_battalions\n\nresult = solution(5, 10, 4, 8)\nprint(result)"
+  },
+  {
+    "example_id": 148,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40320.0"
+    ],
+    "annotated_answers": [
+      "5040.0"
+    ],
+    "solution": "# Define a function that returns a list of all possible seating arrangements\ndef seating_arrangements(n, m):\n    # Generate all possible permutations of the numbers 0 to n - 1\n    all_permutations = list(permutations(range(n), m))\n\n    # Remove any permutation that has two adjacent people sitting next to each other\n    # This is because we don't want to count rotations as different seating arrangements\n    # The following line of code is equivalent to:\n    # all_permutations = [p for p in all_permutations if not (p[0] == p[1] or p[1] == p[2])]\n    all_permutations = [p for p in all_permutations if not (p[0] == p[1])]\n\n    # Return the number of seating arrangements\n    return len(all_permutations)\n\n# Print the result\nprint(seating_arrangements(8, 8))"
+  },
+  {
+    "example_id": 149,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "import math\n\ndef count_cubes(cubes):\n    count = 0\n    for cube in cubes:\n        if cube.faces.count(red) == 4:\n            count += 1\n    return count\n\ncubes = []\n\ndef draw_cube(cube):\n   ...\n\ndef draw_cubes(cubes):\n    for cube in cubes:\n        draw_cube(cube)\n\ndraw_cubes(cubes)\n\nprint(count_cubes(cubes))"
+  },
+  {
+    "example_id": 150,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "253.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "result = 23 * 22 / 2\nprint(result)"
+  },
+  {
+    "example_id": 151,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-142.0"
+    ],
+    "annotated_answers": [
+      "18.0"
+    ],
+    "solution": "# Total number of students\nN = 100\n\n# Number of students who did math homework\nm = 59\n\n# Number of students who did English homework\ne = 49\n\n# Number of students who did science homework\ns = 42\n\n# Number of students who did English and science homework\nes = 20\n\n# Number of students who did science and math homework\nsm = 29\n\n# Number of students who did math and English homework\nme = 31\n\n# Number of students who did math, science and English homework\nms = 12\n\n# Number of students who did no math, no English and no science homework\nprint(N - m - e - s - es - sm - me - ms)"
+  },
+  {
+    "example_id": 152,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.126822490730477",
+      "-12.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# Calculate the probability that the ant is standing on the same vertex on which he began\nprob = (1 / 6) ** 15\nprint(prob)"
+  },
+  {
+    "example_id": 153,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "# The sum of the first list is 29\nsum_first_list = 29\n\n# The sum of the second list is 33\nsum_second_list = 33\n\n# The number of elements in the list\nn = 5\n\n# The number of different elements\nk = 5\n\n# Compute the number of increasing lists of five different single-digit positive integers that have a sum of 33\nresult = math.factorial(n) / math.factorial(k) / math.factorial(n - k)\nprint(result)"
+  },
+  {
+    "example_id": 154,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "110.0"
+    ],
+    "solution": "# Find the difference between 9! and 11!\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\n\ndef find_factor(n):\n    for i in range(1, n + 1):\n        if factorial(n) % factorial(i) == 0:\n            return i\n\n\nprint(find_factor(9))"
+  },
+  {
+    "example_id": 155,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "23.0"
+    ],
+    "solution": "# Create a list of coins\ncoins = [1, 5, 10, 25]\n\n# Use permutations to get all possible combinations\npermutations = permutations(coins)\n\n# Get total number of possible combinations\ntotal = len(list(permutations))\n\n# Print the result\nprint(total)"
+  },
+  {
+    "example_id": 156,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "result = 3\nprint(result)"
+  },
+  {
+    "example_id": 157,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "3.0",
+      "3.0",
+      "3.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "n = 5\nsides = range(n)\ndiagonals = []\nfor i in range(n):\n    diagonals.append(int(math.sqrt((n-2)*(n-2) + 2*(n-2))))\nprint(diagonals)"
+  },
+  {
+    "example_id": 158,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "325.0"
+    ],
+    "solution": "n = 5\nm = 4\n\n# number of ways to choose 4 teachers from 11\n# total number of subcommittees = 11 choose 4\ntotal_subcommittees = math.comb(11, 4)\n\n# number of ways to choose 1 non-teacher from 6 teachers\n# and 3 non-teachers from 7 teachers\n# total number of subcommittees = 6 choose 1 x 7 choose 3\nnon_teacher_subcommittees = math.comb(6, 1) * math.comb(7, 3)\n\n# total number of subcommittees = total subcommittees - non teacher subcommittees\ntotal_subcommittees -= non_teacher_subcommittees\n\nprint(total_subcommittees)"
+  },
+  {
+    "example_id": 159,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "result = math.comb(6, 2)\nprint(result)"
+  },
+  {
+    "example_id": 160,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "27.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "result = 3**3\nprint(result)"
+  },
+  {
+    "example_id": 161,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "240.0"
+    ],
+    "solution": "# Define the number of people\nn = 8\n\n# Define the number of seats\nm = 8\n\n# Define the number of seating arrangements\nnum_seating_arrangements = math.factorial(m) / (math.factorial(n) * math.factorial(m - n))\n\n# Print the number of seating arrangements\nprint(num_seating_arrangements)"
+  },
+  {
+    "example_id": 162,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "-1.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "-1.0",
+      "2.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "from sympy import *\n\ns = symbols('s')\n\neq = Eq((s**2 + 1)**2, (s**2 + 2*s + 1)**2)\n\nsol = solve(eq)\n\nprint(sol)"
+  },
+  {
+    "example_id": 163,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "n = 0\nwhile True:\n    if 2*(n+1)!=3:\n        break\n    n += 1\nprint(n)"
+  },
+  {
+    "example_id": 164,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "count = 0\nfor i in range(200, 300):\n    if i**0.5 == int(i**0.5):\n        count += 1\nprint(count)"
+  },
+  {
+    "example_id": 165,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1000.0"
+    ],
+    "annotated_answers": [
+      "1092.0"
+    ],
+    "solution": "result = 1000\nprint(result)"
+  },
+  {
+    "example_id": 166,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "165699.0"
+    ],
+    "annotated_answers": [
+      "6732.0"
+    ],
+    "solution": "def combinations(n, k):\n    if k < 0 or n < 0:\n        return 0\n    if k > n:\n        return 1\n    if k == 0 or n == k:\n        return 1\n    return combinations(n - 1, k - 1) + combinations(n - 1, k)\n\ndef solution(n, k, x, y):\n    n_officers = n - 1\n    return combinations(n_officers, k - 1) * combinations(n_officers, k)\n\ndef main():\n    n = 20\n    k = 3\n    x = 1\n    y = 2\n    result = solution(n, k, x, y)\n    print(result)\n\nmain()"
+  },
+  {
+    "example_id": 167,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "def even_rows(rows):\n    for i in range(rows):\n        row = [1] * (i + 1)\n        row[0] = 1\n        row[-1] = 1\n        if not any(x % 2 == 1 for x in row):\n            yield row\n\nprint(sum(1 for _ in even_rows(100)))"
+  },
+  {
+    "example_id": 168,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6048000.0"
+    ],
+    "annotated_answers": [
+      "7000.0"
+    ],
+    "solution": "# Define the number of teachers, parents and students\nn_teachers = 5\nn_parents = 7\nn_students = 6\n\n# Define the number of teachers, parents and students in the subcommittee\nn_subteachers = 2\nn_subparents = 3\nn_substudents = 3\n\n# Compute the number of different subcommittees\nn_different_subcommittees = math.factorial(n_teachers) * math.factorial(n_parents) * math.factorial(n_students) / (math.factorial(n_subteachers) * math.factorial(n_subparents) * math.factorial(n_substudents))\n\n# Print the number of different subcommittees\nprint(n_different_subcommittees)"
+  },
+  {
+    "example_id": 169,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "0.832",
+      "0.832",
+      "0.1664"
+    ],
+    "annotated_answers": [
+      "60.0"
+    ],
+    "solution": "# define the amount the player should pay to play\npayment = 5\n\n# define the number of times the die is rolled\nrolls = 2\n\n# define the amount the player should win\nwin = 0\n\n# define the number of odds and evens\nodds = 0\nevens = 0\n\n# define the number of wins and losses\nwins = 0\nlosses = 0\n\n# define the number of trials\ntrials = 10000\n\n# loop through trials\nfor i in range(trials):\n\n    # roll the die\n    first = random.randint(1, 6)\n    second = random.randint(1, 6)\n\n    # check if the first number is odd\n    if first % 2 == 1:\n        odds += 1\n\n    # check if the first number is even\n    else:\n        evens += 1\n\n    # check if the second number matches the first\n    if first == second:\n        wins += 1\n\n    # check if the second number does not match the first\n    else:\n        losses += 1\n\n# compute the probability of winning\nprobability = wins / trials\n\n# compute the amount the player should win\nwin = probability * payment\n\n# print the results\nprint(\"The player should pay $\\$\", payment, \" to play the game.\")\nprint(\"The game is fair if the probability of winning times the amount won is $\\$\", win, \".\")\nprint(\"The player should win $\\$\", win, \" if the game is fair.\")\nprint(\"The probability of winning is \", probability, \".\")"
+  },
+  {
+    "example_id": 170,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0"
+    ],
+    "annotated_answers": [
+      "47.0"
+    ],
+    "solution": "# Create list\nlist_nums = [6, 7, 10, 11, 14, 15, 94, 95, 98]\n\n# Count elements in list\nprint(len(list_nums))"
+  },
+  {
+    "example_id": 171,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1023.0"
+    ],
+    "annotated_answers": [
+      "210.0"
+    ],
+    "solution": "# calculate the number of paths\npaths = 0\nfor i in range(1, 11):\n    paths += math.factorial(10) // (math.factorial(i) * math.factorial(10 - i))\nprint(paths)"
+  },
+  {
+    "example_id": 172,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "10.0"
+    ],
+    "solution": "# Define the number of each color beads\nn_orange = 3\nn_black = 3\nn_teal = 1\n\n# Define the total number of beads\nn = n_orange + n_black + n_teal\n\n# Define the number of permutations\npermutations = permutations(range(n), n)\n\n# Initialize the counter\ncounter = 0\n\n# Iterate through the permutations\nfor p in permutations:\n\n    # Check if the beads are the same\n    if p[0] == p[1] == p[2] == p[3] == p[4] == p[5] == p[6] == p[7] == p[8]:\n        counter += 1\n\n# Print the result\nprint(counter)"
+  },
+  {
+    "example_id": 173,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "1.0",
+      "3.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "26.0"
+    ],
+    "solution": "# create list of numbers\nlist = [1, 2, 3]\n\n# shuffle list\nrandom.shuffle(list)\n\n# print list\nprint(list)\n\n# calculate difference\nlargest = max(list)\nsmallest = min(list)\nprint(largest - smallest)"
+  },
+  {
+    "example_id": 174,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "28121600.0"
+    ],
+    "solution": "# old format\nold_format = \"AAA99\"\n\n# new format\nnew_format = \"AAAA99\"\n\n# number of old format plates\nold_format_plates = 1000\n\n# number of new format plates\nnew_format_plates = 1000\n\n# calculate the positive difference\ndifference = new_format_plates - old_format_plates\n\n# print the result\nprint(difference)"
+  },
+  {
+    "example_id": 175,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "11.0"
+    ],
+    "solution": "result = int(str(2007 ** 3)[0]) + int(str(2007 ** 3)[-1])\nprint(result)"
+  },
+  {
+    "example_id": 176,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "16.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "# Number of students who play all three sports\nn = 8\n# Number of students who play basketball\nm = int(n/2)\n# Number of students who play soccer\ns = n - m\n# Number of students who play mathletics\nk = s * 2\n# Total number of students\ntotal = n + m + s + k\n# Number of students who play exactly two sports\ntwo = total - n\nprint(two)"
+  },
+  {
+    "example_id": 177,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "40320.0"
+    ],
+    "annotated_answers": [
+      "280.0"
+    ],
+    "solution": "# Create a list of all possible combinations of pens\npens = list(permutations(range(1,9), 8))\n\n# Initialize counter for the number of ways the pound can allocate the pens\ncounter = 0\n\n# Loop through each possible combination of pens\nfor pen in pens:\n\n    # Initialize a list to hold the number of pens allocated to dogs\n    dogs = []\n\n    # Initialize a list to hold the number of pens allocated to cats\n    cats = []\n\n    # Initialize a list to hold the number of pens allocated to roosters\n    roosters = []\n\n    # Loop through each pen in the combination and allocate to the appropriate group\n    for i in range(len(pen)):\n\n        # If the pen is for dogs, add it to the dogs list\n        if i < 4:\n            dogs.append(pen[i])\n\n        # If the pen is for cats, add it to the cats list\n        elif i < 7:\n            cats.append(pen[i])\n\n        # If the pen is for roosters, add it to the roosters list\n        else:\n            roosters.append(pen[i])\n\n    # Check that the number of pens allocated to dogs, cats, and roosters is correct\n    if len(dogs) == 4 and len(cats) == 3 and len(roosters) == 1:\n\n        # Increment the counter for the number of ways the pound can allocate the pens\n        counter += 1\n\n# Print the number of ways the pound can allocate the pens\nprint(counter)"
+  },
+  {
+    "example_id": 178,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "value = 3*2*1\nprint(value)"
+  },
+  {
+    "example_id": 179,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "425.0"
+    ],
+    "solution": "n = 0\nwhile True:\n    n += 1\n    if n**2 in [i**2 for i in range(1, int(n**0.5) + 1)] or n**3 in [i**3 for i in range(1, int(n**(1/3)) + 1)]:\n        continue\n    else:\n        print(n)\n        break"
+  },
+  {
+    "example_id": 180,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "14.0"
+    ],
+    "solution": "# Define function to calculate the number of ways to put n balls in m boxes\ndef put_balls_in_boxes(n, m):\n    # Calculate the number of ways to put n balls in m boxes\n    return math.factorial(n) // math.factorial(n - m) // math.factorial(m)\n\n# Calculate the number of ways to put 4 balls in 3 boxes\nresult = put_balls_in_boxes(4, 3)\n\n# Print the result\nprint(result)"
+  },
+  {
+    "example_id": 181,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11217.992779456934"
+    ],
+    "annotated_answers": [
+      "11218.0"
+    ],
+    "solution": "x = 5 + 2*math.sqrt(7)\ny = x**4\nprint(y)"
+  },
+  {
+    "example_id": 182,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "187.5"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "def count_unit_triangles(n_rows):\n    \"\"\"\n    Compute the number of unit triangles in an n-row triangle\n    \"\"\"\n    # Initialize the number of unit triangles\n    n_triangles = 0\n    # Loop through the rows\n    for i in range(n_rows):\n        # Compute the number of unit triangles in the current row\n        n_triangles += (2**i) * (2**i - 1) / 2\n    # Return the number of unit triangles\n    return n_triangles\n\n\ndef count_unit_triangles_in_triangle(n_rows, n_extra_rows):\n    \"\"\"\n    Compute the number of unit triangles in a triangle with n_rows\n    and n_extra_rows extra rows.\n    \"\"\"\n    # Compute the number of unit triangles in the triangle with n_rows\n    n_triangles = count_unit_triangles(n_rows)\n    # Loop through the extra rows\n    for i in range(n_extra_rows):\n        # Increment the number of unit triangles by the number of unit triangles\n        # in the current row\n        n_triangles += count_unit_triangles(i + 1)\n    # Return the number of unit triangles\n    return n_triangles\n\n\n# Test the count_unit_triangles function\nprint(count_unit_triangles(3))\n# Test the count_unit_triangles_in_triangle function\nprint(count_unit_triangles_in_triangle(3, 2))"
+  },
+  {
+    "example_id": 183,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def keychain(n):\n    return len(list(permutations(range(n), n)))\n\nprint(keychain(5))"
+  },
+  {
+    "example_id": 184,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "3.0",
+      "3.0",
+      "3.0",
+      "3.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# Define the number of dimes\nnum_dimes = 12\n\n# Define the number of piles\nnum_piles = 3\n\n# Define the odd number\nodd_num = 1\n\n# Define the even number\neven_num = 0\n\n# Define the list of possible combinations\npossible_combinations = []\n\n# Generate the possible combinations\nfor i in range(num_dimes):\n    if (num_dimes - i) % 2 == odd_num:\n        possible_combinations.append(i)\n\n# Print the number of possible combinations\nprint(len(possible_combinations))\n\n# Print the possible combinations\nprint(possible_combinations)"
+  },
+  {
+    "example_id": 185,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "15.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "result = math.factorial(6) / (math.factorial(2) * math.factorial(4))\nprint(result)"
+  },
+  {
+    "example_id": 186,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def seating_arrangement(people):\n    \"\"\"\n    Return the number of possible seating arrangements.\n    \"\"\"\n    # Possible seating arrangements\n    arrangements = 0\n    # Iterate through all permutations\n    for perm in permutations(people):\n        # Check if Bonnie and Carlo are driving\n        if perm[1] and perm[3]:\n            arrangements += 1\n    return arrangements\n\n# Test the function\npeople = ['Ali', 'Bonnie', 'Carlo', 'Dianna']\nprint(seating_arrangement(people))"
+  },
+  {
+    "example_id": 187,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "n = 4\nr = 2\nresult = math.comb(n, r)\nprint(result)"
+  },
+  {
+    "example_id": 188,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "# Define function\ndef is_divisible_by_6(x):\n    return x % 6 == 0\n\n# Create a list of 5 random numbers\nnumbers = [random.randint(1, 6) for _ in range(5)]\n\n# Compute the product of the 5 numbers\nproduct = 1\nfor num in numbers:\n    product *= num\n\n# Check if the product is divisible by 6\nif is_divisible_by_6(product):\n    print(\"The product of the 5 numbers is divisible by 6.\")\nelse:\n    print(\"The product of the 5 numbers is not divisible by 6.\")"
+  },
+  {
+    "example_id": 189,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1275.0"
+    ],
+    "annotated_answers": [
+      "1275.0"
+    ],
+    "solution": "from math import factorial\n\ndef triangular_number(n):\n    return n * (n + 1) // 2\n\nprint(triangular_number(50))"
+  },
+  {
+    "example_id": 190,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "115.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "# Find the number of points\nn = 120 - 5\nprint(n)"
+  },
+  {
+    "example_id": 191,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "336.0"
+    ],
+    "annotated_answers": [
+      "720.0"
+    ],
+    "solution": "n = 8\nm = 3\n\ndef find_permutations(n, m):\n    result = 0\n    for perm in permutations(range(n), m):\n        if perm[0]!= perm[1] and perm[1]!= perm[2] and perm[2]!= perm[0]:\n            result += 1\n    return result\n\nprint(find_permutations(n, m))"
+  },
+  {
+    "example_id": 192,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "29.0"
+    ],
+    "solution": "n = 6\nm = 1\nfor i in range(1, n):\n    if math.gcd(i, n) == 1:\n        m += 1\nprint(m)"
+  },
+  {
+    "example_id": 193,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "print(8 + 4 * 6 // 2)"
+  },
+  {
+    "example_id": 194,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "N = 7\nS = {1, 3, 5, 7, 9, 11, 13}\n\ndef solution(N, S):\n    count = 0\n    for i in range(1, N+1):\n        for j in range(i+1, N+1):\n            if (i-j) in S:\n                count += 1\n    return count\n\nprint(solution(N, S))"
+  },
+  {
+    "example_id": 195,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "18.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "# Number of points in S\nN = 9\n\n# Number of lines through at least two points\ncount = 0\n\n# Loop over all possible pairs of points\nfor i in range(N):\n    for j in range(i+1, N):\n        # Check if the points are on the same line\n        if i == j:\n            continue\n\n        # Check if the points are on the same vertical line\n        if (i%3 == 0 and j%3 == 0) or (i%3 == 1 and j%3 == 1) or (i%3 == 2 and j%3 == 2):\n            continue\n\n        # Check if the points are on the same horizontal line\n        if i//3 == j//3:\n            continue\n\n        # Count the number of lines that pass through the two points\n        count += 1\n\nprint(count)"
+  },
+  {
+    "example_id": 196,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1000000.0"
+    ],
+    "annotated_answers": [
+      "1000000.0"
+    ],
+    "solution": "print(101**3 - 3*101**2 + 3*101 - 1)"
+  },
+  {
+    "example_id": 197,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "210.0"
+    ],
+    "annotated_answers": [
+      "210.0"
+    ],
+    "solution": "import math\n\ndef group_presentation(n_boys, n_girls):\n    n_choices = math.comb(n_boys, 3) * math.comb(n_girls, 2)\n    return n_choices\n\nprint(group_presentation(7, 4))"
+  },
+  {
+    "example_id": 198,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "314.0"
+    ],
+    "annotated_answers": [
+      "314.0"
+    ],
+    "solution": "# define a function\ndef count_positive_integers_less_than_100pi(n):\n    count = 0\n    for i in range(1, n + 1):\n        if i < 100 * math.pi:\n            count += 1\n    return count\n\n# call the function\nprint(count_positive_integers_less_than_100pi(1000))"
+  },
+  {
+    "example_id": 199,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "231.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "# Get the number of squares\nn = 5\n# Get the number of dots\nm = 25\n# Get the number of rows\nr = 5\n# Get the number of columns\nc = 5\n\n# Compute the number of squares\ns = (m - r + 1) * (m - r + 2) // 2\n\nprint(s)"
+  },
+  {
+    "example_id": 200,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "720.0"
+    ],
+    "annotated_answers": [
+      "180.0"
+    ],
+    "solution": "import itertools\n\ndef arrange_letters(word):\n    return len(list(itertools.permutations(word)))\n\nprint(arrange_letters(\"GAMMAS\"))"
+  },
+  {
+    "example_id": 201,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "# compute the number of paths from C to B\npaths = permutations([1, 2, 3, 4, 5, 6, 7, 8, 9])\ncount = 0\nfor path in paths:\n    if path[0] == 1 and path[1] == 2 and path[2] == 3 and path[3] == 4 and path[4] == 5 and path[5] == 6 and path[6] == 7 and path[7] == 8 and path[8] == 9:\n        count += 1\nprint(count)"
+  },
+  {
+    "example_id": 202,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "48.0"
+    ],
+    "annotated_answers": [
+      "144.0"
+    ],
+    "solution": "people = ['Pierre', 'Rosa', 'Thomas']\n\ndef get_permutations(people, n_people):\n    \"\"\"\n    Return all permutations of people in a round table\n    \"\"\"\n    if n_people == 1:\n        return [people]\n\n    permutations = []\n    for i in range(len(people)):\n        person = people[i]\n        remaining_people = people[:i] + people[i+1:]\n        for perm in get_permutations(remaining_people, n_people-1):\n            permutations.append([person] + perm)\n\n    return permutations\n\ndef get_rotations(permutations):\n    \"\"\"\n    Return all rotations of permutations\n    \"\"\"\n    rotations = []\n    for perm in permutations:\n        for i in range(len(perm)):\n            rotations.append(perm[i:] + perm[:i])\n\n    return rotations\n\ndef get_seating_arrangements(people, n_people):\n    \"\"\"\n    Return all seating arrangements of people in a round table\n    \"\"\"\n    permutations = get_permutations(people, n_people)\n    rotations = get_rotations(permutations)\n    return permutations + rotations\n\ndef get_distinct_seating_arrangements(people, n_people):\n    \"\"\"\n    Return all distinct seating arrangements of people in a round table\n    \"\"\"\n    arrangements = get_seating_arrangements(people, n_people)\n    return list(set(arrangements))\n\ndef get_distinct_seating_arrangements_count(people, n_people):\n    \"\"\"\n    Return the number of distinct seating arrangements of people in a round table\n    \"\"\"\n    return len(get_distinct_seating_arrangements(people, n_people))\n\ndef get_distinct_seating_arrangements_with_no_adjacent_people(people, n_people):\n    \"\"\"\n    Return all distinct seating arrangements of people in a round table\n    where no two of the people in the arrangement are adjacent\n    \"\"\"\n    arrangements = get_"
+  },
+  {
+    "example_id": 203,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "7.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Define a function\ndef triangle_count(n):\n    count = 0\n    for i in range(1, n):\n        for j in range(1, n):\n            if i + j == n:\n                count += 1\n    return count\n\n# Call the function\nprint(triangle_count(8))"
+  },
+  {
+    "example_id": 204,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0654565303025664",
+      "21"
+    ],
+    "annotated_answers": [
+      "1050.0"
+    ],
+    "solution": "# Number of vowels\nnum_vowels = 5\n\n# Number of consonants\nnum_consonants = 26 - num_vowels\n\n# Number of ways to choose 1 vowel\nnum_ways_choose_vowel = math.factorial(num_vowels) // math.factorial(1)\n\n# Number of ways to choose 2 consonants\nnum_ways_choose_consonants = math.factorial(num_consonants) // math.factorial(2)\n\n# Number of ways to choose 3 distinct letters of the alphabet\nnum_ways_choose_distinct_letters = num_ways_choose_vowel * num_ways_choose_consonants\n\n# Print the result\nprint(num_ways_choose_distinct_letters)"
+  },
+  {
+    "example_id": 205,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4920.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "# Compute the number of ways to arrange the fish\n# without consecutive crocodiles\n\n# Create a list of all possible orders\nall_orders = list(permutations([1, 2, 3, 4, 5, 6, 7]))\n\n# Filter out the orders that have consecutive crocodiles\nfiltered_orders = [order for order in all_orders if order[1]!= 1 or order[2]!= 2]\n\n# Compute the number of ways to arrange the fish\nresult = len(filtered_orders)\nprint(result)"
+  },
+  {
+    "example_id": 206,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "20.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "# Define number of basil plants\nn = 6\n\n# Define number of window sills\nk = 3\n\n# Compute the number of ways to put the plants on the window sills\nresult = math.comb(n, k)\nprint(result)"
+  },
+  {
+    "example_id": 207,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "15.0"
+    ],
+    "solution": "ways = 4**1\nprint(ways)"
+  },
+  {
+    "example_id": 208,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "200.0"
+    ],
+    "solution": "def combinations_without_oranges(friends):\n    apples = 3\n    oranges = 3\n    total = apples + oranges\n    result = math.factorial(total)\n    for i in range(1, friends + 1):\n        result //= math.factorial(i) * math.factorial(total - i)\n    return result\n\nfriends = 4\nprint(combinations_without_oranges(friends))"
+  },
+  {
+    "example_id": 209,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0",
+      "3.0",
+      "2.0",
+      "-2.0",
+      "2.0",
+      "1.0",
+      "2.0",
+      "6.0",
+      "3.0",
+      "-4.0"
+    ],
+    "annotated_answers": [
+      "8.0"
+    ],
+    "solution": "result = 2\nfor i in range(1000):\n    if i % 2 == 0:\n        result += 2\n    else:\n        result -= 2\nprint(result)"
+  },
+  {
+    "example_id": 210,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "31254.0"
+    ],
+    "solution": "nums = [i for i in range(10000, 99955) if '12345' in str(i)]\nprint(nums[49])"
+  },
+  {
+    "example_id": 211,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "4.0",
+      "4.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "import itertools\n\n# number of ways to put 4 balls in 3 boxes\nways = len(list(itertools.combinations(range(4), 3)))\n\n# number of ways to put 4 balls in 3 boxes with 2 green, 2 red, and 2 blue balls\nways2 = len(list(itertools.combinations(range(4), 3)))\n\n# number of ways to put 4 balls in 3 boxes with 2 green, 2 red, and 2 blue balls\nways3 = len(list(itertools.combinations(range(4), 3)))\n\nprint(ways, ways2, ways3)"
+  },
+  {
+    "example_id": 212,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "40.0"
+    ],
+    "annotated_answers": [
+      "40.0"
+    ],
+    "solution": "print(5*4*3*2/3)"
+  },
+  {
+    "example_id": 213,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "8.64"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "result = 216 / 25\nprint(result)"
+  },
+  {
+    "example_id": 214,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "17576.0"
+    ],
+    "annotated_answers": [
+      "1951.0"
+    ],
+    "solution": "result = 26**3\nprint(result)"
+  },
+  {
+    "example_id": 215,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "49766400.0"
+    ],
+    "annotated_answers": [
+      "864000.0"
+    ],
+    "solution": "# The number of possible license plates.\nn = 3\n\n# The number of possible letters.\nm = 5\n\n# The number of possible digits.\np = 4\n\n# The number of possible vowels.\nq = 5\n\n# The number of possible locations.\nr = 4\n\n# The total number of possible license plates.\ntotal = math.factorial(n) * math.factorial(m) * math.factorial(p) * math.factorial(q) * math.factorial(r)\nprint(total)"
+  },
+  {
+    "example_id": 216,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "11.0"
+    ],
+    "annotated_answers": [
+      "95.0"
+    ],
+    "solution": "# count = 0\ncount = 0\nfor i in range(1, 101):\n    if i % 9 == 0:\n        count += 1\nprint(count)"
+  },
+  {
+    "example_id": 217,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "p_head = 0.5 # probability of head\np_head_three = p_head**3 * (1-p_head)**5\np_head_two = p_head**2 * (1-p_head)**6\n\nprint(p_head_three/p_head_two)"
+  },
+  {
+    "example_id": 218,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "import itertools\nimport math\n\n\ndef fruit_salad(fruits, strawberries_pineapples=True, grapes_bananas=True):\n    \"\"\"\n    How many possible good tasting and appetizing salads are there?\n    :param fruits: list of fruits\n    :param strawberries_pineapples: boolean\n    :param grapes_bananas: boolean\n    :return: int\n    \"\"\"\n    if strawberries_pineapples:\n        strawberries_pineapples = 1\n    else:\n        strawberries_pineapples = 0\n\n    if grapes_bananas:\n        grapes_bananas = 1\n    else:\n        grapes_bananas = 0\n\n    n = len(fruits)\n    m = 5\n    total_combinations = math.factorial(m) / math.factorial(n) / math.factorial(m - n)\n    good_combinations = total_combinations * strawberries_pineapples * grapes_bananas\n    return good_combinations\n\n\nprint(fruit_salad(['apples', 'bananas', 'grapes','strawberries', 'pineapples'], True, True))\nprint(fruit_salad(['apples', 'bananas', 'grapes','strawberries', 'pineapples'], False, True))\nprint(fruit_salad(['apples', 'bananas', 'grapes','strawberries', 'pineapples'], True, False))\nprint(fruit_salad(['apples', 'bananas', 'grapes','strawberries', 'pineapples'], False, False))"
+  },
+  {
+    "example_id": 219,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "3.0",
+      "3.0",
+      "4.0",
+      "3.0",
+      "5.0",
+      "4.0",
+      "5.0",
+      "2.0",
+      "3.0",
+      "2.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "4060.0"
+    ],
+    "solution": "from math import factorial\nn = 30\nk = 27\nprint(factorial(n)/(factorial(k)*factorial(n-k)))"
+  },
+  {
+    "example_id": 220,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "9.0"
+    ],
+    "solution": ""
+  },
+  {
+    "example_id": 221,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "-125.0"
+    ],
+    "annotated_answers": [
+      "-125.0"
+    ],
+    "solution": "x = symbols('x')\nf = (10*x**3 - 1/2*x**(-2))**5\nf_expanded = f.expand()\nconstant_term = f_expanded.coeff(x, 0)\nprint(constant_term)"
+  },
+  {
+    "example_id": 222,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "452.3893421169302"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "def expected_non_shaded(n):\n    r = 6\n    for i in range(n):\n        r -= 2\n    return r**2 * math.pi\n\nprint(expected_non_shaded(9))"
+  },
+  {
+    "example_id": 223,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-216.0"
+    ],
+    "annotated_answers": [
+      "39.0"
+    ],
+    "solution": "x = symbols(\"x\")\nexpr = (x/3)**3 - 3*x**2 + 81*x - 729\nexpr = expand(expr)\nexpr = expr.subs(x, 9)\nresult = expr.evalf()\nprint(result)"
+  },
+  {
+    "example_id": 224,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1995.0",
+      "1.0",
+      "2.0",
+      "2.0",
+      "1995.0",
+      "2.0",
+      "2.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "3.0"
+    ],
+    "solution": "def is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef get_prime_square_numbers(start, end):\n    result = []\n    for i in range(start, end + 1):\n        if is_prime(i) and i ** 0.5 in range(start, end + 1):\n            result.append(i)\n    return result\n\ndef get_prime_square_numbers_in_range(start, end):\n    return list(map(lambda x: x ** 2, get_prime_square_numbers(start, end)))\n\ndef get_prime_square_numbers_between_100_and_300():\n    return get_prime_square_numbers_in_range(100, 300)\n\ndef count_prime_square_numbers_between_100_and_300():\n    return len(get_prime_square_numbers_between_100_and_300())\n\nprint(count_prime_square_numbers_between_100_and_300())"
+  },
+  {
+    "example_id": 225,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "35.0"
+    ],
+    "annotated_answers": [
+      "840.0"
+    ],
+    "solution": "n = 7\nk = 3\n\n# Compute binomial coefficient\nresult = math.comb(n, k)\n\n# Print result\nprint(result)"
+  },
+  {
+    "example_id": 226,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "330.0"
+    ],
+    "annotated_answers": [
+      "330.0"
+    ],
+    "solution": "import math\nprint(math.comb(11,4))"
+  },
+  {
+    "example_id": 227,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "def get_rectangles(grid, size):\n    rectangles = 0\n    for i in range(len(grid)):\n        for j in range(i + 1, len(grid[0])):\n            if grid[i][j] == 1:\n                rectangles += 1\n    return rectangles\n\ngrid = [[1, 0, 0, 0, 0, 0],\n        [1, 1, 0, 0, 0, 0],\n        [1, 1, 1, 0, 0, 0],\n        [1, 1, 1, 1, 0, 0],\n        [1, 1, 1, 1, 1, 0],\n        [1, 1, 1, 1, 1, 1]]\n\nprint(get_rectangles(grid, 8))"
+  },
+  {
+    "example_id": 228,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "153.0"
+    ],
+    "annotated_answers": [
+      "153.0"
+    ],
+    "solution": "# create a list of all possible 3-digit numbers\ndigits = [1, 3, 5]\nall_numbers = []\nfor perm in permutations(digits):\n    all_numbers.append(int(''.join(map(str, perm))))\n\n# sort the list\nall_numbers.sort(reverse=True)\n\n# print the fifth number\nprint(all_numbers[4])"
+  },
+  {
+    "example_id": 229,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "30.0"
+    ],
+    "annotated_answers": [
+      "864.0"
+    ],
+    "solution": "# Number of pets\nn = 7\n\n# Number of pets the children will want\nwanted = 4\n\n# Number of pets the children will not want\nunwanted = 1\n\n# Number of pets that are wanted by the children\nwanted_by_children = n - unwanted\n\n# Number of pets that are available\navailable = wanted_by_children - wanted\n\n# Number of ways to give pets to children\npermutations = math.comb(wanted_by_children, wanted)\n\n# Number of ways to give pets to children that are not wanted\nunwanted_permutations = math.comb(available, unwanted)\n\n# Total number of ways to give pets to children\ntotal_permutations = permutations * unwanted_permutations\n\n# Print the result\nprint(total_permutations)"
+  },
+  {
+    "example_id": 230,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "72.0"
+    ],
+    "annotated_answers": [
+      "71.0"
+    ],
+    "solution": "result = (9**5 - 9**4) / 9**3\nprint(result)"
+  },
+  {
+    "example_id": 231,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2162160.0"
+    ],
+    "annotated_answers": [
+      "1414.0"
+    ],
+    "solution": "boys = 6\ngirls = 8\n\ndef select_team(boys, girls):\n    \"\"\"\n    Return the number of ways to select a team with\n    more girls than boys.\n    \"\"\"\n    return len(list(permutations(range(boys + girls), boys)))\n\nprint(select_team(boys, girls))"
+  },
+  {
+    "example_id": 232,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "153.0"
+    ],
+    "annotated_answers": [
+      "49.0"
+    ],
+    "solution": "# Define symbols\nn = 18\nk = 2\n\n# Compute combinations\nresult = math.comb(n, k)\n\n# Print result\nprint(result)"
+  },
+  {
+    "example_id": 233,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "23400.0"
+    ],
+    "annotated_answers": [
+      "10800.0"
+    ],
+    "solution": "# Declare variables\nletters = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\ndigits = \"123456789\"\n\n# Generate all possible combinations of letters\nall_letters = list(permutations(letters, 2))\n\n# Generate all possible combinations of digits\nall_digits = list(permutations(digits, 2))\n\n# Generate all possible combinations of letters and digits\nall_combinations = []\nfor l in all_letters:\n    for d in all_digits:\n        all_combinations.append(l + d)\n\n# Remove combinations that are not in alphabetical order\nalphabetical_combinations = []\nfor combination in all_combinations:\n    if combination[0] < combination[1]:\n        alphabetical_combinations.append(combination)\n\n# Remove combinations that have repeated letters\nunique_combinations = []\nfor combination in alphabetical_combinations:\n    if combination[0]!= combination[1]:\n        unique_combinations.append(combination)\n\n# Remove combinations that have repeated digits\nfinal_combinations = []\nfor combination in unique_combinations:\n    if combination[2]!= combination[3]:\n        final_combinations.append(combination)\n\n# Print the result\nprint(len(final_combinations))"
+  },
+  {
+    "example_id": 234,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "735471.0"
+    ],
+    "annotated_answers": [
+      "384.0"
+    ],
+    "solution": "result = math.comb(24, 8)\nprint(result)"
+  },
+  {
+    "example_id": 235,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "387420489.0"
+    ],
+    "annotated_answers": [
+      "126.0"
+    ],
+    "solution": "ways = 9**9\nprint(ways)"
+  },
+  {
+    "example_id": 236,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "7.0",
+      "0.0",
+      "4.0",
+      "1.0",
+      "0.0",
+      "3.4641016151377544",
+      "6.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "# Number of hexagon vertices\nn = 6\n\n# Number of triangles\nm = 3\n\n# Length of each side of hexagon\ns = 1\n\n# Calculate area of hexagon\narea = pow(3, 0.5) * (pow(s, 2) * (n - 2) / 2)\n\n# Calculate perimeter of hexagon\nperimeter = n * s\n\n# Calculate number of triangles\nnum_triangles = permutations(range(n), m)\n\n# Print results\nprint(\"Number of triangles:\", num_triangles)\nprint(\"Area of hexagon:\", area)\nprint(\"Perimeter of hexagon:\", perimeter)"
+  },
+  {
+    "example_id": 237,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "210.0"
+    ],
+    "annotated_answers": [
+      "210.0"
+    ],
+    "solution": "result = math.comb(10, 4)\nprint(result)"
+  },
+  {
+    "example_id": 238,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "30960.0"
+    ],
+    "annotated_answers": [
+      "3600.0"
+    ],
+    "solution": "n_people = 8\nalice_bob = [0, 1]\n\ndef num_seating(n_people, alice_bob):\n    # create all possible seatings\n    all_seatings = permutations(range(n_people), n_people)\n    # count number of seatings that do not have alice and bob next to each other\n    num_seatings = 0\n    for seating in all_seatings:\n        # check if alice and bob are next to each other\n        if not (alice_bob[0] == seating[alice_bob[1]] or alice_bob[1] == seating[alice_bob[0]]):\n            num_seatings += 1\n    return num_seatings\n\nnum_seatings = num_seating(n_people, alice_bob)\nprint(num_seatings)"
+  },
+  {
+    "example_id": 239,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "252.0"
+    ],
+    "annotated_answers": [
+      "126.0"
+    ],
+    "solution": "# define function\ndef get_combinations(n, r):\n    \"\"\"\n    Returns the number of combinations of n objects taken r at a time.\n    \"\"\"\n    if r < 0:\n        return 0\n    if r == 0:\n        return 1\n    return math.factorial(n) // math.factorial(r) // math.factorial(n - r)\n\n# get number of combinations\nnum_combinations = get_combinations(10, 5)\n\n# print result\nprint(num_combinations)"
+  },
+  {
+    "example_id": 240,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "90.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "N = 900 / 10\nprint(N)"
+  },
+  {
+    "example_id": 241,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "5.0"
+    ],
+    "solution": "n = 5\nresult = 0\nfor i in range(n):\n    for j in range(i+1, n):\n        for k in range(j+1, n):\n            for l in range(k+1, n):\n                for m in range(l+1, n):\n                    if (pow(m - i, 2) + pow(l - j, 2) == pow(k - i, 2) + pow(m - j, 2)) and (pow(m - i, 2) + pow(l - j, 2) == pow(k - i, 2) + pow(m - j, 2)):\n                        result += 1\nprint(result)"
+  },
+  {
+    "example_id": 242,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "120.0"
+    ],
+    "solution": "from math import factorial\n\ndef gcf(a, b, c):\n    result = min(a, b, c)\n    while result > 1:\n        if a % result == 0 and b % result == 0 and c % result == 0:\n            break\n        result -= 1\n    return result\n\nprint(gcf(factorial(5), factorial(10), factorial(15)))"
+  },
+  {
+    "example_id": 243,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "n = 1000\nresult = math.comb(n, n)\nprint(result)"
+  },
+  {
+    "example_id": 244,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3780.0"
+    ],
+    "annotated_answers": [
+      "576.0"
+    ],
+    "solution": "result = math.comb(9, 3) * math.comb(6, 4) * math.comb(3, 2)\nprint(result)"
+  },
+  {
+    "example_id": 245,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5040.0"
+    ],
+    "annotated_answers": [
+      "1260.0"
+    ],
+    "solution": "result = len(list(permutations('ELLIPSE')))\nprint(result)"
+  },
+  {
+    "example_id": 246,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "n = 4\nr = 2\n\nresult = math.comb(n, r)\nprint(result)"
+  },
+  {
+    "example_id": 247,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "# 3-digit number with first digit triple final digit\ndef is_3_digit_num_first_digit_triple_final_digit(x):\n    if len(str(x))!= 3:\n        return False\n    if int(str(x)[0])!= int(str(x)[2]) * 3:\n        return False\n    return True\n\n# Generate 3-digit numbers with first digit triple final digit\nnums = [x for x in range(1000, 10000) if is_3_digit_num_first_digit_triple_final_digit(x)]\n\n# print number of 3-digit numbers\nprint(len(nums))"
+  },
+  {
+    "example_id": 248,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "861774.0"
+    ],
+    "annotated_answers": [
+      "380.0"
+    ],
+    "solution": "n = 20\nb = 10\ng = 10\n\ndef president_and_vice_president(n, b, g):\n    '''\n    Given the total number of members in the club, the number of boys, and the number of girls,\n    find the number of ways to choose a president and a vice-president if there are no restrictions other than the same person can't hold both offices.\n    '''\n    # Calculate the total number of ways to choose a president and a vice-president.\n    total_ways = math.comb(n, 2)\n\n    # Calculate the number of ways to choose a president and a vice-president if there are no restrictions other than the same person can't hold both offices.\n    ways_without_restrictions = 0\n\n    # Loop over all possible president and vice-president combinations.\n    for president in range(1, b + 1):\n        for vice_president in range(1, g + 1):\n            # If the president and vice-president are different, add the number of ways to choose the president and vice-president to the total number of ways.\n            if president!= vice_president:\n                ways_without_restrictions += math.comb(b, president) * math.comb(g, vice_president)\n\n    return ways_without_restrictions\n\nprint(president_and_vice_president(n, b, g))"
+  },
+  {
+    "example_id": 249,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "4.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "n = 4\nk = 3\nresult = math.comb(n, k)\nprint(result)"
+  },
+  {
+    "example_id": 250,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def n_permutations(n, r):\n    return factorial(n) // factorial(n - r)\n\n\ndef n_permutations_with_repetition(n, r):\n    return factorial(n + r - 1) // factorial(n - 1) // factorial(r)\n\n\ndef n_combinations(n, r):\n    return n_permutations(n, r) // n_permutations(n, n - r)\n\n\ndef n_combinations_with_repetition(n, r):\n    return n_permutations_with_repetition(n, r) // n_permutations_with_repetition(n, n - r)\n\n\nNINE = [symbols('N'), symbols('I'), symbols('N'), symbols('E')]\n\nprint(n_permutations(len(NINE), len(NINE)))"
+  },
+  {
+    "example_id": 251,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "414720.0"
+    ],
+    "annotated_answers": [
+      "2880.0"
+    ],
+    "solution": "# compute 6!\nsix_factorial = 1\nfor i in range(1, 6 + 1):\n    six_factorial *= i\n\n# compute (4!)^2\nfour_squared = 1\nfor i in range(1, 4 + 1):\n    four_squared *= i\n    four_squared *= i\n\n# compute least common multiple\nlcm = six_factorial * four_squared\n\nprint(lcm)"
+  },
+  {
+    "example_id": 252,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "-5.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "monica = 6 - sum([4,3,2,2])\nprint(monica)"
+  },
+  {
+    "example_id": 253,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "1.0"
+    ],
+    "annotated_answers": [
+      "1.0"
+    ],
+    "solution": "n = 10\nresult = math.comb(n, 0)\nprint(result)"
+  },
+  {
+    "example_id": 254,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "3.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "def intersect_points(circles):\n    # Return the maximum number of points where at least two of the circles intersect\n    n = len(circles)\n    if n == 0:\n        return 0\n    elif n == 1:\n        return len(circles[0])\n    else:\n        return max([len(circles[i]) for i in range(n)])\n\n# Test the function with up to 4 circles\ncircles = []\nfor i in range(4):\n    x = symbols('x{}'.format(i))\n    y = symbols('y{}'.format(i))\n    r = symbols('r{}'.format(i))\n    circle = [x, y, r]\n    circles.append(circle)\n\nprint(intersect_points(circles))"
+  },
+  {
+    "example_id": 255,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0",
+      "0.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "1940.0"
+    ],
+    "solution": "import itertools\n\ncombinations = itertools.combinations_with_replacement(range(8), 5)\n\nfor combination in combinations:\n    if len(set(combination)) == 5:\n        print(combination)"
+  },
+  {
+    "example_id": 256,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "# Define a function to calculate the number of seating arrangements\ndef seating_arrangements(num_front, num_back, num_driver):\n    num_front_seats = num_front\n    num_back_seats = num_back\n    num_driver_seats = num_driver\n    num_total_seats = num_front_seats + num_back_seats\n    num_arrangements = 0\n\n    for i in range(num_front_seats):\n        for j in range(num_back_seats):\n            num_arrangements += 1\n\n    return num_arrangements\n\n# Call the function\nnum_front = 2\nnum_back = 3\nnum_driver = 1\nnum_arrangements = seating_arrangements(num_front, num_back, num_driver)\nprint(num_arrangements)"
+  },
+  {
+    "example_id": 257,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2000.0"
+    ],
+    "annotated_answers": [
+      "839.0"
+    ],
+    "solution": "n = 1000\nk = 1000\n\nwhile True:\n    if (math.factorial(3) * math.factorial(k)) % n == 0:\n        break\n    k += 1\n\nprint(k + n)"
+  },
+  {
+    "example_id": 258,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "50.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "# Define a function to return a list of numbers that are not divisible by 3 or 4\ndef get_remaining_numbers(n):\n    numbers = []\n    for i in range(1, n+1):\n        if i % 3!= 0 and i % 4!= 0:\n            numbers.append(i)\n    return numbers\n\n# Call the function\nresult = len(get_remaining_numbers(100))\nprint(result)"
+  },
+  {
+    "example_id": 259,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0"
+    ],
+    "annotated_answers": [
+      "48.0"
+    ],
+    "solution": "# Create a list of all the books\nbooks = ['math1','math2', 'nonmath1', 'nonmath2', 'nonmath3', 'nonmath4']\n\n# Shuffle the list\nrandom.shuffle(books)\n\n# Create a list of math books\nmath_books = books[:2]\n\n# Create a list of non-math books\nnon_math_books = books[2:]\n\n# Create a list of all the possible stacks\npossible_stacks = []\n\n# Loop over all the possible combinations of math books\nfor math1, math2 in permutations(math_books, 2):\n\n    # Create a list of the non-math books\n    non_math_list = non_math_books[:]\n\n    # Add the first math book to the list\n    non_math_list.insert(0, math1)\n\n    # Add the second math book to the list\n    non_math_list.insert(1, math2)\n\n    # Add the non-math books to the list\n    non_math_list.extend(non_math_books[2:])\n\n    # Add the list to the possible stacks\n    possible_stacks.append(non_math_list)\n\n# Count the number of stacks\nprint(len(possible_stacks))"
+  },
+  {
+    "example_id": 260,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "28.0"
+    ],
+    "annotated_answers": [
+      "36.0"
+    ],
+    "solution": "# Initialize variables\nN = 8\nK = 2\n\n# Compute the number of possible ways to set the switches\nresult = math.comb(N, K)\nprint(result)"
+  },
+  {
+    "example_id": 261,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.5511187532873822",
+      "66",
+      "53.0"
+    ],
+    "annotated_answers": [
+      "47.0"
+    ],
+    "solution": "# Define a function to calculate the sum\ndef sum_of_fact(n):\n    s = 0\n    for i in range(1, n+1):\n        s += i * factorial(i)\n    return s\n\n# Calculate the sum\nresult = sum_of_fact(50)\nprint(result)\n\n# Find the largest prime factor\nlargest_prime_factor = 1\nfor i in range(2, int(math.sqrt(result)) + 1):\n    if result % i == 0:\n        largest_prime_factor = i\n        break\n\n# Print the result\nprint(largest_prime_factor)"
+  },
+  {
+    "example_id": 262,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "28.0"
+    ],
+    "solution": "import itertools\n\ndef paths(n):\n    for path in itertools.permutations([(1, 0), (-1, 0), (0, 1), (0, -1)], n):\n        yield ''.join('MATH'[x[1] + 1] for x in path)\n\nprint(sum(1 for _ in paths(11)))"
+  },
+  {
+    "example_id": 263,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6720.0",
+      "8.0",
+      "5.0"
+    ],
+    "annotated_answers": [
+      "672.0"
+    ],
+    "solution": "# Define a function to get the number of ways to arrange the beads\ndef get_arrangements(n, r):\n    # Compute the number of ways to arrange n objects in r positions\n    # using itertools.permutations\n    return len(list(permutations(range(n), r)))\n\n# Get the number of ways to arrange 5 beads\n# in 8 positions\nn = 8\nr = 5\narrangements = get_arrangements(n, r)\nprint(\"There are {} ways to arrange {} beads in {} positions.\".format(arrangements, n, r))"
+  },
+  {
+    "example_id": 264,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "52.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "result = 130 * 0.40\nprint(result)"
+  },
+  {
+    "example_id": 265,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "500500.0"
+    ],
+    "annotated_answers": [
+      "500500.0"
+    ],
+    "solution": "result = math.comb(1001, 2)\nprint(result)"
+  },
+  {
+    "example_id": 266,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "243.0"
+    ],
+    "solution": "# Define the number of balls and boxes\nn_balls = 5\nn_boxes = 3\n\n# Define the number of balls in each box\nballs_per_box = []\n\n# Define the number of balls in each box\nfor i in range(n_boxes):\n    balls_per_box.append(n_balls//n_boxes)\n\n# Define the number of balls in each box\nfor i in range(n_boxes):\n    balls_per_box[i] = n_balls//n_boxes\n\n# Define the number of balls left over\nballs_left_over = n_balls - sum(balls_per_box)\n\n# Define the number of ways to put the balls in the boxes\nn_ways = 0\n\n# Define the number of ways to put the balls in the boxes\nfor i in range(balls_left_over+1):\n    n_ways += factorial(n_balls-1-i)*factorial(i)\n\n# Define the number of ways to put the balls in the boxes\nn_ways = math.factorial(n_balls)\n\n# Print the number of ways to put the balls in the boxes\nprint(n_ways)"
+  },
+  {
+    "example_id": 267,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "9.0",
+      "2.0",
+      "12.0",
+      "6.0",
+      "4.0",
+      "2.0",
+      "4.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "x, y = symbols('x y')\nresult = expand((3*x + (2*y + 1))**2)\nprint(result)"
+  },
+  {
+    "example_id": 268,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "0.0",
+      "2.0",
+      "0.0",
+      "3.0",
+      "0.0",
+      "4.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "16.0"
+    ],
+    "solution": "digits = [1, 2, 3, 4]\n\ndef count_divisible_by_4(n):\n    count = 0\n    for i in range(1, n+1):\n        if i % 4 == 0:\n            count += 1\n    return count\n\nfor digit in digits:\n    print(f'{digit}: {count_divisible_by_4(digit)}')"
+  },
+  {
+    "example_id": 269,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "84.0"
+    ],
+    "solution": "prefix = 336\nsuffix = 7624\n\ndef is_valid(num):\n    if num < 1000 or num > 9999:\n        return False\n    if num % 1000 == 7624:\n        return True\n    return False\n\ndef get_nums(num):\n    if num < 1000:\n        return []\n    if num > 9999:\n        return []\n    num_str = str(num)\n    num_str = num_str[1:]\n    num_list = []\n    for i in range(4):\n        num_list.append(int(num_str[i]))\n    return num_list\n\ndef get_product(num_list):\n    product = 1\n    for i in range(4):\n        product *= num_list[i]\n    return product\n\ndef get_prefix(num):\n    return int(str(num)[0:3])\n\ndef get_suffix(num):\n    return int(str(num)[3:])\n\ndef get_new_num(num):\n    new_num = 0\n    for i in range(4):\n        new_num += num % 10\n        num = num // 10\n    return new_num\n\ndef solve(prefix, suffix):\n    nums = []\n    for i in range(1000, 10000):\n        if is_valid(i):\n            nums.append(i)\n    count = 0\n    for num in nums:\n        num_list = get_nums(num)\n        product = get_product(num_list)\n        if product == prefix:\n            new_num = get_new_num(num)\n            if new_num == suffix:\n                count += 1\n    return count\n\nprint(solve(prefix, suffix))"
+  },
+  {
+    "example_id": 270,
+    "selected_mode": "skip",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "21.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "numbers = [6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50, 54, 58, 62, 66, 70, 74, 78, 82, 86]\nprint(len(numbers))"
+  },
+  {
+    "example_id": 271,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "3.0",
+      "0.0",
+      "0.0",
+      "6.0",
+      "0.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "for i in range(0, 10):\n    for j in range(0, 10):\n        for k in range(0, 10):\n            if i % 3 == 0 and j % 3 == 0 and k % 3 == 0:\n                print(i, j, k)"
+  },
+  {
+    "example_id": 272,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "5.0"
+    ],
+    "annotated_answers": [
+      "24.0"
+    ],
+    "solution": "result = 5\nprint(result)"
+  },
+  {
+    "example_id": 273,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "64.0"
+    ],
+    "annotated_answers": [
+      "52.0"
+    ],
+    "solution": "result = 64\nprint(result)"
+  },
+  {
+    "example_id": 274,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "2.0",
+      "4.0",
+      "12.0",
+      "3.0",
+      "30.0",
+      "2.0",
+      "2.0",
+      "36.0",
+      "3.0",
+      "17.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "30.0"
+    ],
+    "solution": "x, y = symbols('x y')\nresult = expand((x+y)**4 + (x+2*y)**4)\nprint(result)"
+  },
+  {
+    "example_id": 275,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "20.0"
+    ],
+    "solution": "result = math.factorial(len(\"TEPEE\"))\nprint(result)"
+  },
+  {
+    "example_id": 276,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "504.0"
+    ],
+    "annotated_answers": [
+      "31.0"
+    ],
+    "solution": "n = 11\nprime_set = [2, 3, 5, 7]\nsubset_count = 0\nfor i in range(1 << n):\n    subset = []\n    for j in range(n):\n        if (i & (1 << j)):\n            subset.append(j + 1)\n    if all(subset[k] in prime_set for k in range(len(subset))):\n        subset_count += 1\nprint(subset_count)"
+  },
+  {
+    "example_id": 277,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "120.0"
+    ],
+    "annotated_answers": [
+      "2.0"
+    ],
+    "solution": "# Number of non-congruent figures\nn = 0\n\n# Iterate through all possible combinations\nfor i in itertools.permutations([0, 1, 2, 3, 4]):\n    # Check if the figure is non-congruent\n    if not (i[0] == i[1] or i[0] == i[2] or i[1] == i[2]):\n        n += 1\n\nprint(n)"
+  },
+  {
+    "example_id": 278,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "7.0",
+      "21.0",
+      "35.0",
+      "35.0",
+      "21.0",
+      "7.0",
+      "7.0",
+      "7.0",
+      "2.0"
+    ],
+    "annotated_answers": [
+      "0.0"
+    ],
+    "solution": "# row 1: 1\n# row 2: 6\n# row 3: 15\n# row 4: 20\n# row 5: 15\n# row 6: 6\n# row 7: 1\n\n# number of primes: 3\n\ndef is_prime(n):\n    if n == 1:\n        return False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef prime_count(n):\n    count = 0\n    for i in range(n):\n        if is_prime(i + 1):\n            count += 1\n    return count\n\ndef get_row(n):\n    row = [1]\n    for i in range(n - 1):\n        row.append(row[i] * (n - i) // (i + 1))\n    return row\n\ndef get_primes(n):\n    row = get_row(n)\n    primes = []\n    for i in range(n):\n        if is_prime(row[i]):\n            primes.append(row[i])\n    return primes\n\ndef get_row_primes(n):\n    row = get_row(n)\n    primes = []\n    for i in range(n):\n        if is_prime(row[i]):\n            primes.append(row[i])\n    return primes\n\ndef get_row_prime_count(n):\n    return len(get_row_primes(n))\n\ndef main():\n    n = 7\n    row = get_row(n)\n    primes = get_row_primes(n)\n    count = get_row_prime_count(n)\n    print(row)\n    print(primes)\n    print(count)\n\nif __name__ == \"__main__\":\n    main()"
+  },
+  {
+    "example_id": 279,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0",
+      "1.0",
+      "4.0"
+    ],
+    "annotated_answers": [
+      "12.0"
+    ],
+    "solution": "bracelets = []\n\nfor i in range(4):\n    bracelets.append(random.randint(1, 4))\n\nbracelets.sort()\n\nprint(bracelets)"
+  },
+  {
+    "example_id": 280,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "14.0"
+    ],
+    "annotated_answers": [
+      "17.0"
+    ],
+    "solution": "def solve_brown_handed(n):\n    # Right-handed students\n    r = int(n * 6/7)\n    # Brown-haired students\n    b = int(n * 3/4)\n    # Total students\n    total = n\n    # Total right-handed and brown-haired students\n    r_b = r + b\n    # Total non-right-handed and non-brown-haired students\n    n_r_b = total - r_b\n    # Find the smallest possible number of students that could be both right-handed and have brown hair\n    min_number = int((r_b + n_r_b) / 2)\n    return min_number\n\nprint(solve_brown_handed(28))"
+  },
+  {
+    "example_id": 281,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "24.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "n = 4\ns = ['P', 'A', 'P', 'A']\n\npermutations_count = 0\n\nfor perm in permutations(s):\n    permutations_count += 1\n\nprint(permutations_count)"
+  },
+  {
+    "example_id": 282,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "6.0"
+    ],
+    "annotated_answers": [
+      "4.0"
+    ],
+    "solution": "# 1. Define a function to determine the number of ways to divide the oranges into groups\ndef n_groups(n):\n    if n == 1:\n        return 1\n    elif n == 2:\n        return 2\n    else:\n        return n_groups(n-1) + n_groups(n-2)\n\n# 2. Define a function to determine the number of ways to divide the oranges into groups of size 3\ndef n_groups_3(n):\n    if n == 1:\n        return 1\n    elif n == 2:\n        return 2\n    else:\n        return n_groups(n-1) + n_groups(n-2) + n_groups(n-3)\n\n# 3. Define a function to determine the number of ways to divide the oranges into groups of size 3\ndef n_groups_3(n):\n    if n == 1:\n        return 1\n    elif n == 2:\n        return 2\n    else:\n        return n_groups(n-1) + n_groups(n-2) + n_groups(n-3)\n\n# 4. Define a function to determine the number of ways to divide the oranges into groups of size 3\ndef n_groups_3(n):\n    if n == 1:\n        return 1\n    elif n == 2:\n        return 2\n    else:\n        return n_groups(n-1) + n_groups(n-2) + n_groups(n-3)\n\n# 5. Print the number of ways to divide the oranges into groups of size 3\nprint(n_groups_3(4))"
+  },
+  {
+    "example_id": 283,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "6435.0"
+    ],
+    "annotated_answers": [
+      "6435.0"
+    ],
+    "solution": "# solve the problem\nresult = math.comb(15, 7)\nprint(result)"
+  },
+  {
+    "example_id": 284,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "600.0"
+    ],
+    "annotated_answers": [
+      "50.0"
+    ],
+    "solution": "# Define the word BANANA\nword = 'BANANA'\n\n# Define the alphabet\nalphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'\n\n# Define the list of letters\nletters = list(word)\n\n# Define the list of rearranged letters\nrearranged_letters = []\n\n# Define the number of ways to rearrange the letters\nnum_ways = 0\n\n# Rearrange the letters\nfor perm in permutations(letters):\n\n    # Check if the word begins with a B\n    if perm[0] == 'B':\n        continue\n\n    # Add the rearranged letters to the list\n    rearranged_letters.append(''.join(perm))\n\n    # Increment the number of ways\n    num_ways += 1\n\n# Print the number of ways\nprint(num_ways)"
+  },
+  {
+    "example_id": 285,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "6.0"
+    ],
+    "solution": "n = 0\nfor i in range(0, 15):\n    if pow(3, i) % 15 == 0:\n        n += 1\nprint(n)"
+  },
+  {
+    "example_id": 286,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": true,
+    "model_answers": [
+      "26.0"
+    ],
+    "annotated_answers": [
+      "26.0"
+    ],
+    "solution": "def count_number_with_digit_at_least_twice(n):\n    count = 0\n    for i in range(1, n + 1):\n        if str(i).count('6') >= 2:\n            count += 1\n    return count\n\n\nresult = count_number_with_digit_at_least_twice(800)\nprint(result)"
+  },
+  {
+    "example_id": 287,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "1.0",
+      "2.0",
+      "4.0",
+      "1.0",
+      "2.0",
+      "5.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "720.0"
+    ],
+    "solution": "n = 3\nk = 7\n\ndef smith(n, k):\n    \"\"\"\n    Returns the number of ways to seat n people in k chairs\n    \"\"\"\n    return math.comb(k, n)\n\ndef girls_seat(n, k):\n    \"\"\"\n    Returns the number of ways to seat n people in k chairs with n girls sitting next to each other\n    \"\"\"\n    return math.comb(k - 1, n - 1)\n\ndef print_seating(n, k):\n    \"\"\"\n    Prints out the possible seating arrangements\n    \"\"\"\n    for i in range(smith(n, k)):\n        print(list(permutations(range(1, k + 1), n)))\n\nprint_seating(n, k)"
+  },
+  {
+    "example_id": 288,
+    "selected_mode": "import",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "0.0"
+    ],
+    "annotated_answers": [
+      "80.0"
+    ],
+    "solution": "# Define a function to check if a number is prime\ndef is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n# Define a function to check if a number has a prime factor greater than 4\ndef has_prime_factor_gt_4(n):\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0 and i > 4:\n            return True\n    return False\n\n# Define a function to count the number of positive integers less than or equal to 100 that have a prime factor greater than 4\ndef count_positive_integers_with_prime_factor_gt_4(n):\n    count = 0\n    for i in range(1, n + 1):\n        if is_prime(i) and has_prime_factor_gt_4(i):\n            count += 1\n    return count\n\n# Test the function\nprint(count_positive_integers_with_prime_factor_gt_4(100))"
+  },
+  {
+    "example_id": 289,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "1.0",
+      "1.0"
+    ],
+    "annotated_answers": [
+      "21.0"
+    ],
+    "solution": "def numberOfPaths(m, n):\n    # Initialize a two-dimensional array.\n    dp = [[0 for i in range(n)] for j in range(m)]\n\n    # Base case\n    dp[0][0] = 1\n\n    # Populate the table.\n    for i in range(m):\n        for j in range(n):\n            # If the current cell is not on the last row,\n            # then there are two choices for the next step.\n            if i!= m - 1:\n                dp[i][j] = dp[i][j] + dp[i + 1][j]\n            # If the current cell is not on the last column,\n            # then there are two choices for the next step.\n            if j!= n - 1:\n                dp[i][j] = dp[i][j] + dp[i][j + 1]\n    return dp[0][0]\n\n\nprint(numberOfPaths(3, 3))"
+  },
+  {
+    "example_id": 290,
+    "selected_mode": "create",
+    "is_success": true,
+    "is_correct": false,
+    "model_answers": [
+      "39.0"
+    ],
+    "annotated_answers": [
+      "13.0"
+    ],
+    "solution": "result = 78 / 2\nprint(result)"
+  }
+]
